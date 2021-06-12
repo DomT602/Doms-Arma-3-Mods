@@ -53,6 +53,9 @@
         <Key ID="STR_DTVD_enableOptionDescription">
             <English>Allow the DT View Distance Manager to manage your view distance and terrain grid.</English>
         </Key>
+        <Key ID="STR_DTVD_openMenu">
+            <English>Open view distance menu</English>
+        </Key>
         <Key ID="STR_DTVD_modCategory">
             <English>Dom's Mods</English>
         </Key>
