@@ -30,22 +30,16 @@ for "_i" from 1400 to 1409 do {
 };
 
 private _terrainDataArray = [_footTerrainGrid,_shipTerrainGrid,_carTerrainGrid,_rotaryTerrainGrid,_airTerrainGrid];
-private _gridData = [
-	["50","50 (Smoothest)"],
-	["25","25 (Default)"],
-	["12.5","12.5"],
-	["6.25","6.25"],
-	["3.125","3.125 (Best Quality)"]
-];
+private _gridData = ["50","25","12.5","6.25","3.125"];
+
 for "_i" from 2100 to 2104 do {
 	private _control = _display displayCtrl _i;
 	{
-		_x params ["_value","_text"];
-		_control lbAdd _text;
-		_control lbSetData [_forEachIndex,_value];
+		_control lbAdd localize format ["STR_DTVD_terrainGrid%1",(_forEachIndex + 1)];
+		_control lbSetData [_forEachIndex,_x];
 	} forEach _gridData;
 
 	private _currentGrid = _terrainDataArray select (_i - 2100);
-	private _index = _gridData findIf {(_x select 0) isEqualTo str(_currentGrid)};
+	private _index = _gridData find (str _currentGrid);
 	_control lbSetCurSel _index;
 };

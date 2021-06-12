@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="DT View Distance">
+    <Package name="GUI">
+        <Key ID="STR_DTVD_menuTitle">
+            <English>View Distance Menu</English>
+        </Key>
+        <Key ID="STR_DTVD_foot">
+            <English>Foot:</English>
+        </Key>
+        <Key ID="STR_DTVD_ship">
+            <English>Ship:</English>
+        </Key>
+        <Key ID="STR_DTVD_car">
+            <English>Car:</English>
+        </Key>
+        <Key ID="STR_DTVD_rotary">
+            <English>Rotary:</English>
+        </Key>
+        <Key ID="STR_DTVD_air">
+            <English>Other Air:</English>
+        </Key>
+        <Key ID="STR_DTVD_view">
+            <English>View:</English>
+        </Key>
+        <Key ID="STR_DTVD_object">
+            <English>Object:</English>
+        </Key>
+        <Key ID="STR_DTVD_terrain">
+            <English>Terrain:</English>
+        </Key>
+    </Package>
+    <Package name="Terrain">
+        <Key ID="STR_DTVD_terrainGrid1">
+            <English>50 (Smoothest)</English>
+        </Key>
+        <Key ID="STR_DTVD_terrainGrid2">
+            <English>25 (Default)</English>
+        </Key>
+        <Key ID="STR_DTVD_terrainGrid3">
+            <English>12.5</English>
+        </Key>
+        <Key ID="STR_DTVD_terrainGrid4">
+            <English>6.25</English>
+        </Key>
+        <Key ID="STR_DTVD_terrainGrid5">
+            <English>3.125 (Best Quality)</English>
+        </Key>
+    </Package>
+    <Package name="Options">
+        <Key ID="STR_DTVD_enableOption">
+            <English>Enable View Distance Management</English>
+        </Key>
+        <Key ID="STR_DTVD_enableOptionDescription">
+            <English>Allow the DT View Distance Manager to manage your view distance and terrain grid.</English>
+        </Key>
+        <Key ID="STR_DTVD_modCategory">
+            <English>Dom's Mods</English>
+        </Key>
+        <Key ID="STR_DTVD_modSubCategory">
+            <English>View Distance</English>
+        </Key>
+    </Package>
+</Project>

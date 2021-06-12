@@ -30,7 +30,7 @@ class DT_viewDistanceMenu {
 		class RscText_1000: RscText
 		{
 			idc = 1000;
-			text = "View Distance Menu"; //--- ToDo: Localize;
+			text = "$STR_DTVD_menuTitle";
 			style = 0x02;
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.114 * safezoneH + safezoneY;
@@ -40,7 +40,7 @@ class DT_viewDistanceMenu {
 		class RscText_1001: RscText
 		{
 			idc = 1001;
-			text = "Foot:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_foot";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.147 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -49,7 +49,7 @@ class DT_viewDistanceMenu {
 		class RscText_1002: RscText
 		{
 			idc = 1002;
-			text = "View:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_view";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.18 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -58,7 +58,7 @@ class DT_viewDistanceMenu {
 		class RscText_1003: RscText
 		{
 			idc = 1003;
-			text = "Object:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_object";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.213 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -67,7 +67,7 @@ class DT_viewDistanceMenu {
 		class RscText_1004: RscText
 		{
 			idc = 1004;
-			text = "Terrain:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_terrain";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.246 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -76,7 +76,7 @@ class DT_viewDistanceMenu {
 		class RscEdit_1400: RscEdit
 		{
 			idc = 1400;
-			text = "12000"; //--- ToDo: Localize;
+			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.18 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -96,7 +96,7 @@ class DT_viewDistanceMenu {
 		class RscEdit_1401: RscEdit
 		{
 			idc = 1401;
-			text = "12000"; //--- ToDo: Localize;
+			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.213 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -116,7 +116,7 @@ class DT_viewDistanceMenu {
 		class RscText_1005: RscText
 		{
 			idc = 1005;
-			text = "Ship:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_ship";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.29 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -125,7 +125,7 @@ class DT_viewDistanceMenu {
 		class RscText_1006: RscText
 		{
 			idc = 1006;
-			text = "View:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_view";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.323 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -134,7 +134,7 @@ class DT_viewDistanceMenu {
 		class RscText_1007: RscText
 		{
 			idc = 1007;
-			text = "Object:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_object";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.356 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -143,7 +143,7 @@ class DT_viewDistanceMenu {
 		class RscText_1008: RscText
 		{
 			idc = 1008;
-			text = "Terrain:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_terrain";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.389 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -152,7 +152,7 @@ class DT_viewDistanceMenu {
 		class RscText_1009: RscText
 		{
 			idc = 1009;
-			text = "Car:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_car";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.422 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -161,7 +161,7 @@ class DT_viewDistanceMenu {
 		class RscText_1010: RscText
 		{
 			idc = 1010;
-			text = "View:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_view";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.455 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -170,7 +170,7 @@ class DT_viewDistanceMenu {
 		class RscText_1011: RscText
 		{
 			idc = 1011;
-			text = "Object:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_object";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.488 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -179,7 +179,7 @@ class DT_viewDistanceMenu {
 		class RscText_1012: RscText
 		{
 			idc = 1012;
-			text = "Terrain:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_terrain";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.521 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -188,7 +188,7 @@ class DT_viewDistanceMenu {
 		class RscText_1013: RscText
 		{
 			idc = 1013;
-			text = "Rotary:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_rotary";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.554 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -197,7 +197,7 @@ class DT_viewDistanceMenu {
 		class RscText_1014: RscText
 		{
 			idc = 1014;
-			text = "View:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_view";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.587 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -206,7 +206,7 @@ class DT_viewDistanceMenu {
 		class RscText_1015: RscText
 		{
 			idc = 1015;
-			text = "Object:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_object";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.62 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -215,7 +215,7 @@ class DT_viewDistanceMenu {
 		class RscText_1016: RscText
 		{
 			idc = 1016;
-			text = "Terrain:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_terrain";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.653 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -224,7 +224,7 @@ class DT_viewDistanceMenu {
 		class RscText_1017: RscText
 		{
 			idc = 1017;
-			text = "Other Air:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_air";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.687 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -233,7 +233,7 @@ class DT_viewDistanceMenu {
 		class RscText_1018: RscText
 		{
 			idc = 1018;
-			text = "View:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_view";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -242,7 +242,7 @@ class DT_viewDistanceMenu {
 		class RscText_1019: RscText
 		{
 			idc = 1019;
-			text = "Object:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_object";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.753 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -251,7 +251,7 @@ class DT_viewDistanceMenu {
 		class RscText_1020: RscText
 		{
 			idc = 1020;
-			text = "Terrain:"; //--- ToDo: Localize;
+			text = "$STR_DTVD_terrain";
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.786 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
@@ -368,7 +368,7 @@ class DT_viewDistanceMenu {
 		class RscEdit_1402: RscEdit
 		{
 			idc = 1402;
-			text = "12000"; //--- ToDo: Localize;
+			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.323 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -379,7 +379,7 @@ class DT_viewDistanceMenu {
 		class RscEdit_1403: RscEdit
 		{
 			idc = 1403;
-			text = "12000"; //--- ToDo: Localize;
+			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.356 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -390,7 +390,7 @@ class DT_viewDistanceMenu {
 		class RscEdit_1404: RscEdit
 		{
 			idc = 1404;
-			text = "12000"; //--- ToDo: Localize;
+			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.455 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -401,7 +401,7 @@ class DT_viewDistanceMenu {
 		class RscEdit_1405: RscEdit
 		{
 			idc = 1405;
-			text = "12000"; //--- ToDo: Localize;
+			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.488 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -412,7 +412,7 @@ class DT_viewDistanceMenu {
 		class RscEdit_1406: RscEdit
 		{
 			idc = 1406;
-			text = "12000"; //--- ToDo: Localize;
+			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.587 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -423,7 +423,7 @@ class DT_viewDistanceMenu {
 		class RscEdit_1407: RscEdit
 		{
 			idc = 1407;
-			text = "12000"; //--- ToDo: Localize;
+			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.62 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -434,7 +434,7 @@ class DT_viewDistanceMenu {
 		class RscEdit_1408: RscEdit
 		{
 			idc = 1408;
-			text = "12000"; //--- ToDo: Localize;
+			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -445,7 +445,7 @@ class DT_viewDistanceMenu {
 		class RscEdit_1409: RscEdit
 		{
 			idc = 1409;
-			text = "12000"; //--- ToDo: Localize;
+			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.753 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
