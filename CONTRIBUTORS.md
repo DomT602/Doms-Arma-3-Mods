@@ -1,0 +1,1 @@
+* [padddyyy](https://github.com/padddyyy) for translation into German.

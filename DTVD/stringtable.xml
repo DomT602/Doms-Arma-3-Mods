@@ -41,11 +41,11 @@
     <Package name="Terrain">
         <Key ID="STR_DTVD_terrainGrid1">
             <English>50 (Smoothest)</English>
-            <German>(Am weichesten)</German>
+            <German>50 (Am weichesten)</German>
         </Key>
         <Key ID="STR_DTVD_terrainGrid2">
             <English>25 (Default)</English>
-            <German>(Standard)</German>
+            <German>25 (Standard)</German>
         </Key>
         <Key ID="STR_DTVD_terrainGrid3">
             <English>12.5</English>
