@@ -11,7 +11,7 @@
         </Key>
         <Key ID="STR_DTVD_ship">
             <English>Ship:</English>
-            <German>Schiff</German>
+            <German>Schiff:</German>
         </Key>
         <Key ID="STR_DTVD_car">
             <English>Car:</English>
@@ -31,7 +31,7 @@
         </Key>
         <Key ID="STR_DTVD_object">
             <English>Object:</English>
-            <German>Objektsichtweite</German>
+            <German>Objektsichtweite:</German>
         </Key>
         <Key ID="STR_DTVD_terrain">
             <English>Terrain:</English>
@@ -68,6 +68,14 @@
         <Key ID="STR_DTVD_enableOptionDescription">
             <English>Allow the DT View Distance Manager to manage your view distance and terrain grid.</English>
             <German>Erlaube den DT Sichtweiten Manager die Sichtweite und Geländeraster einzustellen.</German>
+        </Key>
+        <Key ID="STR_DTVD_maxDistance">
+            <English>Max View Distance</English>
+            <German>Maximale Sichtweite</German>
+        </Key>
+        <Key ID="STR_DTVD_maxDistanceDescription">
+            <English>Select the max view distance players may use.</English>
+            <German>Einstellung der maximalen Sichtweite des Spieler.</German>
         </Key>
         <Key ID="STR_DTVD_openMenu">
             <English>Open view distance menu</English>

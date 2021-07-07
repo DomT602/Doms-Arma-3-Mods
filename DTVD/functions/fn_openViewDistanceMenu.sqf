@@ -11,16 +11,24 @@ createDialog "DT_viewDistanceMenu";
 
 private _display = findDisplay 9439;
 
-(profileNamespace getVariable ["DT_footViewDistance",[5000,5000,25]]) params ["_footViewDistance","_footObjectDistance","_footTerrainGrid"];
-(profileNamespace getVariable ["DT_shipViewDistance",[5000,5000,25]]) params ["_shipViewDistance","_shipObjectDistance","_shipTerrainGrid"];
-(profileNamespace getVariable ["DT_carViewDistance",[5000,5000,25]]) params ["_carViewDistance","_carObjectDistance","_carTerrainGrid"];
-(profileNamespace getVariable ["DT_rotaryViewDistance",[5000,5000,25]]) params ["_rotaryViewDistance","_rotaryObjectDistance","_rotaryTerrainGrid"];
-(profileNamespace getVariable ["DT_airViewDistance",[5000,5000,25]]) params ["_airViewDistance","_airObjectDistance","_airTerrainGrid"];
+private _sliderDataArray = [];
+private _terrainDataArray = [];
+{
+	_x params ["_viewDistance","_objectDistance","_terrainGrid"];
+	_sliderDataArray pushBack _viewDistance;
+	_sliderDataArray pushBack _objectDistance;
+	_terrainDataArray pushBack _terrainGrid;
+} forEach [
+	profileNamespace getVariable ["DT_footViewDistance",[5000,5000,25]],
+	profileNamespace getVariable ["DT_shipViewDistance",[5000,5000,25]],
+	profileNamespace getVariable ["DT_carViewDistance",[5000,5000,25]],
+	profileNamespace getVariable ["DT_rotaryViewDistance",[5000,5000,25]],
+	profileNamespace getVariable ["DT_airViewDistance",[5000,5000,25]]
+];
 
-private _sliderDataArray = [_footViewDistance,_footObjectDistance,_shipViewDistance,_shipObjectDistance,_carViewDistance,_carObjectDistance,_rotaryViewDistance,_rotaryObjectDistance,_airViewDistance,_airObjectDistance];
 for "_i" from 1900 to 1909 do {
 	private _control = _display displayCtrl _i;
-	_control sliderSetRange [100,12000];
+	_control sliderSetRange [100,DT_viewDistanceMax];
 	_control sliderSetSpeed [100,100];
 	_control sliderSetPosition (_sliderDataArray select (_i - 1900));
 };
@@ -29,9 +37,7 @@ for "_i" from 1400 to 1409 do {
 	_control ctrlSetText str (_sliderDataArray select (_i - 1400));
 };
 
-private _terrainDataArray = [_footTerrainGrid,_shipTerrainGrid,_carTerrainGrid,_rotaryTerrainGrid,_airTerrainGrid];
 private _gridData = ["50","25","12.5","6.25","3.125"];
-
 for "_i" from 2100 to 2104 do {
 	private _control = _display displayCtrl _i;
 	{

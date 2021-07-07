@@ -13,9 +13,9 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1200;
 			text = "#(argb,8,8,3)color(0,0,0,0.75)";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.114 * safezoneH + safezoneY;
-			w = 0.20625 * safezoneW;
+			w = 0.221719 * safezoneW;
 			h = 0.704 * safezoneH;
 		};
 		class RscSlider_1900: RscXSliderH
@@ -32,16 +32,16 @@ class DT_viewDistanceMenu {
 			idc = 1000;
 			text = "$STR_DTVD_menuTitle";
 			style = 0x02;
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.114 * safezoneH + safezoneY;
-			w = 0.20625 * safezoneW;
+			w = 0.221719 * safezoneW;
 			h = 0.022 * safezoneH;
 		};
 		class RscText_1001: RscText
 		{
 			idc = 1001;
 			text = "$STR_DTVD_foot";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.147 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -50,7 +50,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1002;
 			text = "$STR_DTVD_view";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.18 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -59,7 +59,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1003;
 			text = "$STR_DTVD_object";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.213 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -68,7 +68,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1004;
 			text = "$STR_DTVD_terrain";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.246 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -117,7 +117,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1005;
 			text = "$STR_DTVD_ship";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.29 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -126,7 +126,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1006;
 			text = "$STR_DTVD_view";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.323 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -135,7 +135,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1007;
 			text = "$STR_DTVD_object";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.356 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -144,7 +144,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1008;
 			text = "$STR_DTVD_terrain";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.389 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -153,7 +153,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1009;
 			text = "$STR_DTVD_car";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.422 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -162,7 +162,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1010;
 			text = "$STR_DTVD_view";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.455 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -171,7 +171,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1011;
 			text = "$STR_DTVD_object";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.488 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -180,7 +180,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1012;
 			text = "$STR_DTVD_terrain";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.521 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -189,7 +189,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1013;
 			text = "$STR_DTVD_rotary";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.554 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -198,7 +198,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1014;
 			text = "$STR_DTVD_view";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.587 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -207,7 +207,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1015;
 			text = "$STR_DTVD_object";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.62 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -216,7 +216,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1016;
 			text = "$STR_DTVD_terrain";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.653 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -225,7 +225,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1017;
 			text = "$STR_DTVD_air";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.687 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -234,7 +234,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1018;
 			text = "$STR_DTVD_view";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -243,7 +243,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1019;
 			text = "$STR_DTVD_object";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.753 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
@@ -252,7 +252,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1020;
 			text = "$STR_DTVD_terrain";
-			x = 0.396875 * safezoneW + safezoneX;
+			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.786 * safezoneH + safezoneY;
 			w = 0.061875 * safezoneW;
 			h = 0.022 * safezoneH;
