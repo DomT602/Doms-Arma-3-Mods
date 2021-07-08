@@ -4,90 +4,111 @@
         <Key ID="STR_DTVD_menuTitle">
             <English>View Distance Menu</English>
             <German>Sichtweiten Einstellungen</German>
+		    <Turkish>Görüş Mesafesi Menüsü</Turkish>
         </Key>
         <Key ID="STR_DTVD_foot">
             <English>Foot:</English>
             <German>Fuß:</German>
+			<Turkish>Piyade:</Turkish>
         </Key>
         <Key ID="STR_DTVD_ship">
             <English>Ship:</English>
             <German>Schiff:</German>
+			<Turkish>Gemi:</Turkish>
         </Key>
         <Key ID="STR_DTVD_car">
             <English>Car:</English>
             <German>Auto:</German>
+			<Turkish>Araç:</Turkish>
         </Key>
         <Key ID="STR_DTVD_rotary">
             <English>Rotary:</English>
             <German>Helikopter:</German>
+			<Turkish>Helikopter:</Turkish>
         </Key>
         <Key ID="STR_DTVD_air">
             <English>Other Air:</English>
             <German>Andere Flugzeuge:</German>
+			<Turkish>Diğer Hava Araçları:</Turkish>
         </Key>
         <Key ID="STR_DTVD_view">
             <English>View:</English>
             <German>Sichtweite:</German>
+			<Turkish>Görüş Mesafesi:</Turkish>
         </Key>
         <Key ID="STR_DTVD_object">
             <English>Object:</English>
             <German>Objektsichtweite:</German>
+			<Turkish>Obje Görüş Mesafesi:</Turkish>
         </Key>
         <Key ID="STR_DTVD_terrain">
             <English>Terrain:</English>
             <German>Gelände:</German>
+			<Turkish>Arazi:</Turkish>
         </Key>
     </Package>
     <Package name="Terrain">
         <Key ID="STR_DTVD_terrainGrid1">
             <English>50 (Smoothest)</English>
             <German>50 (Am weichesten)</German>
+			<Turkish>50 (En düz)</Turkish>
         </Key>
         <Key ID="STR_DTVD_terrainGrid2">
             <English>25 (Default)</English>
             <German>25 (Standard)</German>
+			<Turkish>25 (Varsayılan)</Turkish>
         </Key>
         <Key ID="STR_DTVD_terrainGrid3">
             <English>12.5</English>
             <German>12.5</German>
+			<Turkish>12.5</Turkish>
         </Key>
         <Key ID="STR_DTVD_terrainGrid4">
             <English>6.25</English>
             <German>6.25</German>
+			<Turkish>6.25</Turkish>
         </Key>
         <Key ID="STR_DTVD_terrainGrid5">
             <English>3.125 (Best Quality)</English>
             <German>3.125 (Beste Qualität)</German>
+			<Turkish>3.125 (En İyi Kalite)</Turkish>
         </Key>
     </Package>
     <Package name="Options">
         <Key ID="STR_DTVD_enableOption">
             <English>Enable View Distance Management</English>
             <German>Aktiviere Sichtweiten Manager</German>
+			<Turkish>Görüş Mesafesi Düzenleyicisini Etkinleştir</Turkish>
         </Key>
         <Key ID="STR_DTVD_enableOptionDescription">
             <English>Allow the DT View Distance Manager to manage your view distance and terrain grid.</English>
             <German>Erlaube den DT Sichtweiten Manager die Sichtweite und Geländeraster einzustellen.</German>
+			<Turkish>DT Görüş Mesafesi Düzenleyicisine görüş mesafesini ve araziyi ayarlaması için izin ver.</Turkish>
         </Key>
         <Key ID="STR_DTVD_maxDistance">
             <English>Max View Distance</English>
             <German>Maximale Sichtweite</German>
+			<Turkish>Azami Görüş Mesafesi</Turkish>
         </Key>
         <Key ID="STR_DTVD_maxDistanceDescription">
             <English>Select the max view distance players may use.</English>
             <German>Einstellung der maximalen Sichtweite des Spieler.</German>
+			<Turkish>Oyuncuların kullanabileceği azami görüş mesafesini seç.</Turkish>
         </Key>
         <Key ID="STR_DTVD_openMenu">
             <English>Open view distance menu</English>
             <German>Öffne Sichtweitenmenü</German>
+			<Turkish>Görüş mesafesi menüsünü aç</Turkish>
         </Key>
         <Key ID="STR_DTVD_modCategory">
             <English>Dom's Mods</English>
             <German>Dom's Mods</German>
+			<Turkish>Dom's Mods</Turkish>
         </Key>
         <Key ID="STR_DTVD_modSubCategory">
             <English>View Distance</English>
             <German>Sichtweite</German>
+			<Turkish>Görüş Mesafesi</Turkish>
         </Key>
     </Package>
 </Project>
