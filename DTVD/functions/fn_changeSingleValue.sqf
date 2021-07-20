@@ -43,7 +43,7 @@ if (_viewType isEqualTo "ship") exitWith {
 };
 
 if (_viewType isEqualTo "car") exitWith {
-	if (_vehicle isKindOf "Car") then {
+	if (_vehicle isKindOf "LandVehicle") then {
 		if (_index isEqualTo 0) then {
 			setViewDistance _value;
 		} else {

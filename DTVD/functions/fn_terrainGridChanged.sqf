@@ -35,7 +35,7 @@ if (_type isEqualTo "ship") exitWith {
 };
 
 if (_type isEqualTo "car") exitWith {
-	if (_vehicle isKindOf "Car") then {
+	if (_vehicle isKindOf "LandVehicle") then {
 		setTerrainGrid _newValue;
 	};
 };

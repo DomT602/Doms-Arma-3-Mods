@@ -8,7 +8,7 @@ params ["_control","_type","_updateIndex"];
 private _text = ctrlText _control;
 if (count _text < 3) exitWith {}; //not finished typing
 private _newValue = parseNumber ([_text,"0123456789"] call BIS_fnc_filterString);
-_newValue = ((_newValue max 100) min DT_viewDistanceMax);
+_newValue = ((_newValue max 200) min DT_viewDistanceMax);
 
 private _variableToUpdate = format ["DT_%1ViewDistance",_type];
 private _viewVar = profileNamespace getVariable [_variableToUpdate,[5000,5000,25]];

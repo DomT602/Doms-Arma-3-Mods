@@ -28,7 +28,7 @@ private _terrainDataArray = [];
 
 for "_i" from 1900 to 1909 do {
 	private _control = _display displayCtrl _i;
-	_control sliderSetRange [100,DT_viewDistanceMax];
+	_control sliderSetRange [200,DT_viewDistanceMax];
 	_control sliderSetSpeed [100,100];
 	_control sliderSetPosition (_sliderDataArray select (_i - 1900));
 };

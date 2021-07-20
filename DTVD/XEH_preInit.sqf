@@ -18,6 +18,6 @@
 	"SLIDER",
 	["STR_DTVD_maxDistance","STR_DTVD_maxDistanceDescription"],
 	["STR_DTVD_modCategory","STR_DTVD_modSubCategory"],
-	[100,24000,12000,0],
+	[100,40000,12000,0],
 	1
 ] call CBA_fnc_addSetting;
