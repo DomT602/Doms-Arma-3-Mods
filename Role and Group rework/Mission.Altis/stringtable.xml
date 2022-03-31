@@ -20,4 +20,24 @@
 			<English>Pilot Desc</English>
 		</Key>
 	</Package>
+	<Package name="Notifications">
+		<Key ID="STR_DT_Group_Created">
+			<English>New group created.</English>
+		</Key>
+		<Key ID="STR_DT_Group_Invited">
+			<English>%1 has invited you to their group, the invite expires in 60 seconds.</English>
+		</Key>
+		<Key ID="STR_DT_Group_Invite">
+			<English>You invited %1 to your group.</English>
+		</Key>
+		<Key ID="STR_DT_Group_Kicked">
+			<English>You kicked %1 from your group.</English>
+		</Key>
+		<Key ID="STR_DT_Group_Locked">
+			<English>Group locked.</English>
+		</Key>
+		<Key ID="STR_DT_Group_Unlocked">
+			<English>Group unlocked.</English>
+		</Key>
+	</Package>
 </Project>

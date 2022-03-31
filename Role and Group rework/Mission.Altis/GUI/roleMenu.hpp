@@ -13,7 +13,7 @@ class DT_roleMenu
 			w = 0.4125 * safezoneW;
 			h = 0.55 * safezoneH;
 		};
-		class RscText_1000: RscText
+		class RscText_1000: DT_RscTextCentralised
 		{
 			idc = -1;
 			text = "Role Selection"; //--- ToDo: Localize;
@@ -38,8 +38,11 @@ class DT_roleMenu
 			y = 0.291 * safezoneH + safezoneY;
 			w = 0.211406 * safezoneW;
 			h = 0.44 * safezoneH;
+			class Attributes {
+		        align = "center";
+		    };
 		};
-		class RscButtonMenu_2400: RscButtonMenu
+		class RscButtonMenu_2400: DT_RscButtonGeneral
 		{
 			idc = 2400;
 			text = "Select Role"; //--- ToDo: Localize;

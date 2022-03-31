@@ -9,5 +9,5 @@ params [
 ];
 
 [true] remoteExecCall ["DT_fnc_leaveGroup",_unit];
-hint format ["You kicked %1 from your group.",name _unit];
+hint format [localize "STR_DT_Group_Kicked",name _unit];
 [] remoteExecCall ["DT_fnc_updateMenuifOpen",_group];

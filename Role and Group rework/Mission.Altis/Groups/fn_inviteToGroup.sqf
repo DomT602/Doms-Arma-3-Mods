@@ -8,5 +8,5 @@ params [
 	["_unit",objNull,[objNull]]
 ];
 
-[_group,profileName] remoteExecCall ["AW_fnc_invitedToGroup",_unit];
-hint format ["You invited %1 to your group.",name _unit];
+[_group,profileName] remoteExecCall ["DT_fnc_invitedToGroup",_unit];
+hint format [localize "STR_DT_Group_Invite",name _unit];

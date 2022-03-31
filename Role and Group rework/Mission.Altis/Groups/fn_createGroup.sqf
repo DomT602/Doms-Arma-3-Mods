@@ -6,5 +6,5 @@
 
 private _group = createGroup [playerSide,true];
 [player] joinSilent _group;
-hint "New group created.";
+hint localize "STR_DT_Group_Created";
 [] call DT_fnc_initGroupMenu;

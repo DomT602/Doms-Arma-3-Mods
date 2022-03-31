@@ -10,9 +10,9 @@ params [
 
 if (_lock) then {
 	_group setVariable ["DT_groupLocked",true,true];
-	hint "Group locked.";
+	hint localize "STR_DT_Group_Locked";
 } else {
 	_group setVariable ["DT_groupLocked",false,true];
-	hint "Group unlocked.";
+	hint localize "STR_DT_Group_Unlocked";
 };
 [] call DT_fnc_initGroupMenu;

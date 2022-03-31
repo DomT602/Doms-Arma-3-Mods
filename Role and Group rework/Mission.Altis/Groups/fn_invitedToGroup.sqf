@@ -8,10 +8,11 @@ params [
 	["_name","",[""]]
 ];
 
-hint format ["%1 has invited you to their group, the invite expires in 60 seconds.",_name];
+hint format [localize "STR_DT_Group_Invited",_name];
 _group setVariable ["DT_groupInvited",true];
 
 [_group] spawn {
 	params ["_group"];
+	uiSleep 60;
 	_group setVariable ["DT_groupInvited",false];
 };
