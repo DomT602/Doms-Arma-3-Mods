@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="DT Roles and Groups">
+	<Package name="GUI">
+		<Key ID="STR_DT_Rifleman_Description">
+			<English>Rifleman Desc</English>
+		</Key>
+		<Key ID="STR_DT_Medic_Description">
+			<English>Medic Desc</English>
+		</Key>
+		<Key ID="STR_DT_Engineer_Description">
+			<English>Engineer Desc</English>
+		</Key>
+		<Key ID="STR_DT_EOD_Description">
+			<English>EOD Desc</English>
+		</Key>
+		<Key ID="STR_DT_SqLe_Description">
+			<English>Squad Leader Desc</English>
+		</Key>
+		<Key ID="STR_DT_Pilot_Description">
+			<English>Pilot Desc</English>
+		</Key>
+	</Package>
+</Project>
