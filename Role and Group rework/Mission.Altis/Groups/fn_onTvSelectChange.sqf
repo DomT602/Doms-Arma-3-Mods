@@ -23,7 +23,7 @@ _editBox ctrlEnable (leader _group isEqualTo player);
 private _groupArray = missionConfigFile >> "Dynamic_Groups" >> "interactions";
 
 private _startIDC = 2399; //start - 1
-for "_i" from _startIDC to (_startIDC + 7) do {
+for "_i" from _startIDC to (_startIDC + 9) do {
 	private _button = _display displayCtrl _i;
 	_button ctrlShow false;
 };

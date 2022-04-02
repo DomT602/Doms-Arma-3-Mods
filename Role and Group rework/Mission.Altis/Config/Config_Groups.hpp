@@ -36,12 +36,12 @@ class Dynamic_Groups {
 			title = "Disband";
 			action = "[group player] call DT_fnc_disbandGroup";
 			condition = "(leader (group player)) isEqualTo player && {(DT_groupMenuSelection select 0) isEqualTo (group player)}";
-	};
+		};
 		class leave {
 			title = "Leave";
 			action = "[false] call DT_fnc_leaveGroup";
 			condition = "true";
-};
+		};
 		class create {
 			title = "Create";
 			action = "[] call DT_fnc_createGroup";

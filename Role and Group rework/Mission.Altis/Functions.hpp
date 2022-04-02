@@ -9,6 +9,7 @@ class DT_Core {
 		class invitedToGroup {};
 		class inviteToGroup {};
 		class joinGroup {};
+		class keyHandler {};
 		class kickFromGroup {};
 		class leaveGroup {};
 		class lockGroup {};

@@ -11,3 +11,7 @@ params [
 [player] join _group;
 [format["%1 has joined your group.",profileName]] remoteExecCall ["hint",_group];
 [] remoteExecCall ["DT_fnc_updateMenuifOpen",_group];
+[] spawn {
+	uiSleep 0.1;
+	[] call DT_fnc_initGroupMenu;
+};

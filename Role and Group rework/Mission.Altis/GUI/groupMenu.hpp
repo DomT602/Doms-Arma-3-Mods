@@ -72,6 +72,16 @@ class DT_groupMenu
 			idc = 2406;
 			y = 0.621 * safezoneH + safezoneY;
 		};
+		class RscButtonMenu_2407: RscButtonMenu_2400
+		{
+			idc = 2407;
+			y = 0.665 * safezoneH + safezoneY;
+		};
+		class RscButtonMenu_2408: RscButtonMenu_2400
+		{
+			idc = 2408;
+			y = 0.709 * safezoneH + safezoneY;
+		};
 		class RscEdit_1400: RscEdit
 		{
 			idc = 1400;
