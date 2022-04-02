@@ -17,23 +17,27 @@ private _rolesArray = missionConfigFile >> "Dynamic_Roles";
 private _myPath = [0,0];
 
 {
-	_tree tvAdd [[],groupID _x];
-	private _treeIndex = _forEachIndex;
-	_tree tvSetData [[_treeIndex],netID _x];
+	private _group = _x;
+	private _treeIndex = _tree tvAdd [[],groupID _group];
+	_tree tvSetData [[_treeIndex],netID _group];
 
 	{
-		private _roleInfo = _rolesArray >> (player getVariable ["DT_role","rifleman"]);
+		private _roleInfo = _rolesArray >> (_x getVariable ["DT_role","rifleman"]);
 		private _roleName = getText(_roleInfo >> "name");
-		_tree tvAdd [[_treeIndex],name _x];
-		_tree tvSetData [[_treeIndex,_forEachIndex],netID _x];
-		_tree tvSetPicture [[_treeIndex,_forEachIndex],getText(_roleInfo >> "icon")];
-		_tree tvSetPictureColor [[_treeIndex,_forEachIndex],[0,1,0,1]];
-		_tree tvSetPictureRight [[_treeIndex,_forEachIndex],format["a3\ui_f\data\GUI\Cfg\Ranks\%1_gs.paa",getText(_roleInfo >> "rank")]];
+		private _unitIndex = _tree tvAdd [[_treeIndex],name _x];
+		_tree tvSetData [[_treeIndex,_unitIndex],netID _x];
+		_tree tvSetPicture [[_treeIndex,_unitIndex],getText(_roleInfo >> "icon")];
+		private _colour = [0,1,0,1];
+		if (leader _group isEqualTo _x) then {
+			_colour = [1,1,0,1];
+		};
+		_tree tvSetPictureColor [[_treeIndex,_unitIndex],_colour];
+		_tree tvSetPictureRight [[_treeIndex,_unitIndex],format["a3\ui_f\data\GUI\Cfg\Ranks\%1_gs.paa",getText(_roleInfo >> "rank")]];
 
 		if (player isEqualTo _x) then {
-			_myPath = [_treeIndex,_forEachIndex];
+			_myPath = [_treeIndex,_unitIndex];
 		};
-	} forEach units _x;
+	} forEach units _group;
 } forEach _friendlyGroups;
 
 _tree tvSetCurSel _myPath;

@@ -2,7 +2,7 @@
 	Faction: Squad Leader
 	Author: Dom
 */
-class teamlead {
+class squadlead {
 	name = $STR_B_SOLDIER_SL_F0;
 	rank = "Sergeant";
 	description = $STR_DT_SqLe_Description;

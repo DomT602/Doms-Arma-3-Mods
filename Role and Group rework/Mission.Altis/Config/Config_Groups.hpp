@@ -7,20 +7,10 @@ class Dynamic_Groups {
 			action = "DT_groupMenuSelection call DT_fnc_joinGroup";
 			condition = "count DT_groupMenuSelection isEqualTo 1 && {!(player in (units (DT_groupMenuSelection select 0))) && {!((DT_groupMenuSelection select 0) getVariable ['DT_groupLocked',false]) || {((DT_groupMenuSelection select 0) getVariable ['DT_groupInvited',false])}}}";
 		};
-		class leave {
-			title = "Leave";
-			action = "[false] call DT_fnc_leaveGroup";
-			condition = "true";
-		};
-		class create {
-			title = "Create";
-			action = "[] call DT_fnc_createGroup";
-			condition = "true";
-		};
 		class invite {
 			title = "Invite";
-			action = "[] call DT_fnc_inviteToGroup";
-			condition = "(count DT_groupMenuSelection) isEqualTo 2 && {leader (DT_groupMenuSelection select 0) isNotEqualTo player}";
+			action = "DT_groupMenuSelection call DT_fnc_inviteToGroup";
+			condition = "(leader (group player)) isEqualTo player && {(count DT_groupMenuSelection) isEqualTo 2 && {leader (DT_groupMenuSelection select 0) isNotEqualTo player}}";
 		};
 		class kick {
 			title = "Kick";
@@ -32,20 +22,30 @@ class Dynamic_Groups {
 			action = "DT_groupMenuSelection call DT_fnc_promoteNewLeader";
 			condition = "(count DT_groupMenuSelection) isEqualTo 2 && {leader (DT_groupMenuSelection select 0) isEqualTo player && {(DT_groupMenuSelection select 1) isNotEqualTo player}}";
 		};
-		class disband {
-			title = "Disband";
-			action = "[group player] call DT_fnc_disbandGroup";
-			condition = "(leader (group player)) isEqualTo player";
-		};
 		class lock {
 			title = "Lock";
 			action = "[group player,true] call DT_fnc_lockGroup";
-			condition = "(leader (group player)) isEqualTo player && {!((group player) getVariable ['DT_groupLocked',false])}";
+			condition = "(leader (group player)) isEqualTo player && {(DT_groupMenuSelection select 0) isEqualTo (group player) && {!((group player) getVariable ['DT_groupLocked',false])}}";
 		};
 		class unlock {
 			title = "Unlock";
 			action = "[group player,false] call DT_fnc_lockGroup";
-			condition = "(leader (group player)) isEqualTo player && {((group player) getVariable ['DT_groupLocked',false])}";
+			condition = "(leader (group player)) isEqualTo player && {(DT_groupMenuSelection select 0) isEqualTo (group player) && {((group player) getVariable ['DT_groupLocked',false])}}";
+		};
+		class disband {
+			title = "Disband";
+			action = "[group player] call DT_fnc_disbandGroup";
+			condition = "(leader (group player)) isEqualTo player && {(DT_groupMenuSelection select 0) isEqualTo (group player)}";
+	};
+		class leave {
+			title = "Leave";
+			action = "[false] call DT_fnc_leaveGroup";
+			condition = "true";
+};
+		class create {
+			title = "Create";
+			action = "[] call DT_fnc_createGroup";
+			condition = "true";
 		};
 	};
 };

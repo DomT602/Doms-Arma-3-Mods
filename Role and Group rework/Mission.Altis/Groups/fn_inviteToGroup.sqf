@@ -8,5 +8,5 @@ params [
 	["_unit",objNull,[objNull]]
 ];
 
-[_group,profileName] remoteExecCall ["DT_fnc_invitedToGroup",_unit];
+[group player,profileName] remoteExecCall ["DT_fnc_invitedToGroup",_unit];
 hint format [localize "STR_DT_Group_Invite",name _unit];
