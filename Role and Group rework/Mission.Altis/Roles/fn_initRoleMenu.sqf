@@ -18,10 +18,14 @@ for "_i" from 0 to (count _rolesArray) - 1 do {
 	private _roleMaxCount = getNumber(_currentConfig >> "maxCount");
 	private _roleCurrentCount = [_role] call DT_fnc_countRole;
 
+	private _lbTextRight = format ["(%1/%2)", _roleCurrentCount, _roleMaxCount];
+
 	private _index = _listbox lbAdd _roleName;
+	_listbox lbSetTextRight [_index, _lbTextRight];
 	_listbox lbSetData [_index,_role];
-	private _colour = if (_roleCurrentCount >= _roleMaxCount) then {[1,0,0,1]} else {[0,1,0,1]};
+	private _colour = if (_roleCurrentCount >= _roleMaxCount) then {[1,1,1,0.2]} else {[1,1,1,1]};
 	_listbox lbSetColor [_index,_colour];
+	_listbox lbSetColorRight [_index,_colour];
 };
 
 _listbox lbSetCurSel 0;

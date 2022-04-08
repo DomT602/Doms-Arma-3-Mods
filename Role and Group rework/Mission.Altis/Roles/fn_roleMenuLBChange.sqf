@@ -20,11 +20,23 @@ private _display = findDisplay 9700;
 private _textBox = _display displayCtrl 1100;
 
 private _text = format ["
-	<t size='2'>%1</t><br/>
-	Rank: %2<br/>
-	Description: %3<br/>
-	Count: %4/%5<br/>",
-	_roleName,_roleRank,_roleDesc,_roleCurrentCount,_roleMaxCount
+	<t align='center' font='PuristaBold' size='1.6'>%1</t>
+	<br/>
+	<t align='center' font='PuristaLight'>%2</t>
+
+	<br/><br/>
+
+	<t font='PuristaBold' align='left' v-align='top' size='1.4'>STATISTICS</t>
+	<br/>
+
+	<t font='PuristaLight' valign='bottom' align='left'>Rank</t>
+	<t font='PuristaBold' align='Right' valign='bottom'><img size='0.8' image='a3\ui_f\data\gui\cfg\ranks\%3_gs.paa'/> %3</t>
+	<br/>
+
+	<t font='PuristaLight' valign='bottom' align='left'>Available slots</t>
+	<t font='PuristaBold' align='Right' valign='bottom'>(%4/%5)</t>
+	<br/>",
+	_roleName,_roleDesc,_roleRank,_roleCurrentCount,_roleMaxCount
 ];
 _textBox ctrlSetStructuredText parseText _text;
 
