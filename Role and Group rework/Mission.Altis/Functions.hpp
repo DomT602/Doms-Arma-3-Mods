@@ -25,5 +25,6 @@ class DT_Core {
 		class initRoleMenu {};
 		class roleMenuLBChange {};
 		class selectRole {};
+		class updateRoleMenu {};
 	};
 };

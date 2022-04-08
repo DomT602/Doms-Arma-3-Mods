@@ -61,4 +61,7 @@ _backpacks append getArray(missionConfigFile >> "Common_Arsenal" >> "backpacks")
 	[_x,_backpacks,false,true] call BIS_fnc_addVirtualBackpackCargo;
 } forEach DT_arsenalBoxes;
 
+private _oldRole = player getVariable ["DT_role","rifleman"];
 player setVariable ["DT_role",_desiredRole,true];
+
+[_desiredRole,_oldRole] remoteExecCall ["DT_fnc_updateMenu",-2];

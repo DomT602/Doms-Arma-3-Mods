@@ -16,16 +16,15 @@ for "_i" from 0 to (count _rolesArray) - 1 do {
 	private _role = configName _currentConfig;
 	private _roleName = getText(_currentConfig >> "name");
 	private _roleMaxCount = getNumber(_currentConfig >> "maxCount");
-	private _roleCurrentCount = [_role] call DT_fnc_countRole;
+	private _roleCount = [_role] call DT_fnc_countRole;
 
-	private _lbTextRight = format ["(%1/%2)", _roleCurrentCount, _roleMaxCount];
+	private _lbTextRight = format ["(%1/%2)",_roleCount,_roleMaxCount];
 
 	private _index = _listbox lbAdd _roleName;
 	_listbox lbSetTextRight [_index, _lbTextRight];
 	_listbox lbSetData [_index,_role];
-	private _colour = if (_roleCurrentCount >= _roleMaxCount) then {[1,1,1,0.2]} else {[1,1,1,1]};
-	_listbox lbSetColor [_index,_colour];
-	_listbox lbSetColorRight [_index,_colour];
+	private _alpha = if (_roleCount >= _roleMaxCount) then {0.2} else {1};
+	_listbox lbSetColorRight [_index,[1,1,1,_colour]];
 };
 
 _listbox lbSetCurSel 0;
