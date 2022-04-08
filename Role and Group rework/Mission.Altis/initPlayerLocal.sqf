@@ -6,7 +6,7 @@
 
 DT_arsenalBoxes = [arsenal_1];
 ["rifleman"] call DT_fnc_selectRole;
-["rifleman"] remoteExecCall ["DT_fnc_updateMenu",-2];
+["rifleman"] remoteExecCall ["DT_fnc_updateRoleMenu",-2];
 
 player addAction ["Open Role Menu",DT_fnc_initRoleMenu];
 

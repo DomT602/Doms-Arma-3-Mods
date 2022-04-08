@@ -64,4 +64,4 @@ _backpacks append getArray(missionConfigFile >> "Common_Arsenal" >> "backpacks")
 private _oldRole = player getVariable ["DT_role","rifleman"];
 player setVariable ["DT_role",_desiredRole,true];
 
-[_desiredRole,_oldRole] remoteExecCall ["DT_fnc_updateMenu",-2];
+[_desiredRole,_oldRole] remoteExecCall ["DT_fnc_updateRoleMenu",-2];
