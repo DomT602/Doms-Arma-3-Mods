@@ -11,9 +11,11 @@ class CfgRemoteExec {
 		mode = 1;
 		jip = 0;
 
+		F(DT_fnc_updateRoleMenu,CLIENT)
+
 		F(DT_fnc_invitedToGroup,CLIENT)
 		F(DT_fnc_leaveGroup,CLIENT)
-		F(DT_fnc_updateMenuifOpen,CLIENT)
+		F(DT_fnc_updateMenuIfOpen,CLIENT)
 	};
 
 	class Commands {

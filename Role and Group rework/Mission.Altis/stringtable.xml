@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="DT Roles and Groups">
 	<Package name="GUI">
+		<Key ID="STR_DT_Role_Menu_Title">
+			<English>Role Selection</English>
+		</Key>
+		<Key ID="STR_DT_Role_Menu_Slots">
+			<English>Available slots</English>
+		</Key>
 		<Key ID="STR_DT_Rifleman_Description">
 			<English>Rifleman Desc</English>
 		</Key>
@@ -21,6 +27,9 @@
 		</Key>
 	</Package>
 	<Package name="Notifications">
+		<Key ID="STR_DT_Role_Full">
+			<English>Sorry, this role is full.</English>
+		</Key>
 		<Key ID="STR_DT_Group_Created">
 			<English>New group created.</English>
 		</Key>
@@ -38,6 +47,9 @@
 		</Key>
 		<Key ID="STR_DT_Group_Unlocked">
 			<English>Group unlocked.</English>
+		</Key>
+		<Key ID="STR_DT_Group_Blacklisted_Word">
+			<English>You entered a blacklisted word.</English>
 		</Key>
 	</Package>
 </Project>

@@ -24,19 +24,16 @@ private _text = format ["
 	<br/>
 	<t align='center' font='PuristaLight'>%2</t>
 
-	<br/><br/>
+	<br/><br/><br/>
 
-	<t font='PuristaBold' align='left' v-align='top' size='1.4'>STATISTICS</t>
+	<t font='PuristaLight' valign='bottom' align='left'>%3</t>
+	<t font='PuristaBold' align='Right' valign='bottom'><img size='0.8' image='a3\ui_f\data\gui\cfg\ranks\%4_gs.paa'/> %4</t>
 	<br/>
 
-	<t font='PuristaLight' valign='bottom' align='left'>Rank</t>
-	<t font='PuristaBold' align='Right' valign='bottom'><img size='0.8' image='a3\ui_f\data\gui\cfg\ranks\%3_gs.paa'/> %3</t>
-	<br/>
-
-	<t font='PuristaLight' valign='bottom' align='left'>Available slots</t>
-	<t font='PuristaBold' align='Right' valign='bottom'>(%4/%5)</t>
+	<t font='PuristaLight' valign='bottom' align='left'>%5</t>
+	<t font='PuristaBold' align='Right' valign='bottom'>(%6/%7)</t>
 	<br/>",
-	_roleName,_roleDesc,_roleRank,_roleCurrentCount,_roleMaxCount
+	_roleName,_roleDesc,localize "STR_LIVE_STATS_RANK",_roleRank,localize "STR_DT_Role_Menu_Slots",_roleCurrentCount,_roleMaxCount
 ];
 _textBox ctrlSetStructuredText parseText _text;
 
@@ -46,5 +43,5 @@ private _currentRole = player getVariable ["DT_role","rifleman"];
 if (_currentRole isEqualTo _selectedRole || {_roleCurrentCount >= _roleMaxCount}) then {
 	_button ctrlEnable false;
 } else {
-	_button ctrlEnable true;	
+	_button ctrlEnable true;    
 };

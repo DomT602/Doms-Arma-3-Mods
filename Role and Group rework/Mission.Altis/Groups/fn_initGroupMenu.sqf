@@ -23,7 +23,6 @@ private _myPath = [0,0];
 
 	{
 		private _roleInfo = _rolesArray >> (_x getVariable ["DT_role","rifleman"]);
-		private _roleName = getText(_roleInfo >> "name");
 		private _unitIndex = _tree tvAdd [[_treeIndex],name _x];
 		_tree tvSetData [[_treeIndex,_unitIndex],netID _x];
 		_tree tvSetPicture [[_treeIndex,_unitIndex],getText(_roleInfo >> "icon")];

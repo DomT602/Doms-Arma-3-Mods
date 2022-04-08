@@ -17,7 +17,7 @@ if (_key in [28,156]) then {
 	{
 		if (_x in _loweredName) exitWith {
 			_newName = "";
-			hint "You entered a blacklisted word.";
+			hint localize "STR_DT_Group_Blacklisted_Word";
 		};
 	} forEach _filterWords;
 	if (_newName isEqualTo "") exitWith {closeDialog 0};

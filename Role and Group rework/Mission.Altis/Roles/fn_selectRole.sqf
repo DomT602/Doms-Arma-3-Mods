@@ -18,7 +18,7 @@ if (_desiredRole isEqualTo "") then {
 private _roleConfig = missionConfigFile >> "Dynamic_Roles" >> _desiredRole;
 private _roleMaxCount = getNumber(_roleConfig >> "maxCount");
 private _roleCurrentCount = [_desiredRole] call DT_fnc_countRole;
-if (_roleCurrentCount >= _roleMaxCount) exitWith {hint "Sorry, this role is full."};
+if (_roleCurrentCount >= _roleMaxCount) exitWith {hint localize "STR_DT_Role_Full"};
 
 private _roleRank = getText(_roleConfig >> "rank");
 player setUnitRank _roleRank;

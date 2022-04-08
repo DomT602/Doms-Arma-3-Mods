@@ -11,7 +11,7 @@ class DT_roleMenu : RscDisplayTeamSwitch
 	{
 		class Title : CA_TSTitle
 		{
-			text = "Role selection";
+			text = "$STR_DT_Role_Menu_Title";
 		};
 		class RoleList : CA_TSRoles
 		{
@@ -28,12 +28,12 @@ class DT_roleMenu : RscDisplayTeamSwitch
 		};
 		class CancelBtn : CA_ButtonCancel
 		{
-			text = "Cancel";
+			text = "$STR_DISP_CANCEL";
 		};
 		class SelectRoleBtn : CA_ButtonContinue
 		{
 			idc = 2400;
-			text = "Select Role";
+			text = "$STR_A3_TO_C01M02_TASK_CHOOSEMISSION_TITLE";
 			onButtonClick = "[] call DT_fnc_selectRole;";
 		};
 	};
