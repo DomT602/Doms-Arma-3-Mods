@@ -22,6 +22,7 @@ class DT_Core {
 	class Roles {
 		file = "Roles";
 		class countRole {};
+		class handleDisconnect {};
 		class initRoleMenu {};
 		class roleMenuLBChange {};
 		class selectRole {};

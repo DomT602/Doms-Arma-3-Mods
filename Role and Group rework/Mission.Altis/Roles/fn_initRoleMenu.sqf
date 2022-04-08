@@ -24,7 +24,7 @@ for "_i" from 0 to (count _rolesArray) - 1 do {
 	_listbox lbSetTextRight [_index, _lbTextRight];
 	_listbox lbSetData [_index,_role];
 	private _alpha = if (_roleCount >= _roleMaxCount) then {0.2} else {1};
-	_listbox lbSetColorRight [_index,[1,1,1,_colour]];
+	_listbox lbSetColorRight [_index,[1,1,1,_alpha]];
 };
 
 _listbox lbSetCurSel 0;
