@@ -1,4 +1,5 @@
 import RscDisplayTeamSwitch;
+import RscControlsGroup;
 
 class DT_roleMenu : RscDisplayTeamSwitch
 {
@@ -18,7 +19,7 @@ class DT_roleMenu : RscDisplayTeamSwitch
 			idc = 1500;
 			onLBSelChanged = "_this call DT_fnc_roleMenuLBChange";
 		};
-		class RoleInformationControlGroup: RscControlsGroup
+		class RoleInformationControlGroup : RscControlsGroup
 		{
 			delete HScrollBar;
 
@@ -31,7 +32,7 @@ class DT_roleMenu : RscDisplayTeamSwitch
 
 			class Controls
 			{
-				class RoleInformation: RscStructuredText
+				class RoleInformation : RscStructuredText
                 {
                     idc = 1100;
                     text = "";
