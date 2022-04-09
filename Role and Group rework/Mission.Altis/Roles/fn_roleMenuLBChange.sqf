@@ -8,8 +8,6 @@ params [
 	["_index",0,[0]]
 ];
 
-private _emptyPlaceholder = "-";
-
 private _selectedRole = _control lbData _index;
 private _roleData = missionConfigFile >> "Dynamic_Roles" >> _selectedRole;
 private _roleName = getText(_roleData >> "name");
@@ -18,26 +16,28 @@ private _roleDesc = getText(_roleData >> "description");
 private _roleMaxCount = getNumber(_roleData >> "maxCount");
 private _roleCurrentCount = [_selectedRole] call DT_fnc_countRole;
 
-private _roleGearPrimary = getText(configFile >> "CfgWeapons" >> (getArray(_roleData >> "defaultLoadout") # 0) # 0 >> "displayName");
-if (isNil "_roleGearPrimary") then { _roleGearPrimary = _emptyPlaceholder; };
+private _defaultLoadout = getArray(_roleData >> "defaultLoadout");
+private _defaultLoadoutText = [];
 
-private _roleGearLauncher = getText(configFile >> "CfgWeapons" >> (getArray(_roleData >> "defaultLoadout") # 1) # 0 >> "displayName");
-if (isNil "_roleGearLauncher") then { _roleGearLauncher = _emptyPlaceholder; };
-
-private _roleGearSecondary = getText(configFile >> "CfgWeapons" >> (getArray(_roleData >> "defaultLoadout") # 2) # 0 >> "displayName");
-if (isNil "_roleGearSecondary") then { _roleGearSecondary = _emptyPlaceholder; };
-
-private _roleGearUniform = getText(configFile >> "CfgWeapons" >> (getArray(_roleData >> "defaultLoadout") # 3) # 0 >> "displayName");
-if (isNil "_roleGearUniform") then { _roleGearUniform = _emptyPlaceholder; };
-
-private _roleGearVest = getText(configFile >> "CfgWeapons" >> (getArray(_roleData >> "defaultLoadout") # 4) # 0 >> "displayName");
-if (isNil "_roleGearVest") then { _roleGearVest = _emptyPlaceholder; };
-
-private _roleGearBackpack = getText(configFile >> "CfgVehicles" >> (getArray(_roleData >> "defaultLoadout") # 5) # 0 >> "displayName");
-if (isNil "_roleGearBackpack") then { _roleGearBackpack = _emptyPlaceholder; };
-
-private _roleGearHelmet = getText(configFile >> "CfgWeapons" >> getArray(_roleData >> "defaultLoadout") # 6 >> "displayName");
-if (isNil "_roleGearHelmet") then { _roleGearHelmet = _emptyPlaceholder; };
+for "_i" from 0 to 5 do {
+	private _array = _defaultLoadout select _i;
+	_array params [["_className",""]];
+	if (_className isEqualTo "") then {
+		_defaultLoadoutText pushBack "-";
+	} else {
+		if (_i isEqualTo 5) then {
+			_defaultLoadoutText pushBack (getText(configFile >> "CfgVehicles" >> _className >> "displayName"));
+		} else {
+			_defaultLoadoutText pushBack (getText(configFile >> "CfgWeapons" >> _className >> "displayName"));
+		};
+	};
+};
+private _helmetClass = _defaultLoadout select 6;
+if (_helmetClass isEqualTo "") then {
+	_defaultLoadoutText pushBack "-";
+} else {
+	_defaultLoadoutText pushBack (getText(configFile >> "CfgWeapons" >> _helmetClass >> "displayName"));
+};
 
 private _display = findDisplay 9700;
 private _textBox = _display displayCtrl 1100;
@@ -98,8 +98,8 @@ private _text = format ["
 	
 	",
 	_roleName,_roleDesc,_roleRank,_roleCurrentCount,_roleMaxCount,
-	_roleGearPrimary, _roleGearLauncher, _roleGearSecondary,
-	_roleGearUniform, _roleGearVest, _roleGearBackpack, _roleGearHelmet
+	_defaultLoadoutText#0, _defaultLoadoutText#1, _defaultLoadoutText#2,
+	_defaultLoadoutText#3, _defaultLoadoutText#4, _defaultLoadoutText#5, _defaultLoadoutText#6
 ];
 _textBox ctrlSetStructuredText parseText _text;
 
