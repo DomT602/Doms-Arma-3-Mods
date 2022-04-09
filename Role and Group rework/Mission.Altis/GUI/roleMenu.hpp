@@ -1,5 +1,3 @@
-import RscDisplayTeamSwitch;
-
 class DT_roleMenu : RscDisplayTeamSwitch
 {
 	idd = 9700;

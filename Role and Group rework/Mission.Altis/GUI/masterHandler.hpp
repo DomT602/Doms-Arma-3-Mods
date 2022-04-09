@@ -5,6 +5,8 @@ import RscStructuredText;
 import RscButtonMenu;
 import RscEdit;
 import RscTree;
+import RscDisplayTeamSwitch;
+import RscControlsGroup;
 
 class DT_RscButtonGeneral: RscButtonMenu
 {

@@ -7,6 +7,9 @@
 		<Key ID="STR_DT_Role_Menu_Slots">
 			<English>Available slots</English>
 		</Key>
+		<Key ID="STR_DT_Role_Menu_Default_Loadout">
+			<English>DEFAULT LOADOUT</English>
+		</Key>
 		<Key ID="STR_DT_Rifleman_Description">
 			<English>The Rifleman is a flexible role, with access to a variety of kit to match the situation they find themselves in.</English>
 		</Key>
