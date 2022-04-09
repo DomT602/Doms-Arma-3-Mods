@@ -43,59 +43,38 @@ private _display = findDisplay 9700;
 private _textBox = _display displayCtrl 1100;
 
 private _text = format ["
-	<t align='center' font='PuristaBold' size='1.6'>%1</t>
-	<br/>
-	<t align='center' font='PuristaLight'>%2</t>
-
-	<br/><br/>
-
-	<t font='PuristaLight' valign='bottom' align='left'>Rank</t>
-	<t font='PuristaBold' align='Right' valign='bottom'><img size='0.8' image='a3\ui_f\data\gui\cfg\ranks\%3_gs.paa'/> %3</t>
-
-	<br/>
-
-	<t font='PuristaLight' valign='bottom' align='left'>Available slots</t>
-	<t font='PuristaBold' align='Right' valign='bottom'>(%4/%5)</t>
-	
-	<br/><br/>
-
-	<t font='PuristaBold' size='1.2'>DEFAULT LOADOUT</t>
-
-	<br/>
-
-	<t font='PuristaLight' valign='bottom' align='left'>Primary</t>
-	<t font='PuristaBold' align='Right' valign='bottom'>%6</t>
-
-	<br/>
-
-	<t font='PuristaLight' valign='bottom' align='left'>Launcher</t>
-	<t font='PuristaBold' align='Right' valign='bottom'>%7</t>
-
-	<br/>
-
-	<t font='PuristaLight' valign='bottom' align='left'>Secondary</t>
-	<t font='PuristaBold' align='Right' valign='bottom'>%8</t>
-
-	<br/><br/>
-
-	<t font='PuristaLight' valign='bottom' align='left'>Uniform</t>
-	<t font='PuristaBold' align='Right' valign='bottom'>%9</t>
-	
-	<br/>
-
-	<t font='PuristaLight' valign='bottom' align='left'>Vest</t>
-	<t font='PuristaBold' align='Right' valign='bottom'>%10</t>
-	
-	<br/>
-
-	<t font='PuristaLight' valign='bottom' align='left'>Backpack</t>
-	<t font='PuristaBold' align='Right' valign='bottom'>%11</t>
-
-	<br/>
-
-	<t font='PuristaLight' valign='bottom' align='left'>Helmet</t>
-	<t font='PuristaBold' align='Right' valign='bottom'>%12</t>
-	
+<t align='center' font='PuristaBold' size='1.6'>%1</t>
+<br/>
+<t align='center' font='PuristaLight'>%2</t>
+<br/><br/>
+<t font='PuristaLight' valign='bottom' align='left'>Rank</t>
+<t font='PuristaBold' align='Right' valign='bottom'><img size='0.8' image='a3\ui_f\data\gui\cfg\ranks\%3_gs.paa'/> %3</t>
+<br/>
+<t font='PuristaLight' valign='bottom' align='left'>Available slots</t>
+<t font='PuristaBold' align='Right' valign='bottom'>(%4/%5)</t>
+<br/><br/>
+<t font='PuristaBold' size='1.2'>DEFAULT LOADOUT</t>
+<br/>
+<t font='PuristaLight' valign='bottom' align='left'>Primary</t>
+<t font='PuristaBold' align='Right' valign='bottom'>%6</t>
+<br/>
+<t font='PuristaLight' valign='bottom' align='left'>Launcher</t>
+<t font='PuristaBold' align='Right' valign='bottom'>%7</t>
+<br/>
+<t font='PuristaLight' valign='bottom' align='left'>Secondary</t>
+<t font='PuristaBold' align='Right' valign='bottom'>%8</t>
+<br/><br/>
+<t font='PuristaLight' valign='bottom' align='left'>Uniform</t>
+<t font='PuristaBold' align='Right' valign='bottom'>%9</t>
+<br/>
+<t font='PuristaLight' valign='bottom' align='left'>Vest</t>
+<t font='PuristaBold' align='Right' valign='bottom'>%10</t>
+<br/>
+<t font='PuristaLight' valign='bottom' align='left'>Backpack</t>
+<t font='PuristaBold' align='Right' valign='bottom'>%11</t>
+<br/>
+<t font='PuristaLight' valign='bottom' align='left'>Helmet</t>
+<t font='PuristaBold' align='Right' valign='bottom'>%12</t>
 	",
 	_roleName,_roleDesc,_roleRank,_roleCurrentCount,_roleMaxCount,
 	_defaultLoadoutText#0, _defaultLoadoutText#1, _defaultLoadoutText#2,
