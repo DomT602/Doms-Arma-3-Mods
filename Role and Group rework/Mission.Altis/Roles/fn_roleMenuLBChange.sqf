@@ -43,9 +43,9 @@ private _display = findDisplay 9700;
 private _textBox = _display displayCtrl 1100;
 
 private _text = format ["
-	<t font='PuristaBold' size='1.6'>%1</t>
+	<t align='center' font='PuristaBold' size='1.6'>%1</t>
 	<br/>
-	<t font='PuristaLight'>%2</t>
+	<t align='center' font='PuristaLight'>%2</t>
 
 	<br/><br/>
 
