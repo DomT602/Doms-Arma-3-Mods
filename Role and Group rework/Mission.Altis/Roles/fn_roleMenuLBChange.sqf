@@ -42,8 +42,8 @@ if (_helmetClass isEqualTo "") then {
 private _display = findDisplay 9700;
 private _textBox = _display displayCtrl 1100;
 
-private _text = format ["
-<t align='center' font='PuristaBold' size='1.6'>%1</t>
+private _text = format 
+["<t align='center' font='PuristaBold' size='1.6'>%1</t>
 <br/>
 <t align='center' font='PuristaLight'>%2</t>
 <br/><br/>
@@ -74,8 +74,7 @@ private _text = format ["
 <t font='PuristaBold' align='Right' valign='bottom'>%11</t>
 <br/>
 <t font='PuristaLight' valign='bottom' align='left'>Helmet</t>
-<t font='PuristaBold' align='Right' valign='bottom'>%12</t>
-	",
+<t font='PuristaBold' align='Right' valign='bottom'>%12</t>",
 	_roleName,_roleDesc,_roleRank,_roleCurrentCount,_roleMaxCount,
 	_defaultLoadoutText#0, _defaultLoadoutText#1, _defaultLoadoutText#2,
 	_defaultLoadoutText#3, _defaultLoadoutText#4, _defaultLoadoutText#5, _defaultLoadoutText#6
