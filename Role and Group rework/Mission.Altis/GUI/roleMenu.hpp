@@ -18,13 +18,29 @@ class DT_roleMenu : RscDisplayTeamSwitch
 			idc = 1500;
 			onLBSelChanged = "_this call DT_fnc_roleMenuLBChange";
 		};
-		class RoleInformation : RscStructuredText
+		class RoleInformationControlGroup: RscControlsGroup
 		{
-			idc = 1100;
+			delete HScrollBar;
+
+			idc = 1205;
+
 			h = 20.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25);
 			w = 22.5 * (((safezoneW / safezoneH) min 1.2) / 40);
-			x = 16.3 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX + (safezoneW - ((safezoneW / safezoneH) min 1.2))/2);
+			x = 16.5 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX + (safezoneW - ((safezoneW / safezoneH) min 1.2))/2);
 			y = 2.3 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2);
+
+			class Controls
+			{
+				class RoleInformation: RscStructuredText
+                {
+                    idc = 1100;
+                    text = "";
+					h = 20.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25);
+					w = 21.8 * (((safezoneW / safezoneH) min 1.2) / 40);
+					x = 0;
+					y = 0;
+                };
+			};
 		};
 		class CancelBtn : CA_ButtonCancel
 		{
