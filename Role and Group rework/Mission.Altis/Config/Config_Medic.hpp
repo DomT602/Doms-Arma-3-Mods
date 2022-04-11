@@ -30,7 +30,9 @@ class medic {
 
 	};
 	arsenalItems[] = {
+		"Medikit",
 
+		"G_Respirator_white_F"
 	};
 	arsenalBackpacks[] = {
 

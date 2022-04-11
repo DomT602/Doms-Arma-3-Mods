@@ -4,6 +4,7 @@ class Dynamic_Groups {
 		{"Bravo",{"squadlead","teamlead","medic","rifleman","rifleman","teamlead","engineer","rifleman","rifleman"},"true"},
 		{"Charlie",{"squadlead","teamlead","medic","rifleman","rifleman","teamlead","engineer","rifleman","rifleman"},"count playableUnits > 10"},
 		{"Talon",{"pilot","pilot"},"true"},
-		{"Clown Squad",{"sniper","spotter"},"true"}
+		{"Outlaw",{"pilot","pilot"},"count playableUnits > 10"},
+		{"Hawkeye",{"sniper","spotter"},"true"}
 	};
 };

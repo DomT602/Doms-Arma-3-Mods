@@ -24,10 +24,10 @@ class teamlead {
 	};
 
 	arsenalWeapons[] = {
-		"arifle_MX_ACO_pointer_F"
+		
 	};
 	arsenalMagazines[] = {
-		"30Rnd_65x39_caseless_mag"
+		
 	};
 	arsenalItems[] = {
 		

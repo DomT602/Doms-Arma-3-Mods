@@ -24,15 +24,15 @@ class uavop {
 	};
 
 	arsenalWeapons[] = {
-		"arifle_MX_ACO_pointer_F"
+
 	};
 	arsenalMagazines[] = {
-		"30Rnd_65x39_caseless_mag"
+
 	};
 	arsenalItems[] = {
 		
 	};
 	arsenalBackpacks[] = {
-		
+		"B_UAV_01_backpack_F", "B_UAV_06_backpack_F", "B_UAV_06_medical_backpack_F", "B_W_Static_Designator_01_weapon_F", "B_UGV_02_Demining_backpack_F", "B_UGV_02_Science_backpack_F"
 	};
 };

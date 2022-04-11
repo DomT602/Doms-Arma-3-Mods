@@ -24,13 +24,17 @@ class pilot {
 	};
 
 	arsenalWeapons[] = {
-		"arifle_MX_ACO_pointer_F"
+		
 	};
 	arsenalMagazines[] = {
-		"30Rnd_65x39_caseless_mag"
+		
 	};
 	arsenalItems[] = {
-		
+		"U_B_HeliPilotCoveralls", "U_B_PilotCoveralls",
+		"U_I_HeliPilotCoveralls", "U_I_pilotCoveralls",
+		"U_I_E_Uniform_01_coveralls_F", "U_O_R_Gorka_01_black_F",
+		"U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"
+
 	};
 	arsenalBackpacks[] = {
 		

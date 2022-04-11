@@ -24,13 +24,18 @@ class eod {
 	};
 
 	arsenalWeapons[] = {
-		"arifle_MX_ACO_pointer_F"
+
 	};
 	arsenalMagazines[] = {
-		"30Rnd_65x39_caseless_mag"
+
 	};
 	arsenalItems[] = {
-		
+		"ToolKit", "MineDetector",
+
+		"APERSBoundingMine_Range_Mag", "APERSMine_Range_Mag", "APERSTripMine_Wire_Mag", "ATMine_Range_Mag", "ClaymoreDirectionalMine_Remote_Mag",
+		"IEDLandBig_Remote_Mag", "IEDLandSmall_Remote_Mag", "IEDUrbanBig_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "SatchelCharge_Remote_Mag", "SLAMDirectionalMine_Wire_Mag",
+		"TrainingMine_Mag"
+
 	};
 	arsenalBackpacks[] = {
 		
