@@ -12,7 +12,6 @@ private _display = findDisplay 9700;
 if (isNull _display) exitWith {};
 private _listbox = _display displayCtrl 1500;
 private _listboxSize = lbSize _listbox;
-private _listboxCurSel = lbCurSel _listbox;
 
 private _newIndex = -1;
 private _oldIndex = -1;
@@ -42,4 +41,4 @@ for "_i" from 0 to (_listboxSize - 1) do {
 	};
 } forEach [[_newRole,_newIndex],[_oldRole,_oldIndex]];
 
-_listbox lbSetCurSel _listboxCurSel;
+_listbox lbSetCurSel (lbCurSel _listbox);

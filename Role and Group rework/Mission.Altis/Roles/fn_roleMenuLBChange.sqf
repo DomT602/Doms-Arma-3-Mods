@@ -74,7 +74,7 @@ private _text = format ["
 <br/>
 
 <t font='PuristaLight' valign='bottom' align='left'>%13</t>
-<t font='PuristaBold' align='Right' valign='bottom'>%4</t>
+<t font='PuristaBold' align='Right' valign='bottom'>%14</t>
 
 <br/><br/>
 
