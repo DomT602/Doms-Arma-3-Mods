@@ -3,11 +3,13 @@ class DT_Core {
 
 	class Groups {
 		file = "Groups";
+		class assignPlayer {};
 		class handleDisconnect {};
 		class initGroupMenu {};
 		class onGroupMenuTvSelectChange {};
 		class removeFromGroup {};
 		class selectPosition {};
+		class setupPlayer {};
 		class updateGroups {};
 	};
 };
