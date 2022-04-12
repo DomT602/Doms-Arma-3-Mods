@@ -1,4 +1,6 @@
 class Dynamic_Roles {
+	#include "Config_Officer.hpp"
+
 	#include "Config_Rifleman.hpp"
 	#include "Config_Medic.hpp"
 	#include "Config_Engineer.hpp"
@@ -6,11 +8,15 @@ class Dynamic_Roles {
 	#include "Config_SquadLeader.hpp"
 
 	#include "Config_EOD.hpp"
+	#include "Config_Diver.hpp"
 	#include "Config_Sniper.hpp"
 	#include "Config_Spotter.hpp"
+	#include "Config_Paratrooper.hpp"
 
 	#include "Config_Pilot.hpp"
 	#include "Config_UAVOp.hpp"
+
+	#include "Config_Crewman.hpp"
 };
 
 class Common_Arsenal {
@@ -27,9 +33,7 @@ class Common_Arsenal {
 
 		"arifle_AK12_F", "arifle_AK12_arid_F", "arifle_AK12_lush_F", "arifle_AKM_F", "arifle_AKM_FL_F", "arifle_CTAR_blk_F", 
 		"arifle_Katiba_F", "arifle_Mk20_plain_F", "arifle_MX_Black_F", "arifle_MX_F", "arifle_MX_khk_F", "arifle_SPAR_01_blk_F", "arifle_SPAR_01_khk_F", 
-		"arifle_SPAR_01_snd_F", "arifle_TRG21_F", "arifle_MSBS65_UBS_F", "arifle_MSBS65_UBS_black_F", "arifle_MSBS65_UBS_sand_F",
-
-		"arifle_SDAR_F"
+		"arifle_SPAR_01_snd_F", "arifle_TRG21_F", "arifle_MSBS65_UBS_F", "arifle_MSBS65_UBS_black_F", "arifle_MSBS65_UBS_sand_F"
 	};
 	magazines[] = {
 		"200Rnd_556x45_Box_F", "200Rnd_556x45_Box_Red_F", "200Rnd_556x45_Box_Tracer_F", "200Rnd_556x45_Box_Tracer_Red_F",
@@ -139,9 +143,9 @@ class Common_Arsenal {
 		"bipod_02_F_blk", "bipod_02_F_tan", "bipod_02_F_lush", "bipod_02_F_arid",
 		"bipod_03_F_blk", "bipod_03_F_oli",
 
-		"G_Aviator", "G_B_Diving", "G_Balaclava_blk", "G_Balaclava_combat", "G_Balaclava_lowprofile", "G_Balaclava_oli", "G_Balaclava_TI_blk_F", "G_Balaclava_TI_G_blk_F",
+		"G_Aviator", "G_Balaclava_blk", "G_Balaclava_combat", "G_Balaclava_lowprofile", "G_Balaclava_oli", "G_Balaclava_TI_blk_F", "G_Balaclava_TI_G_blk_F",
 		"G_Balaclava_TI_G_tna_F", "G_Balaclava_TI_tna_F", "G_Bandanna_aviator", "G_Bandanna_beast", "G_Bandanna_blk", "G_Bandanna_khk", "G_Bandanna_oli",
-		"G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_tan", "G_Combat", "G_Combat_Goggles_tna_F", "G_Diving", "G_EyeProtectors_Earpiece_F", "G_EyeProtectors_F",
+		"G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_tan", "G_Combat", "G_Combat_Goggles_tna_F", "G_EyeProtectors_Earpiece_F", "G_EyeProtectors_F",
 		"G_Lady_Blue", "G_Lowprofile", "G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_Blackred",
 		"G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Checkered", "G_Sport_Greenblack", "G_Sport_Red", "G_Squares", "G_Squares_Tinted", "G_Tactical_Black",
 		"G_Tactical_Clear", "G_AirPurifyingRespirator_01_F", "G_RegulatorMask_F", "G_AirPurifyingRespirator_02_black_F", "G_AirPurifyingRespirator_02_olive_F",
@@ -158,16 +162,15 @@ class Common_Arsenal {
 
 		"H_HelmetB", "H_HelmetB_black", "H_HelmetB_camo", "H_HelmetB_desert", "H_HelmetB_Enh_tna_F", "H_HelmetB_grass", "H_HelmetB_light",
 		"H_HelmetB_light_black", "H_HelmetB_light_desert", "H_HelmetB_light_grass", "H_HelmetB_light_sand", "H_HelmetB_light_snakeskin", "H_HelmetB_Light_tna_F",
-		"H_HelmetB_sand", "H_HelmetB_snakeskin", "H_HelmetB_TI_tna_F", "H_HelmetB_tna_F", "H_HelmetCrew_B", "H_HelmetSpecB", "H_HelmetSpecB_blk",
+		"H_HelmetB_sand", "H_HelmetB_snakeskin", "H_HelmetB_TI_tna_F", "H_HelmetB_tna_F", "H_HelmetSpecB", "H_HelmetSpecB_blk",
 		"H_HelmetSpecB_paint1", "H_HelmetSpecB_paint2", "H_HelmetSpecB_sand", "H_HelmetSpecB_snakeskin", "H_PASGT_basic_black_F", "H_PASGT_basic_blue_F",
 		"H_PASGT_basic_olive_F", "H_PASGT_basic_white_F", "H_HelmetB_plain_wdl", "H_HelmetSpecB_wdl", "H_HelmetB_light_wdl", "H_HelmetHBK_headset_F",
-		"H_HelmetHBK_chops_F", "H_HelmetHBK_ear_F", "H_HelmetHBK_F", "H_HelmetAggressor_cover_F", "H_HelmetAggressor_cover_taiga_F", "H_Tank_eaf_F",
-		"H_HelmetCrew_I_E", "H_HelmetB_TI_arid_F", "H_HelmetAggressor_F",
+		"H_HelmetHBK_chops_F", "H_HelmetHBK_ear_F", "H_HelmetHBK_F", "H_HelmetB_TI_arid_F",
 
 		"U_I_C_Soldier_Para_1_F", "U_I_C_Soldier_Para_2_F", "U_I_C_Soldier_Para_3_F", "U_I_C_Soldier_Para_4_F", "U_I_C_Soldier_Para_5_F",
 		"U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_vest", "U_B_CombatUniform_mcam_worn", "U_B_CTRG_1", "U_B_CTRG_2", "U_B_CTRG_3",
 		"U_B_CTRG_Soldier_2_F", "U_B_CTRG_Soldier_3_F", "U_B_CTRG_Soldier_F", "U_B_CTRG_Soldier_urb_1_F", "U_B_CTRG_Soldier_urb_2_F", "U_B_CTRG_Soldier_urb_3_F",
-		"U_B_survival_uniform", "U_B_Wetsuit", "U_B_CombatUniform_mcam_wdl_f", "U_B_CombatUniform_tshirt_mcam_wdL_f", "U_B_CombatUniform_vest_mcam_wdl_f",
+		"U_B_CombatUniform_mcam_wdl_f", "U_B_CombatUniform_tshirt_mcam_wdL_f", "U_B_CombatUniform_vest_mcam_wdl_f",
 		"U_B_CombatUniform_vest_mcam_wdl_f", "U_B_CBRN_Suit_01_MTP_F", "U_B_CBRN_Suit_01_Tropic_F",
 		"U_B_CBRN_Suit_01_Wdl_F", "U_I_E_Uniform_01_shortsleeve_F", "U_I_E_Uniform_01_sweater_F", "U_I_E_Uniform_01_tanktop_F",
 		"U_I_E_Uniform_01_F", "U_I_L_Uniform_01_deserter_F", "U_O_R_Gorka_01_F", "U_O_R_Gorka_01_brown_F", "U_O_R_Gorka_01_camo_F", "U_O_R_Gorka_01_black_F",
@@ -178,7 +181,7 @@ class Common_Arsenal {
 		"V_PlateCarrier1_rgr", "V_PlateCarrier1_rgr_noflag_F", "V_PlateCarrier1_tna_F", "V_PlateCarrier2_blk", "V_PlateCarrier2_rgr", "V_PlateCarrier2_rgr_noflag_F",
 		"V_PlateCarrier2_tna_F", "V_PlateCarrierGL_blk", "V_PlateCarrierGL_mtp", "V_PlateCarrierGL_rgr", "V_PlateCarrierGL_tna_F", "V_PlateCarrierH_CTRG",
 		"V_PlateCarrierIAGL_oli", "V_PlateCarrierL_CTRG", "V_PlateCarrierSpec_blk", "V_PlateCarrierSpec_mtp", "V_PlateCarrierSpec_rgr", "V_PlateCarrierSpec_tna_F",
-		"V_Rangemaster_belt", "V_RebreatherB", "V_TacChestrig_cbr_F", "V_TacChestrig_grn_F",
+		"V_Rangemaster_belt", "V_TacChestrig_cbr_F", "V_TacChestrig_grn_F",
 		"V_TacChestrig_oli_F", "V_TacVest_blk", "V_TacVest_brn", "V_TacVest_camo", "V_TacVest_khk", "V_TacVest_oli", "V_TacVestIR_blk", "V_PlateCarrierGL_wdl",
 		"V_PlateCarrier1_wdl", "V_PlateCarrier2_wdl", "V_PlateCarrierSpec_wdl", "V_SmershVest_01_F", "V_SmershVest_01_radio_F",
 		"V_CarrierRigKBT_01_heavy_EAF_F", "V_CarrierRigKBT_01_heavy_Olive_F", "V_CarrierRigKBT_01_light_EAF_F", "V_CarrierRigKBT_01_light_Olive_F",
