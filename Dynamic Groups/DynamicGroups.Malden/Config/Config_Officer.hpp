@@ -18,8 +18,8 @@ class officer {
 		{"arifle_MXC_ACO_F","","","optic_Aco",{"30Rnd_65x39_caseless_mag",30},{},""},
 		{},
 		{"hgun_Pistol_heavy_01_MRD_F","","","optic_MRD",{"11Rnd_45ACP_Mag",11},{},""},
-		{"U_B_CombatUniform_mcam",{{"FirstAidKit",1},{"30Rnd_65x39_caseless_mag",2,30},{"Chemlight_green",1,1}}},
-		{"V_BandollierB_rgr",{{"30Rnd_65x39_caseless_mag",1,30},{"11Rnd_45ACP_Mag",2,11},{"SmokeShell",1,1},{"SmokeShellGreen",1,1},{"Chemlight_green",1,1}}},
+		{"U_B_CTRG_3",{{"FirstAidKit",1},{"30Rnd_65x39_caseless_mag",2,30},{"Chemlight_green",1,1}}},
+		{"V_PlateCarrierL_CTRG",{{"30Rnd_65x39_caseless_mag",1,30},{"11Rnd_45ACP_Mag",2,11},{"SmokeShell",1,1},{"SmokeShellGreen",1,1},{"Chemlight_green",1,1}}},
 		{},
 		"H_MilCap_mcamo","",{},
 		{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""}

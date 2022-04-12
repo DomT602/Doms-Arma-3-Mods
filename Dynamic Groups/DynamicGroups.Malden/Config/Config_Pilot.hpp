@@ -19,10 +19,10 @@ class pilot {
 		{},
 		{},
 		{"U_B_HeliPilotCoveralls",{{"FirstAidKit",1},{"30Rnd_45ACP_Mag_SMG_01",2,30},{"Chemlight_green",1,1}}},
-		{"V_TacVest_blk",{{"30Rnd_45ACP_Mag_SMG_01",1,30},{"SmokeShellGreen",1,1},{"SmokeShellBlue",1,1},{"SmokeShellOrange",1,1},{"Chemlight_green",1,1}}},
+		{"V_PlateCarrierL_CTRG",{{"30Rnd_45ACP_Mag_SMG_01",1,30},{"SmokeShellGreen",1,1},{"SmokeShellBlue",1,1},{"SmokeShellOrange",1,1},{"Chemlight_green",1,1}}},
 		{},
 		"H_PilotHelmetHeli_B","",{},
-		{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles"}
+		{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","NVGoggles"}
 	};
 
 	arsenalWeapons[] = {
@@ -33,10 +33,9 @@ class pilot {
 	};
 	arsenalItems[] = {
 		"U_B_HeliPilotCoveralls", "U_B_PilotCoveralls",
-		"U_I_HeliPilotCoveralls", "U_I_pilotCoveralls",
-		"U_I_E_Uniform_01_coveralls_F", "U_O_R_Gorka_01_black_F",
-		"U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"
 
+		"H_PilotHelmetHeli_B",
+		"H_CrewHelmetHeli_B"
 	};
 	arsenalBackpacks[] = {
 		

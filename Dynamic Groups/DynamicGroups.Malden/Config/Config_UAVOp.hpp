@@ -18,8 +18,8 @@ class uavop {
 		{"arifle_MX_ACO_pointer_F","","acc_pointer_IR","optic_Aco",{"30Rnd_65x39_caseless_mag",30},{},""},
 		{},
 		{"hgun_P07_F","","","",{"16Rnd_9x21_Mag",16},{},""},
-		{"U_B_CombatUniform_mcam",{{"FirstAidKit",1},{"30Rnd_65x39_caseless_mag",2,30},{"Chemlight_green",1,1},{"HandGrenade",1,1}}},
-		{"V_PlateCarrierSpec_rgr",{{"30Rnd_65x39_caseless_mag",7,30},{"16Rnd_9x21_Mag",2,16},{"SmokeShell",1,1},{"SmokeShellGreen",1,1},{"Chemlight_green",1,1}}},
+		{"U_B_CTRG_3",{{"FirstAidKit",1},{"30Rnd_65x39_caseless_mag",2,30},{"Chemlight_green",1,1},{"HandGrenade",1,1}}},
+		{"V_PlateCarrierH_CTRG",{{"30Rnd_65x39_caseless_mag",7,30},{"16Rnd_9x21_Mag",2,16},{"SmokeShell",1,1},{"SmokeShellGreen",1,1},{"Chemlight_green",1,1}}},
 		{"B_UAV_01_backpack_F",{}},
 		"H_HelmetB","",{},
 		{"ItemMap","B_UavTerminal","ItemRadio","ItemCompass","ItemWatch","NVGoggles"}
@@ -32,7 +32,7 @@ class uavop {
 
 	};
 	arsenalItems[] = {
-		
+		"B_UavTerminal"
 	};
 	arsenalBackpacks[] = {
 		"B_UAV_01_backpack_F", "B_UAV_06_backpack_F", "B_UAV_06_medical_backpack_F", "B_W_Static_Designator_01_weapon_F", "B_UGV_02_Demining_backpack_F", "B_UGV_02_Science_backpack_F"
