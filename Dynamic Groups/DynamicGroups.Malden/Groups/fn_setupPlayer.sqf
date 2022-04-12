@@ -65,6 +65,6 @@ private _customVariables = getArray(_roleConfig >> "customVariables");
 DT_myCustomVariables = [];
 {
 	_x params ["_variable","_value","_global"];
-	player setVariable [_variable,_value,_global];
+	player setVariable [_variable,_value,call compile _global];
 	DT_myCustomVariables pushBack _variable;
 } forEach _customVariables;
