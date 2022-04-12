@@ -7,7 +7,7 @@ class spotter {
 	rank = "Private";
 	description = $STR_DT_Spotter_Description;
 	maxCount = 2;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconMan_ca.paa";

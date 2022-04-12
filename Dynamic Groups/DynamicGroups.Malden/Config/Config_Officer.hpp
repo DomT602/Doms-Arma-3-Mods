@@ -1,12 +1,12 @@
 /*
-	Faction: Medic
+	Faction: Officer
 	Author: Dom
 */
 class officer {
 	name = $STR_B_OFFICER_F0;
 	rank = "Captain";
 	description = $STR_DT_Officer_Description;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManCommander_ca.paa";

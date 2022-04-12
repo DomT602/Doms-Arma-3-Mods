@@ -7,7 +7,7 @@ class paratrooper {
 	rank = "Private";
 	description = $STR_DT_Paratrooper_Description;
 	maxCount = 5;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconMan_ca.paa";

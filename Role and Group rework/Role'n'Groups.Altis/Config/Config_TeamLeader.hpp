@@ -7,7 +7,7 @@ class teamlead {
 	rank = "Sergeant";
 	description = $STR_DT_TeLe_Description;
 	maxCount = 10;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManLeader_ca.paa";

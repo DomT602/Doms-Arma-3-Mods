@@ -6,7 +6,7 @@ class crewman {
 	name = $STR_B_CREW_F0;
 	rank = "Private";
 	description = $STR_DT_Crewman_Description;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 		{"Engineer",true}
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconMan_ca.paa";

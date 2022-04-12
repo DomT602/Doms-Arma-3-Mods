@@ -6,7 +6,7 @@ class eod {
 	name = $STR_B_SOLDIER_EXP_F0;
 	rank = "Corporal";
 	description = $STR_DT_EOD_Description;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 		{"ExplosiveSpecialist",true}
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManExplosive_ca.paa";

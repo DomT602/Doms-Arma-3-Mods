@@ -7,7 +7,7 @@ class pilot {
 	rank = "Lieutenant";
 	description = $STR_DT_Pilot_Description;
 	maxCount = 5;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManOfficer_ca.paa";

@@ -7,7 +7,7 @@ class uavop {
 	rank = "Sergeant";
 	description = $STR_DT_UAVOp_Description;
 	maxCount = 1;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 		{"UAVHacker",true}
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconMan_ca.paa";

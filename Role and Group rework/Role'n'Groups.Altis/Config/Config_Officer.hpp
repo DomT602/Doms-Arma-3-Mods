@@ -7,7 +7,7 @@ class officer {
 	rank = "Captain";
 	description = $STR_DT_Officer_Description;
 	maxCount = 1;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManCommander_ca.paa";

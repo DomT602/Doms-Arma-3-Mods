@@ -7,7 +7,7 @@ class diver {
 	rank = "Private";
 	description = $STR_DT_Diver_Description;
 	maxCount = 6;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconMan_ca.paa";

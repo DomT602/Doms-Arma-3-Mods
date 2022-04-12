@@ -6,7 +6,7 @@ class squadlead {
 	name = $STR_B_SOLDIER_SL_F0;
 	rank = "Lieutenant";
 	description = $STR_DT_SqLe_Description;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManLeader_ca.paa";

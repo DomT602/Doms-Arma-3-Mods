@@ -6,7 +6,7 @@ class spotter {
 	name = $STR_B_SPOTTER_F0;
 	rank = "Private";
 	description = $STR_DT_Spotter_Description;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconMan_ca.paa";

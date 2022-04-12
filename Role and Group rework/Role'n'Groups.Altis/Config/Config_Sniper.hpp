@@ -7,7 +7,7 @@ class sniper {
 	rank = "Corporal";
 	description = $STR_DT_Sniper_Description;
 	maxCount = 2;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconMan_ca.paa";

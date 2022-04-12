@@ -7,7 +7,7 @@ class medic {
 	rank = "Corporal";
 	description = $STR_DT_Medic_Description;
 	maxCount = 5;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 		{"Medic",true}
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa";

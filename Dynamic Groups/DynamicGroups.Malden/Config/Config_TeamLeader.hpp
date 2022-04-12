@@ -6,7 +6,7 @@ class teamlead {
 	name = $STR_B_SOLDIER_TL_F0;
 	rank = "Sergeant";
 	description = $STR_DT_TeLe_Description;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManLeader_ca.paa";

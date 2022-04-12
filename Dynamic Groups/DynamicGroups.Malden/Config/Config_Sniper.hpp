@@ -6,7 +6,7 @@ class sniper {
 	name = $STR_B_SNIPER_F0;
 	rank = "Corporal";
 	description = $STR_DT_Sniper_Description;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconMan_ca.paa";

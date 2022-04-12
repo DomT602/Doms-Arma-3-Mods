@@ -6,7 +6,7 @@ class medic {
 	name = $STR_B_MEDIC_F0;
 	rank = "Corporal";
 	description = $STR_DT_Medic_Description;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 		{"Medic",true}
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa";

@@ -7,7 +7,7 @@ class eod {
 	rank = "Corporal";
 	description = $STR_DT_EOD_Description;
 	maxCount = 5;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 		{"ExplosiveSpecialist",true}
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManExplosive_ca.paa";

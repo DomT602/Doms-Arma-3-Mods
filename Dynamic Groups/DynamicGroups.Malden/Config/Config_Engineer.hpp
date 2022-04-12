@@ -6,7 +6,7 @@ class engineer {
 	name = $STR_B_ENGINEER_F0;
 	rank = "Corporal";
 	description = $STR_DT_Engineer_Description;
-	traits[] = { //format {"trait",value,isCustom}}
+	traits[] = {
 		{"Engineer",true}
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManEngineer_ca.paa";
