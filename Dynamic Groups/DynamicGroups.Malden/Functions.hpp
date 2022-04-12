@@ -7,6 +7,7 @@ class DT_Core {
 		class handleDisconnect {};
 		class initGroupMenu {};
 		class onGroupMenuTvSelectChange {};
+		class onRespawn {};
 		class removeFromGroup {};
 		class selectPosition {};
 		class setupPlayer {};

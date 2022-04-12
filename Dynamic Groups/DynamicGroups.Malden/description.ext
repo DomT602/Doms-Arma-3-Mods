@@ -1,7 +1,11 @@
 #include "GUI\masterHandler.hpp"
 
+skipLobby = 1;
+respawn = 2;
+enableDebugConsole = 2;
+
 class CfgFunctions {
-    #include "Functions.hpp"
+	#include "Functions.hpp"
 };
 
 #include "Config\Config_Groups.hpp"

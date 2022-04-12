@@ -21,7 +21,7 @@ class officer {
 		{"U_B_CTRG_3",{{"FirstAidKit",1},{"30Rnd_65x39_caseless_mag",2,30},{"Chemlight_green",1,1}}},
 		{"V_PlateCarrierL_CTRG",{{"30Rnd_65x39_caseless_mag",1,30},{"11Rnd_45ACP_Mag",2,11},{"SmokeShell",1,1},{"SmokeShellGreen",1,1},{"Chemlight_green",1,1}}},
 		{},
-		"H_MilCap_mcamo","",{},
+		"H_Beret_Colonel","",{},
 		{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""}
 	};
 

@@ -16,6 +16,6 @@ DT_dynamicGroups = getArray(missionConfigFile >> "Dynamic_Groups" >> "group_setu
 	_x pushBack _playerArray;
 } forEach DT_dynamicGroups;
 
-[DT_dynamicGroups] remoteExecCall ["DT_fnc_updateGroups",0,"DT_DG_JIP"];
+[DT_dynamicGroups] remoteExecCall ["DT_fnc_updateGroups",-2,"DT_DG_JIP"];
 
 addMissionEventHandler ["HandleDisconnect",{_this call DT_fnc_handleDisconnect}];

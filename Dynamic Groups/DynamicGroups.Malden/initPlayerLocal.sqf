@@ -7,6 +7,8 @@
 DT_isACEEnabled = isClass (configFile >> "CfgPatches" >> "ace_common");
 DT_arsenalBoxes = [arsenal_1];
 
+player addEventHandler ["Respawn",DT_fnc_onRespawn];
+
 if (DT_isACEEnabled) then {
 	private _groupCategory = [
 		"groupCategory",
