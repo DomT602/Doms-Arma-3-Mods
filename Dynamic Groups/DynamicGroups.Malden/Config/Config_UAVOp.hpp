@@ -9,6 +9,9 @@ class uavop {
 	traits[] = {
 		{"UAVHacker",true}
 	};
+	customVariables[] = {
+
+	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconMan_ca.paa";
 
 	defaultLoadout[] = {

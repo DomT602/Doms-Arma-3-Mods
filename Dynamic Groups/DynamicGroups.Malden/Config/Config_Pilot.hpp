@@ -9,6 +9,9 @@ class pilot {
 	traits[] = {
 
 	};
+	customVariables[] = {
+		{"ace_isEngineer",1,true}
+	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManOfficer_ca.paa";
 
 	defaultLoadout[] = {

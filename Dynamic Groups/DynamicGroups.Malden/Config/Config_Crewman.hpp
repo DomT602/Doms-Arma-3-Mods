@@ -9,6 +9,9 @@ class crewman {
 	traits[] = {
 		{"Engineer",true}
 	};
+	customVariables[] = {
+		{"ace_isEngineer",1,true}
+	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconMan_ca.paa";
 
 	defaultLoadout[] = {

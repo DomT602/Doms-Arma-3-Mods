@@ -9,6 +9,9 @@ class teamlead {
 	traits[] = {
 
 	};
+	customVariables[] = {
+
+	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManLeader_ca.paa";
 
 	defaultLoadout[] = {

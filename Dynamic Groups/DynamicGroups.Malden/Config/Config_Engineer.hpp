@@ -9,6 +9,9 @@ class engineer {
 	traits[] = {
 		{"Engineer",true}
 	};
+	customVariables[] = {
+		{"ace_isEngineer",2,true}
+	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManEngineer_ca.paa";
 
 	defaultLoadout[] = {

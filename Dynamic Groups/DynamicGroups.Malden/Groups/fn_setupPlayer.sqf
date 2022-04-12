@@ -56,3 +56,15 @@ private _roleTraits = getArray(_roleConfig >> "traits");
 	if (_value isEqualTo "true") then {_value = true} else {if (_value isEqualTo "false") then {_value = false}};
 	player setUnitTrait [_trait,_value,_custom];
 } forEach _roleTraits;
+
+private _customVariables = getArray(_roleConfig >> "customVariables");
+{
+	player setVariable [_x,nil,true];
+} forEach (missionNamespace getVariable ["DT_myCustomVariables",[]]);
+
+DT_myCustomVariables = [];
+{
+	_x params ["_variable","_value","_global"];
+	player setVariable [_variable,_value,_global];
+	DT_myCustomVariables pushBack _variable;
+} forEach _customVariables;

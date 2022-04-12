@@ -9,6 +9,9 @@ class eod {
 	traits[] = {
 		{"ExplosiveSpecialist",true}
 	};
+	customVariables[] = {
+		{"ace_isEOD",1,true}
+	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManExplosive_ca.paa";
 
 	defaultLoadout[] = {
