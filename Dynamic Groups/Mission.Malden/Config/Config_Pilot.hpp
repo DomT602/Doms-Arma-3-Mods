@@ -6,7 +6,6 @@ class pilot {
 	name = $STR_B_PILOT_F0;
 	rank = "Lieutenant";
 	description = $STR_DT_Pilot_Description;
-	maxCount = 5;
 	traits[] = { //format {"trait",value,isCustom}}
 
 	};

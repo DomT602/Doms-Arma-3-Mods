@@ -6,7 +6,6 @@ class engineer {
 	name = $STR_B_ENGINEER_F0;
 	rank = "Corporal";
 	description = $STR_DT_Engineer_Description;
-	maxCount = 5;
 	traits[] = { //format {"trait",value,isCustom}}
 		{"Engineer",true}
 	};

@@ -1,11 +1,11 @@
 /*
-	Faction: Rifleman
+	Faction: Paratrooper
 	Author: Dom
 */
-class rifleman {
-	name = $STR_DN_RIFLEMAN;
+class paratrooper {
+	name = $STR_B_SOLDIER_PG_F0;
 	rank = "Private";
-	description = $STR_DT_Rifleman_Description;
+	description = $STR_DT_Paratrooper_Description;
 	traits[] = { //format {"trait",value,isCustom}}
 
 	};
@@ -15,11 +15,11 @@ class rifleman {
 		{"arifle_MX_ACO_pointer_F","","acc_pointer_IR","optic_Aco",{"30Rnd_65x39_caseless_mag",30},{},""},
 		{},
 		{"hgun_P07_F","","","",{"16Rnd_9x21_Mag",16},{},""},
-		{"U_B_CombatUniform_mcam",{{"FirstAidKit",1},{"30Rnd_65x39_caseless_mag",2,30},{"Chemlight_green",1,1}}},
-		{"V_PlateCarrier1_rgr",{{"30Rnd_65x39_caseless_mag",7,30},{"16Rnd_9x21_Mag",2,16},{"SmokeShell",1,1},{"SmokeShellGreen",1,1},{"Chemlight_green",1,1},{"HandGrenade",2,1}}},
-		{},
+		{"U_B_CombatUniform_mcam",{{"FirstAidKit",1},{"30Rnd_65x39_caseless_mag",2,30},{"Chemlight_green",1,1},{"HandGrenade",1,1}}},
+		{"V_PlateCarrierSpec_rgr",{{"30Rnd_65x39_caseless_mag",7,30},{"16Rnd_9x21_Mag",2,16},{"SmokeShell",1,1},{"SmokeShellGreen",1,1},{"Chemlight_green",1,1}}},
+		{"B_Parachute",{}},
 		"H_HelmetB","",{},
-		{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles"}
+		{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","NVGoggles"}
 	};
 
 	arsenalWeapons[] = {
@@ -40,11 +40,7 @@ class rifleman {
 		"arifle_ARX_blk_F", "srifle_DMR_04_F", "srifle_DMR_04_Tan_F",
 
 		"launch_RPG32_green_F", "launch_RPG7_F", "launch_MRAWS_green_rail_F", "launch_MRAWS_olive_rail_F",
-		"launch_MRAWS_sand_rail_F", "launch_MRAWS_green_F", "launch_MRAWS_olive_F", "launch_MRAWS_sand_F", "launch_NLAW_F",
-
-		"launch_B_Titan_F", "launch_B_Titan_olive_F",
-		"launch_B_Titan_short_F", "launch_B_Titan_short_tna_F", "launch_B_Titan_tna_F",
-		"launch_O_Vorona_brown_F", "launch_O_Vorona_green_F"
+		"launch_MRAWS_sand_rail_F", "launch_MRAWS_green_F", "launch_MRAWS_olive_F", "launch_MRAWS_sand_F", "launch_NLAW_F"
 	};
 	arsenalMagazines[] = {
 		

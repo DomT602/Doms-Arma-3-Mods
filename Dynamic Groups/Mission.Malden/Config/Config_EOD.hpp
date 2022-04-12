@@ -6,7 +6,6 @@ class eod {
 	name = $STR_B_SOLDIER_EXP_F0;
 	rank = "Corporal";
 	description = $STR_DT_EOD_Description;
-	maxCount = 5;
 	traits[] = { //format {"trait",value,isCustom}}
 		{"ExplosiveSpecialist",true}
 	};

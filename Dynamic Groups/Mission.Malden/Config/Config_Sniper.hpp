@@ -6,7 +6,6 @@ class sniper {
 	name = $STR_B_SNIPER_F0;
 	rank = "Corporal";
 	description = $STR_DT_Sniper_Description;
-	maxCount = 2;
 	traits[] = { //format {"trait",value,isCustom}}
 
 	};

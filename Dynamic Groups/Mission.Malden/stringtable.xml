@@ -17,7 +17,7 @@
 			<English>The Engineer is responsible for keeping vehicles operational through repairing and maintaining them.</English>
 		</Key>
 		<Key ID="STR_DT_TeLe_Description">
-			<English>The Team Leader takes command of a small team in the field under the command of a Squad Leader.</English>
+			<English>The Team Leader takes command of a small team in the field.</English>
 		</Key>
 		<Key ID="STR_DT_SqLe_Description">
 			<English>The Squad Leader takes command of an infantry squad, utilising all members to achieve the objectives.</English>
@@ -32,10 +32,22 @@
 			<English>The Spotter aids the Sniper by choosing targets and acting as close protection.</English>
 		</Key>
 		<Key ID="STR_DT_Pilot_Description">
-			<English>The Pilot is responsible for transporting troops, vehicles and supplies around the AO. They can also fly Fixed Wing Aircraft to assist friendlies on the ground.</English>
+			<English>The Pilot is responsible for transporting troops, vehicles and supplies around the AO. They can also fly CAS Missions to assist friendlies on the ground.</English>
 		</Key>
 		<Key ID="STR_DT_UAVOp_Description">
 			<English>The UAV Operator can command UAV's and UGV's to assist friendly forces.</English>
+		</Key>
+		<Key ID="STR_DT_Paratrooper_Description">
+			<English>The Paratrooper supports his allies by using his ability do deploy from above to get into positions that regular infantry cannot.</English>
+		</Key>
+		<Key ID="STR_DT_Diver_Description">
+			<English>The Diver is a specialist who comes equipped for underwater operations.</English>
+		</Key>
+		<Key ID="STR_DT_Crewman_Description">
+			<English>The Crewman takes control of vehicles to support friendly forces.</English>
+		</Key>
+		<Key ID="STR_DT_Officer_Description">
+			<English>The Officer is in overall command of all forces to achieve their objectives.</English>
 		</Key>
 	</Package>
 </Project>

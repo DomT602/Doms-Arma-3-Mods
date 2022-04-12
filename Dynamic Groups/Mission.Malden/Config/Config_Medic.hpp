@@ -6,7 +6,6 @@ class medic {
 	name = $STR_B_MEDIC_F0;
 	rank = "Corporal";
 	description = $STR_DT_Medic_Description;
-	maxCount = 5;
 	traits[] = { //format {"trait",value,isCustom}}
 		{"Medic",true}
 	};

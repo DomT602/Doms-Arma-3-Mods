@@ -6,7 +6,6 @@ class uavop {
 	name = $STR_A3_B_SOLDIER_UAV_F0;
 	rank = "Sergeant";
 	description = $STR_DT_UAVOp_Description;
-	maxCount = 1;
 	traits[] = { //format {"trait",value,isCustom}}
 		{"UAVHacker",true}
 	};

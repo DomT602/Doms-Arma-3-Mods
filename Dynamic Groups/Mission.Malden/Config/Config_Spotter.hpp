@@ -6,7 +6,6 @@ class spotter {
 	name = $STR_B_SPOTTER_F0;
 	rank = "Private";
 	description = $STR_DT_Spotter_Description;
-	maxCount = 2;
 	traits[] = { //format {"trait",value,isCustom}}
 
 	};
