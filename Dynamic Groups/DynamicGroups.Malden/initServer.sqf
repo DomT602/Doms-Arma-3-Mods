@@ -3,7 +3,6 @@
 	Author: Dom
 	Requires: Start the server up
 */
-
 DT_dynamicGroups = getArray(missionConfigFile >> "Dynamic_Groups" >> "group_setup");
 {
 	_x params ["_name","_roles","_conditions"];

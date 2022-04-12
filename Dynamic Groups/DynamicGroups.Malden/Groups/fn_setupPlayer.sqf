@@ -19,19 +19,26 @@ _items append getArray(missionConfigFile >> "Common_Arsenal" >> "items");
 private _backpacks = getArray(_roleConfig >> "arsenalBackpacks");
 _backpacks append getArray(missionConfigFile >> "Common_Arsenal" >> "backpacks");
 
-{
-	[_x,(_x call BIS_fnc_getVirtualWeaponCargo)] call BIS_fnc_removeVirtualWeaponCargo;
-	[_x,_weapons,false,false] call BIS_fnc_addVirtualWeaponCargo;
+if (DT_isACEEnabled) then {
+	[player,true,false] call ace_arsenal_fnc_removeVirtualItems;
+	{
+		[player,_x,false] call ace_arsenal_fnc_addVirtualItems;
+	} forEach [_weapons,_magazines,_items,_backpacks];
+} else {
+	{
+		[_x,(_x call BIS_fnc_getVirtualWeaponCargo)] call BIS_fnc_removeVirtualWeaponCargo;
+		[_x,_weapons,false,false] call BIS_fnc_addVirtualWeaponCargo;
 
-	[_x,(_x call BIS_fnc_getVirtualMagazineCargo)] call BIS_fnc_removeVirtualMagazineCargo;
-	[_x,_magazines,false,false] call BIS_fnc_addVirtualMagazineCargo;
+		[_x,(_x call BIS_fnc_getVirtualMagazineCargo)] call BIS_fnc_removeVirtualMagazineCargo;
+		[_x,_magazines,false,false] call BIS_fnc_addVirtualMagazineCargo;
 
-	[_x,(_x call BIS_fnc_getVirtualItemCargo)] call BIS_fnc_removeVirtualItemCargo;
-	[_x,_items,false,false] call BIS_fnc_addVirtualItemCargo;
+		[_x,(_x call BIS_fnc_getVirtualItemCargo)] call BIS_fnc_removeVirtualItemCargo;
+		[_x,_items,false,false] call BIS_fnc_addVirtualItemCargo;
 
-	[_x,(_x call BIS_fnc_getVirtualBackpackCargo)] call BIS_fnc_removeVirtualBackpackCargo;
-	[_x,_backpacks,false,true] call BIS_fnc_addVirtualBackpackCargo;
-} forEach DT_arsenalBoxes;
+		[_x,(_x call BIS_fnc_getVirtualBackpackCargo)] call BIS_fnc_removeVirtualBackpackCargo;
+		[_x,_backpacks,false,true] call BIS_fnc_addVirtualBackpackCargo;
+	} forEach DT_arsenalBoxes;
+};
 
 private _roleRank = getText(_roleConfig >> "rank");
 player setUnitRank _roleRank;
