@@ -29,7 +29,8 @@ if (DT_isACEEnabled) then {
 		{[player,player,false] call ace_arsenal_fnc_openBox},
 		{
 			isNull objectParent player &&
-			{(DT_arsenalBoxes findIf {(player distance _x) < 50}) isNotEqualTo -1}
+			{player getVariable ["ace_arsenal_virtualItems",[]] isNotEqualTo [] && 
+			{(DT_arsenalBoxes findIf {(player distance _x) < 50}) isNotEqualTo -1}}
 		}
 	] call ace_interact_menu_fnc_createAction;
 	[player,1,["ACE_SelfActions"],_arsenalCategory] call ace_interact_menu_fnc_addActionToObject;
