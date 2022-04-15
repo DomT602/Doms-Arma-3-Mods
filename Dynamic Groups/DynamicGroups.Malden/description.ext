@@ -8,4 +8,3 @@ class CfgFunctions {
 };
 
 #include "Config\Config_Groups.hpp"
-#include "Config\Config_Roles.hpp"

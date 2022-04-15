@@ -18,7 +18,7 @@ private _desiredUnit = _unitsInGroup select _unitIndex;
 if (!isNull _desiredUnit && {!_respawn}) exitWith {
 	["Role already taken."] remoteExecCall ["hint",_unit];
 };
-[_desiredRole] remoteExecCall ["DT_fnc_setupPlayer",_unit];
+[_desiredRole,_isRespawn] remoteExecCall ["DT_fnc_setupPlayer",_unit];
 
 private _oldSelectionPath = if (_isRespawn) then {[]} else {[_unit] call DT_fnc_removeFromGroup};
 

@@ -10,7 +10,7 @@ class medic {
 		{"Medic",true}
 	};
 	customVariables[] = {
-		{"ace_isMedic",2,true}
+		{"ace_medical_medicClass",2,true}
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa";
 

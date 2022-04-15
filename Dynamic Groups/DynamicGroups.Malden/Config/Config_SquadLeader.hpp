@@ -29,7 +29,7 @@ class squadlead {
 		"arifle_SPAR_01_GL_blk_F",
 		"arifle_SPAR_01_GL_snd_F",
 		"arifle_MX_GL_Black_F",
-		"arifle_MX_GL_F",
+		"arifle_MX_GL_F"
 	};
 	arsenalMagazines[] = {
 		

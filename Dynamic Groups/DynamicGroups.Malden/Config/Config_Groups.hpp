@@ -12,3 +12,5 @@ class Dynamic_Groups { //format: {"Group Name",{"Group","Roles","Matching","Role
 		{"Nemo",{"diver","diver","diver"},"true"}
 	};
 };
+
+#include "Config_Roles.hpp"

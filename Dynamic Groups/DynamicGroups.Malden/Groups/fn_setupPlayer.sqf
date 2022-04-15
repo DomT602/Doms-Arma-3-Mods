@@ -4,12 +4,15 @@
 	Description: Finishes setting up the player in their new role/group
 */
 params [
-	["_desiredRole","rifleman",[""]]
+	["_desiredRole","rifleman",[""]],
+	["_isRespawn",false,[true]]
 ];
 
 private _roleConfig = missionConfigFile >> "Dynamic_Roles" >> _desiredRole;
 
 player setUnitLoadout getArray(_roleConfig >> "defaultLoadout");
+if (_isRespawn) exitWith {};
+	
 private _weapons = getArray(_roleConfig >> "arsenalWeapons");
 _weapons append getArray(missionConfigFile >> "Common_Arsenal" >> "weapons");
 private _magazines = getArray(_roleConfig >> "arsenalMagazines");
@@ -68,3 +71,5 @@ DT_myCustomVariables = [];
 	player setVariable [_variable,_value,call compile _global];
 	DT_myCustomVariables pushBack _variable;
 } forEach _customVariables;
+
+player setVariable ["DT_role",_desiredRole,true];
