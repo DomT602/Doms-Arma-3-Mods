@@ -34,8 +34,16 @@ if (DT_isACEEnabled) then {
 		}
 	] call ace_interact_menu_fnc_createAction;
 	[player,1,["ACE_SelfActions"],_arsenalCategory] call ace_interact_menu_fnc_addActionToObject;
+
+	["ace_arsenal_displayClosed",{
+		DT_savedLoadout = getUnitLoadout player;
+	}] call CBA_fnc_addEventHandler;
 } else {
 	{
 		_x addAction ["Open Group Menu",DT_fnc_initGroupMenu];
 	} forEach DT_arsenalBoxes;
+
+	[missionNamespace,"arsenalClosed",{
+		DT_savedLoadout = getUnitLoadout player;
+	}] call BIS_fnc_addScriptedEventHandler;
 };
