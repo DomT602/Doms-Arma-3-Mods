@@ -46,7 +46,7 @@ private _fnc_getRankNumber = {
 	};
 };
 
-if ([rank _unit] call _fnc_getRankNumber > [rank (leader _selectedGroup)] call _fnc_getRankNumber) then {
+if ([getText(missionConfigFile >> "Dynamic_Roles" >> _desiredRole >> "rank")] call _fnc_getRankNumber > [rank (leader _selectedGroup)] call _fnc_getRankNumber) then {
 	[_selectedGroup,_unit] remoteExecCall ["selectLeader",groupOwner _selectedGroup];
 };
 
