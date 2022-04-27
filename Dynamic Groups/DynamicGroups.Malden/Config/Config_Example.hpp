@@ -9,7 +9,7 @@ class roleClassname { //this class is used when defining which roles are in what
 	traits[] = { //these are specific traits to the unit in the following format {"trait",value,isCustom}}, more information here: https://community.bistudio.com/wiki/setUnitTrait
 
 	};
-	customVariables[] = { //these variables are set on the player object once the role is taken
+	customVariables[] = { //these variables are set on the player object once the role is taken in format {"variable",value,global}
 
 	};
 	icon = "a3\ui_f\data\map\vehicleicons\iconMan_ca.paa"; //this icon is shown on the menu when picking a role

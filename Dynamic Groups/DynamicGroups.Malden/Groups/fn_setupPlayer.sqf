@@ -5,7 +5,8 @@
 */
 params [
 	["_desiredRole","rifleman",[""]],
-	["_isRespawn",false,[true]]
+	["_isRespawn",false,[true]],
+	["_team","",[""]]
 ];
 
 private _roleConfig = missionConfigFile >> "Dynamic_Roles" >> _desiredRole;
@@ -13,6 +14,7 @@ private _defaultLoadout = getArray(_roleConfig >> "defaultLoadout");
 
 if (_isRespawn) then {
 	player setUnitLoadout (missionNamespace getVariable ["DT_savedLoadout",_defaultLoadout]);
+	player assignTeam _team;
 } else {
 	DT_savedLoadout = _defaultLoadout;
 	player setUnitLoadout _defaultLoadout;
