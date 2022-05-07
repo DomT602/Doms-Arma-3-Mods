@@ -13,7 +13,7 @@ class CfgRemoteExec {
 
 		F(DT_fnc_assignPlayer,SERVER)
 		F(DT_fnc_setupPlayer,CLIENT)
-		F(DT_fnc_updateGroups,ANYONE)
+		F(DT_fnc_updateGroups,CLIENT)
 	};
 
 	class Commands {
@@ -21,5 +21,6 @@ class CfgRemoteExec {
 		jip = 0;
 
 		F(hint,CLIENT)
+		F(selectLeader,CLIENT)
 	};
 };
