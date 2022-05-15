@@ -61,9 +61,9 @@ if (_isRespawn) then {
 	} forEach (getAllUnitTraits player);
 
 	{
-		_x params ["_trait","_value",["_custom",false]];
+		_x params ["_trait","_value",["_custom","false"]];
 		if (_value isEqualTo "true") then {_value = true} else {if (_value isEqualTo "false") then {_value = false}};
-		player setUnitTrait [_trait,_value,_custom];
+		player setUnitTrait [_trait,_value,call compile _custom];
 	} forEach _roleTraits;
 
 	private _customVariables = getArray(_roleConfig >> "customVariables");
