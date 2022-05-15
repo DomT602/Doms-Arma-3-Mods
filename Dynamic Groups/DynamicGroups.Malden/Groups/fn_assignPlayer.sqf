@@ -16,7 +16,7 @@ private _groupToUpdate = DT_dynamicGroups select _groupIndex;
 private _unitsInGroup = _groupToUpdate select 4;
 private _desiredUnit = _unitsInGroup select _unitIndex;
 
-if (!isNull _desiredUnit && {!_respawn}) exitWith {
+if (!isNull _desiredUnit && {!_isRespawn}) exitWith {
 	["Role already taken."] remoteExecCall ["hint",_unit];
 };
 [_desiredRole,_isRespawn,_oldTeam] remoteExecCall ["DT_fnc_setupPlayer",_unit];
