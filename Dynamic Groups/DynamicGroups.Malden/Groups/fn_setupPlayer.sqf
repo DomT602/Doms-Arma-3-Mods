@@ -6,7 +6,7 @@
 params [
 	["_desiredRole","rifleman",[""]],
 	["_isRespawn",false,[true]],
-	["_team","",[""]]
+	["_team","MAIN",[""]]
 ];
 
 private _roleConfig = missionConfigFile >> "Dynamic_Roles" >> _desiredRole;
