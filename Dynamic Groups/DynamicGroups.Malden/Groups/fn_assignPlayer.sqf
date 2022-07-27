@@ -8,7 +8,7 @@ params [
 	["_selectionPath",[],[[]]],
 	["_desiredRole","",[""]],
 	["_isRespawn",false,[true]],
-	["_oldTeam","",[""]]
+	["_oldTeam","MAIN",[""]]
 ];
 
 _selectionPath params ["_groupIndex","_unitIndex"];
