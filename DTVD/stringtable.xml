@@ -85,6 +85,21 @@
             <German>Erlaube den DT Sichtweiten Manager die Sichtweite und Geländeraster einzustellen.</German>
 			<Turkish>DT Görüş Mesafesi Düzenleyicisine görüş mesafesini ve araziyi ayarlaması için izin ver.</Turkish>
         </Key>
+        <Key ID="STR_DTVD_objectSync">
+            <English>Automatically sync object distance</English>
+        </Key>
+        <Key ID="STR_DTVD_objectSyncDescription">
+            <English>Automatically sync changes to the object view distance to match the selected terrain view distance.</English>
+        </Key>
+        <Key ID="STR_DTVD_viewDistanceHotkey1">
+            <English>Change view hotkey 1</English>
+        </Key>
+        <Key ID="STR_DTVD_viewDistanceHotkey2">
+            <English>Change view hotkey 2</English>
+        </Key>
+        <Key ID="STR_DTVD_viewDistanceHotkeyDescription">
+            <English>Select the view and object distance you would like to be changed to when pressing the selected hotkey.</English>
+        </Key>
         <Key ID="STR_DTVD_maxDistance">
             <English>Max View Distance</English>
             <German>Maximale Sichtweite</German>
@@ -100,7 +115,13 @@
             <German>Öffne Sichtweitenmenü</German>
 			<Turkish>Görüş mesafesi menüsünü aç</Turkish>
         </Key>
-        <Key ID="STR_DTVD_modCategory">
+        <Key ID="STR_DTVD_hotkey1">
+            <English>View distance hotkey 1</English>
+        </Key>
+        <Key ID="STR_DTVD_hotkey2">
+            <English>View distance hotkey 2</English>
+        </Key>
+        <Key ID="STR_DT_modCategory">
             <English>Dom's Mods</English>
             <German>Dom's Mods</German>
 			<Turkish>Dom's Mods</Turkish>

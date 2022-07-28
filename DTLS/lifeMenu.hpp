@@ -30,7 +30,7 @@ class DT_lifeMenu
 		class RscButtonMenu_2400: RscButtonMenu
 		{
 			idc = 2400;
-			text = "Transfer"; //--- ToDo: Localize;
+			text = "$STR_DTLS_transfer";
 			onButtonClick = "[""transfer""] call DT_fnc_alterLives";
 			x = 0.355625 * safezoneW + safezoneX;
 			y = 0.588 * safezoneH + safezoneY;
@@ -40,7 +40,7 @@ class DT_lifeMenu
 		class RscButtonMenu_2401: RscButtonMenu
 		{
 			idc = 2401;
-			text = "Reset"; //--- ToDo: Localize;
+			text = "$STR_DTLS_reset";
 			onButtonClick = "[""reset""] call DT_fnc_alterLives";
 			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.621 * safezoneH + safezoneY;
@@ -50,7 +50,7 @@ class DT_lifeMenu
 		class RscButtonMenu_2402: RscButtonMenu
 		{
 			idc = 2402;
-			text = "Give"; //--- ToDo: Localize;
+			text = "$STR_DTLS_give";
 			onButtonClick = "[""give""] call DT_fnc_alterLives";
 			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.588 * safezoneH + safezoneY;
@@ -60,7 +60,7 @@ class DT_lifeMenu
 		class RscButtonMenu_2403: RscButtonMenu
 		{
 			idc = 2403;
-			text = "Remove"; //--- ToDo: Localize;
+			text = "$STR_DTLS_remove";
 			onButtonClick = "[""remove""] call DT_fnc_alterLives";
 			x = 0.355625 * safezoneW + safezoneX;
 			y = 0.621 * safezoneH + safezoneY;

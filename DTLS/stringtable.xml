@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="DT Life System">
+    <Package name="GUI">
+        <Key ID="STR_DTLS_transfer">
+            <English>Transfer</English>
+        </Key>
+        <Key ID="STR_DTLS_reset">
+            <English>Reset</English>
+        </Key>
+        <Key ID="STR_DTLS_give">
+            <English>Give</English>
+        </Key>
+        <Key ID="STR_DTLS_remove">
+            <English>Remove</English>
+        </Key>
+    </Package>
+    <Package name="Options">
+        <Key ID="STR_DT_modCategory">
+            <English>Dom's Mods</English>
+        </Key>
+        <Key ID="STR_DTLS_modSubCategory">
+            <English>Life System</English>
+        </Key>
+        <Key ID="STR_DTLS_showLives">
+            <English>Hint Current Lives</English>
+        </Key>
+        <Key ID="STR_DTLS_openMenu">
+            <English>Open Life Menu</English>
+        </Key>
+        <Key ID="STR_DTLS_defaultLives">
+            <English>Default lives</English>
+        </Key>
+        <Key ID="STR_DTLS_defaultLivesDescription">
+            <English>Number of lives given on initial spawn or on admin reset.</English>
+        </Key>
+        <Key ID="STR_DTLS_adminUIDs">
+            <English>Admin UIDs</English>
+        </Key>
+        <Key ID="STR_DTLS_adminUIDsDescription">
+            <English>Player UIDs who can access the admin buttons on the life menu.</English>
+        </Key>
+        <Key ID="STR_DTLS_transferUIDs">
+            <English>Transfer UIDs</English>
+        </Key>
+        <Key ID="STR_DTLS_transferUIDsDescription">
+            <English>Player UIDs who can access the transfer button on the life menu without being a medic.</English>
+        </Key>
+    </Package>
+    <Package name="Notifications">
+        <Key ID="STR_DTLS_livesHint">
+            <English>Lives remaining: %1.</English>
+        </Key>
+    </Package>
+</Project>

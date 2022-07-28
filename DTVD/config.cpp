@@ -14,6 +14,7 @@ class CfgFunctions {
         class viewDistance {
             file = "\DTVD\functions";
             class changeSingleValue {};
+            class changeViewByHotkey {};
             class getInMan {};
             class getOutMan {};
             class initViewDistance {};

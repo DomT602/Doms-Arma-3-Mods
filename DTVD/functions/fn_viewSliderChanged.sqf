@@ -21,3 +21,9 @@ private _editBox = _display displayCtrl (_controlID - 500);
 _editBox ctrlSetText str _newValue;
 
 [_type,_updateIndex,_newValue] call DT_fnc_changeSingleValue;
+
+if (DT_automaticObjectSync && {_updateIndex isEqualTo 0}) then {
+	private _objectViewSlider = _display displayCtrl (_controlID + 1);
+	_objectViewSlider sliderSetPosition _newValue;
+	[[_objectViewSlider,_newValue],_type,1] call DT_fnc_viewSliderChanged;
+};
