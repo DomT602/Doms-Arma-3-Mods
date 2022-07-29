@@ -13,6 +13,9 @@
         <Key ID="STR_DTLS_remove">
             <English>Remove</English>
         </Key>
+        <Key ID="STR_DTLS_resetAll">
+            <English>Reset all</English>
+        </Key>
     </Package>
     <Package name="Options">
         <Key ID="STR_DT_modCategory">

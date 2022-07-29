@@ -11,7 +11,7 @@ class DT_lifeMenu
 	{
 		class RscPicture_1200: RscPicture
 		{
-			idc = 1200;
+			idc = -1;
 			text = "#(argb,8,8,3)color(0,0,0,0.7)";
 			x = 0.345312 * safezoneW + safezoneX;
 			y = 0.335 * safezoneH + safezoneY;
@@ -37,35 +37,38 @@ class DT_lifeMenu
 			w = 0.144375 * safezoneW;
 			h = 0.022 * safezoneH;
 		};
-		class RscButtonMenu_2401: RscButtonMenu
+		class RscButtonMenu_2401: RscButtonMenu_2400
 		{
 			idc = 2401;
 			text = "$STR_DTLS_reset";
 			onButtonClick = "[""reset""] call DT_fnc_alterLives";
 			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.621 * safezoneH + safezoneY;
-			w = 0.144375 * safezoneW;
-			h = 0.022 * safezoneH;
+			w = 0.0670312 * safezoneW;
 		};
-		class RscButtonMenu_2402: RscButtonMenu
+		class RscButtonMenu_2402: RscButtonMenu_2400
 		{
 			idc = 2402;
 			text = "$STR_DTLS_give";
 			onButtonClick = "[""give""] call DT_fnc_alterLives";
 			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.588 * safezoneH + safezoneY;
-			w = 0.144375 * safezoneW;
-			h = 0.022 * safezoneH;
 		};
-		class RscButtonMenu_2403: RscButtonMenu
+		class RscButtonMenu_2403: RscButtonMenu_2400
 		{
 			idc = 2403;
 			text = "$STR_DTLS_remove";
 			onButtonClick = "[""remove""] call DT_fnc_alterLives";
 			x = 0.355625 * safezoneW + safezoneX;
 			y = 0.621 * safezoneH + safezoneY;
-			w = 0.144375 * safezoneW;
-			h = 0.022 * safezoneH;
+		};
+		class RscButtonMenu_2404: RscButtonMenu_2401
+		{
+			idc = 2401;
+			text = "$STR_DTLS_resetAll";
+			onButtonClick = "[""resetAll""] call DT_fnc_alterLives";
+			x = 0.5825 * safezoneW + safezoneX;
+			y = 0.621 * safezoneH + safezoneY;
 		};
 	};
 };

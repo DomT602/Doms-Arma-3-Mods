@@ -32,9 +32,9 @@ private _myIndex = 0;
 
 	if (_lives isEqualTo 0) then {
 		if (alive _x) then {
-			_listbox lbSetColor [_index,[1,0.451,0,1]];
+			_listbox lbSetColorRight [_index,[1,0.451,0,1]];
 		} else {
-			_listbox lbSetColor [_index,[1,0,0,1]];
+			_listbox lbSetColorRight [_index,[1,0,0,1]];
 		};	
 	};
 } forEach playableUnits;
@@ -45,4 +45,5 @@ if !(getPlayerUID player in DT_adminUIDs) then {
 	(_display displayCtrl 2401) ctrlEnable false;
 	(_display displayCtrl 2402) ctrlEnable false;
 	(_display displayCtrl 2403) ctrlEnable false;
+	(_display displayCtrl 2404) ctrlEnable false;
 };
