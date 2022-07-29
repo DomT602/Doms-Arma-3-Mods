@@ -30,13 +30,7 @@ private _myIndex = 0;
 	private _lives = [_x] call BIS_fnc_respawnTickets;
 	_listbox lbSetTextRight [_index,str(_lives)];
 
-	if (_lives isEqualTo 0) then {
-		if (alive _x) then {
-			_listbox lbSetColorRight [_index,[1,0.451,0,1]];
-		} else {
-			_listbox lbSetColorRight [_index,[1,0,0,1]];
-		};	
-	};
+	[_lives,_x,_listbox,_index] call DT_fnc_setColourAndIcon;
 } forEach playableUnits;
 
 _listbox lbSetCurSel _myIndex;

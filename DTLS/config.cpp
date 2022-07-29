@@ -18,6 +18,7 @@ class CfgFunctions {
 			class hintLives {};
 			class lifeMenuLbChange {};
 			class openLifeMenu {};
+			class setColourAndIcon {};
 		};
 	};
 };

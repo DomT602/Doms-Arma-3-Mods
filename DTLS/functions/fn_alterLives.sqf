@@ -23,37 +23,34 @@ switch _action do {
 			};
 		};
 		[player,-1] call BIS_fnc_respawnTickets;
-		private _myLives = [player] call BIS_fnc_respawnTickets;
-		_listbox lbSetTextRight [_myIndex,str(_myLives - 1)];
-		if ((_myLives - 1) isEqualTo 0) then {
-			_listbox lbSetColorRight [_index,[1,0.451,0,1]];
-		};
-
 		[_unit,1] call BIS_fnc_respawnTickets;
-		_listbox lbSetTextRight [_index,str(_unitsLives + 1)];
-		_listbox lbSetColorRight [_index,[1,1,1,1]];
+
+		private _myLives = [player] call BIS_fnc_respawnTickets;
+		_myLives = _myLives - 1;
+		_listbox lbSetTextRight [_myIndex,str(_myLives)];
+		[_myLives,player,_listbox,_myIndex] call DT_fnc_setColourAndIcon;
+
+		_unitsLives = _unitsLives + 1;
+		_listbox lbSetTextRight [_index,str(_unitsLives)];
+		[_unitsLives,_unit,_listbox,_index] call DT_fnc_setColourAndIcon;
 	};
 	case "give": {
 		[_unit,1] call BIS_fnc_respawnTickets;
-		_listbox lbSetTextRight [_index,str(_unitsLives + 1)];
-		_listbox lbSetColorRight [_index,[1,1,1,1]];
+		_unitsLives = _unitsLives + 1;
+		_listbox lbSetTextRight [_index,str(_unitsLives)];
+		[_unitsLives,_unit,_listbox,_index] call DT_fnc_setColourAndIcon;
 	};
 	case "remove": {
 		[_unit,-1] call BIS_fnc_respawnTickets;
-		_listbox lbSetTextRight [_index,str((_unitsLives - 1) max 0)];
-		if ((_unitsLives - 1) isEqualTo 0) then {
-			if (alive _unit) then {
-				_listbox lbSetColorRight [_index,[1,0.451,0,1]];
-			} else {
-				_listbox lbSetColorRight [_index,[1,0,0,1]];
-			};
-		};
+		_unitsLives = _unitsLives - 1;
+		_listbox lbSetTextRight [_index,str(_unitsLives)];
+		[_unitsLives,_unit,_listbox,_index] call DT_fnc_setColourAndIcon;
 	};
 	case "reset": {
 		if (_unitsLives isNotEqualTo DT_defaultLives) then {
 			[_unit,DT_defaultLives - _unitsLives] call BIS_fnc_respawnTickets;
 			_listbox lbSetTextRight [_index,str(DT_defaultLives)];
-			_listbox lbSetColorRight [_index,[1,1,1,1]];
+			_listbox lbSetColorRight [_index,[0,1,0,1]];
 		};
 	};
 	case "resetAll": {
@@ -65,7 +62,7 @@ switch _action do {
 			if (_unitsLives isNotEqualTo DT_defaultLives) then {
 				[_unit,DT_defaultLives - _unitsLives] call BIS_fnc_respawnTickets;
 				_listbox lbSetTextRight [_i,str(DT_defaultLives)];
-				_listbox lbSetColorRight [_i,[1,1,1,1]];
+				_listbox lbSetColorRight [_i,[0,1,0,1]];
 			};
 		};
 	};
