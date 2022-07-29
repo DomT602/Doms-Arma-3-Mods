@@ -64,7 +64,7 @@ class DT_lifeMenu
 		};
 		class RscButtonMenu_2404: RscButtonMenu_2401
 		{
-			idc = 2401;
+			idc = 2404;
 			text = "$STR_DTLS_resetAll";
 			onButtonClick = "[""resetAll""] call DT_fnc_alterLives";
 			x = 0.5825 * safezoneW + safezoneX;
