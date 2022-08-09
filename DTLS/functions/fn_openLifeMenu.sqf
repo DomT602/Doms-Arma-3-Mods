@@ -31,7 +31,7 @@ private _myIndex = 0;
 	_listbox lbSetTextRight [_index,str(_lives)];
 
 	[_lives,_x,_listbox,_index] call DT_fnc_setColourAndIcon;
-} forEach playableUnits;
+} forEach allPlayers;
 
 _listbox lbSetCurSel _myIndex;
 

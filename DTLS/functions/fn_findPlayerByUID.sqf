@@ -12,6 +12,6 @@ private _unit = objNull;
 	if (getPlayerUID _x isEqualTo _uid) exitWith {
 		_unit = _x;
 	};
-} forEach playableUnits;
+} forEach allPlayers;
 
 _unit;
