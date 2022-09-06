@@ -3,4 +3,4 @@
 	Author: Dom
 	Description: Hints the players current lives
 */
-hint format ["Lives remaining: %1.",[player] call BIS_fnc_respawnTickets];
+hint format ["Respawns remaining: %1.",[player] call DT_fnc_getLives];

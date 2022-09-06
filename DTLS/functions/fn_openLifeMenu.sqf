@@ -27,7 +27,7 @@ private _myIndex = 0;
 		_listbox lbSetColor [_index,[0,1,0,1]];
 	};
 
-	private _lives = [_x] call BIS_fnc_respawnTickets;
+	private _lives = [_x] call DT_fnc_getLives;
 	_listbox lbSetTextRight [_index,str(_lives)];
 
 	[_lives,_x,_listbox,_index] call DT_fnc_setColourAndIcon;

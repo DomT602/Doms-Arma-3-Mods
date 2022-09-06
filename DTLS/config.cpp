@@ -15,6 +15,7 @@ class CfgFunctions {
 			file = "\DTLS\functions";
 			class alterLives {};
 			class findPlayerByUID {};
+			class getLives {};
 			class hintLives {};
 			class lifeMenuLbChange {};
 			class openLifeMenu {};
