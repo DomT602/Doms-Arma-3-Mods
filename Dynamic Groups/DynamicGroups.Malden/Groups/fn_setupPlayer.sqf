@@ -33,6 +33,8 @@ if (_isRespawn) then {
 		{
 			[player,_x,false] call ace_arsenal_fnc_addVirtualItems;
 		} forEach [_weapons,_magazines,_items,_backpacks];
+		private _roleName = getText(_roleConfig >> "name");
+		[_roleName,_defaultLoadout] call ace_arsenal_fnc_addDefaultLoadout;
 	} else {
 		{
 			[_x,(_x call BIS_fnc_getVirtualWeaponCargo)] call BIS_fnc_removeVirtualWeaponCargo;
