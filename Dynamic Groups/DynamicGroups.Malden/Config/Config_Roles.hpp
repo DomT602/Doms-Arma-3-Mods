@@ -25,6 +25,7 @@ class Common_Arsenal {
 		"launch_RPG7_F",
 		"hgun_ACPC2_F",
 		"hgun_Pistol_heavy_01_F",
+		"hgun_P07_F",
 		"arifle_MXC_F",
 		"arifle_MX_F",
 		"arifle_MX_SW_F",
@@ -236,6 +237,7 @@ class Common_Arsenal {
 		"G_Balaclava_TI_tna_F",
 		"G_Balaclava_TI_G_tna_F",
 
+		"NVGoggles",
 		"NVGogglesB_blk_F",
 		"NVGogglesB_grn_F",
 		"NVGogglesB_gry_F",
