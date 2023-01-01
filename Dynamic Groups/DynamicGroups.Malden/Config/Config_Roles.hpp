@@ -45,7 +45,7 @@ class Common_Arsenal {
 		"arifle_SPAR_03_snd_F"
 	};
 	magazines[] = {
-		"SmokeShell", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "SmokeShellRed", "SmokeShellYellow", "HandGrenade", "MiniGrenade",
+		"SmokeShell", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "SmokeShellRed", "SmokeShellYellow", "HandGrenade", "MiniGrenade", "B_IR_Grenade",
 
 		"20Rnd_556x45_UW_mag",
 		"200Rnd_65x39_cased_Box",
@@ -116,7 +116,8 @@ class Common_Arsenal {
 		"30Rnd_9x21_Green_Mag",
 		"30Rnd_9x21_Red_Mag",
 		"30Rnd_9x21_Yellow_Mag",
-		"7Rnd_408_Mag"
+		"7Rnd_408_Mag",
+		"30Rnd_45ACP_Mag_SMG_01"
 	};
 	items[] = {
 		"optic_DMS",
@@ -132,6 +133,7 @@ class Common_Arsenal {
 		"optic_Nightstalker",
 		"optic_ERCO_snd_F",
 		"optic_ERCO_blk_F",
+		"optic_MRD",
 
 		"acc_flashlight",
 		"acc_flashlight_smg_01",
