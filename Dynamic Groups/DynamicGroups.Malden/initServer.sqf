@@ -5,7 +5,7 @@
 */
 DT_dynamicGroups = getArray(missionConfigFile >> "Dynamic_Groups" >> "group_setup");
 {
-	_x params ["_name","_roles","_conditions"];
+	_x params ["","_roles"];
 	_x pushBack grpNull;
 
 	private _roleCount = count _roles;
@@ -18,4 +18,4 @@ DT_dynamicGroups = getArray(missionConfigFile >> "Dynamic_Groups" >> "group_setu
 
 [DT_dynamicGroups] remoteExecCall ["DT_fnc_updateGroups",-2,"DT_DG_JIP"];
 
-addMissionEventHandler ["HandleDisconnect",{_this call DT_fnc_handleDisconnect}];
+addMissionEventHandler ["HandleDisconnect",{DT_fnc_handleDisconnect}];

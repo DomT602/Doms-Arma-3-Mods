@@ -4,9 +4,7 @@
 	Requires: Open and populates the group menu
 */
 
-createDialog "DT_groupMenu";
-
-private _display = findDisplay 9702;
+private _display = createDialog ["DT_groupMenu",true];
 private _tree = _display displayCtrl 1500;
 
 private _factionName = getText(missionConfigFile >> "Dynamic_Groups" >> "faction_name");
