@@ -1,0 +1,148 @@
+
+author = "Dom";
+overviewPicture = "";
+loadScreen = "";
+overviewText = "Game mode created by Dom.";
+onLoadMission = "Game mode created by Dom.";
+onLoadName = "Op Rising Phoenix";
+
+class Header {
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 46;
+};
+
+respawnButton = 1;
+respawn = 3;
+respawnOnStart = -1;
+respawnDelay = 5;
+
+corpseManagerMode = 1;
+corpseLimit = 30;
+corpseRemovalMinTime = 300;
+corpseRemovalMaxTime = 1200;
+
+wreckManagerMode = 1;
+wreckLimit = 5;
+wreckRemovalMinTime = 600;
+wreckRemovalMaxTime = 2400;
+minPlayerDistance = 1000;
+
+disabledAI = 1;
+enableDebugConsole[] = {"76561198071007604"};
+unsafeCVL = 1;
+joinUnassigned = 0;
+
+#include "GUI\masterHandler.hpp"
+
+class CfgFunctions {
+	#include "Functions.hpp"
+};
+
+#include "Config\Config_Civilian.hpp"
+#include "Config\Config_Compositions.hpp"
+#include "Config\Config_Opfor.hpp"
+#include "Config\Groups\Config_Groups.hpp"
+#include "Config\Groups\Config_Logi.hpp"
+
+class Params
+{
+	class difficultyModifier
+	{
+		title = "Difficulty Modifier";
+		texts[] = {"Very Easy","Easy","Normal","Hard","Very Hard"};
+		values[] = {0.5,0.75,1,1.25,1.5};
+		default = 1;
+	};
+	class missionKarmaGain
+	{
+		title = "Karma gain on successful mission";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {20,30,40,50,60};
+		default = 40;
+	};
+	class ambientCivilianPresence
+	{
+		title = "Ambient Civilian Presence";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {1,2,3,4,5};
+		default = 3;
+	};
+	class townCivilianPresence
+	{
+		title = "Town Civilian Presence";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {3,6,9,12,15};
+		default = 9;
+	};
+	class hitCivilianKarmaPenalty
+	{
+		title = "Injured Civilian Karma Penalty";
+		texts[] = {"Very Forgiving","Forgiving","Normal","Harsh","Very Harsh"};
+		values[] = {-1,-2,-3,-4,-5};
+		default = -3;
+	};
+	class killedCivilianKarmaPenalty
+	{
+		title = "Killed Civilian Karma Penalty";
+		texts[] = {"Very Forgiving","Forgiving","Normal","Harsh","Very Harsh"};
+		values[] = {-3,-6,-9,-12,-15};
+		default = -9;
+	};
+	class healedCivilianKarmaGain
+	{
+		title = "Healed Civilian Karma Gain";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {1,2,3,4,5};
+		default = 3;
+	};
+	class opforTrapChance
+	{
+		title = "Chances of Booby Traps";
+		texts[] = {"None","Very Low","Low","Normal","High","Very High"};
+		values[] = {0,3,6,9,12,15};
+		default = 6;
+	};
+	class ambientOpforPresence
+	{
+		title = "Ambient Opfor Presence";
+		texts[] = {"None","Very Low","Low","Normal","High","Very High"};
+		values[] = {0,1,2,3,4,5};
+		default = 3;
+	};
+	class ambushOpforChance
+	{
+		title = "Chances of Ambushes";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {5,15,25,35,45};
+		default = 25;
+	};
+	class ambushOpforDelay
+	{
+		title = "Ambush Time Delay";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {15,30,45,60,75};
+		default = 45;
+	};
+	class opforMineIntensity
+	{
+		title = "Opfor Mine Intensity";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {3,6,9,12,15};
+		default = 9;
+	};
+	class opforMortarIntensity
+	{
+		title = "Opfor Mortar Intensity";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {40,30,20,15,10};
+		default = 20;
+	};
+	class enemyActionFrequency
+	{
+		title = "Opfor Side Mission Frequency";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {90,75,60,45,30};
+		default = 60;
+	};
+};
