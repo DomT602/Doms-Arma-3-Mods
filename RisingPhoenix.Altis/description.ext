@@ -41,9 +41,8 @@ class CfgFunctions {
 
 #include "Config\Config_Civilian.hpp"
 #include "Config\Config_Compositions.hpp"
-#include "Config\Config_Opfor.hpp"
-#include "Config\Groups\Config_Groups.hpp"
-#include "Config\Groups\Config_Logi.hpp"
+#include "Config\Opfor\Config_Opfor.hpp"
+#include "Config\Blufor\Config_Blufor.hpp"
 
 class Params
 {
@@ -144,5 +143,24 @@ class Params
 		texts[] = {"Very Low","Low","Normal","High","Very High"};
 		values[] = {90,75,60,45,30};
 		default = 60;
+	};
+	class missionCompletionCount
+	{
+		title = "Main Missions to complete before Final Mission";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {6,8,10,12,14};
+		default = 10;
+	};
+	class opforFaction {
+		title = "Opfor Faction";
+		texts[] = {"CSAT","AAF"};
+		values[] = {0,1};
+		default = 0;
+	};
+	class bluforFaction {
+		title = "Blufor Faction";
+		texts[] = {"CTRG","NATO"};
+		values[] = {0,1};
+		default = 0;
 	};
 };

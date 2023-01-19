@@ -7,7 +7,7 @@ params [
 	["_unit",objNull,[objNull]]
 ];
 
-nearestObjects [_unit,["GroundWeaponHolder"],3] params [["_holder",objNull,[objNull]]];
+nearestObjects [_unit,["GroundWeaponHolder"],3] params [["_holder",objNull]];
 if (isNull _holder) then {
 	_holder = createVehicle ["GroundWeaponHolder",getPosATL _unit,[],0,"CAN_COLLIDE"];
 };

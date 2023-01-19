@@ -1,5 +1,5 @@
 class Dynamic_Groups { //format: {"Group Name",{"Group","Roles","Matching","Role","Configs"},"Conditions for the group to be shown"}
-	faction_name = "CTRG";
+	faction_name = "NATO";
 	group_setup[] = {
 		{"Command",{"officer","medic","uavop"},"true"},
 		{"Alpha",{"squadlead","teamlead","medic","rifleman","rifleman","teamlead","engineer","rifleman","rifleman"},"true"},
@@ -15,3 +15,4 @@ class Dynamic_Groups { //format: {"Group Name",{"Group","Roles","Matching","Role
 };
 
 #include "Config_Roles.hpp"
+#include "Config_Logi.hpp"

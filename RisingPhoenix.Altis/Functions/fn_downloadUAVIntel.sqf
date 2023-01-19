@@ -14,20 +14,18 @@ private _action = [
 	{
 		[
 			15,
-			[_target],
+			_target,
 			{
-				params ["_args"];
-				_args params ["_uav"];
+				params ["_uav"];
 				_uav setVariable ["intelDownloaded",true,true];
-				["The intelligence was downloaded, now destroy the UAV to prevent it being taken by the enemy."] call DT_fnc_notify;
+				["The intelligence was downloaded, now destroy the UAV to prevent it being taken by the enemy."] remoteExecCall ["DT_fnc_notify",0];
 			},
 			{
 				["Download cancelled."] call DT_fnc_notify;
 			},
 			"Downloading",
 			{
-				params ["_args"];
-				_args params ["_uav"];
+				params ["_uav"];
 				!(_uav getVariable ["intelDownloaded",false])
 			}
 		] call ace_common_fnc_progressBar;

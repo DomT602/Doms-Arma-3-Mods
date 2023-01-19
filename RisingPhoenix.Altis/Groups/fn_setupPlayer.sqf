@@ -9,7 +9,7 @@ params [
 	["_team","",[""]]
 ];
 
-private _roleConfig = missionConfigFile >> "Dynamic_Roles" >> _desiredRole;
+private _roleConfig = missionConfigFile >> DT_bluforFaction >> "Dynamic_Roles" >> _desiredRole;
 private _defaultLoadout = getArray(_roleConfig >> "defaultLoadout");
 
 if (_isRespawn) then {
@@ -20,7 +20,7 @@ if (_isRespawn) then {
 	[player,_defaultLoadout,true] call CBA_fnc_setLoadout;
 	
 	private _items = getArray(_roleConfig >> "arsenalItems");
-	_items append getArray(missionConfigFile >> "Common_Arsenal" >> "items");
+	_items append getArray(missionConfigFile >> DT_bluforFaction >> "Common_Arsenal" >> "items");
 
 	[player,true,false] call ace_arsenal_fnc_removeVirtualItems;
 	[player,_items,false] call ace_arsenal_fnc_addVirtualItems;

@@ -28,8 +28,10 @@ class DT_Core {
 		class createMortar {};
 		class createPatrols {};
 		class createSquad {};
+		class createStatic {};
 		class createUnit {};
 		class createVehicle {};
+		class defuseNuke {};
 		class deleteGroup {};
 		class downloadUAVIntel {};
 		class fetchDetails {};
@@ -91,6 +93,7 @@ class DT_Core {
 		class killCommander {};
 		class secureIntel {};
 		class secureUAV {};
+		class secureNuke {};
 		class startNewMission {};
 		class startSideMission {};
 	};

@@ -61,7 +61,7 @@ _questionBox lbSetCurSel 0;
 [
 	{
 		params ["_unit","_oldCaptiveState"];
-		!alive _unit || {!alive player || {!dialog || {player distance _unit > 5 || {captive _unit isNotEqualTo _oldCaptiveState || {_unit getVariable ["ACE_isUnconscious",false];}}}}}
+		!alive _unit || {!alive player || {!dialog || {player distance _unit > 5 || {captive _unit isNotEqualTo _oldCaptiveState || {_unit getVariable ["ACE_isUnconscious",false]}}}}}
 	},
 	{
 		params ["_unit"];

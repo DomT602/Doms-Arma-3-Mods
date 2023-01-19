@@ -49,10 +49,10 @@ class Logi_Setup {
 	};
 
 	supplyCrateTypes[] = { //crate types to be used below, format {sizeName, classname}
-		{"medical", "ACE_medicalSupplyCrate_advanced"},
-		{"small", "Box_NATO_Ammo_F"},
-		{"medium", "Box_NATO_Wps_F"},
-		{"large", "Box_NATO_WpsSpecial_F"},
+		{"medical","ACE_medicalSupplyCrate_advanced"},
+		{"small","Box_NATO_Ammo_F"},
+		{"medium","Box_NATO_Wps_F"},
+		{"large","Box_NATO_WpsSpecial_F"},
 	};
 	//categories supported: medicalCrateCategory,lightWeaponCrateCategory,heavyWeaponCrateCategory,staticWeaponCrateCategory,miscWeaponCrateCategory
 	supplyCrates[] = { //format {"category","title","box size",{contents}}

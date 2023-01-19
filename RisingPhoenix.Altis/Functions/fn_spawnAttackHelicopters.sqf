@@ -13,15 +13,13 @@ private _airports = DT_airportLocations select {[_x select 0,1000] call DT_fnc_a
 if (_airports isEqualTo []) exitWith {};
 (selectRandom _airports) params ["_airportPos","_airportDir"];
 
-private _heliTypes = getArray (missionConfigFile >> "Opfor_Setup" >> "opforAttackHelicopters");
+private _heliTypes = getArray (missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforAttackHelicopters");
 private _classData = selectRandom _heliTypes;
 private _className = _classData;
 private _pilotClass = "";
 if (_classData isEqualType []) then {
 	_className = _classData select 0;
-	if (call compile (_classData select 1)) then {
-		_pilotClass = getText (missionConfigFile >> "Opfor_Setup" >> "opforPilot");
-	};
+	_pilotClass = getText (missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforPilot");
 };
 
 private _group = createGroup [east,true];

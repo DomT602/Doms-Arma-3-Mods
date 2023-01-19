@@ -23,7 +23,7 @@ DT_missionDetails pushBack _taskAndMarkerVar;
 publicVariable "DT_missionDetails";
 
 private _templateObjects = selectRandom (getArray(missionConfigFile >> "Compositions" >> "opforAirbases"));
-private _heliTypes = getArray (missionConfigFile >> "Opfor_Setup" >> "opforAttackHelicopters");
+private _heliTypes = getArray (missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforAttackHelicopters");
 private _objects = [];
 private _objectives = [];
 
@@ -52,6 +52,7 @@ private _objectives = [];
 
 private _squads = [_airportPos,50] call DT_fnc_createPatrols;
 _squads pushBack ([_airportPos,25] call DT_fnc_createMortar);
+_squads pushBack ([_airportPos,50] call DT_fnc_createStatic);
 
 [
 	{

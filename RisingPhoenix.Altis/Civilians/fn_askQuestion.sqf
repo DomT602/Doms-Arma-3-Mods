@@ -245,7 +245,7 @@ switch _questionIndex do {
 			_response = selectRandom _genericNegativeResponses;
 		} else {
 			if ((DT_missionDetails findIf {"captureCommander" in _x}) isEqualTo -1 && {random 100 > 75}) then {
-				private _officerName = [getText(missionConfigFile >> "Opfor_Setup" >> "opforOfficer")] call DT_fnc_getRandomName;
+				private _officerName = [getText(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforOfficer")] call DT_fnc_getRandomName;
 				_response = format ["He's called %1, he was here an hour ago.",_officerName];
 				[_unit,_officerName] remoteExecCall ["DT_fnc_captureCommander",2];
 			} else {

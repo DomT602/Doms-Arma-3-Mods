@@ -11,7 +11,7 @@ DT_activeCivLocations = [];
 		private _units = playableUnits;
 		{
 			if !(_x in DT_activeCivLocations) then {
-				private _nearbyPlayers = _units inAreaArray [getPosATL _x,750,750,0,false,250];
+				private _nearbyPlayers = _units inAreaArray [getPosATL _x,750,750,0,false,100];
 				if (_nearbyPlayers isNotEqualTo []) then {
 					DT_activeCivLocations pushBack _x;
 					[_x] call DT_fnc_spawnCivilians;

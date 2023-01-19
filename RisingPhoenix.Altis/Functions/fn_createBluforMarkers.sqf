@@ -6,7 +6,7 @@
 private _markers = [];
 {
 	if (leader (group _x) isEqualTo _x) then {
-		private _roleName = getText(missionConfigFile >> "Dynamic_Roles" >> (_x getVariable ["DT_role","rifleman"]) >> "name");
+		private _roleName = getText(missionConfigFile >> DT_bluforFaction >> "Dynamic_Roles" >> (_x getVariable ["DT_role","rifleman"]) >> "name");
 
 		private _marker = createMarkerLocal [format["grpLdr%1",_forEachIndex],_x];
 		_marker setMarkerColorLocal "ColorBLUFOR";

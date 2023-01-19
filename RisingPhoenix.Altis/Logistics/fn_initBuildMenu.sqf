@@ -11,7 +11,7 @@ private _tree = _display displayCtrl 1500;
 	_tree tvAdd [[],_x];
 } forEach ["Light Vehicles","Heavy Vehicles","Air","Naval"];
 
-private _baseCfg = missionConfigFile >> "Logi_Setup";
+private _baseCfg = missionConfigFile >> DT_bluforFaction >> "Logi_Setup";
 
 {
 	private _index = _forEachIndex;

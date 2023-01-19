@@ -28,7 +28,7 @@ private _unit = objectFromNetId _unitNetID;
 
 _button ctrlEnable (isNull _unit);
 
-private _roleData = missionConfigFile >> "Dynamic_Roles" >> _selectedRole;
+private _roleData = missionConfigFile >> DT_bluforFaction >> "Dynamic_Roles" >> _selectedRole;
 private _roleName = getText(_roleData >> "name");
 private _roleRank = getText(_roleData >> "rank");
 private _roleDesc = getText(_roleData >> "description");

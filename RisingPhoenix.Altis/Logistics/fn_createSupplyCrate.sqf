@@ -12,7 +12,7 @@ private _selectionPath = tvCurSel _tree;
 
 closeDialog 0;
 
-private _allSupplyClasses = getArray(missionConfigFile >> "Logi_Setup" >> "supplyCrateTypes");
+private _allSupplyClasses = getArray(missionConfigFile >> DT_bluforFaction >> "Logi_Setup" >> "supplyCrateTypes");
 private _crateIndex = _allSupplyClasses findIf {_x select 0 == _type};
 private _crateClass = (_allSupplyClasses select _crateIndex) select 1;
 

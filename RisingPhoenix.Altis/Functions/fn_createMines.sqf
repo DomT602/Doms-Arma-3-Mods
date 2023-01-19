@@ -9,7 +9,7 @@ params [
 	["_count",(paramsArray select 11),[0]]
 ];
 
-private _iedTypes = getArray(missionConfigFile >> "Opfor_Setup" >> "opforMines");
+private _iedTypes = getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforMines");
 private _nearRoads = _pos nearRoads _radius;
 
 for "_i" from 1 to _count do {

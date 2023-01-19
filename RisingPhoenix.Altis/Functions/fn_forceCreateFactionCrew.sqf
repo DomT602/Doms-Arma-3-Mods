@@ -8,7 +8,7 @@ params [
 	["_emptyVehicle",objNull,[objNull]]
 ];
 
-private _squadComposition = getArray(missionConfigFile >> "Opfor_Setup" >> "opforBasicSquad");
+private _squadComposition = selectRandom (getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforSquads"));
 private _driver = [_vehGroup,east,selectRandom _squadComposition,_emptyVehicle] call DT_fnc_createUnit;
 _driver moveInDriver _emptyVehicle;
 if (fullCrew [_emptyVehicle,"gunner",true] isNotEqualTo []) then {

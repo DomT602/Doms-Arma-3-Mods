@@ -35,6 +35,7 @@ _cache addEventHandler ["Explosion",{
 
 private _squads = [_spawnPosition,100] call DT_fnc_createPatrols;
 _squads pushBack ([_spawnPosition,75] call DT_fnc_createMortar);
+_squads pushBack ([_spawnPosition,100] call DT_fnc_createStatic);
 [_spawnPosition] call DT_fnc_createMines;
 
 [

@@ -8,7 +8,7 @@ params [
 ];
 
 private _locations = DT_civLocations select {!(_x in DT_activeCivLocations)};
-private _vehiclesTypes = getArray(missionConfigFile >> "Opfor_Setup" >> "opforTroopCarriers");
+private _vehiclesTypes = getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforTroopCarriers");
 
 for "_i" from 1 to _count do {
 	private _group = [selectRandom _vehiclesTypes,getPosASL (selectRandom _locations),750,true] call DT_fnc_createVehicle;

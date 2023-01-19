@@ -1,7 +1,7 @@
 /*
 	File: fn_clearTown.sqf
 	Author: Dom
-	Description: Creates and monitors mission to clear a town
+	Description: Creates and monitors mission to defend a town
 */
 params [
 	["_taskGiver",objNull,[objNull]]

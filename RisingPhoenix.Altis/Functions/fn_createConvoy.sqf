@@ -14,14 +14,14 @@ private _startDirection = _startPos getDir _intermediatePos;
 
 private _groups = [];
 for "_i" from 1 to (_carrierCount + _lightCount) do {
-	private _lightVehicles = getArray(missionConfigFile >> "Opfor_Setup" >> "opforLightVehicles");
-	_lightVehicles append getArray(missionConfigFile >> "Opfor_Setup" >> "opforTroopCarriers");
+	private _lightVehicles = getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforLightVehicles");
+	_lightVehicles append getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforTroopCarriers");
 	private _group = [selectRandom _lightVehicles,_startPos,100,true] call DT_fnc_createVehicle;
 	_groups pushBack _group;
 };
 
 for "_i" from 1 to _mediumCount do {
-	private _mediumVehicles = getArray(missionConfigFile >> "Opfor_Setup" >> "opforMediumVehicles");
+	private _mediumVehicles = getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforMediumVehicles");
 	private _group = [selectRandom _mediumVehicles,_startPos] call DT_fnc_createVehicle;
 	_groups pushBack _group;
 };

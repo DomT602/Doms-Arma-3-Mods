@@ -22,6 +22,7 @@ publicVariable "DT_missionDetails";
 
 private _squads = [_townCentre,200,300] call DT_fnc_createPatrols;
 _squads pushBack ([_townCentre,100] call DT_fnc_createMortar);
+_squads pushBack ([_townCentre] call DT_fnc_createStatic);
 [_townCentre] call DT_fnc_createMines;
 
 private _units = [];

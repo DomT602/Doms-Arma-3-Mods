@@ -3,7 +3,19 @@
 	Author: Dom
 	Requires: Start the server up
 */
-DT_dynamicGroups = getArray(missionConfigFile >> "Dynamic_Groups" >> "group_setup");
+DT_opforFaction = switch (paramsArray select 15) do {
+	case 0: {"CSAT"};
+	case 1: {"AAF"};	
+};
+publicVariable "DT_opforFaction";
+
+DT_bluforFaction = switch (paramsArray select 16) do {
+	case 0: {"CTRG"};
+	case 1: {"NATO"};
+};
+publicVariable "DT_bluforFaction";
+
+DT_dynamicGroups = getArray(missionConfigFile >> DT_bluforFaction >> "Dynamic_Groups" >> "group_setup");
 {
 	_x params ["","_roles"];
 	_x pushBack grpNull;
@@ -31,6 +43,7 @@ resistance setFriend [east,1];
 east setFriend [independent,1];
 
 DT_missionDetails = [];
+DT_missionCount = 0;
 
 ["AllVehicles","initpost",{
 	params ["_vehicle"];

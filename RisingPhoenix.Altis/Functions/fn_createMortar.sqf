@@ -8,13 +8,13 @@ params [
 	["_radius",200,[0]]
 ];
 
-private _mortarClass = getText(missionConfigFile >> "Opfor_Setup" >> "opforMortar");
+private _mortarClass = getText(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforMortar");
 private _spawnPos = [_pos,10,_radius,3,0,1,0] call BIS_fnc_findSafePos;
 
 private _mortar = createVehicle [_mortarClass,_spawnPos];
 
 private _group = createGroup [east,true];
-private _unitClass = selectRandom (selectRandom (getArray(missionConfigFile >> "Opfor_Setup" >> "opforSquads")));
+private _unitClass = selectRandom (selectRandom (getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforSquads")));
 private _unit = [_group,east,_unitClass,_spawnPos] call DT_fnc_createUnit;
 
 _unit moveInGunner _mortar;

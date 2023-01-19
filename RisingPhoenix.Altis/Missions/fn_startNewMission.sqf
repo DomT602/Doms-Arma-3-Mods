@@ -7,6 +7,11 @@ params [
 	["_lastMissionType","",[""]]
 ];
 
+if (DT_missionCount isEqualTo (paramsArray select 14)) exitWith {
+	private _code = selectRandom [DT_fnc_secureNuke];
+	[] call _code;
+};
+
 private _missions = [
 	["clear",DT_fnc_clearTown],
 	["destroyCache",DT_fnc_destroyCache],
@@ -20,3 +25,4 @@ _missions deleteAt _index;
 (selectRandom _missions) params ["","_code"];
 
 [_code,[],30] call CBA_fnc_waitAndExecute;
+DT_missionCount = DT_missionCount + 1;

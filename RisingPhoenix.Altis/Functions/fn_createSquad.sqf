@@ -10,7 +10,7 @@ params [
 
 private _spawnPosition = [_position,0,_radius,5,0,1,0,[],[_position,_position]] call BIS_fnc_findSafePos;
 
-private _squadComposition = selectRandom (getArray(missionConfigFile >> "Opfor_Setup" >> "opforSquads"));
+private _squadComposition = selectRandom (getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforSquads"));
 private _group = createGroup [east,true];
 
 {

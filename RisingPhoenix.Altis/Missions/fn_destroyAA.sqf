@@ -5,7 +5,7 @@
 */
 
 private _halfWorldSize = worldSize / 2;
-private _spawnPos = [[_halfWorldSize,_halfWorldSize],0,-1,25,0,0.4,0] call BIS_fnc_findSafePos;
+private _spawnPos = [[_halfWorldSize,_halfWorldSize],0,-1,25,0,0.3,0] call BIS_fnc_findSafePos;
 
 private _taskAndMarkerVar = "destroyAA";
 private _marker = createMarker [_taskAndMarkerVar,_spawnPos];
@@ -19,7 +19,7 @@ DT_missionDetails pushBack _taskAndMarkerVar;
 publicVariable "DT_missionDetails";
 
 private _templateObjects = selectRandom (getArray(missionConfigFile >> "Compositions" >> "opforAASites"));
-private _AATypes = getArray (missionConfigFile >> "Opfor_Setup" >> "opforAAVehicles");
+private _AATypes = getArray (missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforAAVehicles");
 private _objects = [];
 private _objectives = [];
 
@@ -34,17 +34,16 @@ private _objectives = [];
 	_objects pushBack _object;
 
 	if (_class isEqualTo "PortableHelipadLight_01_yellow_F") then {
-		private _aaVeh = createVehicle [selectRandom _AATypes,_pos,[],0,"NONE"];
-		createVehicleCrew _aaVeh;
-		(driver _aaVeh) disableAI "MOVE";
-		_aaVeh lock 3;
-		_aaVeh setDir _dir;
-		_objectives pushBack _aaVeh;
+		private _aaGrp = [selectRandom _AATypes,_pos,0] call DT_fnc_createVehicle;
+		private _vehicle = objectParent (leader _aaGrp);
+		(driver _vehicle) disableAI "MOVE";
+		_vehicle lock 3;
+		_vehicle setDir _dir;
+		_objectives pushBack _vehicle;
 	};
 } forEach _templateObjects;
 
 private _squads = [_spawnPos,50] call DT_fnc_createPatrols;
-_squads pushBack ([_spawnPos,25] call DT_fnc_createMortar);
 
 [
 	{

@@ -23,6 +23,7 @@ _jammer setDir (_jammer getDir arsenal_1);
 missionNamespace setVariable ["TFAR_globalRadioRangeCoef",0.1,true];
 
 private _squads = [_spawnPos] call DT_fnc_createPatrols;
+_squads pushBack ([_spawnPos,50] call DT_fnc_createStatic);
 [_spawnPos,500] call DT_fnc_createMines;
 
 [

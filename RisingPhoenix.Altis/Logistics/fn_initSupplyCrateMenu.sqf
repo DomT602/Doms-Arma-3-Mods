@@ -11,7 +11,7 @@ private _tree = _display displayCtrl 1500;
 	_tree tvAdd [[],_x];
 } forEach ["Medical","Light Weapons","Heavy Weapons","Static Weapons","Miscellaneous"];
 
-private _allSupplyBoxes = getArray(missionConfigFile >> "Logi_Setup" >> "supplyCrates");
+private _allSupplyBoxes = getArray(missionConfigFile >> DT_bluforFaction >> "Logi_Setup" >> "supplyCrates");
 {
 	_x params ["_category","_title","_crateSize","_contents"];
 

@@ -14,11 +14,14 @@ private _className = _classData;
 private _spawnFactionCrew = false;
 if (_classData isEqualType []) then {
 	_className = _classData select 0;
-	_spawnFactionCrew = call compile (_classData select 1);
+	_spawnFactionCrew = true;
 };
 
-private _nearRoads = _position nearRoads (_radius * 2);
-private _spawnPos = getPosATL (selectRandom _nearRoads);
+private _spawnPos = _position;
+if (_radius isNotEqualTo 0) then {
+	private _nearRoads = _position nearRoads (_radius * 2);
+	_spawnPos = getPosATL (selectRandom _nearRoads);
+};
 
 private _vehicle = createVehicle [_className,_spawnPos];
 private _group = createGroup [east,true];
@@ -30,7 +33,7 @@ if (_spawnFactionCrew) then {
 };
 
 if (_fillWithPax) then {
-	private _squadComposition = selectRandom (getArray(missionConfigFile >> "Opfor_Setup" >> "opforSquads"));
+	private _squadComposition = selectRandom (getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforSquads"));
 	private _seatCount = getNumber(configOf _vehicle >> "transportSoldier");
 	private _troopCount = ceil (random _seatCount);
 

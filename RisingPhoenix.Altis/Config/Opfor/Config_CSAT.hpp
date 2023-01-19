@@ -3,7 +3,7 @@
 	Author: Dom
 	Requires: None
 */
-class Opfor_Setup {
+class CSAT {
 	opforSquads[] = {
 		{
 			"O_Soldier_SL_F",
@@ -56,6 +56,10 @@ class Opfor_Setup {
 	opforOfficer = "O_officer_F";
 	opforPilot = "O_helipilot_F";
 	opforMortar = "O_Mortar_01_F";
+	opforStatics[] = { //HMGs, AT etc
+		"O_HMG_01_high_F",
+		"O_GMG_01_high_F"
+	};
 
 	//if the vehicle does not belong to the faction naturally, enclose in {} and add ,true
 	opforLightVehicles[] = {

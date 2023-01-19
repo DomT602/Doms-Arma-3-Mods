@@ -29,7 +29,7 @@ private _nearBuildings = [_townCentre,500] call DT_fnc_getBuildings;
 private _randomBuildingPositions = (selectRandom _nearBuildings) buildingPos -1;
 private _spawnPosition = selectRandom _randomBuildingPositions;
 
-private _officerClass = getText(missionConfigFile >> "Opfor_Setup" >> "opforOfficer");
+private _officerClass = getText(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforOfficer");
 private _group = createGroup [east,true];
 private _officer = [_group,east,_officerClass,_spawnPosition] call DT_fnc_createUnit;
 _officer forceSpeed 0;
