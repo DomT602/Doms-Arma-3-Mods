@@ -1,7 +1,7 @@
 /*
 	Faction: fn_initEnvironmentMenu.sqf
 	Author: Dom
-	Requires: Open and populates the environmental control menu
+	Requires: Opens and populates the environmental control menu
 */
 
 private _gusts = gusts;

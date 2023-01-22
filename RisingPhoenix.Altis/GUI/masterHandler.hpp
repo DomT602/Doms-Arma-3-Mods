@@ -8,6 +8,7 @@ import RscButtonMenu;
 import Scrollbar;
 import RscText;
 import RscListbox;
+import RscMapControl;
 
 class DT_RscButtonGeneral: RscButtonMenu
 {
@@ -82,3 +83,4 @@ class DT_RscTreeSearch: DT_RscTree
 #include "talkMenu.hpp"
 #include "logiMenu.hpp"
 #include "environmentalControlMenu.hpp"
+#include "supportMenu.hpp"

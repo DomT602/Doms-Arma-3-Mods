@@ -112,6 +112,17 @@ private _fullHealAll = [
 ] call ace_interact_menu_fnc_createAction;
 [medical_1,0,["ACE_MainActions"],_fullHealAll] call ace_interact_menu_fnc_addActionToObject;
 
+private _supportCategory = [
+	"supportCategory",
+	"Supports",
+	"\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\help_ca.paa",
+	{[] call DT_fnc_initSupportMenu},
+	{
+		(player getVariable ["DT_role","rifleman"]) in ["officer","squadlead","commander","pilot"]
+	}
+] call ace_interact_menu_fnc_createAction;
+[player,1,["ACE_SelfActions"],_supportCategory] call ace_interact_menu_fnc_addActionToObject;
+
 private _environmentCategory = [
 	"environmentMenu",
 	"Environment Control",

@@ -3,8 +3,16 @@
 	Author: Dom
 	Description: Creates the supply crate
 */
+params [
+	["_target",[],[[]]]
+];
 
 private _display = findDisplay 9742;
+private _airDrop = _target isNotEqualTo [];
+if (_airDrop) then {
+	_display = findDisplay 9745;
+};
+
 private _tree = _display displayCtrl 1500;
 private _selectionPath = tvCurSel _tree;
 
@@ -16,8 +24,17 @@ private _allSupplyClasses = getArray(missionConfigFile >> DT_bluforFaction >> "L
 private _crateIndex = _allSupplyClasses findIf {_x select 0 == _type};
 private _crateClass = (_allSupplyClasses select _crateIndex) select 1;
 
-private _crate = createVehicle [_crateClass,player];
-[player,_crate] call ace_dragging_fnc_carryObject;
+private _crate = objNull;
+if (_airDrop) then {
+	_target = _target vectorAdd [0,0,100];
+	_crate = createVehicle [_crateClass,_target,[],10];
+	private _chute = createVehicle ["B_Parachute_02_F",_target,[],0,"FLY"];
+	_chute setPosASL (getPosASL _crate);
+	_crate attachTo [_chute];
+} else {
+	_crate = createVehicle [_crateClass,player];
+	[player,_crate] call ace_dragging_fnc_carryObject;
+};
 
 [_crate] call DT_fnc_clearCargo;
 [_crate,true,[0,2,0],0,true] remoteExecCall ["ace_dragging_fnc_setDraggable",-2,_crate];

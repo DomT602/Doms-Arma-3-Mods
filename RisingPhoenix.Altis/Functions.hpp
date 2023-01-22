@@ -74,6 +74,10 @@ class DT_Core {
 	class Command {
 		file = "Command";
 		class initEnvironmentMenu {};
+		class initSupportMenu {};
+		class onMapPress {};
+		class startSupport {};
+		class onSupportMenuTvChange {};
 		class updateEnvironment {};
 	};
 
