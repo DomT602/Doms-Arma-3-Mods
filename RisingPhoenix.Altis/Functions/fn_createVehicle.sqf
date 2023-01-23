@@ -35,7 +35,7 @@ if (_spawnFactionCrew) then {
 if (_fillWithPax) then {
 	private _squadComposition = selectRandom (getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforSquads"));
 	private _seatCount = getNumber(configOf _vehicle >> "transportSoldier");
-	private _troopCount = ceil (random _seatCount);
+	private _troopCount = ceil (random [1,_seatCount / 2,_seatCount]);
 
 	for "_i" from 1 to _troopCount do {
 		private _unit = [_group,east,selectRandom _squadComposition,_vehicle] call DT_fnc_createUnit;

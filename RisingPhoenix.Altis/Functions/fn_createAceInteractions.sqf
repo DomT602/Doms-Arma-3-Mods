@@ -148,3 +148,14 @@ private _talkCategory = [
 	}
 ] call ace_interact_menu_fnc_createAction;
 ["CAManBase",0,["ACE_MainActions"],_talkCategory,true] call ace_interact_menu_fnc_addActionToClass;
+
+private _stopCategory = [
+	"stopCategory",
+	"Call out 'Stop'",
+	"\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\talk_ca.paa",
+	{[] call DT_fnc_callToStop},
+	{
+		isNull objectParent player
+	}
+] call ace_interact_menu_fnc_createAction;
+[player,1,["ACE_SelfActions"],_stopCategory] call ace_interact_menu_fnc_addActionToObject;

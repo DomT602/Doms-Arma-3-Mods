@@ -8,9 +8,10 @@ private _display = findDisplay 9745;
 private _tree = _display displayCtrl 1500;
 private _selectionPath = tvCurSel _tree;
 _selectionPath params ["_firstIndex"];
+private _supportCooldowns = missionNamespace getVariable ["DT_supportCooldowns",[]];
 
 (parseSimpleArray (_tree tvData [_firstIndex])) params ["_action","_cooldown"];
-if (CBA_missionTime < (_supportCooldowns select _actionIndex)) exitWith {["Cooldown not finished."] call DT_fnc_notify};
+if (CBA_missionTime < (_supportCooldowns select _firstIndex)) exitWith {["Cooldown not finished."] call DT_fnc_notify};
 private _pos = markerPos "supportTarget";
 if (_action in ["mortar","supplyDrop"] && {_pos isEqualTo [0,0,0]}) exitWith {["No target has been selected."] call AW_fnc_notify};
 
@@ -57,7 +58,6 @@ if (_action isEqualTo "mortar") then {
 	};
 };
 
-private _supportCooldowns = missionNamespace getVariable ["DT_supportCooldowns",[]];
 _supportCooldowns set [_firstIndex,(CBA_missionTime + _cooldown)];
 missionNamespace setVariable ["DT_supportCooldowns",_supportCooldowns,true];
 

@@ -12,7 +12,7 @@ if !(isNull (_unit getVariable ["currentTalker",objNull])) exitWith {["He is bus
 DT_talkingTarget = _unit;
 _unit setVariable ["currentTalker",player,true];
 [_unit,0] remoteExecCall ["forceSpeed",_unit];
-_unit doWatch player;
+[_unit,player] remoteExecCall ["doWatch",_unit];
 
 private _display = createDialog ["DT_talkMenu",true];
 private _questionBox = _display displayCtrl 1500;

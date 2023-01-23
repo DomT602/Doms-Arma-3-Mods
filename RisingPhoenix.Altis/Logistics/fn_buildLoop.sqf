@@ -41,7 +41,7 @@ if (DT_buildAction > 0 || {!alive player || {!isNull objectParent player}}) then
 	_previewObject setPosATL _nextPreviewPos;
 	_previewObject setDir ((getDir player) + DT_buildRotation);
 
-	private _nearbyObjects = nearestObjects [_nextPreviewPos,["AllVehicles","House"],_collisionZone,true];
+	private _nearbyObjects = nearestObjects [_nextPreviewPos,["AllVehicles","House_F"],_collisionZone,true];
 	_nearbyObjects append (nearestTerrainObjects [_nextPreviewPos,["TREE","BUILDING"],_collisionZone,false,true]);
 
 	private _ignoreObjects = [
@@ -130,7 +130,7 @@ if (DT_buildAction > 0 || {!alive player || {!isNull objectParent player}}) then
 
 	private _collidingObjects = [];
 	{
-		if !(_x isKindOf "CAManBase" || {(typeOf _x) in _ignoreObjects || {_x isEqualTo _previewObject}}) then {
+		if !(_x isKindOf "Man" || {(typeOf _x) in _ignoreObjects || {_x isEqualTo _previewObject}}) then {
 			_collidingObjects pushBack _x;
 		};
 	} forEach _nearbyObjects;

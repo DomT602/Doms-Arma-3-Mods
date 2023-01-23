@@ -59,6 +59,7 @@ class DT_Core {
 	class Civilians {
 		file = "Civilians";
 		class askQuestion {};
+		class callToStop {};
 		class civilianHit {};
 		class civilianKilled {};
 		class civilianWalking {};
