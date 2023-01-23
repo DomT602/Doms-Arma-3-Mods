@@ -11,7 +11,7 @@
 		[_value] call DT_fnc_initViewDistance;
 	}
 ] call CBA_fnc_addSetting;
-[["STR_DT_modCategory","STR_DTVD_modSubCategory"],"openViewDistanceMenu","STR_DTVD_openMenu",{[] call DT_fnc_openViewDistanceMenu},"",[DIK_BACKSLASH,[false,false,false]]] call CBA_fnc_addKeybind;
+[["STR_DT_modCategory","STR_DTVD_modSubCategory"],"openViewDistanceMenu","STR_DTVD_openMenu",DT_fnc_openViewDistanceMenu,"",[DIK_BACKSLASH,[false,false,false]]] call CBA_fnc_addKeybind;
 
 [
 	"DT_automaticObjectSync",

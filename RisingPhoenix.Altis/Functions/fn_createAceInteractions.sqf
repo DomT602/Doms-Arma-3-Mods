@@ -1,3 +1,4 @@
+#include "\a3\ui_f\hpp\defineDIKCodes.inc"
 /*
 	File: fn_createAceInteractions.sqf
 	Author: Dom
@@ -143,11 +144,12 @@ private _talkCategory = [
 	},
 	{
 		alive _target &&
-		{side _target in [civilian,independent] &&
-		{!(_target getVariable ["ACE_isUnconscious",false])}}
+		{!(_target getVariable ["ACE_isUnconscious",false])}
 	}
 ] call ace_interact_menu_fnc_createAction;
-["CAManBase",0,["ACE_MainActions"],_talkCategory,true] call ace_interact_menu_fnc_addActionToClass;
+{
+	[_x,0,["ACE_MainActions"],_talkCategory] call ace_interact_menu_fnc_addActionToClass;
+} forEach getArray(missionConfigFile >> "Civilian_Setup" >> "civilianTypes");
 
 private _stopCategory = [
 	"stopCategory",
@@ -159,3 +161,5 @@ private _stopCategory = [
 	}
 ] call ace_interact_menu_fnc_createAction;
 [player,1,["ACE_SelfActions"],_stopCategory] call ace_interact_menu_fnc_addActionToObject;
+
+[["Operation Rising Phoenix","Interaction"],"callStop","Call out 'Stop'",DT_fnc_callToStop,"",[DIK_5,[false,false,false]]] call CBA_fnc_addKeybind;

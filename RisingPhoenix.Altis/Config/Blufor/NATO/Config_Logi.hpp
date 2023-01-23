@@ -41,6 +41,8 @@ class Logi_Setup {
 		"B_Heli_Transport_03_F",
 		"B_Heli_Transport_01_F",
 
+		"B_Heli_Attack_01_dynamicLoadout_F",
+
 		"B_T_VTOL_01_infantry_F",
 		"B_T_VTOL_01_vehicle_F",
 		"B_T_VTOL_01_armed_F",

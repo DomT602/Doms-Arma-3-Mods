@@ -4,7 +4,7 @@
 	Description: Calculates enemy squads on player count and chosen modifier
 */
 
-private _playerCount = count playableUnits;
+private _playerCount = (count playableUnits) max 1;
 private _difficultyModifier = paramsArray select 0;
 
 private _infantryCount = ceil ((_playerCount / 4) * _difficultyModifier);

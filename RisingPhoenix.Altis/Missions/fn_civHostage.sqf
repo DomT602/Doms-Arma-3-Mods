@@ -25,7 +25,7 @@ _marker setMarkerSize [300,300];
 DT_missionDetails pushBack _taskAndMarkerVar;
 publicVariable "DT_missionDetails";
 
-private _nearBuildings = [_townCentre,500] call DT_fnc_getBuildings;
+private _nearBuildings = [_townCentre,300] call DT_fnc_getBuildings;
 private _randomBuildingPositions = (selectRandom _nearBuildings) buildingPos -1;
 private _spawnPosition = selectRandom _randomBuildingPositions;
 
