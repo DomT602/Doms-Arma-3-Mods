@@ -11,7 +11,7 @@ class DT_supportMenu : RscDisplayTeamSwitch
 		{
 			text = "Support Menu";
 		};
-		class RoleList : RscTree
+		class SupportList : RscTree
 		{
 			idc = 1500;
 			onTreeSelChanged = "_this call DT_fnc_onSupportMenuTvChange;";
@@ -20,10 +20,9 @@ class DT_supportMenu : RscDisplayTeamSwitch
 			w = "15 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			h = "20.4 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
-		class RoleInformationControlGroup: RscMapControl
+		class SupportInformationControlGroup: RscMapControl
 		{
 			idc = 1205;
-
 			h = 20.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25);
 			w = 22.5 * (((safezoneW / safezoneH) min 1.2) / 40);
 			x = 16.5 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX + (safezoneW - ((safezoneW / safezoneH) min 1.2))/2);
@@ -34,7 +33,7 @@ class DT_supportMenu : RscDisplayTeamSwitch
 		{
 			text = "$STR_DISP_CANCEL";
 		};
-		class SelectRoleBtn : CA_ButtonContinue
+		class SelectSupportBtn : CA_ButtonContinue
 		{
 			idc = 2400;
 			text = "Select";

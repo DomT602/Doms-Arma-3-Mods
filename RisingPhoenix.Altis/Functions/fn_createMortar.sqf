@@ -9,7 +9,7 @@ params [
 ];
 
 private _mortarClass = getText(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforMortar");
-private _spawnPos = [_pos,10,_radius,3,0,1,0] call BIS_fnc_findSafePos;
+private _spawnPos = [_pos,10,_radius,3,0,0.5,0] call BIS_fnc_findSafePos;
 
 private _mortar = createVehicle [_mortarClass,_spawnPos];
 

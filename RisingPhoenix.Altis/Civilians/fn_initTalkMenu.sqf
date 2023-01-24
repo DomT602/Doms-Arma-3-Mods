@@ -45,7 +45,7 @@ if (captive _unit) then {
 		_questionBox lbSetValue [_index,_baseIndex + _forEachIndex];
 	} forEach _interrogationQuestions;
 
-	_restrainButton ctrlSetText "UNRESTRAIN";
+	_restrainButton ctrlSetText localize "STR_ACE_Captives_ReleaseCaptive";
 	_restrainButton ctrlSetEventHandler ["buttonClick","[DT_talkingTarget,false,player] remoteExecCall ['ACE_captives_fnc_setHandcuffed',DT_talkingTarget]; closeDialog 0"];
 } else {
 	(_display displayCtrl 2402) ctrlEnable false;

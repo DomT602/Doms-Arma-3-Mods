@@ -39,7 +39,7 @@ private _action = [
 		] call ace_common_fnc_progressBar;
 	},
 	{
-		alive _target && {!(_target getVariable ["defused",false])}
+		!(_target getVariable ["defused",false])
 	},nil,nil,nil,5
 ] call ace_interact_menu_fnc_createAction;
 [_object,0,["ACE_MainActions"],_action] call ace_interact_menu_fnc_addActionToObject;

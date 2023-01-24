@@ -11,7 +11,7 @@ params [
 private _statics = getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforStatics");
 private _staticClass = selectRandom _statics;
 private _spawnPos = [_pos,10,_radius,5,0,0.15,0] call BIS_fnc_findSafePos;
-if (_spawnPos isEqualTo []) exitWith {}; //no pos found
+if (_spawnPos isEqualTo []) exitWith {};
 
 private _static = createVehicle [_staticClass,_spawnPos];
 private _dirToTarget = _static getDir _pos;

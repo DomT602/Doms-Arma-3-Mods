@@ -53,7 +53,7 @@ if (DT_ambientCivHandle isEqualTo -1) then {
 				} else {
 					if (playableUnits isEqualTo []) exitWith {};
 					private _currentPos = getPosATL _unit;
-					if (_lastPos distance _currentPos < 1 && {[_vehicle] call DT_fnc_areaIsClear}) then { //we are stuck & no players nearby?
+					if (_lastPos distance _currentPos < 1 && {[_vehicle] call DT_fnc_areaIsClear}) then {
 						private _locations = DT_civLocations select {!(_x in DT_activeCivLocations)};
 						private _nearRoads = (selectRandom _locations) nearRoads 500;
 						private _spawnPos = getPosATL (selectRandom _nearRoads);
@@ -79,7 +79,7 @@ if (DT_ambientCivHandle isEqualTo -1) then {
 							_waypoint setWaypointBehaviour "SAFE";
 							_waypoint setWaypointSpeed "LIMITED";
 							_waypoint setWaypointCompletionRadius 30;
-							_waypoint setWayPointStatements ["true","deleteWaypoint [group this,currentWaypoint (group this)]"]; //clear waypoints
+							_waypoint setWayPointStatements ["true","deleteWaypoint [group this,currentWaypoint (group this)]"];
 						} else {
 							if (!isNull _vehicle && {fuel _vehicle < 0.1}) then {
 								[_vehicle,1] remoteExecCall ["setFuel",_vehicle];

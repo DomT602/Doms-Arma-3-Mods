@@ -34,7 +34,7 @@ class DT_talkMenu {
 		class RscButtonMenu_2400: DT_RscButtonGeneral
 		{
 			idc = 2400;
-			text = "ASK"; //--- ToDo: Localize;
+			text = "Ask"; //--- ToDo: Localize;
 			onButtonClick = "[DT_talkingTarget,lbCurSel 1500] call DT_fnc_askQuestion";
 			x = 0.474219 * safezoneW + safezoneX;
 			y = 0.511 * safezoneH + safezoneY;
@@ -44,7 +44,7 @@ class DT_talkMenu {
 		class RscButtonMenu_2401: DT_RscButtonGeneral
 		{
 			idc = 2401;
-			text = "RESTRAIN"; //--- ToDo: Localize;
+			text = "$STR_ACE_Captives_CableTie";
 			x = 0.474219 * safezoneW + safezoneX;
 			y = 0.544 * safezoneH + safezoneY;
 			w = 0.165 * safezoneW;
@@ -53,7 +53,7 @@ class DT_talkMenu {
 		class RscButtonMenu_2402: DT_RscButtonGeneral
 		{
 			idc = 2402;
-			text = "SEARCH"; //--- ToDo: Localize;
+			text = "$STR_3DEN_DISPLAY3DEN_MENUBAR_SEARCH_TEXT";
 			onButtonClick = "[DT_talkingTarget] remoteExecCall ['DT_fnc_patDown',DT_talkingTarget]; closeDialog 0";
 			x = 0.474219 * safezoneW + safezoneX;
 			y = 0.577 * safezoneH + safezoneY;
@@ -63,7 +63,7 @@ class DT_talkMenu {
 		class RscButtonMenu_2403: DT_RscButtonGeneral
 		{
 			idc = 2403;
-			text = "MEDICAL"; //--- ToDo: Localize;
+			text = "$STR_A3_CFGCHAINOFCOMMAND_TYPES_MEDICAL_NAMENEUTRAL";
 			onButtonClick = " [{[_this] call ace_medical_gui_fnc_openMenu},DT_talkingTarget,0.1] call CBA_fnc_waitAndExecute; closeDialog 0";
 			x = 0.474219 * safezoneW + safezoneX;
 			y = 0.61 * safezoneH + safezoneY;
@@ -73,7 +73,7 @@ class DT_talkMenu {
 		class RscButtonMenu_2404: DT_RscButtonGeneral
 		{
 			idc = 2404;
-			text = "CLOSE"; //--- ToDo: Localize;
+			text = "$STR_DISP_CLOSE";
 			onButtonClick = "closeDialog 0";
 			x = 0.474219 * safezoneW + safezoneX;
 			y = 0.643 * safezoneH + safezoneY;

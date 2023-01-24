@@ -42,7 +42,7 @@ if (_action isEqualTo "mortar") then {
 		[
 			{
 				params ["_pos","_type"];
-				private _vehicle = createVehicle [_type,_pos,[],10];
+				private _vehicle = createVehicle [_type,_pos,[],8];
 				if ("F_40mm" in _type) then {
 					_vehicle setVelocity [wind select 0,wind select 1,30];
 				};

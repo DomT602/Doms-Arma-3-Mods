@@ -5,7 +5,7 @@
 */
 
 private _halfWorldSize = worldSize / 2;
-private _spawnPos = [[_halfWorldSize,_halfWorldSize],0,-1,25,0,0.3,0] call BIS_fnc_findSafePos;
+private _spawnPos = [[_halfWorldSize,_halfWorldSize],0,-1,25,0,0.25,0] call BIS_fnc_findSafePos;
 
 private _taskAndMarkerVar = "destroyAA";
 private _marker = createMarker [_taskAndMarkerVar,_spawnPos];

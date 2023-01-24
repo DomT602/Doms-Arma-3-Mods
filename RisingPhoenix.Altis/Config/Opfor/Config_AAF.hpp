@@ -58,7 +58,9 @@ class AAF {
 	opforMortar = "I_Mortar_01_F";
 	opforStatics[] = { //HMGs, AT etc
 		"I_HMG_01_high_F",
-		"I_GMG_01_high_F"
+		"I_GMG_01_high_F",
+		"I_static_AA_F",
+		"I_static_AT_F"
 	};
 
 	//if the vehicle does not belong to the faction naturally, enclose in {} and add ,true

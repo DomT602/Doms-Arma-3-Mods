@@ -38,7 +38,7 @@ private _objectives = [];
 	_objects pushBack _object;
 
 	if (_class isEqualTo "Land_Bomb_Trolley_01_F") then {
-		[_object] remoteExecCall ["DT_fnc_rigToExplode",0,_object]; //Bo_GBU12_LGB
+		[_object] remoteExecCall ["DT_fnc_rigToExplode",0,_object];
 		_objectives pushBack _object;
 	} else {
 		if (_class in ["Land_HelipadCircle_F","Land_HelipadSquare_F","Land_HelipadRescue_F"]) then {

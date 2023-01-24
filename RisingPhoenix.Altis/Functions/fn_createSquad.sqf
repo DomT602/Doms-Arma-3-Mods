@@ -26,7 +26,10 @@ if (_ambushChance > random 100) then {
 
 		private _target = _firer;
 		if !(isPlayer _firer) then {
-			_target = _unit findNearestEnemy _unit;
+			private _nearestEnemy = _unit findNearestEnemy _unit;
+			if !(isNull _target) then {
+				_target = _nearestEnemy;
+			};
 		};
 
 		private _timeDelay = paramsArray select 10;

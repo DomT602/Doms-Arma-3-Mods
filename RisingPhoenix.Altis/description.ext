@@ -153,14 +153,14 @@ class Params
 	};
 	class opforFaction {
 		title = "Opfor Faction";
-		texts[] = {"CSAT","AAF"};
-		values[] = {0,1};
+		texts[] = {"CSAT","AAF","NATO"};
+		values[] = {0,1,2};
 		default = 0;
 	};
 	class bluforFaction {
 		title = "Blufor Faction";
-		texts[] = {"CTRG","NATO"};
-		values[] = {0,1};
+		texts[] = {"CTRG","NATO","CSAT"};
+		values[] = {0,1,2};
 		default = 0;
 	};
 };

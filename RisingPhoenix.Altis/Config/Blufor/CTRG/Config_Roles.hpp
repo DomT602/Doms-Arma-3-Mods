@@ -33,7 +33,7 @@ class Common_Arsenal {
 
 		"ACE_RangeTable_82mm", "ACE_artilleryTable", "ACE_RangeCard", "ACE_Tripod", "ACE_ATragMX", "ACE_SpareBarrel", "ACE_SpottingScope", "ACE_Kestrel4500",
 
-		"ItemMap","ItemCompass", "ItemWatch", "ItemGPS", "ACE_Altimeter", "ACE_MapTools", "ACE_CableTie", "ACE_EarPlugs", "ACE_microDAGR", "ACE_DAGR", "acc_flashlight_pistol",
+		"ItemMap","ItemCompass", "ItemWatch", "ItemGPS", "ACE_Altimeter", "ACE_MapTools", "ACE_CableTie", "ACE_EarPlugs", "ACE_microDAGR", "ACE_DAGR",
 
 		"ToolKit", "ACE_DefusalKit","ACE_wirecutter", "ACE_EntrenchingTool", "ACE_Clacker", "ACE_M26_Clacker", "MineDetector", "ACE_SpraypaintRed", "ACE_SpraypaintGreen", "ACE_SpraypaintBlue", "ACE_SpraypaintBlack",
 		"ACE_rope12", "ACE_rope15", "ACE_rope18", "ACE_rope27", "ACE_rope36",
@@ -185,7 +185,6 @@ class Common_Arsenal {
 		"acc_flashlight",
 		"acc_flashlight_smg_01",
 		"acc_esd_01_flashlight",
-		"acc_flashlight_pistol",
 		"acc_pointer_IR",
 		"ACE_acc_pointer_green",
 		"ACE_muzzle_mzls_H",
@@ -263,8 +262,6 @@ class Common_Arsenal {
 		"U_B_CTRG_Soldier_urb_3_F",
 		"U_B_CTRG_Soldier_urb_2_F",
 		"U_B_HeliPilotCoveralls",
-		"U_B_Wetsuit",
-		"U_B_PilotCoveralls",
 		"U_B_FullGhillie_ard",
 		"U_B_T_FullGhillie_tna_F",
 		"U_B_FullGhillie_lsh",
@@ -278,7 +275,6 @@ class Common_Arsenal {
 		"V_PlateCarrier1_blk",
 		"V_PlateCarrier2_blk",
 		"V_PlateCarrier2_rgr_noflag_F",
-		"V_RebreatherB",
 
 		"G_Bandanna_beast",
 		"G_Bandanna_blk",
@@ -289,7 +285,6 @@ class Common_Arsenal {
 		"G_Bandanna_tan",
 		"G_Combat",
 		"G_Combat_Goggles_tna_F",
-		"G_B_Diving",
 		"G_EyeProtectors_F",
 		"G_EyeProtectors_Earpiece_F",
 		"G_Respirator_white_F",
@@ -312,16 +307,7 @@ class Common_Arsenal {
 		"ACE_NVG_Gen4_Black",
 
 		"Binocular",
-		"Laserdesignator",
-		"Laserdesignator_03",
-		"ACE_Vector",
-		"ItemMap",
-		"ItemCompass",
 		"TFAR_anprc152",
-		"ACE_Altimeter",
-		"ItemWatch",
-		"ItemGPS",
-		"B_UavTerminal",
 
 		"B_TacticalPack_blk",
 		"B_TacticalPack_rgr",

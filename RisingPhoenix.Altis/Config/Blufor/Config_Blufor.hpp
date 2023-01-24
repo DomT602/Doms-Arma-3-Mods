@@ -1,7 +1,16 @@
+class CSAT {
+	#include "CSAT\Config_Groups.hpp"
+
+	//format: {Title,ActionCode,Cooldown in seconds}
+	supports[] = {
+		{"Supply Drop","supplyDrop",900},
+		{"Mortar Support","mortar",45}
+	};
+};
+
 class CTRG {
 	#include "CTRG\Config_Groups.hpp"
 
-	//format: {Title,ActionCode,Cooldown in seconds}
 	supports[] = {
 		{"Supply Drop","supplyDrop",900},
 		{"Mortar Support","mortar",45}

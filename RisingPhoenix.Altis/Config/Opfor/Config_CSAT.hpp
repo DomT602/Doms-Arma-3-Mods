@@ -58,7 +58,9 @@ class CSAT {
 	opforMortar = "O_Mortar_01_F";
 	opforStatics[] = { //HMGs, AT etc
 		"O_HMG_01_high_F",
-		"O_GMG_01_high_F"
+		"O_GMG_01_high_F",
+		"O_static_AA_F",
+		"O_static_AT_F"
 	};
 
 	//if the vehicle does not belong to the faction naturally, enclose in {} and add ,true

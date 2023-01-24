@@ -11,7 +11,7 @@ class DT_logiMenu : RscDisplayTeamSwitch
 		{
 			text = "Logistics Menu";
 		};
-		class RoleList : RscTree
+		class CrateList : RscTree
 		{
 			idc = 1500;
 			onTreeSelChanged = "_this call DT_fnc_supplyCrateTvChange;";
@@ -20,7 +20,7 @@ class DT_logiMenu : RscDisplayTeamSwitch
 			w = "15 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			h = "20.4 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
-		class RoleInformationControlGroup: RscControlsGroup
+		class CrateInformationControlGroup: RscControlsGroup
 		{
 			delete HScrollBar;
 

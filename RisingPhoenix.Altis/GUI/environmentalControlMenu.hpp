@@ -27,7 +27,7 @@ class DT_environmentControlMenu
 		class Title: RscText
 		{
 			idc = 1002;
-			text = "Change Environment"; //--- ToDo: Localize;
+			text = "$STR_A3_CFGEDITORCATEGORIES_EDCAT_ENVIRONMENT0";
 			x = 0.441219 * safezoneW + safezoneX;
 			y = 0.291 * safezoneH + safezoneY;
 			w = 0.118594 * safezoneW;
@@ -47,7 +47,7 @@ class DT_environmentControlMenu
 		{
 			idc = 2400;
 			onButtonClick = "[] call DT_fnc_updateEnvironment;";
-			text = "Update"; //--- ToDo: Localize;
+			text = "$STR_A3_RSCDISPLAYPUBLISHMISSION_BUTTONDOUPDATE";
 			x = 0.500516 * safezoneW + safezoneX;
 			y = 0.6914 * safezoneH + safezoneY;
 			w = 0.059297 * safezoneW;
@@ -56,7 +56,7 @@ class DT_environmentControlMenu
 		class RscText_1003: RscText
 		{
 			idc = -1;
-			text = "Time Skip"; //--- ToDo: Localize;
+			text = "$STR_A3_CFGVEHICLES_MODULEDATE_F_ARGUMENTS_SKIPTIME_0";
 			x = 0.443281 * safezoneW + safezoneX;
 			y = 0.324 * safezoneH + safezoneY;
 			w = 0.0567187 * safezoneW;
@@ -115,7 +115,7 @@ class DT_environmentControlMenu
 		class RscEdit_1400: RscEdit
 		{
 			idc = 1400;
-			text = "0"; //--- ToDo: Localize;
+			text = "0";
 			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.324 * safezoneH + safezoneY;
 			w = 0.0464063 * safezoneW;

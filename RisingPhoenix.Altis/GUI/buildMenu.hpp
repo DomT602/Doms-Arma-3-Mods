@@ -26,7 +26,7 @@ class DT_buildMenu
 		class RscButtonMenu_2400: DT_RscButtonGeneral
 		{
 			idc = 2400;
-			text = "Build Item"; //--- ToDo: Localize;
+			text = "$STR_A3_RSCDISPLAYDYNAMICGROUPS_BUTTON_CREATE";
 			onButtonClick="[] call DT_fnc_startBuild";
 			x = 0.536094 * safezoneW + safezoneX;
 			y = 0.764 * safezoneH + safezoneY;
@@ -36,7 +36,7 @@ class DT_buildMenu
 		class RscText_1000: RscText
 		{
 			idc = -1;
-			text = "Search:"; //--- ToDo: Localize;
+			text = "$STR_3DEN_DISPLAY3DEN_MENUBAR_SEARCH_TEXT";
 			x = 0.206094 * safezoneW + safezoneX;
 			y = 0.764 * safezoneH + safezoneY;
 			w = 0.04125 * safezoneW;
@@ -45,7 +45,6 @@ class DT_buildMenu
 		class RscStructuredText_1100: RscStructuredText
 		{
 			idc = 1100;
-			text = ""; //--- ToDo: Localize;
 			x = 0.536094 * safezoneW + safezoneX;
 			y = 0.214 * safezoneH + safezoneY;
 			w = 0.257813 * safezoneW;
