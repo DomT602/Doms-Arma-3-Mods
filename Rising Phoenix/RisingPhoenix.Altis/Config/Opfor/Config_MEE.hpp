@@ -74,10 +74,7 @@ class MEE {
 		"UK3CB_MEE_I_Datsun_Pkm",
 		"UK3CB_MEE_I_Hilux_Igla_Chair",
 		"UK3CB_MEE_I_Hilux_GMG",
-		"UK3CB_MEE_I_Hilux_BMP",
-		"UK3CB_MEE_I_Hilux_BTR",
 		"UK3CB_MEE_I_Hilux_Dshkm",
-		"UK3CB_MEE_I_Hilux_Vulcan_Front",
 		"UK3CB_MEE_I_Hilux_M2",
 		"UK3CB_MEE_I_Hilux_Metis",
 		"UK3CB_MEE_I_Hilux_Pkm",
@@ -98,7 +95,9 @@ class MEE {
 	opforMediumVehicles[] = {
 		"UK3CB_MEE_I_BRDM2",
 		"UK3CB_MEE_I_BRDM2_ATGM",
-		"UK3CB_MEE_I_BRDM2_HQ"
+		"UK3CB_MEE_I_BRDM2_HQ",
+		"UK3CB_MEE_I_Hilux_BMP",
+		"UK3CB_MEE_I_Hilux_BTR",
 	};
 
 	opforHeavyVehicles[] = {
@@ -117,7 +116,8 @@ class MEE {
 	};
 
 	opforAttackHelicopters[] = {
-		"UK3CB_ADA_I_UH1H_M240"
+		{"UK3CB_ADA_I_UH1H_GUNSHIP",true},
+		{"UK3CB_ADA_B_UH1H_M240",true}
 	};
 
 	//CfgMagazines; https://community.bistudio.com/wiki/Arma_3:_CfgMagazines

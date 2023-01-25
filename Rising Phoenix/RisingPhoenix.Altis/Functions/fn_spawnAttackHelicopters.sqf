@@ -32,7 +32,7 @@ for "_i" from 1 to _count do {
 		(units _crew) joinSilent _group;
 	} else {
 		private _crewCount = [_className,false] call BIS_fnc_crewCount;
-		for "_i" from 1 to 2 do {
+		for "_i" from 1 to _crewCount do {
 			private _crewMember = [_group,east,_pilotClass,_helicopter] call DT_fnc_createUnit;
 			_crewMember moveInAny _helicopter;
 		};
