@@ -25,3 +25,12 @@ class NATO {
 		{"Mortar Support","mortar",45}
 	};
 };
+
+class AMF {
+	#include "AMF\Config_Groups.hpp"
+
+	supports[] = {
+		{"Supply Drop","supplyDrop",900},
+		{"Mortar Support","mortar",45}
+	};
+};

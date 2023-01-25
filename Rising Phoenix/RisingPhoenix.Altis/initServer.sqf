@@ -6,7 +6,8 @@
 DT_opforFaction = switch (paramsArray select 15) do {
 	case 0: {"CSAT"};
 	case 1: {"AAF"};
-	case 2: {"NATO"};	
+	case 2: {"NATO"};
+	case 3: {"MEE"};
 };
 publicVariable "DT_opforFaction";
 
@@ -14,6 +15,7 @@ DT_bluforFaction = switch (paramsArray select 16) do {
 	case 0: {"CTRG"};
 	case 1: {"NATO"};
 	case 2: {"CSAT"};
+	case 3: {"AMF"};
 };
 publicVariable "DT_bluforFaction";
 
