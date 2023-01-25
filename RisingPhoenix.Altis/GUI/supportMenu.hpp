@@ -20,7 +20,7 @@ class DT_supportMenu : RscDisplayTeamSwitch
 			w = "15 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			h = "20.4 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
-		class SupportInformationControlGroup: RscMapControl
+		class SupportMap: RscMapControl
 		{
 			idc = 1205;
 			h = 20.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25);

@@ -33,7 +33,7 @@ class DT_logiMenu : RscDisplayTeamSwitch
 
 			class Controls
 			{
-				class RoleInformation: RscStructuredText
+				class Information: RscStructuredText
 				{
 					idc = 1100;
 					text = "";

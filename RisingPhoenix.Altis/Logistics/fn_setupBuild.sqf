@@ -8,7 +8,7 @@ params [
 ];
 
 private _previewObject = _className createVehicleLocal [0,0,0];
-private _collisionZone = (boundingBox _previewObject select 2) max 3;
+private _collisionZone = boundingBox _previewObject select 2;
 
 _previewObject allowDamage false;
 _previewObject enableSimulation false;

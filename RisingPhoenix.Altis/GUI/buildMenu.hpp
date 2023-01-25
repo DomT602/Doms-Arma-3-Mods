@@ -1,66 +1,79 @@
-class DT_buildMenu
+class DT_buildMenu : RscDisplayTeamSwitch
 {
 	idd=9741;
 	name="DT_buildMenu";
 	movingEnable=0;
-	class controls
+	onLoad = "";
+	onUnload = "";
+	class controls : Controls
 	{
-		class RscPicture_1200: RscPicture
+		class Title : CA_TSTitle
 		{
-			idc = 1200;
-			text = "#(argb,8,8,3)color(0,0,0,0.75)";
-			x = 0.2 * safezoneW + safezoneX;
-			y = 0.2 * safezoneH + safezoneY;
-			w = 0.6 * safezoneW;
-			h = 0.6 * safezoneH;
+			text = "Build Menu";
 		};
-		class RscTree_1500: DT_RscTreeSearch
+		class RoleList : DT_RscTreeSearch
 		{
 			idc = 1500;
-			onTreeSelChanged="_this call DT_fnc_buildMenuTvChange";
-			x = 0.206094 * safezoneW + safezoneX;
-			y = 0.214 * safezoneH + safezoneY;
-			w = 0.324844 * safezoneW;
-			h = 0.539 * safezoneH;
+			onTreeSelChanged = "_this call DT_fnc_buildMenuTvChange;";
+			x = "1.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
+			y = "2.3 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
+			w = "15 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+			h = "19.4 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
-		class RscButtonMenu_2400: DT_RscButtonGeneral
+		class VehicleInformationControlGroup: RscControlsGroup
+		{
+			delete HScrollBar;
+
+			idc = 1205;
+
+			h = 20.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25);
+			w = 22.5 * (((safezoneW / safezoneH) min 1.2) / 40);
+			x = 16.5 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX + (safezoneW - ((safezoneW / safezoneH) min 1.2))/2);
+			y = 2.3 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2);
+
+			class Controls
+			{
+				class Information: RscStructuredText
+				{
+					idc = 1100;
+					text = "";
+					h = 20.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25);
+					w = 21.8 * (((safezoneW / safezoneH) min 1.2) / 40);
+					x = 0;
+					y = 0;
+
+					class Attributes {
+						align = "center";
+					};
+				};
+			};
+		};
+		class CancelBtn : CA_ButtonCancel
+		{
+			text = "$STR_DISP_CANCEL";
+		};
+		class SelectVehicleBtn : CA_ButtonContinue
 		{
 			idc = 2400;
 			text = "$STR_A3_RSCDISPLAYDYNAMICGROUPS_BUTTON_CREATE";
-			onButtonClick="[] call DT_fnc_startBuild";
-			x = 0.536094 * safezoneW + safezoneX;
-			y = 0.764 * safezoneH + safezoneY;
-			w = 0.257813 * safezoneW;
-			h = 0.022 * safezoneH;
+			onButtonClick = "[] call DT_fnc_startBuild;";
 		};
-		class RscText_1000: RscText
+		class SearchText: RscText
 		{
 			idc = -1;
 			text = "$STR_3DEN_DISPLAY3DEN_MENUBAR_SEARCH_TEXT";
-			x = 0.206094 * safezoneW + safezoneX;
-			y = 0.764 * safezoneH + safezoneY;
-			w = 0.04125 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = "1.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
+			y = "21.7 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
+			w = "3 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
-		class RscStructuredText_1100: RscStructuredText
-		{
-			idc = 1100;
-			x = 0.536094 * safezoneW + safezoneX;
-			y = 0.214 * safezoneH + safezoneY;
-			w = 0.257813 * safezoneW;
-			h = 0.539 * safezoneH;
-
-			class Attributes {
-				align = "center";
-			};
-		};
-		class RscEdit_645: RscEdit
+		class TreeSearch: RscEdit
 		{
 			idc = 645;
-			x = 0.242187 * safezoneW + safezoneX;
-			y = 0.764 * safezoneH + safezoneY;
-			w = 0.28875 * safezoneW;
-			h = 0.022 * safezoneH;
+			x = "4.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
+			y = "21.7 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
+			w = "12 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		};
 	};
 };
