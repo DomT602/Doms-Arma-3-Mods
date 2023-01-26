@@ -38,7 +38,7 @@ if (DT_ambientOpforHandle isEqualTo -1) then {
 					private _currentPos = getPosATL _vehicle;
 					if (_lastPos distance _currentPos < 1 && {[_vehicle] call DT_fnc_areaIsClear}) then {
 						private _locations = DT_civLocations select {!(_x in DT_activeCivLocations)};
-						private _nearRoads = (selectRandom _locations) nearRoads 500;
+						private _nearRoads = (selectRandom _locations) nearRoads 750;
 						private _spawnPos = getPosATL (selectRandom _nearRoads);
 						
 						_vehicle setPosATL _spawnPos;
@@ -53,7 +53,7 @@ if (DT_ambientOpforHandle isEqualTo -1) then {
 						if (waypoints _group isEqualTo []) then {
 							private _position = [];
 							while {_position isEqualTo []} do {
-								private _nearRoads = (selectRandom DT_civLocations) nearRoads 500;
+								private _nearRoads = (selectRandom DT_civLocations) nearRoads 750;
 								if (_nearRoads isNotEqualTo []) then {
 									_position = getPosATL (selectRandom _nearRoads);
 								};

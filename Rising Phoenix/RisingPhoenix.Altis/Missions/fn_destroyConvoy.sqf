@@ -9,7 +9,7 @@ params [
 
 private _townObject = [_taskGiver] call DT_fnc_getClosestTown;
 private _townCentre = getPosASL _townObject;
-private _townName = _townObject getVariable ["townName",""];
+private _townName = _townObject getVariable ["DT_townName",""];
 private _taskAndMarkerVar = format ["destroyConvoy%1",_townName];
 
 private _marker = createMarker [_taskAndMarkerVar,_townCentre];

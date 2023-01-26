@@ -9,10 +9,15 @@ waitUntil {missionNamespace getVariable ["DT_serverReady",false] && {!isNull pla
 player addEventHandler ["InventoryOpened",DT_fnc_onInventoryOpened];
 player addEventHandler ["Respawn",DT_fnc_onRespawn];
 addMissionEventHandler ["Map",DT_fnc_createBluforMarkers];
+if (DT_isTFAREnabled) then {
+	["radioSetup","OnRadiosReceived",DT_fnc_initSwRadios] call TFAR_fnc_addEventHandler;
+};
 
 ["ace_arsenal_displayClosed",{
-	DT_savedLoadout = [player] call CBA_fnc_getLoadout;
+	DT_savedLoadout = [player] call CBA_fnc_getLoadout;	
 	["Loadout saved."] call DT_fnc_notify;
+
+	if (DT_isTFAREnabled && {call TFAR_fnc_haveLRRadio}) then {call DT_fnc_initLrRadio};
 }] call CBA_fnc_addEventHandler;
 
 ["ace_treatmentSucceded", {
@@ -35,7 +40,10 @@ addMissionEventHandler ["Map",DT_fnc_createBluforMarkers];
 
 [] call DT_fnc_createAceInteractions;
 
-[player] remoteExecCall ["DT_fnc_assignZeus",2];
+DT_isZeus = (getPlayerUID player) in (getArray(missionConfigFile >> "zeusUIDs"));
+if (DT_isZeus) then { 
+	[player] remoteExecCall ["DT_fnc_assignZeus",2];
+};
 
 player setVehiclePosition [getMarkerPos "respawn_west",[],5];
 [] call DT_fnc_initGroupMenu;

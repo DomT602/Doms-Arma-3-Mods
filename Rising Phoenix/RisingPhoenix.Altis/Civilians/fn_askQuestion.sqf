@@ -11,7 +11,7 @@ params [
 private _unitPos = getPosASL _unit;
 private _karma = [_unitPos] call DT_fnc_getKarma;
 _karma = round (_karma / 20); //value between -5 and 5
-private _individualKarma = _unit getVariable ["individualKarma",0];
+private _individualKarma = _unit getVariable ["DT_individualKarma",0];
 _karma = _karma + _individualKarma;
 
 private _isCaptive = captive _unit;
@@ -32,8 +32,8 @@ private _alreadyAnsweredStarters = [
 	"You already asked me that, "
 ];
 
-private _questionsAsked = _unit getVariable ["questionsAsked",[]];
-private _questionAnswers = _unit getVariable ["questionAnswers",[]];
+private _questionsAsked = _unit getVariable ["DT_questionsAsked",[]];
+private _questionAnswers = _unit getVariable ["DT_questionAnswers",[]];
 private _response = "";
 private _alreadyAsked = _questionIndex in _questionsAsked;
 
@@ -45,7 +45,7 @@ if (_alreadyAsked) exitWith {
 };
 
 _questionsAsked pushBack _questionIndex;
-_unit setVariable ["questionsAsked",_questionsAsked,true];
+_unit setVariable ["DT_questionsAsked",_questionsAsked,true];
 
 private _fnc_enemyReport = {
 	params ["_distance","_direction"];
@@ -276,5 +276,5 @@ switch _questionIndex do {
 };
 
 _questionAnswers pushBack _response;
-_unit setVariable ["questionAnswers",_questionAnswers,true];
+_unit setVariable ["DT_questionAnswers",_questionAnswers,true];
 (_display displayCtrl 1100) ctrlSetStructuredText parseText _response;

@@ -24,7 +24,7 @@ class commander {
 		"AMF_FELIN_05_CE","G_Shades_Black",
 		{"ACE_Vector","","","",{},{},""},
 		{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch",""}
-};
+	};
 
 	arsenalItems[] = {
 		

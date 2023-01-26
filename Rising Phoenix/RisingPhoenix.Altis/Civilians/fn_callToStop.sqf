@@ -14,7 +14,7 @@ _karma = round (_karma / 20); //value between -5 and 5
 	if (side _x isEqualTo east) then {
 		[_x,player] remoteExecCall ["reveal",_x];
 	} else {
-		private _individualKarma = (_x getVariable ["individualKarma",0]) + _karma;
+		private _individualKarma = (_x getVariable ["DT_individualKarma",0]) + _karma;
 		if (_individualKarma > -5) then {
 			[_x,0] remoteExecCall ["forceSpeed",_x];
 			[_x,player] remoteExecCall ["doWatch",_x];
@@ -23,7 +23,7 @@ _karma = round (_karma / 20); //value between -5 and 5
 			[
 				{
 					params ["_unit"];
-					if (isNull (_unit getVariable ["currentTalker",objNull])) then {
+					if (isNull (_unit getVariable ["DT_currentTalker",objNull])) then {
 						_unit forceSpeed -1;
 						_unit doWatch objNull;
 					};

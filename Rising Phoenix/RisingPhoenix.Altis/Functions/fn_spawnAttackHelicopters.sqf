@@ -7,7 +7,7 @@ params [
 	["_target",objNull,[objNull,[]]],
 	["_count",1,[0]]
 ];
-if (missionNamespace getVariable ["opforAirDisabled",false]) exitWith {};
+if (missionNamespace getVariable ["DT_opforAirDisabled",false]) exitWith {};
 
 private _airports = DT_airportLocations select {[_x select 0,1000] call DT_fnc_areaIsClear};
 if (_airports isEqualTo []) exitWith {};

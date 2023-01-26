@@ -9,7 +9,7 @@ params [
 
 if (_data isEqualType []) exitWith {
 	private _townObj = [_data] call DT_fnc_getClosestTown;
-	_townObj getVariable ["townKarma",0];
+	_townObj getVariable ["DT_townKarma",0];
 };
 
-_data getVariable ["townKarma",0];
+_data getVariable ["DT_townKarma",0];

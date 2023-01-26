@@ -10,7 +10,7 @@ params [
 private _oldPath = [];
 
 {
-	_x params ["_groupName","_roles","_conditions","_group","_units"];
+	_x params ["","","","","_units"];
 	if (_unit in _units) exitWith {
 		private _unitIndex = _units find _unit;
 		_units set [_unitIndex,objNull];

@@ -26,14 +26,14 @@ _unit addEventHandler ["Hit",{
 		private _possibleTargets = playableUnits select {_unit distance2D _x < 50 && {civilian knowsAbout _x > 3.5}};
 		if (_possibleTargets isNotEqualTo []) then {
 			_possibleTargets params ["_target"];
-			if !(_unit getVariable ["suicideSetup",false]) then {
+			if !(_unit getVariable ["DT_suicideSetup",false]) then {
 				[_unit] call CBA_fnc_clearWaypoints;
 				_unit setBehaviour "CARELESS";
 				_unit setCombatMode "BLUE";
 				_unit setUnitPos "UP";
 				_unit disableAI "AUTOCOMBAT";
 				_unit setSpeedMode "FULL";
-				_unit setVariable ["suicideSetup",true];
+				_unit setVariable ["DT_suicideSetup",true];
 			};
 			if (_unit distance2D _target < 4) then {
 				private _bomb = createVehicle ["DemoCharge_Remote_Ammo_Scripted",_unit,[],0,"CAN_COLLIDE"];

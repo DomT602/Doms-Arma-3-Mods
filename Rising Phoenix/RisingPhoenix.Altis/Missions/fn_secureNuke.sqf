@@ -32,7 +32,7 @@ _nuke attachTo [_bunker,[1.5,0,-0.5]];
 [
 	{
 		params ["_nuke"];
-		_nuke getVariable ["defused",false]
+		_nuke getVariable ["DT_defused",false]
 	},
 	{
 		params ["_nuke","_missionVar"];

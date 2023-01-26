@@ -8,7 +8,7 @@ private _townNamespace = selectRandom _locations;
 
 private _townCentre = getPosASL _townNamespace;
 private _objectivePosition = [_townCentre,500,2500,15,0,0.2,0,[]] call BIS_fnc_findSafePos;
-private _townName = _townNamespace getVariable ["townName",""];
+private _townName = _townNamespace getVariable ["DT_townName",""];
 private _taskAndMarkerVar = format ["secureUAV%1",_townName];
 
 private _markerPos = [_objectivePosition,250] call CBA_fnc_randPos;
@@ -43,7 +43,7 @@ private _squads = [_objectivePosition,100,300] call DT_fnc_createPatrols;
 	{
 		params ["_uav","_missionVar","_objectivePosition","_squads","_craters"];
 
-		if (_uav getVariable ["intelDownloaded",false]) then {
+		if (_uav getVariable ["DT_intelDownloaded",false]) then {
 			[_missionVar,true] call DT_fnc_endMission;
 		} else {
 			[_missionVar,false] call DT_fnc_endMission;

@@ -20,7 +20,11 @@ if (_classData isEqualType []) then {
 private _spawnPos = _position;
 if (_radius isNotEqualTo 0) then {
 	private _nearRoads = _position nearRoads (_radius * 2);
-	_spawnPos = getPosATL (selectRandom _nearRoads);
+	if (_nearRoads isEqualTo []) then {
+		_spawnPos = [_position,0,_radius,10,0,0.4,0] call BIS_fnc_findSafePos;
+	} else {
+		_spawnPos = getPosATL (selectRandom _nearRoads);
+	};
 };
 
 private _vehicle = createVehicle [_className,_spawnPos];

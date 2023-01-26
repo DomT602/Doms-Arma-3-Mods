@@ -23,7 +23,7 @@ private _action = [
 				if ([player,"ToolKit"] call ace_common_fnc_hasItem || {[player,"ACE_DefusalKit"] call ace_common_fnc_hasItem}) then {_chance = _chance + 25};
 
 				if (_chance > random 100) then {
-					_nuke setVariable ["defused",true,true];
+					_nuke setVariable ["DT_defused",true,true];
 				} else {
 					["Defusing failed."] call DT_fnc_notify;
 				};
@@ -34,12 +34,12 @@ private _action = [
 			"Defusing",
 			{
 				params ["_nuke"];
-				!(_nuke getVariable ["defused",false])
+				!(_nuke getVariable ["DT_defused",false])
 			}
 		] call ace_common_fnc_progressBar;
 	},
 	{
-		!(_target getVariable ["defused",false])
+		!(_target getVariable ["DT_defused",false])
 	},nil,nil,nil,5
 ] call ace_interact_menu_fnc_createAction;
 [_object,0,["ACE_MainActions"],_action] call ace_interact_menu_fnc_addActionToObject;

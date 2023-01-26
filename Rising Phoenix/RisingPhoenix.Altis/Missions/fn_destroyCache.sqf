@@ -7,7 +7,7 @@ private _locations = DT_civLocations select {!(_x in DT_activeCivLocations)};
 private _townNamespace = selectRandom _locations;
 
 private _townCentre = getPosASL _townNamespace;
-private _townName = _townNamespace getVariable ["townName",""];
+private _townName = _townNamespace getVariable ["DT_townName",""];
 private _taskAndMarkerVar = format ["destroyCache%1",_townName];
 
 private _marker = createMarker [_taskAndMarkerVar,_townCentre];

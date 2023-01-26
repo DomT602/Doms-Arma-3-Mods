@@ -25,7 +25,7 @@ for "_i" from 1 to _count do {
 	private _karma = [_spawnPos] call DT_fnc_getKarma;
 	if (_karma < -25) then {
 		_vehicle addMagazineCargoGlobal ["DemoCharge_Remote_Mag",1];
-		_vehicle setVariable ["carBomb",true,true];
+		_vehicle setVariable ["DT_carBomb",true,true];
 	} else {
 		_driver addEventHandler ["Hit",DT_fnc_civilianHit];
 		_driver addEventHandler ["Killed",DT_fnc_civilianKilled];
@@ -55,7 +55,7 @@ if (DT_ambientCivHandle isEqualTo -1) then {
 					private _currentPos = getPosATL _unit;
 					if (_lastPos distance _currentPos < 1 && {[_vehicle] call DT_fnc_areaIsClear}) then {
 						private _locations = DT_civLocations select {!(_x in DT_activeCivLocations)};
-						private _nearRoads = (selectRandom _locations) nearRoads 500;
+						private _nearRoads = (selectRandom _locations) nearRoads 750;
 						private _spawnPos = getPosATL (selectRandom _nearRoads);
 
 						_vehicle setPosATL _spawnPos;
@@ -68,7 +68,7 @@ if (DT_ambientCivHandle isEqualTo -1) then {
 						if (waypoints _group isEqualTo []) then {
 							private _position = [];
 							while {_position isEqualTo []} do {
-								private _nearRoads = (selectRandom DT_civLocations) nearRoads 500;
+								private _nearRoads = (selectRandom DT_civLocations) nearRoads 750;
 								if (_nearRoads isNotEqualTo []) then {
 									_position = getPosATL (selectRandom _nearRoads);
 								};

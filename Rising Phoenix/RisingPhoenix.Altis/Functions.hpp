@@ -6,6 +6,8 @@ class DT_Core {
 		class assignPlayer {};
 		class handleDisconnect {};
 		class initGroupMenu {};
+		class initLrRadio {};
+		class initSwRadios {};
 		class onGroupMenuTvSelectChange {};
 		class onRespawn {};
 		class removeFromGroup {};

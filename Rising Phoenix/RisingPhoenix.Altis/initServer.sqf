@@ -3,6 +3,11 @@
 	Author: Dom
 	Requires: Start the server up
 */
+DT_isLambsEnabled = isClass(configFile >> "CfgPatches" >> "lambs_main");
+DT_isZenEnabled = isClass(configFile >> "CfgPatches" >> "ZEN_main");
+DT_isTFAREnabled = isClass (configFile >> "CfgPatches" >> "task_force_radio");
+publicVariable "DT_isTFAREnabled";
+
 DT_opforFaction = switch (paramsArray select 15) do {
 	case 0: {"CSAT"};
 	case 1: {"AAF"};
@@ -20,24 +25,52 @@ DT_bluforFaction = switch (paramsArray select 16) do {
 publicVariable "DT_bluforFaction";
 
 DT_dynamicGroups = getArray(missionConfigFile >> DT_bluforFaction >> "Dynamic_Groups" >> "group_setup");
+if (DT_isTFAREnabled) then {
+	DT_swRadioFrequencies = [[],[]];
+	DT_lrRadioFrequencies = [[],[]];
+};
 {
-	_x params ["","_roles"];
-	_x pushBack grpNull;
+	_x params ["_groupName","_roles","","_swFreq","_lrFreq"];
+
+	if (DT_isTFAREnabled) then {
+		DT_swRadioFrequencies params ["_swFreqs","_swGroups"];
+		private _freqIndex = _swFreqs find _swFreq;
+		if (_freqIndex isNotEqualTo -1) then {
+			(_swGroups select _freqIndex) pushBack _groupName;
+		} else {
+			_swFreqs pushBack _swFreq;
+			_swGroups pushBack [_groupName];
+		};
+
+		DT_lrRadioFrequencies params ["_lrFreqs","_lrGroups"];
+		private _freqIndex = _lrFreqs find _lrFreq;
+		if (_freqIndex isNotEqualTo -1) then {
+			(_lrGroups select _freqIndex) pushBack _groupName;
+		} else {
+			_lrFreqs pushBack _lrFreq;
+			_lrGroups pushBack [_groupName];
+		};
+	};
+	_x deleteAt 4;
+	_x deleteAt 3;
 
 	private _roleCount = count _roles;
 	private _playerArray = [];
 	for "_i" from 1 to _roleCount do {
 		_playerArray pushBack objNull;
 	};
+
+	_x pushBack grpNull;
 	_x pushBack _playerArray;
 } forEach DT_dynamicGroups;
+if (DT_isTFAREnabled) then {
+	publicVariable "DT_swRadioFrequencies";
+	publicVariable "DT_lrRadioFrequencies";
+};
 
 [DT_dynamicGroups] remoteExecCall ["DT_fnc_updateGroups",-2,"DT_DG_JIP"];
 
 addMissionEventHandler ["HandleDisconnect",{DT_fnc_handleDisconnect}];
-
-DT_isLambsEnabled = isClass(configFile >> "CfgPatches" >> "lambs_main");
-DT_isZenEnabled = isClass(configFile >> "CfgPatches" >> "ZEN_main");
 
 call DT_fnc_setupLocations;
 

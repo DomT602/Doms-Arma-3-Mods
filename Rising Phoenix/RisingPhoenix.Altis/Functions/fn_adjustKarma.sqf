@@ -14,4 +14,4 @@ if !(_data in DT_civLocations) then {
 
 private _currentKarma = [_data] call DT_fnc_getKarma;
 private _newKarma = _currentKarma + _value;
-_data setVariable ["townKarma",_newKarma,true];
+_data setVariable ["DT_townKarma",_newKarma,true];

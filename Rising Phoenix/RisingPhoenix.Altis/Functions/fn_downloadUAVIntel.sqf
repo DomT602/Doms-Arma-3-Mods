@@ -17,7 +17,7 @@ private _action = [
 			_target,
 			{
 				params ["_uav"];
-				_uav setVariable ["intelDownloaded",true,true];
+				_uav setVariable ["DT_intelDownloaded",true,true];
 				["The intelligence was downloaded, now destroy the UAV to prevent it being taken by the enemy."] remoteExecCall ["DT_fnc_notify",0];
 			},
 			{
@@ -26,12 +26,12 @@ private _action = [
 			"Downloading",
 			{
 				params ["_uav"];
-				!(_uav getVariable ["intelDownloaded",false])
+				!(_uav getVariable ["DT_intelDownloaded",false])
 			}
 		] call ace_common_fnc_progressBar;
 	},
 	{
-		alive _target && {!(_target getVariable ["intelDownloaded",false])}
+		alive _target && {!(_target getVariable ["DT_intelDownloaded",false])}
 	}
 ] call ace_interact_menu_fnc_createAction;
 [_object,0,["ACE_MainActions"],_action] call ace_interact_menu_fnc_addActionToObject;

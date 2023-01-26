@@ -30,6 +30,7 @@ minPlayerDistance = 1000;
 
 disabledAI = 1;
 enableDebugConsole[] = {"76561198071007604"};
+zeusUIDs[] = {"76561198071007604"}; //list UIDs for access to zeus here
 unsafeCVL = 1;
 joinUnassigned = 0;
 

@@ -47,7 +47,7 @@ for "_i" from 1 to _civilianCount do {
 			};
 		};
 
-		_civilian setVariable ["individualKarma",-1,true];
+		_civilian setVariable ["DT_individualKarma",-1,true];
 	} else {
 		_civilian addEventHandler ["Hit",DT_fnc_civilianHit];
 		_civilian addEventHandler ["Killed",DT_fnc_civilianKilled];

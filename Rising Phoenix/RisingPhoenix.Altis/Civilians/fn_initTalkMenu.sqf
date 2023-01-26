@@ -7,10 +7,10 @@ params [
 	["_unit",cursorObject,[objNull]]
 ];
 
-if !(isNull (_unit getVariable ["currentTalker",objNull])) exitWith {["He is busy talking to someone else."] call DT_fnc_notify};
+if !(isNull (_unit getVariable ["DT_currentTalker",objNull])) exitWith {["He is busy talking to someone else."] call DT_fnc_notify};
 
 DT_talkingTarget = _unit;
-_unit setVariable ["currentTalker",player,true];
+_unit setVariable ["DT_currentTalker",player,true];
 [_unit,0] remoteExecCall ["forceSpeed",_unit];
 [_unit,player] remoteExecCall ["doWatch",_unit];
 
@@ -71,7 +71,7 @@ _questionBox lbSetCurSel 0;
 		};
 
 		DT_talkingTarget = nil;
-		_unit setVariable ["currentTalker",nil,true];
+		_unit setVariable ["DT_currentTalker",nil,true];
 		[_unit,-1] remoteExecCall ["forceSpeed",_unit];
 		_unit doWatch objNull;
 	},

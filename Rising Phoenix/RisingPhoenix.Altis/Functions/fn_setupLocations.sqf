@@ -11,10 +11,10 @@ DT_civLocations = [];
 {
 	private _pos = position _x;
 	_pos set [2,0];
-	if (_pos distance arsenal_1 > 500) then {
+	if (_pos distance arsenal_1 > 750) then {
 		private _townNameSpace = createSimpleObject ["CBA_NamespaceDummy",_pos];
-		_townNameSpace setVariable ["townName",text _x,true];
-		_townNameSpace setVariable ["townKarma",round random [-100,0,100]];
+		_townNameSpace setVariable ["DT_townName",text _x,true];
+		_townNameSpace setVariable ["DT_townKarma",round random [-100,0,100]];
 
 		DT_civLocations pushBack _townNameSpace;
 	};
