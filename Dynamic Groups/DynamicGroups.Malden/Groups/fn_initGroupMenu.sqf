@@ -14,7 +14,7 @@ private _rolesArray = missionConfigFile >> "Dynamic_Roles";
 private _myPath = [0,0];
 
 {
-	_x params ["_groupName","_roles","_conditions","_group","_units"];
+	_x params ["_groupName","_roles","_conditions","","_units"];
 
 	private _treeIndex = _tree tvAdd [[],_groupName];
 

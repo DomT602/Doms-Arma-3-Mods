@@ -13,7 +13,7 @@ private _oldRole = "";
 private _oldTeam = assignedTeam _unit;
 
 {
-	_x params ["","_roles","","_group","_units"];
+	_x params ["","_roles","","","_units"];
 	private _groupIndex = _forEachIndex;
 	{
 		if (_x isEqualTo _corpse) exitWith {
