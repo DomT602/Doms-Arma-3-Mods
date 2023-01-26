@@ -5,7 +5,7 @@
 class marksman {
 	name = "Marksman";
 	rank = "Private";
-	description = $STR_DT_Rifleman_Description;
+	description = "The Marksman has access to improved scopes better designed for longer range engagements.";
 	traits[] = {
 
 	};

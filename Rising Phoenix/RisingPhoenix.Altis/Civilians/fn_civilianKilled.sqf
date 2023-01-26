@@ -9,5 +9,5 @@ private _lastInstigator = _unit getVariable ["ace_medical_lastInstigator",objNul
 
 if (isPlayer _lastInstigator || {isPlayer _instigator}) then {
 	["A civilian has been killed."] remoteExecCall ["DT_fnc_notify",0];
-	[getPosASL _unit,paramsArray select 5] call DT_fnc_adjustKarma;
+	[getPosASL _unit,paramsArray select 8] call DT_fnc_adjustKarma;
 };

@@ -62,7 +62,7 @@ private _squads = [_spawnPosition,50] call DT_fnc_createPatrols;
 
 		if (_officer distance arsenal_1 < 50) then {
 			[_missionVar,true] call DT_fnc_endMission;
-			[_locationObject,paramsArray select 1] call DT_fnc_adjustKarma;
+			[_locationObject,paramsArray select 4] call DT_fnc_adjustKarma;
 			if !(missionNamespace getVariable ["DT_opforAirDisabled",false]) then {
 				[name _officer] call DT_fnc_destroyAirbase;
 			};

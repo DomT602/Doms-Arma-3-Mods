@@ -45,8 +45,26 @@ class CfgFunctions {
 #include "Config\Opfor\Config_Opfor.hpp"
 #include "Config\Blufor\Config_Blufor.hpp"
 
-class Params
-{
+class Params {
+	class bluforFaction {
+		title = "Blufor Faction";
+		texts[] = {"CTRG (Vanilla)","NATO (Vanilla)","CSAT (Vanilla)","AMF (AMF_AIO)"};
+		values[] = {0,1,2,3};
+		default = 0;
+	};
+	class opforFaction {
+		title = "Opfor Faction";
+		texts[] = {"CSAT (Vanilla)","AAF (Vanilla)","NATO (Vanilla)","MEE (3CB Factions)"};
+		values[] = {0,1,2,3};
+		default = 0;
+	};
+	class missionCompletionCount
+	{
+		title = "Main Missions to complete before Final Mission";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {6,8,10,12,14};
+		default = 10;
+	};
 	class difficultyModifier
 	{
 		title = "Difficulty Modifier";
@@ -96,12 +114,12 @@ class Params
 		values[] = {1,2,3,4,5};
 		default = 3;
 	};
-	class opforTrapChance
+	class enemyActionFrequency
 	{
-		title = "Chances of Booby Traps";
-		texts[] = {"None","Very Low","Low","Normal","High","Very High"};
-		values[] = {0,3,6,9,12,15};
-		default = 6;
+		title = "Opfor Side Mission Frequency";
+		texts[] = {"Very Low","Low","Normal","High","Very High"};
+		values[] = {90,75,60,45,30};
+		default = 60;
 	};
 	class ambientOpforPresence
 	{
@@ -124,6 +142,13 @@ class Params
 		values[] = {15,30,45,60,75};
 		default = 45;
 	};
+	class opforTrapChance
+	{
+		title = "Chances of Booby Traps";
+		texts[] = {"None","Very Low","Low","Normal","High","Very High"};
+		values[] = {0,3,6,9,12,15};
+		default = 6;
+	};
 	class opforMineIntensity
 	{
 		title = "Opfor Mine Intensity";
@@ -137,31 +162,5 @@ class Params
 		texts[] = {"Very Low","Low","Normal","High","Very High"};
 		values[] = {40,30,20,15,10};
 		default = 20;
-	};
-	class enemyActionFrequency
-	{
-		title = "Opfor Side Mission Frequency";
-		texts[] = {"Very Low","Low","Normal","High","Very High"};
-		values[] = {90,75,60,45,30};
-		default = 60;
-	};
-	class missionCompletionCount
-	{
-		title = "Main Missions to complete before Final Mission";
-		texts[] = {"Very Low","Low","Normal","High","Very High"};
-		values[] = {6,8,10,12,14};
-		default = 10;
-	};
-	class opforFaction {
-		title = "Opfor Faction";
-		texts[] = {"CSAT","AAF","NATO","MEE"};
-		values[] = {0,1,2,3};
-		default = 0;
-	};
-	class bluforFaction {
-		title = "Blufor Faction";
-		texts[] = {"CTRG","NATO","CSAT","AMF"};
-		values[] = {0,1,2,3};
-		default = 0;
 	};
 };

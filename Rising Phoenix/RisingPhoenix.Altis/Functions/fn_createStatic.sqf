@@ -13,7 +13,7 @@ private _staticClass = selectRandom _statics;
 private _spawnPos = [_pos,10,_radius,5,0,0.15,0] call BIS_fnc_findSafePos;
 if (_spawnPos isEqualTo []) exitWith {};
 
-private _static = createVehicle [_staticClass,_spawnPos];
+private _static = createVehicle [_staticClass,_spawnPos,[],0,"CAN_COLLIDE"];
 private _dirToTarget = _static getDir _pos;
 _static setDir (_dirToTarget + (random [135,180,225]));
 

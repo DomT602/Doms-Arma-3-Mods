@@ -7,7 +7,7 @@ params [
 	["_lastMissionType","",[""]]
 ];
 
-if (DT_missionCount isEqualTo (paramsArray select 14)) exitWith {
+if (DT_missionCount isEqualTo (paramsArray select 2)) exitWith {
 	private _code = selectRandom [DT_fnc_secureNuke];
 	[] call _code;
 };

@@ -34,7 +34,7 @@ if (DT_isTFAREnabled) then {
 	];
 
 	if (side _target isEqualTo civilian && {_usedItem in _medicalItems}) then {
-		[getPosASL _target,paramsArray select 6] remoteExecCall ["DT_fnc_adjustKarma",2];
+		[getPosASL _target,paramsArray select 8] remoteExecCall ["DT_fnc_adjustKarma",2];
 	};
 }] call CBA_fnc_addEventHandler;
 

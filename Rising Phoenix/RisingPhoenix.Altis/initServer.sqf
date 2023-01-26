@@ -8,21 +8,21 @@ DT_isZenEnabled = isClass(configFile >> "CfgPatches" >> "ZEN_main");
 DT_isTFAREnabled = isClass (configFile >> "CfgPatches" >> "task_force_radio");
 publicVariable "DT_isTFAREnabled";
 
-DT_opforFaction = switch (paramsArray select 15) do {
-	case 0: {"CSAT"};
-	case 1: {"AAF"};
-	case 2: {"NATO"};
-	case 3: {"MEE"};
-};
-publicVariable "DT_opforFaction";
-
-DT_bluforFaction = switch (paramsArray select 16) do {
+DT_bluforFaction = switch (paramsArray select 0) do {
 	case 0: {"CTRG"};
 	case 1: {"NATO"};
 	case 2: {"CSAT"};
 	case 3: {"AMF"};
 };
 publicVariable "DT_bluforFaction";
+
+DT_opforFaction = switch (paramsArray select 1) do {
+	case 0: {"CSAT"};
+	case 1: {"AAF"};
+	case 2: {"NATO"};
+	case 3: {"MEE"};
+};
+publicVariable "DT_opforFaction";
 
 DT_dynamicGroups = getArray(missionConfigFile >> DT_bluforFaction >> "Dynamic_Groups" >> "group_setup");
 if (DT_isTFAREnabled) then {
@@ -97,11 +97,11 @@ DT_missionCount = 0;
 
 DT_ambientCivs = [];
 DT_ambientCivHandle = -1;
-[paramsArray select 2] call DT_fnc_spawnAmbientCiv;
+[paramsArray select 5] call DT_fnc_spawnAmbientCiv;
 
 DT_ambientOpfor = [];
 DT_ambientOpforHandle = -1;
-[paramsArray select 8] call DT_fnc_spawnAmbientOpfor;
+[paramsArray select 11] call DT_fnc_spawnAmbientOpfor;
 
 DT_supportCooldowns = [];
 private _supportActions = getArray(missionConfigFile >> DT_bluforFaction >> "supports");

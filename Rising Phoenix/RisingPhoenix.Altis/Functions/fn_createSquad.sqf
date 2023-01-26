@@ -17,7 +17,7 @@ private _group = createGroup [east,true];
 	[_group,east,_x,_spawnPosition,10] call DT_fnc_createUnit;
 } forEach _squadComposition;
 
-private _ambushChance = paramsArray select 9;
+private _ambushChance = paramsArray select 12;
 if (_ambushChance > random 100) then {
 	(leader _group) addEventHandler ["FiredNear",{
 		params ["_unit","_firer"];
@@ -32,7 +32,7 @@ if (_ambushChance > random 100) then {
 			};
 		};
 
-		private _timeDelay = paramsArray select 10;
+		private _timeDelay = paramsArray select 13;
 		[DT_fnc_spawnAmbushOpfor,_target,_timeDelay + random _timeDelay] call CBA_fnc_waitAndExecute;
 	}];
 };

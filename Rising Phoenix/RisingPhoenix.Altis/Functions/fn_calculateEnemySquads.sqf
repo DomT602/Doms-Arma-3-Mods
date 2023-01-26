@@ -5,7 +5,7 @@
 */
 
 private _playerCount = (count playableUnits) max 1;
-private _difficultyModifier = paramsArray select 0;
+private _difficultyModifier = paramsArray select 3;
 
 private _infantryCount = ceil ((_playerCount / 4) * _difficultyModifier);
 private _lightVehCount = ceil ((_playerCount / 8) * _difficultyModifier);

@@ -42,7 +42,7 @@ _squads pushBack ([_spawnPosition,75] call DT_fnc_createMortar);
 
 		if (alive _laptop) then {
 			[_missionVar,true] call DT_fnc_endMission;
-			[_locationObject,paramsArray select 1] call DT_fnc_adjustKarma;
+			[_locationObject,paramsArray select 4] call DT_fnc_adjustKarma;
 			if (33 > random 100) then {
 				private _missions = [
 					["The intel had details of an upcoming attack on a town in the region.",DT_fnc_defendTown],

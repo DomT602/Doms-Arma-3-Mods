@@ -49,7 +49,7 @@ publicVariable "DT_missionDetails";
 
 				if (({alive _x} count _units) < 3) then {
 					[_missionVar,true] call DT_fnc_endMission;
-					[_locationObject,(paramsArray select 1) * 2] call DT_fnc_adjustKarma;
+					[_locationObject,(paramsArray select 4) * 2] call DT_fnc_adjustKarma;
 				} else {
 					[_missionVar,false] call DT_fnc_endMission;
 				};

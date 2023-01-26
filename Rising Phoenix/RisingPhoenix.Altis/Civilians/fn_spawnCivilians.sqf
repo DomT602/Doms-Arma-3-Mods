@@ -7,7 +7,7 @@ params [
 	["_townObj",objNull,[objNull]]
 ];
 
-private _civilianCount = paramsArray select 3;
+private _civilianCount = paramsArray select 6;
 if ([] call DT_fnc_isNight) then {
 	_civilianCount = round (_civilianCount / 2);
 };

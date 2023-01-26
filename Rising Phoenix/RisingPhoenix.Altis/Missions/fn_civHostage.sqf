@@ -63,7 +63,7 @@ private _squads = [_spawnPosition,50] call DT_fnc_createPatrols;
 
 		if (alive _hostage) then {
 			[_missionVar,true] call DT_fnc_endMission;
-			[_locationObject,(paramsArray select 1) * 2] call DT_fnc_adjustKarma;
+			[_locationObject,(paramsArray select 4) * 2] call DT_fnc_adjustKarma;
 
 			[
 				{

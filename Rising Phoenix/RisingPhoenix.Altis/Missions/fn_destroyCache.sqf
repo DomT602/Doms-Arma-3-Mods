@@ -47,7 +47,7 @@ _squads pushBack ([_spawnPosition,100] call DT_fnc_createStatic);
 		params ["","_missionVar","_locationObject","_squads"];
 
 		[_missionVar,true] call DT_fnc_endMission;
-		[_locationObject,paramsArray select 1] call DT_fnc_adjustKarma;
+		[_locationObject,paramsArray select 4] call DT_fnc_adjustKarma;
 		[_missionVar] call DT_fnc_startNewMission;
 		
 		[

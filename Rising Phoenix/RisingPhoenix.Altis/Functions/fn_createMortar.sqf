@@ -19,7 +19,7 @@ private _unit = [_group,east,_unitClass,_spawnPos] call DT_fnc_createUnit;
 
 _unit moveInGunner _mortar;
 private _ammoTypes = getArtilleryAmmo [_mortar];
-private _mortarTiming = paramsArray select 12;
+private _mortarTiming = paramsArray select 16;
 
 [
 	{

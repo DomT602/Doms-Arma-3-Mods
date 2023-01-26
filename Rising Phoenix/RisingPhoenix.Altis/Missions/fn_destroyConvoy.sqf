@@ -44,7 +44,7 @@ private _units = units _squad;
 		params ["","_missionVar","_locationObject","_squad"];
 		
 		[_missionVar,true] call DT_fnc_endMission;
-		[_locationObject,paramsArray select 1] call DT_fnc_adjustKarma;
+		[_locationObject,paramsArray select 4] call DT_fnc_adjustKarma;
 
 		[
 			{
