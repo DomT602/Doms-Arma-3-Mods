@@ -22,6 +22,7 @@ private _templateObjects = selectRandom (getArray(missionConfigFile >> "Composit
 private _AATypes = getArray (missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforAAVehicles");
 private _objects = [];
 private _objectives = [];
+private _squads = [];
 
 {
 	_x params ["_class","_pos","_dir"];
@@ -35,6 +36,7 @@ private _objectives = [];
 
 	if (_class isEqualTo "PortableHelipadLight_01_yellow_F") then {
 		private _aaGrp = [selectRandom _AATypes,_pos,0] call DT_fnc_createVehicle;
+		_squads pushBack _aaGrp;
 		private _vehicle = objectParent (leader _aaGrp);
 		(driver _vehicle) disableAI "MOVE";
 		_vehicle lock 3;
@@ -43,7 +45,7 @@ private _objectives = [];
 	};
 } forEach _templateObjects;
 
-private _squads = [_spawnPos,50] call DT_fnc_createPatrols;
+_squads append ([_spawnPos,50] call DT_fnc_createPatrols);
 
 [
 	{
@@ -61,21 +63,7 @@ private _squads = [_spawnPos,50] call DT_fnc_createPatrols;
 				params ["_pos"];
 				[_pos] call DT_fnc_areaIsClear
 			},
-			{
-				params ["_pos","_squads","_objects"];
-
-				{
-					[_x] call DT_fnc_deleteGroup;
-				} forEach _squads;
-
-				{
-					deleteVehicle _x;
-				} forEach _objects;
-
-				{
-					deleteVehicle _x;
-				} forEach (nearestObjects [_pos,["LandVehicle","Air","GroundWeaponHolder","WeaponHolderSimulated"],750]);
-			},
+			DT_fnc_clearArea,
 			[_spawnPos,_squads,_objects]
 		] call CBA_fnc_waitUntilAndExecute;
 	},

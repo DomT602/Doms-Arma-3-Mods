@@ -20,24 +20,18 @@ if (_isCaptive) then {_karma = _karma - 1};
 private _display = findDisplay 9743;
 private _listbox = _display displayCtrl 1500;
 
-private _genericNegativeResponses = [
-	"I'm not telling you that.",
-	"Piss off.",
-	"I spit on what you have done here.",
-	"Just leave me alone."
-];
-private _alreadyAnsweredStarters = [
-	"I already answered that: ",
-	"I told you before; ",
-	"You already asked me that, "
-];
-
 private _questionsAsked = _unit getVariable ["DT_questionsAsked",[]];
 private _questionAnswers = _unit getVariable ["DT_questionAnswers",[]];
 private _response = "";
 private _alreadyAsked = _questionIndex in _questionsAsked;
 
 if (_alreadyAsked) exitWith {
+	private _alreadyAnsweredStarters = [
+		"I already answered that: ",
+		"I told you before; ",
+		"You already asked me that, "
+	];
+
 	private _oldIndex = _questionsAsked find _questionIndex;
 	private _oldResponse = _questionAnswers select _oldIndex;
 	_response = format ["%1%2",selectRandom _alreadyAnsweredStarters,_oldResponse];
@@ -46,6 +40,13 @@ if (_alreadyAsked) exitWith {
 
 _questionsAsked pushBack _questionIndex;
 _unit setVariable ["DT_questionsAsked",_questionsAsked,true];
+
+private _genericNegativeResponses = [
+	"I'm not telling you that.",
+	"Piss off.",
+	"I spit on what you have done here.",
+	"Just leave me alone."
+];
 
 private _fnc_enemyReport = {
 	params ["_distance","_direction"];

@@ -65,8 +65,7 @@ class MEE {
 		"UK3CB_MEE_I_DSHKM",
 		"UK3CB_MEE_I_KORD_high",
 		"UK3CB_MEE_I_PKM_High",
-		"UK3CB_MEE_I_SPG9",
-		"UK3CB_MEE_I_AGS"
+		"UK3CB_MEE_I_SPG9"
 	};
 
 	//if the vehicle does not belong to the faction naturally, enclose in {} and add ,true
@@ -112,7 +111,8 @@ class MEE {
 	};
 
 	opforAAVehicles[] = {
-		"UK3CB_MEE_I_MTLB_ZU23"
+		"UK3CB_MEE_I_MTLB_ZU23",
+		"UK3CB_MEE_O_V3S_Zu23"
 	};
 
 	opforAttackHelicopters[] = {

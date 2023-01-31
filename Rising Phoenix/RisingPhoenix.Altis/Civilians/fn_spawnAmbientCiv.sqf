@@ -16,6 +16,7 @@ for "_i" from 1 to _count do {
 	private _spawnPos = getPosATL (selectRandom _nearRoads);
 
 	private _vehicle = createVehicle [selectRandom _civilianVehicleTypes,_spawnPos,[],0,"NONE"];
+	_vehicle setVariable ["DT_isProtected",true,true];
 	private _group = createGroup [civilian,true];
 	private _driver = _group createUnit [selectRandom _civilianTypes,_spawnPos,[],0,"NONE"];
 	[_group] call CBA_fnc_clearWaypoints;

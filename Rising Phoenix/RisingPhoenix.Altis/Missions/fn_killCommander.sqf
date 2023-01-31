@@ -21,7 +21,7 @@ _marker setMarkerShape "ELLIPSE";
 _marker setMarkerBrush "FDiagonal";
 _marker setMarkerSize [500,500];
 
-[true,_taskAndMarkerVar,[format ["We have information on a local commander in %1, kill him.",_townName],"Kill Commander",""],_townCentre,"CREATED",1,true,"KILL",true] call BIS_fnc_taskCreate;
+[true,_taskAndMarkerVar,[format ["We have information on a local commander in %1, kill him. He is likely to flee once he is engaged, make sure he cannot escape.",_townName],"Kill Commander",""],_townCentre,"CREATED",1,true,"KILL",true] call BIS_fnc_taskCreate;
 DT_missionDetails pushBack _taskAndMarkerVar;
 publicVariable "DT_missionDetails";
 
@@ -41,15 +41,15 @@ _officer addEventHandler ["FiredNear",{
 	_unit forceSpeed -1;
 	_unit setSkill ["courage",1];
 
-	private _dir = _officer getDir _firer;
+	private _dir = _unit getDir _firer;
 	_dir = _dir + 180;
-	private _posAwayFromPlayers = _officer getPos [1500,_dir];
+	private _posAwayFromPlayers = _unit getPos [1500,_dir];
 	private _waypointPos = [_posAwayFromPlayers,0,700,0,0,1,0,[],[_posAwayFromPlayers,_posAwayFromPlayers]] call BIS_fnc_findSafePos;
 
 	private _group = group _unit;
 	private _waypoint = _group addWaypoint [_waypointPos,0];
 	_waypoint setWaypointSpeed "FULL";
-	_waypoint setWaypointBehaviour "AWARE";
+	_waypoint setWaypointBehaviour "SAFE";
 	_waypoint setWaypointCombatMode "YELLOW";
 }];
 
@@ -87,17 +87,7 @@ private _squads = [_spawnPosition,50] call DT_fnc_createPatrols;
 				params ["_pos"];
 				[_pos] call DT_fnc_areaIsClear
 			},
-			{
-				params ["_pos","_squads"];
-
-				{
-					[_x] call DT_fnc_deleteGroup;
-				} forEach _squads;
-
-				{
-					deleteVehicle _x;
-				} forEach (nearestObjects [_pos,["LandVehicle","Air","GroundWeaponHolder","WeaponHolderSimulated"],750]);
-			},
+			DT_fnc_clearArea,
 			[_spawnPosition,_squads]
 		] call CBA_fnc_waitUntilAndExecute;
 	},

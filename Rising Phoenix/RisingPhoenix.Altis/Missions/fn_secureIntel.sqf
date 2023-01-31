@@ -24,7 +24,8 @@ private _nearBuildings = [_townCentre,300] call DT_fnc_getBuildings;
 private _randomBuildingPositions = (selectRandom _nearBuildings) buildingPos -1;
 private _spawnPosition = selectRandom _randomBuildingPositions;
 
-private _laptop = createVehicle ["Land_laptop_03_closed_black_F",_spawnPosition,[],0,"NONE"];
+private _laptopClasses = ["Land_laptop_03_closed_sand_F","Land_laptop_03_closed_black_F","Land_laptop_03_closed_olive_F"];
+private _laptop = createVehicle [selectRandom _laptopClasses,_spawnPosition];
 [_laptop,1] call ace_cargo_fnc_setSize;
 [_laptop,true,[0,1,1]] remoteExecCall ["ace_dragging_fnc_setCarryable",0,_laptop];
 
@@ -76,17 +77,7 @@ _squads pushBack ([_spawnPosition,75] call DT_fnc_createMortar);
 				params ["_pos"];
 				[_pos] call DT_fnc_areaIsClear
 			},
-			{
-				params ["_pos","_squads"];
-
-				{
-					[_x] call DT_fnc_deleteGroup;
-				} forEach _squads;
-
-				{
-					deleteVehicle _x;
-				} forEach (nearestObjects [_pos,["LandVehicle","Air","GroundWeaponHolder","WeaponHolderSimulated"],750]);
-			},
+			DT_fnc_clearArea,
 			[getPosASL _locationObject,_squads]
 		] call CBA_fnc_waitUntilAndExecute;
 	},

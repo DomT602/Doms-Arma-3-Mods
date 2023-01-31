@@ -29,7 +29,7 @@ if (50 > random 100) then {
 [
 	{
 		params ["_target"];
-		[_target,1250] call DT_fnc_areaIsClear
+		[_target,1500] call DT_fnc_areaIsClear
 	},
 	{
 		params ["","_groups"];

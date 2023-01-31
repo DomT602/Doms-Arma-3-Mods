@@ -8,6 +8,7 @@ waitUntil {missionNamespace getVariable ["DT_serverReady",false] && {!isNull pla
 
 player addEventHandler ["InventoryOpened",DT_fnc_onInventoryOpened];
 player addEventHandler ["Respawn",DT_fnc_onRespawn];
+player addEventHandler ["GetInMan",DT_fnc_onGetInMan];
 addMissionEventHandler ["Map",DT_fnc_createBluforMarkers];
 if (DT_isTFAREnabled) then {
 	["radioSetup","OnRadiosReceived",DT_fnc_initSwRadios] call TFAR_fnc_addEventHandler;
@@ -35,6 +36,7 @@ if (DT_isTFAREnabled) then {
 
 	if (side _target isEqualTo civilian && {_usedItem in _medicalItems}) then {
 		[getPosASL _target,paramsArray select 8] remoteExecCall ["DT_fnc_adjustKarma",2];
+		[format["%1 thanks you for the treatment.",name _target]] call DT_fnc_notify;
 	};
 }] call CBA_fnc_addEventHandler;
 

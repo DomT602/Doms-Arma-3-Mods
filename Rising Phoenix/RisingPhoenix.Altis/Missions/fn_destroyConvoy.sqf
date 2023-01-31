@@ -51,15 +51,7 @@ private _units = units _squad;
 				params ["_pos"];
 				[_pos] call DT_fnc_areaIsClear
 			},
-			{
-				params ["_pos","_squad"];
-
-				[_squad] call DT_fnc_deleteGroup;
-
-				{
-					deleteVehicle _x;
-				} forEach (nearestObjects [_pos,["LandVehicle","Air","GroundWeaponHolder","WeaponHolderSimulated"],750]);
-			},
+			DT_fnc_clearArea,
 			[getPosASL _locationObject,_squad]
 		] call CBA_fnc_waitUntilAndExecute;
 	},

@@ -42,7 +42,7 @@ _nuke attachTo [_bunker,[1.5,0,-0.5]];
 		[{["end1",true] remoteExecCall ["BIS_fnc_endMission",0]},[],30] call CBA_fnc_waitAndExecute;
 	},
 	[_nuke,_taskAndMarkerVar],
-	1200 + random 1200,
+	900 + random 900,
 	{
 		params ["_nuke","_missionVar"];
 

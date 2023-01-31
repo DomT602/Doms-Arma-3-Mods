@@ -23,6 +23,7 @@ class DT_Core {
 		class areaIsClear {};
 		class assignZeus {};
 		class calculateEnemySquads {};
+		class clearArea {};
 		class createAceInteractions {};
 		class createBluforMarkers {}; //client
 		class createConvoy {};
@@ -47,6 +48,7 @@ class DT_Core {
 		class isNight {};
 		class mainLoop {};
 		class notify {}; //client
+		class onGetInMan {};
 		class onInventoryOpened {};
 		class rigToExplode {};
 		class setupLocations {};

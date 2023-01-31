@@ -27,7 +27,7 @@ if (_ambushChance > random 100) then {
 		private _target = _firer;
 		if !(isPlayer _firer) then {
 			private _nearestEnemy = _unit findNearestEnemy _unit;
-			if !(isNull _target) then {
+			if !(isNull _nearestEnemy) then {
 				_target = _nearestEnemy;
 			};
 		};

@@ -20,7 +20,9 @@ publicVariable "DT_missionDetails";
 
 private _jammer = createVehicle ["Land_MobileRadar_01_radar_F",_spawnPos];
 _jammer setDir (_jammer getDir arsenal_1);
-missionNamespace setVariable ["TFAR_globalRadioRangeCoef",0.1,true];
+if (DT_isTFAREnabled) then {
+	missionNamespace setVariable ["TFAR_globalRadioRangeCoef",0.1,true];
+};
 
 private _squads = [_spawnPos] call DT_fnc_createPatrols;
 _squads pushBack ([_spawnPos,50] call DT_fnc_createStatic);
@@ -35,7 +37,9 @@ _squads pushBack ([_spawnPos,50] call DT_fnc_createStatic);
 		params ["","_missionVar","_pos","_squads"];
 
 		[_missionVar,true] call DT_fnc_endMission;
-		missionNamespace setVariable ["TFAR_globalRadioRangeCoef",1,true];
+		if (DT_isTFAREnabled) then {
+			missionNamespace setVariable ["TFAR_globalRadioRangeCoef",1,true];
+		};
 		["destroyJammer"] call DT_fnc_startSideMission;
 		
 		[
@@ -43,17 +47,7 @@ _squads pushBack ([_spawnPos,50] call DT_fnc_createStatic);
 				params ["_pos"];
 				[_pos] call DT_fnc_areaIsClear
 			},
-			{
-				params ["_pos","_squads"];
-
-				{
-					[_x] call DT_fnc_deleteGroup;
-				} forEach _squads;
-
-				{
-					deleteVehicle _x;
-				} forEach (nearestObjects [_pos,["LandVehicle","Air","GroundWeaponHolder","WeaponHolderSimulated"],750]);
-			},
+			DT_fnc_clearArea,
 			[_pos,_squads]
 		] call CBA_fnc_waitUntilAndExecute;
 	},

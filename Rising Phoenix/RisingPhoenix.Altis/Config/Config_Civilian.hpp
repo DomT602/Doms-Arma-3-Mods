@@ -73,7 +73,11 @@ class Civilian_Setup {
 	};
 
 	civilianWeapons[] = {
-		"hgun_P07_F"
+		"hgun_P07_F",
+		"hgun_P07_blk_F",
+		"hgun_P07_khk_F",
+		"hgun_Rook40_F",
+		"hgun_Pistol_01_F"
 	};
 
 	civilianBombVests[] = {

@@ -22,46 +22,41 @@ for "_i" from 1 to _civilianCount do {
 	private _className = selectRandom _civTypes;
 	private _spawnPosition = [_position,0,300,5,0,1,0,[],[_position,_position]] call BIS_fnc_findSafePos;
 
-	private _civilian = _group createUnit [_className,_spawnPosition,[],10,"NONE"];
+	private _civilian = _group createUnit [_className,_spawnPosition,[],5,"NONE"];
+	_civilian setVariable ["DT_individualKarma",round (random [-2,0,2]),true];
 	_civilians pushBack _civilian;
 	[_group,_spawnPosition] call DT_fnc_civilianWalking;
 
-	if (_localKarma < 0) then {
-		if (_localKarma < -50) then {
-			if (33 > random 100) then {
-				[_civilian] call DT_fnc_setupSuicideBomber;
-			};
-		} else {
-			if (abs _localKarma > random 100) then {
-				private _civWeps = getArray(missionConfigFile >> "Civilian_Setup" >> "civilianWeapons");
-				private _weapon = selectRandom _civWeps;
-				private _magazine = selectRandom (getArray (configFile >> "CfgWeapons" >> _weapon >> "magazines"));
-				for "_i" from 1 to (ceil random 5) do {
-					_civilian addItem _magazine;
-				};
-				_civilian addWeapon _weapon;
-
-				private _hostileGroup = createGroup [independent,true];
-				_hostileGroup copyWaypoints _group;
-				[_civilian] joinSilent _hostileGroup;
-			};
-		};
-
-		_civilian setVariable ["DT_individualKarma",-1,true];
+	if (_localKarma < -50 && {25 > random 100}) then {
+		[_civilian] call DT_fnc_setupSuicideBomber;
 	} else {
-		_civilian addEventHandler ["Hit",DT_fnc_civilianHit];
-		_civilian addEventHandler ["Killed",DT_fnc_civilianKilled];
-
-		if (7 > random 10) then {
-			private _bodyParts = ["Head","Body","LeftArm","RightArm","LeftLeg","RightLeg"];
-			private _damageTypes = ["bullet","grenade","explosive","vehiclecrash","stab","falling","ropeburn"];
-
-			private _woundCount = 2 + (round (random 1));
-			for "_i" from 1 to _woundCount do {
-				[_civilian,random 0.5,(selectRandom _bodyParts),(selectRandom _damageTypes)] call ace_medical_fnc_addDamageToUnit;
+		if (_localKarma < 0 && {abs _localKarma > random 100}) then {
+			private _civWeps = getArray(missionConfigFile >> "Civilian_Setup" >> "civilianWeapons");
+			private _weapon = selectRandom _civWeps;
+			private _magazine = selectRandom (getArray (configFile >> "CfgWeapons" >> _weapon >> "magazines"));
+			for "_i" from 1 to (ceil random 5) do {
+				_civilian addItem _magazine;
 			};
+			_civilian addWeapon _weapon;
 
-			_civilian setVariable ["ace_medical_ai_lastFired",(CBA_missionTime + 600)];
+			private _hostileGroup = createGroup [independent,true];
+			_hostileGroup copyWaypoints _group;
+			[_civilian] joinSilent _hostileGroup;
+		} else {
+			_civilian addEventHandler ["Hit",DT_fnc_civilianHit];
+			_civilian addEventHandler ["Killed",DT_fnc_civilianKilled];
+
+			if (7 > random 10) then {
+				private _bodyParts = ["Head","Body","LeftArm","RightArm","LeftLeg","RightLeg"];
+				private _damageTypes = ["bullet","grenade","explosive","vehiclecrash","stab","falling","ropeburn"];
+
+				private _woundCount = 2 + (round (random 1));
+				for "_i" from 1 to _woundCount do {
+					[_civilian,random 0.5,selectRandom _bodyParts,selectRandom _damageTypes] call ace_medical_fnc_addDamageToUnit;
+				};
+
+				_civilian setVariable ["ace_medical_ai_lastFired",(CBA_missionTime + 600)];
+			};
 		};
 	};
 };

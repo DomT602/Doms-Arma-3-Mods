@@ -13,6 +13,7 @@ private _vehiclesTypes = getArray(missionConfigFile >> "Opfor_Setup" >> DT_opfor
 for "_i" from 1 to _count do {
 	private _group = [selectRandom _vehiclesTypes,getPosASL (selectRandom _locations),750,true] call DT_fnc_createVehicle;
 	private _vehicle = objectParent (leader _group);
+	_vehicle setVariable ["DT_isProtected",true,true];
 
 	DT_ambientOpfor pushBack [_vehicle,_group,[0,0,0]];
 };

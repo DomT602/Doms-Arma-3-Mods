@@ -24,6 +24,7 @@ publicVariable "DT_missionDetails";
 
 private _templateObjects = selectRandom (getArray(missionConfigFile >> "Compositions" >> "opforAirbases"));
 private _heliTypes = getArray (missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforAttackHelicopters");
+_heliTypes = _heliTypes apply {if (_x isEqualType []) then {_x select 0} else {_x}};
 private _objects = [];
 private _objectives = [];
 
@@ -70,21 +71,7 @@ _squads pushBack ([_airportPos,50] call DT_fnc_createStatic);
 				params ["_pos"];
 				[_pos] call DT_fnc_areaIsClear
 			},
-			{
-				params ["_pos","_squads","_objects"];
-
-				{
-					[_x] call DT_fnc_deleteGroup;
-				} forEach _squads;
-
-				{
-					deleteVehicle _x;
-				} forEach _objects;
-
-				{
-					deleteVehicle _x;
-				} forEach (nearestObjects [_pos,["LandVehicle","Air","GroundWeaponHolder","WeaponHolderSimulated"],750]);
-			},
+			DT_fnc_clearArea,
 			[_airportPos,_squads,_objects]
 		] call CBA_fnc_waitUntilAndExecute;
 	},

@@ -56,21 +56,7 @@ private _squads = [_objectivePosition,100,300] call DT_fnc_createPatrols;
 				params ["_pos"];
 				[_pos] call DT_fnc_areaIsClear
 			},
-			{
-				params ["_pos","_squads","_craters"];
-
-				{
-					[_x] call DT_fnc_deleteGroup;
-				} forEach _squads;
-
-				{
-					deleteVehicle _x;
-				} forEach _craters;
-
-				{
-					deleteVehicle _x;
-				} forEach (nearestObjects [_pos,["LandVehicle","Air","GroundWeaponHolder","WeaponHolderSimulated"],750]);
-			},
+			DT_fnc_clearArea,
 			[_objectivePosition,_squads,_craters]
 		] call CBA_fnc_waitUntilAndExecute;
 	},
