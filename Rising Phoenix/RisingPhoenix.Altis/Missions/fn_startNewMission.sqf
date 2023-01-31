@@ -16,7 +16,8 @@ private _missions = [
 	["clear",DT_fnc_clearTown],
 	["destroyCache",DT_fnc_destroyCache],
 	["secureUAV",DT_fnc_secureUAV],
-	["secureIntel",DT_fnc_secureIntel]
+	["secureIntel",DT_fnc_secureIntel],
+	["deployListeningPost",DT_fnc_deployListeningPost]
 ];
 
 private _index = _missions findIf {_x select 0 in _lastMissionType};

@@ -93,6 +93,7 @@ class DT_Core {
 		class civHostage {};
 		class clearTown {};
 		class defendTown {};
+		class deployListeningPost {};
 		class destroyAA {};
 		class destroyAirbase {};
 		class destroyCache {};

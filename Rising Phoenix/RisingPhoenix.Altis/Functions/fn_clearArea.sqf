@@ -5,12 +5,16 @@
 */
 params [
 	["_centre",[],[[]]],
-	["_groups",[],[[],grpNull]],
+	["_groups",[],[[],grpNull,true]],
 	["_specificObjects",[],[[]]]
 ];
 
-if (_groups isEqualType grpNull) then {
-	_groups = [_groups];
+if (_groups isEqualType true) then {
+	_groups = allGroups select {side _x isEqualTo east && {(leader _x) distance2D _centre < 600}};
+} else {
+	if (_groups isEqualType grpNull) then {
+		_groups = [_groups];
+	};
 };
 
 {

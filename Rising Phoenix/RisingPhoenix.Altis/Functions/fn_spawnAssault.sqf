@@ -37,7 +37,7 @@ for "_i" from 1 to _heavyCount do {
 };
 
 {
-	private _waypoint = _x addWaypoint [_target,15];
+	private _waypoint = _x addWaypoint [_target,10];
 	_waypoint setWaypointType "SAD";
 	_waypoint setWaypointCombatMode "RED";
 	_waypoint setWaypointBehaviour "AWARE";
