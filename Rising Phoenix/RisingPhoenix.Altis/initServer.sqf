@@ -15,6 +15,7 @@ DT_bluforFaction = switch (paramsArray select 0) do {
 	case 1: {"NATO"};
 	case 2: {"CSAT"};
 	case 3: {"AMF"};
+	case 4: {"BAF"};
 };
 publicVariable "DT_bluforFaction";
 
@@ -22,7 +23,11 @@ DT_opforFaction = switch (paramsArray select 1) do {
 	case 0: {"CSAT"};
 	case 1: {"AAF"};
 	case 2: {"NATO"};
-	case 3: {"MEE"};
+	case 3: {"AA"};
+	case 4: {"ADA"};
+	case 5: {"ChDKZ"};
+	case 6: {"KRG"};
+	case 7: {"MEE"};
 };
 publicVariable "DT_opforFaction";
 
@@ -72,9 +77,9 @@ if (DT_isTFAREnabled || {DT_isACREEnabled}) then {
 
 [DT_dynamicGroups] remoteExecCall ["DT_fnc_updateGroups",-2,"DT_DG_JIP"];
 
-addMissionEventHandler ["HandleDisconnect",{DT_fnc_handleDisconnect}];
+addMissionEventHandler ["HandleDisconnect",DT_fnc_handleDisconnect];
 
-call DT_fnc_setupLocations;
+[] call DT_fnc_setupLocations;
 
 resistance setFriend [west,0];
 west setFriend [independent,0];

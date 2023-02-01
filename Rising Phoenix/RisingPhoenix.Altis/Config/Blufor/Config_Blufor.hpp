@@ -1,3 +1,21 @@
+class AMF {
+	#include "AMF\Config_Groups.hpp"
+
+	supports[] = {
+		{"Supply Drop","supplyDrop",900},
+		{"Mortar Support","mortar",45}
+	};
+};
+
+class BAF {
+	#include "BAF\Config_Groups.hpp"
+
+	supports[] = {
+		{"Supply Drop","supplyDrop",900},
+		{"Mortar Support","mortar",45}
+	};
+};
+
 class CSAT {
 	#include "CSAT\Config_Groups.hpp"
 
@@ -19,15 +37,6 @@ class CTRG {
 
 class NATO {
 	#include "NATO\Config_Groups.hpp"
-
-	supports[] = {
-		{"Supply Drop","supplyDrop",900},
-		{"Mortar Support","mortar",45}
-	};
-};
-
-class AMF {
-	#include "AMF\Config_Groups.hpp"
 
 	supports[] = {
 		{"Supply Drop","supplyDrop",900},

@@ -6,118 +6,118 @@
 class MEE {
 	opforSquads[] = {
 		{
-			"UK3CB_MEE_I_SL",
-			"UK3CB_MEE_I_TL",
-			"UK3CB_MEE_I_MD",
-			"UK3CB_MEE_I_AR",
-			"UK3CB_MEE_I_RIF_1",
-			"UK3CB_MEE_I_ENG",
-			"UK3CB_MEE_I_RIF_2",
-			"UK3CB_MEE_I_MK"
+			"UK3CB_MEE_O_SL",
+			"UK3CB_MEE_O_TL",
+			"UK3CB_MEE_O_MD",
+			"UK3CB_MEE_O_AR",
+			"UK3CB_MEE_O_RIF_1",
+			"UK3CB_MEE_O_ENG",
+			"UK3CB_MEE_O_RIF_2",
+			"UK3CB_MEE_O_MK"
 		},
 		{
-			"UK3CB_MEE_I_SL",
-			"UK3CB_MEE_I_TL",
-			"UK3CB_MEE_I_MD",
-			"UK3CB_MEE_I_MK",
-			"UK3CB_MEE_I_LAT",
-			"UK3CB_MEE_I_RIF_1",
-			"UK3CB_MEE_I_ENG",
-			"UK3CB_MEE_I_DEM"
+			"UK3CB_MEE_O_SL",
+			"UK3CB_MEE_O_TL",
+			"UK3CB_MEE_O_MD",
+			"UK3CB_MEE_O_MK",
+			"UK3CB_MEE_O_LAT",
+			"UK3CB_MEE_O_RIF_1",
+			"UK3CB_MEE_O_ENG",
+			"UK3CB_MEE_O_DEM"
 		},
 		{
-			"UK3CB_MEE_I_SL",
-			"UK3CB_MEE_I_TL",
-			"UK3CB_MEE_I_MD",
-			"UK3CB_MEE_I_MK",
-			"UK3CB_MEE_I_MG",
-			"UK3CB_MEE_I_MG_ASST",
-			"UK3CB_MEE_I_ENG",
-			"UK3CB_MEE_I_RIF_1"
+			"UK3CB_MEE_O_SL",
+			"UK3CB_MEE_O_TL",
+			"UK3CB_MEE_O_MD",
+			"UK3CB_MEE_O_MK",
+			"UK3CB_MEE_O_MG",
+			"UK3CB_MEE_O_MG_ASST",
+			"UK3CB_MEE_O_ENG",
+			"UK3CB_MEE_O_RIF_1"
 		},
 		{
-			"UK3CB_MEE_I_SL",
-			"UK3CB_MEE_I_TL",
-			"UK3CB_MEE_I_MD",
-			"UK3CB_MEE_I_AT",
-			"UK3CB_MEE_I_AT_ASST",
-			"UK3CB_MEE_I_MK",
-			"UK3CB_MEE_I_AR",
-			"UK3CB_MEE_I_RIF_1"
+			"UK3CB_MEE_O_SL",
+			"UK3CB_MEE_O_TL",
+			"UK3CB_MEE_O_MD",
+			"UK3CB_MEE_O_AT",
+			"UK3CB_MEE_O_AT_ASST",
+			"UK3CB_MEE_O_MK",
+			"UK3CB_MEE_O_AR",
+			"UK3CB_MEE_O_RIF_1"
 		},
 		{
-			"UK3CB_MEE_I_SL",
-			"UK3CB_MEE_I_TL",
-			"UK3CB_MEE_I_MD",
-			"UK3CB_MEE_I_AA",
-			"UK3CB_MEE_I_AA_ASST",
-			"UK3CB_MEE_I_RIF_2",
-			"UK3CB_MEE_I_AR",
-			"UK3CB_MEE_I_RIF_1"
+			"UK3CB_MEE_O_SL",
+			"UK3CB_MEE_O_TL",
+			"UK3CB_MEE_O_MD",
+			"UK3CB_MEE_O_AA",
+			"UK3CB_MEE_O_AA_ASST",
+			"UK3CB_MEE_O_RIF_2",
+			"UK3CB_MEE_O_AR",
+			"UK3CB_MEE_O_RIF_1"
 		}
 	};
 
-	opforOfficer = "UK3CB_MEE_I_COM";
-	opforPilot = "UK3CB_MEE_I_CREW";
-	opforMortar = "UK3CB_MEE_I_2b14_82mm";
+	opforOfficer = "UK3CB_MEE_O_COM";
+	opforPilot = "UK3CB_MEE_O_CREW";
+	opforMortar = "UK3CB_MEE_O_2b14_82mm";
 	opforStatics[] = { //HMGs, AT etc
-		"UK3CB_MEE_I_Igla_AA_pod",
-		"UK3CB_MEE_I_DSHKM",
-		"UK3CB_MEE_I_KORD_high",
-		"UK3CB_MEE_I_PKM_High",
-		"UK3CB_MEE_I_SPG9"
+		"UK3CB_MEE_O_Igla_AA_pod",
+		"UK3CB_MEE_O_DSHKM",
+		"UK3CB_MEE_O_KORD_high",
+		"UK3CB_MEE_O_PKM_High",
+		"UK3CB_MEE_O_SPG9"
 	};
 
 	//if the vehicle does not belong to the faction naturally, enclose in {} and add ,true
 	opforLightVehicles[] = {
-		"UK3CB_MEE_I_Datsun_Pkm",
-		"UK3CB_MEE_I_Hilux_Igla_Chair",
-		"UK3CB_MEE_I_Hilux_GMG",
-		"UK3CB_MEE_I_Hilux_Dshkm",
-		"UK3CB_MEE_I_Hilux_M2",
-		"UK3CB_MEE_I_Hilux_Metis",
-		"UK3CB_MEE_I_Hilux_Pkm",
-		"UK3CB_MEE_I_Hilux_Rocket",
-		"UK3CB_MEE_I_Hilux_Spg9",
-		"UK3CB_MEE_I_LR_AGS30",
-		"UK3CB_MEE_I_LR_M2",
-		"UK3CB_MEE_I_LR_SPG9",
-		"UK3CB_MEE_I_M1025_MK19",
-		"UK3CB_MEE_I_M1025_M2",
-		"UK3CB_MEE_I_M1025_TOW",
-		"UK3CB_MEE_I_M1025_TOW",
-		"UK3CB_MEE_I_Offroad_AT",
-		"UK3CB_MEE_I_Pickup_DSHKM",
-		"UK3CB_MEE_I_Pickup_M2"
+		"UK3CB_MEE_O_Datsun_Pkm",
+		"UK3CB_MEE_O_Hilux_Igla_Chair",
+		"UK3CB_MEE_O_Hilux_GMG",
+		"UK3CB_MEE_O_Hilux_Dshkm",
+		"UK3CB_MEE_O_Hilux_M2",
+		"UK3CB_MEE_O_Hilux_Metis",
+		"UK3CB_MEE_O_Hilux_Pkm",
+		"UK3CB_MEE_O_Hilux_Rocket",
+		"UK3CB_MEE_O_Hilux_Spg9",
+		"UK3CB_MEE_O_LR_AGS30",
+		"UK3CB_MEE_O_LR_M2",
+		"UK3CB_MEE_O_LR_SPG9",
+		"UK3CB_MEE_O_M1025_MK19",
+		"UK3CB_MEE_O_M1025_M2",
+		"UK3CB_MEE_O_M1025_TOW",
+		"UK3CB_MEE_O_M1025_TOW",
+		"UK3CB_MEE_O_Offroad_AT",
+		"UK3CB_MEE_O_Pickup_DSHKM",
+		"UK3CB_MEE_O_Pickup_M2"
 	};
 
 	opforMediumVehicles[] = {
-		"UK3CB_MEE_I_BRDM2",
-		"UK3CB_MEE_I_BRDM2_ATGM",
-		"UK3CB_MEE_I_BRDM2_HQ",
-		"UK3CB_MEE_I_Hilux_BMP",
-		"UK3CB_MEE_I_Hilux_BTR",
+		"UK3CB_MEE_O_BRDM2",
+		"UK3CB_MEE_O_BRDM2_ATGM",
+		"UK3CB_MEE_O_BRDM2_HQ",
+		"UK3CB_MEE_O_Hilux_BMP",
+		"UK3CB_MEE_O_Hilux_BTR",
 	};
 
 	opforHeavyVehicles[] = {
-		"UK3CB_MEE_I_T55"
+		"UK3CB_MEE_O_T55"
 	};
 
 	opforTroopCarriers[] = {
-		"UK3CB_MEE_I_V3S_Closed",
-		"UK3CB_MEE_I_V3S_Open",
-		"UK3CB_MEE_I_M998_2DR",
-		"UK3CB_MEE_I_M998_4DR"
+		"UK3CB_MEE_O_V3S_Closed",
+		"UK3CB_MEE_O_V3S_Open",
+		"UK3CB_MEE_O_M998_2DR",
+		"UK3CB_MEE_O_M998_4DR"
 	};
 
 	opforAAVehicles[] = {
-		"UK3CB_MEE_I_MTLB_ZU23",
+		"UK3CB_MEE_O_MTLB_ZU23",
 		"UK3CB_MEE_O_V3S_Zu23"
 	};
 
 	opforAttackHelicopters[] = {
-		{"UK3CB_ADA_I_UH1H_GUNSHIP",true},
-		{"UK3CB_ADA_B_UH1H_M240",true}
+		{"UK3CB_ADA_O_UH1H_GUNSHIP",true},
+		{"UK3CB_ADA_O_UH1H_M240",true}
 	};
 
 	//CfgMagazines; https://community.bistudio.com/wiki/Arma_3:_CfgMagazines
