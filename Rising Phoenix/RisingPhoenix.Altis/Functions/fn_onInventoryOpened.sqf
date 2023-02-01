@@ -11,7 +11,7 @@ params [
 
 if (_container getVariable ["DT_boobyTrapped",false]) then {
 	_container setVariable ["DT_boobyTrapped",nil,true];
-	private _trap = selectRandom (getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforTrapMunitions"));
+	private _trap = selectRandom ["GrenadeHand","mini_Grenade"];
 	createVehicle [_trap,_container,[],0,"CAN_COLLIDE"];
 };
 

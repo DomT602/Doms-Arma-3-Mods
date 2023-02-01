@@ -54,7 +54,7 @@ class Params {
 	};
 	class opforFaction {
 		title = "Opfor Faction";
-		texts[] = {"CSAT (Vanilla)","AAF (Vanilla)","NATO (Vanilla)","Ardistan Army (3CB Factions)","African Desert Army (3CB Factions)","Chernorussian Movement of the Red Star (3CB Factions)","Karzeghistan Royal Guard (3CB Factions)","MEE (3CB Factions)"};
+		texts[] = {"CSAT (Vanilla)","AAF (Vanilla)","NATO (Vanilla)","Ardistan Army (3CB Factions)","African Desert Army (3CB Factions)","Chernorussian Movement of the Red Star (3CB Factions)","Karzeghistan Royal Guard (3CB Factions)","Middle Eastern Extremists (3CB Factions)"};
 		values[] = {0,1,2,3,4,5,6,7};
 		default = 0;
 	};

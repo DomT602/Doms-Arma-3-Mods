@@ -145,12 +145,6 @@ class ADA {
 		"UK3CB_ADA_O_UH1H_GUNSHIP"
 	};
 
-	//CfgMagazines; https://community.bistudio.com/wiki/Arma_3:_CfgMagazines
-	opforTrapMunitions[] = {
-		"GrenadeHand",
-		"mini_Grenade"
-	};
-
 	opforMines[] = {
 		"ATMine",
 		"APERSTripMine",

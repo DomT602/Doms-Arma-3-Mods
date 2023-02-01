@@ -120,12 +120,6 @@ class MEE {
 		{"UK3CB_ADA_O_UH1H_M240",true}
 	};
 
-	//CfgMagazines; https://community.bistudio.com/wiki/Arma_3:_CfgMagazines
-	opforTrapMunitions[] = {
-		"GrenadeHand",
-		"mini_Grenade"
-	};
-
 	opforMines[] = {
 		"ATMine",
 		"APERSTripMine",

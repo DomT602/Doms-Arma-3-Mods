@@ -16,7 +16,7 @@ class pilot {
 	icon = "a3\ui_f\data\map\vehicleicons\iconManOfficer_ca.paa";
 
 	defaultLoadout[] = {
-		{"UK3CB_BAF_L22A2_SUSAT","","","UK3CB_BAF_SUSAT",{"UK3CB_BAF_556_30Rnd",30},{},""},
+		{"UK3CB_BAF_L22A2","","","UK3CB_BAF_SpecterLDS",{"UK3CB_BAF_556_30Rnd",30},{},""},
 		{},
 		{"UK3CB_BAF_L131A1","","","",{"UK3CB_BAF_9_17Rnd",17},{},""},
 		{"UK3CB_BAF_U_HeliPilotCoveralls_Army",{{"ACE_EarPlugs",1},{"ACE_quikclot",2},{"ACE_elasticBandage",1},{"UK3CB_BAF_9_17Rnd",1,17},{"Chemlight_green",1,1},{"Chemlight_blue",1,1},{"UK3CB_BAF_SmokeShellBlue",1,1},{"UK3CB_BAF_SmokeShellRed",1,1},{"UK3CB_BAF_SmokeShell",2,1},{"HandGrenade",1,1}}},

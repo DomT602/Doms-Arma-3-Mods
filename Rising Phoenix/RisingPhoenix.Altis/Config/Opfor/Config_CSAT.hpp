@@ -101,12 +101,6 @@ class CSAT {
 		"O_Heli_Light_02_v2_F"
 	};
 
-	//CfgMagazines; https://community.bistudio.com/wiki/Arma_3:_CfgMagazines
-	opforTrapMunitions[] = {
-		"GrenadeHand",
-		"mini_Grenade"
-	};
-
 	opforMines[] = {
 		"ATMine",
 		"APERSTripMine",

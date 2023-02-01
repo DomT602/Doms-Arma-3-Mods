@@ -97,12 +97,6 @@ class NATO {
 		"B_Heli_Attack_01_F"
 	};
 
-	//CfgMagazines; https://community.bistudio.com/wiki/Arma_3:_CfgMagazines
-	opforTrapMunitions[] = {
-		"GrenadeHand",
-		"mini_Grenade"
-	};
-
 	opforMines[] = {
 		"ATMine",
 		"APERSTripMine",

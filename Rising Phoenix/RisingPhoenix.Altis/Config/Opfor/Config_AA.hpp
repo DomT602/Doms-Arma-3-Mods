@@ -141,12 +141,6 @@ class AA {
 		"UK3CB_ARD_O_Mi8AMTSh"
 	};
 
-	//CfgMagazines; https://community.bistudio.com/wiki/Arma_3:_CfgMagazines
-	opforTrapMunitions[] = {
-		"GrenadeHand",
-		"mini_Grenade"
-	};
-
 	opforMines[] = {
 		"ATMine",
 		"APERSTripMine",
