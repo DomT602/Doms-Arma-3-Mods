@@ -7,6 +7,8 @@ DT_isLambsEnabled = isClass(configFile >> "CfgPatches" >> "lambs_main");
 DT_isZenEnabled = isClass(configFile >> "CfgPatches" >> "ZEN_main");
 DT_isTFAREnabled = isClass (configFile >> "CfgPatches" >> "task_force_radio");
 publicVariable "DT_isTFAREnabled";
+DT_isACREEnabled = isClass (configFile >> "CfgPatches" >> "acre_main");
+publicVariable "DT_isACREEnabled";
 
 DT_bluforFaction = switch (paramsArray select 0) do {
 	case 0: {"CTRG"};
@@ -25,14 +27,14 @@ DT_opforFaction = switch (paramsArray select 1) do {
 publicVariable "DT_opforFaction";
 
 DT_dynamicGroups = getArray(missionConfigFile >> DT_bluforFaction >> "Dynamic_Groups" >> "group_setup");
-if (DT_isTFAREnabled) then {
+if (DT_isTFAREnabled || {DT_isACREEnabled}) then {
 	DT_swRadioFrequencies = [[],[]];
 	DT_lrRadioFrequencies = [[],[]];
 };
 {
 	_x params ["_groupName","_roles","","_swFreq","_lrFreq"];
 
-	if (DT_isTFAREnabled) then {
+	if (DT_isTFAREnabled || {DT_isACREEnabled}) then {
 		DT_swRadioFrequencies params ["_swFreqs","_swGroups"];
 		private _freqIndex = _swFreqs find _swFreq;
 		if (_freqIndex isNotEqualTo -1) then {
@@ -63,7 +65,7 @@ if (DT_isTFAREnabled) then {
 	_x pushBack grpNull;
 	_x pushBack _playerArray;
 } forEach DT_dynamicGroups;
-if (DT_isTFAREnabled) then {
+if (DT_isTFAREnabled || {DT_isACREEnabled}) then {
 	publicVariable "DT_swRadioFrequencies";
 	publicVariable "DT_lrRadioFrequencies";
 };
