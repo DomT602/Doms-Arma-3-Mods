@@ -98,6 +98,8 @@ DT_missionCount = 0;
 	} forEach allCurators;
 },true,[],true] call CBA_fnc_addClassEventHandler;
 
+["ace_explosives_defuse",DT_fnc_onDefuse] call CBA_fnc_addEventHandler;
+
 [] call DT_fnc_mainLoop;
 [] call DT_fnc_startNewMission;
 [] call DT_fnc_startSideMission;

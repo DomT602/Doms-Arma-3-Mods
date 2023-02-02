@@ -71,6 +71,7 @@ class DT_Core {
 		class initTalkMenu {};
 		class markMines {};
 		class patDown {};
+		class onDefuse {};
 		class setupSuicideBomber {};
 		class spawnAmbientCiv {};
 		class spawnCivilians {};
