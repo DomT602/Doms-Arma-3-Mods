@@ -17,4 +17,4 @@ _sideMissions deleteAt _index;
 
 (selectRandom _sideMissions) params ["","_code"];
 
-[_code,[],(paramsArray select 10) * 60] call CBA_fnc_waitAndExecute;
+[_code,[],(paramsArray select 11) * 60] call CBA_fnc_waitAndExecute;

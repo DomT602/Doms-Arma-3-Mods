@@ -25,7 +25,7 @@ if (_desiredSide isEqualTo _configSide) then {
 	deleteGroup _tempGroup;
 };
 
-private _trapChance = paramsArray select 14;
+private _trapChance = paramsArray select 15;
 if (_trapChance > random 100) then {
 	_unit setVariable ["DT_boobyTrapped",true,true];
 };

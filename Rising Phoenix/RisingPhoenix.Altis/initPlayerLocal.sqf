@@ -48,10 +48,8 @@ if (DT_isACREEnabled) then {
 	if (DT_isTFAREnabled && {call TFAR_fnc_haveLRRadio}) then {call DT_fnc_initLrRadio};
 }] call CBA_fnc_addEventHandler;
 
-["ace_treatmentSucceded", {
+["ace_treatmentSucceded",{
 	params ["_caller","_target","_selectionName","_className","_itemUser","_usedItem"];
-
-	if (_caller isNotEqualTo player) exitWith {};
 
 	private _medicalItems = [
 		"ACE_fieldDressing","ACE_elasticBandage","ACE_packingBandage","ACE_quikclot",
@@ -61,7 +59,7 @@ if (DT_isACREEnabled) then {
 		"ACE_salineIV_250","ACE_salineIV_500","ACE_salineIV"
 	];
 
-	if (side _target isEqualTo civilian && {_usedItem in _medicalItems}) then {
+	if (([typeOf _target] call DT_fnc_getConfigSide) isEqualTo civilian && {_usedItem in _medicalItems}) then {
 		[getPosASL _target,paramsArray select 8] remoteExecCall ["DT_fnc_adjustKarma",2];
 		[format["%1 thanks you for the treatment.",name _target]] call DT_fnc_notify;
 	};

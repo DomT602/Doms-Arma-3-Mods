@@ -9,7 +9,7 @@ onLoadName = "Op Rising Phoenix";
 class Header {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 46;
+	maxPlayers = 51;
 };
 
 respawnButton = 1;
@@ -113,6 +113,13 @@ class Params {
 		texts[] = {"Very Low","Low","Normal","High","Very High"};
 		values[] = {1,2,3,4,5};
 		default = 3;
+	};
+	class rankAffectsCivTalking
+	{
+		title = "Should player rank increase the chance of civilians co-operating?";
+		texts[] = {"Yes","No"};
+		values[] = {1,0};
+		default = 1;
 	};
 	class enemyActionFrequency
 	{

@@ -22,7 +22,8 @@ private _generalQuestions = [
 	"Have you seen any unusual activity recently?",
 	"What can we do to help you?",
 	"Where is the nearest burger joint?",
-	"Are there any nearby enemies?"
+	"Are there any nearby enemies?",
+	"What do people around here think about us?"
 ];
 
 private _interrogationQuestions = [

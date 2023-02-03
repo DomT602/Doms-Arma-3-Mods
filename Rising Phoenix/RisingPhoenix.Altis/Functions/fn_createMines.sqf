@@ -6,7 +6,7 @@
 params [
 	["_pos",[],[[]]],
 	["_radius",200,[0]],
-	["_count",(paramsArray select 15),[0]]
+	["_count",(paramsArray select 16),[0]]
 ];
 
 private _iedTypes = getArray(missionConfigFile >> "Opfor_Setup" >> DT_opforFaction >> "opforMines");

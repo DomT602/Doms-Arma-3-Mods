@@ -10,10 +10,13 @@ params [
 
 private _unitPos = getPosASL _unit;
 private _karma = [_unitPos] call DT_fnc_getKarma;
-_karma = round (_karma / 20); //value between -5 and 5
+_karma = _karma / 20; //value between -5 and 5
 private _individualKarma = _unit getVariable ["DT_individualKarma",0];
 _karma = _karma + _individualKarma;
-
+if ((paramsArray select 10) isEqualTo 1) then {
+	private _rankID = rankId player;
+	_karma = _karma + (_rankID / 4)
+};
 private _isCaptive = captive _unit;
 if (_isCaptive) then {_karma = _karma - 1};
 
@@ -210,7 +213,7 @@ switch _questionIndex do {
 				"I know nothing about this 'enemy' you talk about.",
 				"You are the only enemy around here.",
 				"Do you count yourself as the enemy?",
-				"In my eyes, you are the only enemy here",
+				"In my eyes, you are the only enemy here.",
 				"I don't know of any enemies nearby."
 			];
 			_options append _genericNegativeResponses;
@@ -231,6 +234,21 @@ switch _questionIndex do {
 		};
 	};
 	case 5: {
+		private _options = [];
+		if (_karma < 0) then {
+			_options append _genericNegativeResponses;
+		};
+
+		_options pushBack call {
+			if (_karma > 3) exitWith {selectRandom ["You are well regarded around here.","We are thankful that you are around."]};
+			if (_karma > 0) exitWith {"We think you are alright."};
+			if (_karma > -2) exitWith {selectRandom ["We don't like what you have done here.","We would rather you leave.","We wish you would leave us alone."]};
+			selectRandom ["We hate you.","You should leave."]
+		};
+
+		_response = selectRandom _options;
+	};
+	case 6: {
 		private _options = [
 			"I haven't done anything.",
 			"Why are you accusing me of that?"
@@ -241,7 +259,7 @@ switch _questionIndex do {
 		
 		_response = selectRandom _options;
 	};
-	case 6: {
+	case 7: {
 		if (_karma < -5) then {
 			_response = selectRandom _genericNegativeResponses;
 		} else {
@@ -254,7 +272,7 @@ switch _questionIndex do {
 			};
 		};
 	};
-	case 7: {
+	case 8: {
 		if (_karma < -5) then {
 			_response = selectRandom _genericNegativeResponses;
 		} else {
@@ -266,7 +284,7 @@ switch _questionIndex do {
 			};
 		};
 	};
-	case 8: {
+	case 9: {
 		if ((DT_missionDetails findIf {"destroyConvoy" in _x}) isEqualTo -1 && {random 100 > 75}) then {
 			_response = "A convoy usually passes through about now.";
 			[_unit] remoteExecCall ["DT_fnc_destroyConvoy",2];

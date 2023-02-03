@@ -13,7 +13,7 @@ private _supportCooldowns = missionNamespace getVariable ["DT_supportCooldowns",
 (parseSimpleArray (_tree tvData [_firstIndex])) params ["_action","_cooldown"];
 if (CBA_missionTime < (_supportCooldowns select _firstIndex)) exitWith {["Cooldown not finished."] call DT_fnc_notify};
 private _pos = markerPos "supportTarget";
-if (_action in ["mortar","supplyDrop"] && {_pos isEqualTo [0,0,0]}) exitWith {["No target has been selected."] call AW_fnc_notify};
+if (_action in ["mortar","supplyDrop"] && {_pos isEqualTo [0,0,0]}) exitWith {["No target has been selected."] call DT_fnc_notify};
 
 if (_action isEqualTo "mortar") then {
 	private _mortarType = _tree tvText _selectionPath;

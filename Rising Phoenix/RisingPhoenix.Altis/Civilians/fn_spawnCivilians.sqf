@@ -23,7 +23,7 @@ for "_i" from 1 to _civilianCount do {
 	private _spawnPosition = [_position,0,300,5,0,1,0,[],[_position,_position]] call BIS_fnc_findSafePos;
 
 	private _civilian = _group createUnit [_className,_spawnPosition,[],5,"NONE"];
-	_civilian setVariable ["DT_individualKarma",round (random [-2,0,2]),true];
+	_civilian setVariable ["DT_individualKarma",random [-2,0,2],true];
 	_civilians pushBack _civilian;
 	[_group,_spawnPosition] call DT_fnc_civilianWalking;
 
@@ -64,7 +64,7 @@ for "_i" from 1 to _civilianCount do {
 [
 	{
 		params ["_obj"];
-		[_obj] call DT_fnc_areaIsClear
+		[_obj,1000] call DT_fnc_areaIsClear
 	},
 	{
 		params ["_obj","_civilians"];
