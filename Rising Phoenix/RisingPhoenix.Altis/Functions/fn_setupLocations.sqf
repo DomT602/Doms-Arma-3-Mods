@@ -11,7 +11,7 @@ DT_civLocations = [];
 {
 	private _pos = position _x;
 	_pos set [2,0];
-	private _buildings = _centre nearObjects ["House",300];
+	private _buildings = _pos nearObjects ["House",300];
 	if (_pos distance arsenal_1 > 750 && {_buildings isNotEqualTo []}) then {
 		private _townNameSpace = createSimpleObject ["CBA_NamespaceDummy",_pos];
 		_townNameSpace setVariable ["DT_townName",text _x,true];

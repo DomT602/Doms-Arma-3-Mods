@@ -43,3 +43,12 @@ class NATO {
 		{"Mortar Support","mortar",45}
 	};
 };
+
+class USSOCOM {
+	#include "USSOCOM\Config_Groups.hpp"
+
+	supports[] = {
+		{"Supply Drop","supplyDrop",900},
+		{"Mortar Support","mortar",45}
+	};
+};

@@ -48,8 +48,8 @@ class CfgFunctions {
 class Params {
 	class bluforFaction {
 		title = "Blufor Faction";
-		texts[] = {"CTRG (Vanilla)","NATO (Vanilla)","CSAT (Vanilla)","AMF (AMF_AIO)","BAF (3CB)"};
-		values[] = {0,1,2,3,4};
+		texts[] = {"CTRG (Vanilla)","NATO (Vanilla)","CSAT (Vanilla)","AMF (AMF_AIO)","BAF (3CB)","USSOCOM (RHS)"};
+		values[] = {0,1,2,3,4,5};
 		default = 0;
 	};
 	class opforFaction {
@@ -154,7 +154,7 @@ class Params {
 		title = "Chances of Booby Traps";
 		texts[] = {"None","Very Low","Low","Normal","High","Very High"};
 		values[] = {0,3,6,9,12,15};
-		default = 6;
+		default = 9;
 	};
 	class opforMineIntensity
 	{

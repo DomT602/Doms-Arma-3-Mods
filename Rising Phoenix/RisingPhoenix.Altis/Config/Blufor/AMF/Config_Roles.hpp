@@ -23,14 +23,14 @@ class Common_Arsenal {
 		"ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500",
 		"ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_500",
 		"ACE_tourniquet", "ACE_splint",
-		"ACE_surgicalKit",
+		"ACE_surgicalKit", "ACE_Canteen",
 
 		"ACE_Chemlight_HiBlue", "ACE_Chemlight_HiGreen", "ACE_Chemlight_HiRed", "ACE_Chemlight_HiWhite", "ACE_Chemlight_HiYellow", "ACE_Chemlight_UltraHiOrange",
 		"Chemlight_blue", "Chemlight_green", "Chemlight_red", "Chemlight_yellow", "acc_flashlight_pistol", "ACE_Flashlight_XL50", "ACE_Flashlight_MX991", "ACE_Flashlight_KSF1",
 		"ACE_Chemlight_IR", "ACE_Chemlight_Orange", "ACE_Chemlight_White", "ACE_Chemlight_Shield", "ACE_Chemlight_Shield_Blue", "ACE_Chemlight_Shield_Green", "ACE_Chemlight_Shield_Orange", "ACE_Chemlight_Shield_Red", "ACE_Chemlight_Shield_White", "ACE_Chemlight_Shield_Yellow",
 		"ACE_HandFlare_Green", "ACE_HandFlare_Red", "ACE_HandFlare_White", "ACE_HandFlare_Yellow", "ACE_IR_Strobe_Item",
 		"SmokeShell", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "SmokeShellRed", "SmokeShellYellow",
-		"HandGrenade", "MiniGrenade",
+		"rhs_mag_m67", "MiniGrenade", "rhs_mag_mk84",
 
 		"ACE_RangeTable_82mm", "ACE_artilleryTable", "ACE_RangeCard", "ACE_Tripod", "ACE_ATragMX", "ACE_SpareBarrel", "ACE_SpottingScope", "ACE_Kestrel4500",
 
@@ -121,10 +121,10 @@ class Common_Arsenal {
 		"AMF_614_short_01_F",
 		"AMF_614_long_HK269_01_F",
 		
-		"amf_aimpoint_compm5",
-		"amf_specter",
-		"amf_eotech_553",
-		"amf_eotech_553_magnifier_side",
+		"rhsusf_acc_g33_xps3",
+		"rhsusf_acc_su230",
+		"rhsusf_acc_compm4",
+		"rhsusf_acc_eotech_552",
 		"amf_wmx200",
 		"amf_an_peq_15_black",
 		"amf_an_peq_15_tan",
@@ -166,9 +166,8 @@ class Common_Arsenal {
 		
 		"ACE_VMH3",
 		"ACE_VMM3",
-		"AMF_AT4CS_Loaded",
-		"AMF_LRAC89_F",
-		"AMF_Eryx",
+		"AMF_RFG_AC58",
+		"AMF_RFG_APAV40",
 		
 		"amf_balaclava_ranger",
 		"amf_balaclava_blk",

@@ -74,3 +74,19 @@ if (DT_isZeus) then {
 
 player setVehiclePosition [getMarkerPos "respawn_west",[],5];
 [] call DT_fnc_initGroupMenu;
+
+createDialog ["RscDisplayWelcome",true];
+private _display = findDisplay 999999;
+private _text = _display displayCtrl 1100;
+private _message = "
+	<t align='center' size='6' shadow='0'><br/>Operation Rising Phoenix</t><br/>
+	Welcome to Operation Rising Phoenix, a highly customisable gamemode .<br/><br/>
+	<a color='#00DFFF'>•</a> Github: <a href='https://github.com/DomT602/Doms-Arma-3-Mods/tree/main/Rising%20Phoenix' color='#56BDD6'> https://github.com/DomT602/Doms-Arma-3-Mods/tree/main/Rising%20Phoenix</a><br/>
+	<a color='#00DFFF'>•</a> Discord: <a href='https://discord.gg/FewM2Wfc9y' color='#56BDD6'> https://discord.gg/FewM2Wfc9y</a>
+";
+
+_text ctrlSetStructuredText (parseText _message);
+(ctrlPosition _text) params ["_xPos","_yPos","_width"];
+private _height = ctrlTextHeight _text;
+_text ctrlSetPosition [_xPos,_yPos,_width,_height];
+_text ctrlCommit 0;
