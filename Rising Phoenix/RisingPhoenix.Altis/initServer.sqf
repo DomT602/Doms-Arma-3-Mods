@@ -114,7 +114,7 @@ DT_ambientOpforHandle = -1;
 [paramsArray select 12] call DT_fnc_spawnAmbientOpfor;
 
 DT_supportCooldowns = [];
-private _supportActions = getArray(missionConfigFile >> DT_bluforFaction >> "supports");
+private _supportActions = getArray(missionConfigFile >> "supports");
 for "_i" from 1 to (count _supportActions) do {
 	DT_supportCooldowns pushBack 0;
 };

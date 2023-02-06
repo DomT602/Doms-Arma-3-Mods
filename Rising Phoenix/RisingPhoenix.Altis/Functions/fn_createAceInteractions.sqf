@@ -52,14 +52,28 @@ private _loadRespawnLoadout = [
 ] call ace_interact_menu_fnc_createAction;
 [player,1,["ACE_SelfActions","arsenalCategory"],_loadRespawnLoadout] call ace_interact_menu_fnc_addActionToObject;
 
+private _deployToRallyPoint = [
+	"rallyPoint",
+	"Deploy to Rally Point",
+	"\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\takeoff_ca.paa",
+	{
+		player setVehiclePosition [missionNamespace getVariable ["DT_rallyPointPos",[]],[],5];
+	},
+	{
+		isNull objectParent _player &&
+		{missionNamespace getVariable ["DT_rallyPointPos",[]] isNotEqualTo [] &&
+		{_player distance arsenal_1 < 100}}
+	}
+] call ace_interact_menu_fnc_createAction;
+[player,1,["ACE_SelfActions"],_deployToRallyPoint] call ace_interact_menu_fnc_addActionToObject;
+
 private _buildMenuCategory = [
 	"buildCategory",
 	"Build Menu",
 	"\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\defend_ca.paa",
 	DT_fnc_initBuildMenu,
 	{
-		isNull objectParent _player &&
-		{_player distance arsenal_1 < 100}
+		rankId player > 1
 	}
 ] call ace_interact_menu_fnc_createAction;
 [player,1,["ACE_SelfActions"],_buildMenuCategory] call ace_interact_menu_fnc_addActionToObject;
@@ -99,7 +113,7 @@ private _deleteVehicleCategory = [
 	"\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\use_ca.paa",
 	{deleteVehicle _target},
 	{
-		isNull objectParent _player &&
+		rankId player > 1 &&
 		{_player distance arsenal_1 < 100 &&
 		{(crew _target isEqualTo [] || {unitIsUAV _target})}}
 	}
@@ -136,7 +150,7 @@ private _supportCategory = [
 	"\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\help_ca.paa",
 	DT_fnc_initSupportMenu,
 	{
-		(_player getVariable ["DT_role","rifleman"]) in ["officer","squadlead","commander","pilot"]
+		rankId player > 2
 	}
 ] call ace_interact_menu_fnc_createAction;
 [player,1,["ACE_SelfActions"],_supportCategory] call ace_interact_menu_fnc_addActionToObject;
@@ -147,7 +161,7 @@ private _environmentCategory = [
 	"\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\use_ca.paa",
 	DT_fnc_initEnvironmentMenu,
 	{
-		(_player getVariable ["DT_role","rifleman"]) in ["officer","squadlead","commander","pilot"]
+		rankId player > 2
 	}
 ] call ace_interact_menu_fnc_createAction;
 [arsenal_1,0,["ACE_MainActions"],_environmentCategory] call ace_interact_menu_fnc_addActionToObject;

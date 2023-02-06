@@ -79,6 +79,7 @@ class DT_Core {
 
 	class Command {
 		file = "Command";
+		class deployRallyPoint {};
 		class initEnvironmentMenu {};
 		class initSupportMenu {};
 		class onMapPress {};

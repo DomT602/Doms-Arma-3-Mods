@@ -79,8 +79,9 @@ createDialog ["RscDisplayWelcome",true];
 private _display = findDisplay 999999;
 private _text = _display displayCtrl 1100;
 private _message = "
-	<t align='center' size='6' shadow='0'><br/>Operation Rising Phoenix</t><br/>
-	Welcome to Operation Rising Phoenix, a highly customisable gamemode .<br/><br/>
+	<t align='center' size='6' shadow='0'><br/>Op Rising Phoenix</t><br/>
+	Welcome to Operation Rising Phoenix, a highly customisable gamemode designed for its replayability. Through the use of Mission Parameters, you can change various settings including the factions and difficulty of the playthrough.<br/>
+	To get started, select a role from the group menu and access subsequent menus through ACE Self Interact. You can view more information about this gamemode in the diary.<br/><br/>
 	<a color='#00DFFF'>•</a> Github: <a href='https://github.com/DomT602/Doms-Arma-3-Mods/tree/main/Rising%20Phoenix' color='#56BDD6'> https://github.com/DomT602/Doms-Arma-3-Mods/tree/main/Rising%20Phoenix</a><br/>
 	<a color='#00DFFF'>•</a> Discord: <a href='https://discord.gg/FewM2Wfc9y' color='#56BDD6'> https://discord.gg/FewM2Wfc9y</a>
 ";

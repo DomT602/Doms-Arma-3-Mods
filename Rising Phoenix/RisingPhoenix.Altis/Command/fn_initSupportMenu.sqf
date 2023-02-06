@@ -6,7 +6,7 @@
 
 private _display = createDialog ["DT_supportMenu",true];
 private _tree = _display displayCtrl 1500;
-private _supportActions = getArray(missionConfigFile >> DT_bluforFaction >> "supports");
+private _supportActions = getArray(missionConfigFile >> "supports");
 private _supportCooldowns = missionNamespace getVariable ["DT_supportCooldowns",[]];
 
 {
@@ -30,6 +30,10 @@ private _supportCooldowns = missionNamespace getVariable ["DT_supportCooldowns",
 				_tree tvAdd [[_actionIndex],_title];
 				_tree tvSetData [[_actionIndex,_forEachIndex],str([_crateSize,_contents])];
 			} forEach _allSupplyBoxes;
+		} else {
+			if (_action isEqualTo "rallyPoint") then {
+				_tree tvAdd [[_actionIndex],"30 Minutes"];
+			};
 		};
 	};
 } forEach _supportActions;
