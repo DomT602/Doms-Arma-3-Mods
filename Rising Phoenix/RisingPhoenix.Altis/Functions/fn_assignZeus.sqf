@@ -26,6 +26,6 @@ if (isNull _zeus) then {
 	_unit assignCurator _zeus;
 
 	if !(DT_isZenEnabled) then {
-		_zeus addEventHandler ["Local",{DT_fnc_zeusLocalityChanged}];
+		_zeus addEventHandler ["Local",DT_fnc_zeusLocalityChanged];
 	};
 };

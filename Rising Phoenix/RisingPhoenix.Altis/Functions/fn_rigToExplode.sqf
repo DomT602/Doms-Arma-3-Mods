@@ -19,7 +19,7 @@ private _action = [
 				createVehicle ["Bo_GBU12_LGB",_target];
 				deleteVehicle _target;
 			},
-			[_target],
+			_target,
 			30
 		] call CBA_fnc_waitAndExecute;
 	},

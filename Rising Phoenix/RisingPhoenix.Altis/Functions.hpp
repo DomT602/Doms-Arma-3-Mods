@@ -51,6 +51,7 @@ class DT_Core {
 		class onGetInMan {};
 		class onInventoryOpened {};
 		class rigToExplode {};
+		class setupDiaryTutorials {};
 		class setupLocations {};
 		class setupUAV {};
 		class spawnAmbientOpfor {};

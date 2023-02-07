@@ -22,7 +22,7 @@ _marker setMarkerShape "ELLIPSE";
 _marker setMarkerBrush "FDiagonal";
 _marker setMarkerSize [500,500];
 
-[true,_taskAndMarkerVar,[format ["A local commander called %1 has been spotted in %2, capture him and bring him back to base.",_name,_townName],format ["Capture %1",_name],""],_townCentre,"CREATED",1,true,"TARGET",true] call BIS_fnc_taskCreate;
+[true,_taskAndMarkerVar,[format ["A local commander, %1, has been spotted in %2, capture him and bring him back to base.",_name,_townName],format ["Capture %1",_name],""],_townCentre,"CREATED",1,true,"TARGET",true] call BIS_fnc_taskCreate;
 DT_missionDetails pushBack _taskAndMarkerVar;
 publicVariable "DT_missionDetails";
 

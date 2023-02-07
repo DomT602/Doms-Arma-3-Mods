@@ -6,14 +6,12 @@
 params [
 	["_class","",[""]]
 ];
-if (_class isEqualTo "") exitWith {};
 
 private _configValue = getNumber(configFile >> "CfgVehicles" >> _class >> "side");
-private _side = switch _configValue do {
+
+switch _configValue do {
 	case 0: {east};
 	case 1: {west};
 	case 2: {independent};
 	default {civilian};
 };
-
-_side

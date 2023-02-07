@@ -28,7 +28,7 @@ _craters pushBack (createVehicle ["CraterLong",(_objectivePosition getPos [6,180
 _craters pushBack (createVehicle ["CraterLong",(_objectivePosition getPos [12,180]),[],0,"CAN_COLLIDE"]);
 
 private _uav = createVehicle ["B_UAV_02_F",_objectivePosition,[],0,"CAN_COLLIDE"];
-_uav attachTo [(_craters select 0),[0,-1,1]];
+_uav attachTo [_craters select 0,[0,-1,1]];
 _uav setDamage 0.75;
 _uav setVectorUp [0.5,0,1];
 [_uav] remoteExecCall ["DT_fnc_downloadUAVIntel",0,_uav];

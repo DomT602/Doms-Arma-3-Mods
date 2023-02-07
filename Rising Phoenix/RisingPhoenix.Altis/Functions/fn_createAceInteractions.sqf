@@ -120,22 +120,13 @@ private _deleteVehicleCategory = [
 ] call ace_interact_menu_fnc_createAction;
 ["AllVehicles",0,["ACE_MainActions"],_deleteVehicleCategory,true] call ace_interact_menu_fnc_addActionToClass;
 
-private _fullHealSelf = [
-	"aceFullHeal",
-	"Full heal self",
-	"\a3\ui_f\data\IGUI\Cfg\Actions\heal_ca.paa",
-	{[_player] call ace_medical_treatment_fnc_fullHealLocal},
-	{true}
-] call ace_interact_menu_fnc_createAction;
-[medical_1,0,["ACE_MainActions"],_fullHealSelf] call ace_interact_menu_fnc_addActionToObject;
-
 private _fullHealAll = [
 	"aceFullHealAll",
 	"Full heal nearby players (including self)",
 	"\a3\ui_f\data\IGUI\Cfg\Actions\heal_ca.paa",
 	{
 		{
-			if (_x distance _player < 25) then {
+			if (_x distance _player < 50) then {
 				[_x] remoteExecCall ["ace_medical_treatment_fnc_fullHealLocal",_x];
 			};
 		} forEach playableUnits;

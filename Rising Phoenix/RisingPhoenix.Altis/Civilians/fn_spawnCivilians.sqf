@@ -16,6 +16,10 @@ private _civTypes = getArray(missionConfigFile >> "Civilian_Setup" >> "civilianT
 private _localKarma = [_townObj] call DT_fnc_getKarma;
 private _position = getPosASL _townObj;
 
+if (_localKarma < 0) then {
+	[_position,300,abs round(_localKarma / 10)] call DT_fnc_createMines;
+};
+
 private _civilians = [];
 for "_i" from 1 to _civilianCount do {
 	private _group = createGroup [civilian,true];

@@ -66,6 +66,7 @@ if (DT_isACREEnabled) then {
 }] call CBA_fnc_addEventHandler;
 
 [] call DT_fnc_createAceInteractions;
+[] call DT_fnc_setupDiaryTutorials;
 
 DT_isZeus = (getPlayerUID player) in (getArray(missionConfigFile >> "zeusUIDs"));
 if (DT_isZeus) then { 
