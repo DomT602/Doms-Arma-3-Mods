@@ -41,10 +41,13 @@ private _units = units _squad;
 		({alive _x} count _units) < 3
 	},
 	{
-		params ["","_missionVar","_locationObject","_squad"];
+		params ["","_missionVar","_locationObject","_squad","_spawnPos"];
 		
 		[_missionVar,true] call DT_fnc_endMission;
 		[_locationObject,paramsArray select 4] call DT_fnc_adjustKarma;
+		if !(missionNamespace getVariable ["DT_opforHeaviesDisabled",false]) then {
+			[_spawnPos] call DT_fnc_destroySupplyDepot;
+		};
 
 		[
 			{
@@ -55,5 +58,5 @@ private _units = units _squad;
 			[getPosASL _locationObject,_squad]
 		] call CBA_fnc_waitUntilAndExecute;
 	},
-	[_units,_taskAndMarkerVar,_townObject,_squad]
+	[_units,_taskAndMarkerVar,_townObject,_squad,_spawnPos]
 ] call CBA_fnc_waitUntilAndExecute;

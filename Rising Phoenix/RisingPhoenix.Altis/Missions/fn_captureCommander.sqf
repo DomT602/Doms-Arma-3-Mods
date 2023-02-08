@@ -65,6 +65,10 @@ private _squads = [_spawnPosition,50] call DT_fnc_createPatrols;
 			[_locationObject,paramsArray select 4] call DT_fnc_adjustKarma;
 			if !(missionNamespace getVariable ["DT_opforAirDisabled",false]) then {
 				[name _officer] call DT_fnc_destroyAirbase;
+			} else {
+				if !(missionNamespace getVariable ["DT_opforHeaviesDisabled",false]) then {
+					[getPosATL _officer,name _officer] call DT_fnc_destroySupplyDepot;
+				};
 			};
 		} else {
 			[_missionVar,false] call DT_fnc_endMission;

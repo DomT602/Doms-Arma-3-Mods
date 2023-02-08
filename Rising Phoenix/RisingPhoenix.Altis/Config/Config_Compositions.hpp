@@ -1,3 +1,4 @@
+//PortableHelipadLight_01_yellow_F is the class used to designate where vehicles are placed
 class Compositions {
 	opforAirbases[] = {
 		{
@@ -51,7 +52,7 @@ class Compositions {
 			{"Box_East_AmmoVeh_F",{-26.72,5.72,0.03},0.00},
 			{"Box_East_AmmoVeh_F",{-26.73,7.38,0.03},360.00},
 			{"Land_Bomb_Trolley_01_F",{-26.09,10.21,-0.02},45.48},
-			{"Jbad_Mil_ControlTower",{21.71,-15.44,0.00},0.00},
+			{"Land_ControlTower_02_F",{21.71,-15.44,0.00},0.00},
 			{"Box_East_AmmoVeh_F",{-28.41,5.56,0.03},0.00},
 			{"Box_East_AmmoVeh_F",{-28.46,7.21,0.03},0.00},
 			{"Box_East_AmmoVeh_F",{-23.48,-18.91,0.03},0.00},
@@ -199,11 +200,11 @@ class Compositions {
 			{"Land_Razorwire_F",{-18.12,10.61,0.00},337.73}
 		}
 	};
-	opforTankSupplyDepots[] = {
+	opforSupplyDepots[] = {
 		{ 
-			{"Land_HelipadEmpty_F",{-0.97,6.51,0.00},181.56},
+			{"PortableHelipadLight_01_yellow_F",{-0.97,6.51,0.00},181.56},
 			{"Land_TentHangar_V1_F",{-5.33,1.22,0.00},0.00},
-			{"Land_HelipadEmpty_F",{-8.03,-3.13,0.00},179.71},
+			{"PortableHelipadLight_01_yellow_F",{-8.03,-3.13,0.00},179.71},
 			{"Land_RepairDepot_01_green_F",{1.52,-9.94,-0.00},33.49},
 			{"Land_Cargo20_light_green_F",{8.91,6.13,0.00},86.93},
 			{"Jbad_Mil_Repair_center_Big",{10.22,-5.38,0.00},0.00},

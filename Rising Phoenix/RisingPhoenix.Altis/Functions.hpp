@@ -102,6 +102,7 @@ class DT_Core {
 		class destroyCache {};
 		class destroyConvoy {};
 		class destroyJammer {};
+		class destroySupplyDepot {};
 		class endMission {};
 		class killCommander {};
 		class secureIntel {};

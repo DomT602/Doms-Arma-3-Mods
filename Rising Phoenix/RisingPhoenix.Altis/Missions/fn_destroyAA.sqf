@@ -27,12 +27,6 @@ private _squads = [];
 {
 	_x params ["_class","_pos","_dir"];
 	_pos = _pos vectorAdd _spawnPos;
-	private _object = createVehicle [_class,_pos,[],0,"CAN_COLLIDE"];
-	_object setPosATL _pos;
-	_object setVectorUp [0,0,1];
-	_object setDir _dir;
-
-	_objects pushBack _object;
 
 	if (_class isEqualTo "PortableHelipadLight_01_yellow_F") then {
 		private _aaGrp = [selectRandom _AATypes,_pos,0] call DT_fnc_createVehicle;
@@ -42,6 +36,13 @@ private _squads = [];
 		_vehicle lock 3;
 		_vehicle setDir _dir;
 		_objectives pushBack _vehicle;
+	} else {
+		private _object = createVehicle [_class,_pos,[],0,"CAN_COLLIDE"];
+		_object setPosATL _pos;
+		_object setVectorUp [0,0,1];
+		_object setDir _dir;
+
+		_objects pushBack _object;
 	};
 } forEach _templateObjects;
 
