@@ -1,5 +1,5 @@
 class Dynamic_Groups { //format: {"Group Name",{"Group","Roles","Matching","Role","Configs"},"Conditions for the group to be shown","SW TFAR Freq","LR TFAR Freq"}
-	faction_name = "NATO";
+	faction_name = "USSOCOM";
 	group_setup[] = {
 		{"Command",{"officer","medic","uavop"},"true","40","30"},
 		{"Alpha",{"squadlead","medic","rifleman","teamlead","engineer","rifleman"},"true","50","31"},

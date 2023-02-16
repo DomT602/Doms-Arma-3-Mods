@@ -1,4 +1,4 @@
-//PortableHelipadLight_01_yellow_F is the class used to designate where vehicles are placed
+//PortableHelipadLight_01_yellow_F or helipad (for airbase) is the class used to designate where vehicles are placed
 class Compositions {
 	opforAirbases[] = {
 		{

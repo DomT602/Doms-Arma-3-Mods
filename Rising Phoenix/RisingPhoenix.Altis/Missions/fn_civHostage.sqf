@@ -34,7 +34,6 @@ private _group = createGroup [civilian,true];
 private _hostage = _group createUnit [selectRandom _civTypes,_spawnPosition,[],0,"NONE"];
 [_hostage,true] call ACE_captives_fnc_setHandcuffed;
 
-
 [
 	{
 		params ["_hostage"];
