@@ -33,7 +33,7 @@ if (_ambushChance > random 100) then {
 		};
 
 		private _timeDelay = paramsArray select 14;
-		[DT_fnc_spawnAmbushOpfor,_target,_timeDelay + random _timeDelay] call CBA_fnc_waitAndExecute;
+		[DT_fnc_spawnAmbushOpfor,[_target,getPosATL _target],_timeDelay + random _timeDelay] call CBA_fnc_waitAndExecute;
 	}];
 };
 

@@ -4,12 +4,14 @@
 	Description: Spawns enemy units to ambush players
 */
 params [
-	["_target",objNull,[objNull]]
+	["_target",objNull,[objNull]],
+	["_originalPosition",[],[[]]]
 ];
+if (_target distance2D _originalPosition > 1200) exitWith {};
 
 private _spawnPosition = [_target,400,800,5,0,1,0] call BIS_fnc_findSafePos;
 
-(call DT_fnc_calculateEnemySquads) params ["_infantryCount","_lightCount","_mediumCount","_heavyCount"];
+(call DT_fnc_calculateEnemySquads) params ["_infantryCount","_lightCount"];
 
 private _groups = [];
 for "_i" from 1 to _infantryCount do {

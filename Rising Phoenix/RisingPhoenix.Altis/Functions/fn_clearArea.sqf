@@ -10,7 +10,7 @@ params [
 ];
 
 if (_groups isEqualType true) then {
-	_groups = allGroups select {side _x isEqualTo east && {(leader _x) distance2D _centre < 600}};
+	_groups = (groups east) select {(leader _x) distance2D _centre < 600};
 } else {
 	if (_groups isEqualType grpNull) then {
 		_groups = [_groups];
