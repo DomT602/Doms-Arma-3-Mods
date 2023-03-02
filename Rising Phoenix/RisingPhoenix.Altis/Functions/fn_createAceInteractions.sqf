@@ -73,7 +73,8 @@ private _buildMenuCategory = [
 	"\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\defend_ca.paa",
 	DT_fnc_initBuildMenu,
 	{
-		rankId player > 1
+		rankId player > 1 &&
+		{_player distance arsenal_1 < 150}
 	}
 ] call ace_interact_menu_fnc_createAction;
 [player,1,["ACE_SelfActions"],_buildMenuCategory] call ace_interact_menu_fnc_addActionToObject;
@@ -157,6 +158,22 @@ private _environmentCategory = [
 ] call ace_interact_menu_fnc_createAction;
 [arsenal_1,0,["ACE_MainActions"],_environmentCategory] call ace_interact_menu_fnc_addActionToObject;
 
+private _cleanBase = [
+	"cleanBase",
+	"Clean base",
+	"\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\use_ca.paa",
+	{
+		private _toClean = nearestObjects [player,["GroundWeaponHolder","WeaponHolderSimulated"],150];
+		_toClean append (allDead select {_x distance (getPosATL player) < 150});
+
+		{
+			deleteVehicle _x;
+		} forEach _toClean;
+	},
+	{true}
+] call ace_interact_menu_fnc_createAction;
+[arsenal_1,0,["ACE_MainActions"],_cleanBase] call ace_interact_menu_fnc_addActionToObject;
+
 private _talkCategory = [
 	"talkToPerson",
 	"Talk",
@@ -199,3 +216,19 @@ private _talkCategory = [
 	}
 ] call CBA_fnc_addSetting;
 [["Operation Rising Phoenix","Interaction"],"callStop","Call out 'Stop'",DT_fnc_callToStop,"",[DIK_5,[false,false,false]]] call CBA_fnc_addKeybind;
+
+[
+	"DT_bluforMarkersInterval",
+	"SLIDER",
+	["Blufor Map Update Interval","Choose the time interval between blufor map marker updates."],
+	["Operation Rising Phoenix","Map"],
+	[0,10,0.1,2]
+] call CBA_fnc_addSetting;
+
+[
+	"DT_autoRadioOption",
+	"LIST",
+	["Automatic Radio Channel Selection","Choose what radio channel selection should happen once you recieve your radio (TFAR only)."],
+	["Operation Rising Phoenix","Radio"],
+	[[0,1,2],["Disabled","Group default","Last selected channel"],1]
+] call CBA_fnc_addSetting;

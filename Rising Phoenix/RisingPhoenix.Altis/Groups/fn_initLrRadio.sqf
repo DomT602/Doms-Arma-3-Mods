@@ -10,7 +10,11 @@ DT_lrRadioFrequencies params ["_frequencies","_groupArrays"];
 {
 	[_activeLR,1 + _forEachIndex,_x] call TFAR_fnc_setChannelFrequency;
 
-	if (_myGroupName in (_groupArrays select _forEachIndex)) then {
+	if (DT_autoRadioOption isEqualTo 1 && {_myGroupName in (_groupArrays select _forEachIndex)}) then {
 		[_activeLR,_forEachIndex] call TFAR_fnc_setLrChannel;
+	} else {
+		if (DT_autoRadioOption isEqualTo 2) then {
+			[_activeLR,missionNamespace getVariable ["DT_lastLrChannel",0]] call TFAR_fnc_setLrChannel;
+		};
 	};
 } forEach _frequencies;

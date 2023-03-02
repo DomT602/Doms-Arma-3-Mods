@@ -104,6 +104,7 @@ class Common_Arsenal {
 		"AMF_FELIN_BACKPACK_MEDIC",
 		"AMF_FELIN_BACKPACK_TAN_MEDIC",
 		"TFAR_rt1523g_sage",
+		"B_Parachute",
 		
 		"AMF_FELIN_05_CE",
 		"AMF_FELIN_05_TAN",

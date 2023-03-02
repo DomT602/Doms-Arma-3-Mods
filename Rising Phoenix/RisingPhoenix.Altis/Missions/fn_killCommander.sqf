@@ -49,7 +49,7 @@ _officer addEventHandler ["FiredNear",{
 	private _group = group _unit;
 	private _waypoint = _group addWaypoint [_waypointPos,0];
 	_waypoint setWaypointSpeed "FULL";
-	_waypoint setWaypointBehaviour "SAFE";
+	_waypoint setWaypointBehaviour "CARELESS";
 	_waypoint setWaypointCombatMode "YELLOW";
 }];
 

@@ -12,6 +12,8 @@ player addEventHandler ["GetInMan",DT_fnc_onGetInMan];
 addMissionEventHandler ["Map",DT_fnc_createBluforMarkers];
 if (DT_isTFAREnabled) then {
 	["radioSetup","OnRadiosReceived",DT_fnc_initSwRadios] call TFAR_fnc_addEventHandler;
+	["radioSwChange","OnSWchannelSet",{DT_lastSwChannel = _this select 2}] call TFAR_fnc_addEventHandler;
+	["radioLrChange","OnLRchannelSet",{DT_lastLrChannel = _this select 3}] call TFAR_fnc_addEventHandler;
 };
 if (DT_isACREEnabled) then {
 	DT_swRadioFrequencies params ["_frequencies","_groupArrays"];

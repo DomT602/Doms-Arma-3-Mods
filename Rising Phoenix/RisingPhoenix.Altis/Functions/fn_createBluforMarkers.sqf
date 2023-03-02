@@ -69,6 +69,6 @@ private _markers = [];
 			};
 		} forEach _markers;
 	},
-	0.1,
+	DT_bluforMarkersInterval,
 	_markers
 ] call CBA_fnc_addPerFrameHandler;

@@ -5,8 +5,7 @@
 */
 params [
 	["_desiredRole","rifleman",[""]],
-	["_isRespawn",false,[true]],
-	["_team","",[""]]
+	["_isRespawn",false,[true]]
 ];
 
 private _roleConfig = missionConfigFile >> DT_bluforFaction >> "Dynamic_Roles" >> _desiredRole;
@@ -14,7 +13,6 @@ private _defaultLoadout = getArray(_roleConfig >> "defaultLoadout");
 
 if (_isRespawn) then {
 	[player,missionNamespace getVariable ["DT_savedLoadout",_defaultLoadout],true] call CBA_fnc_setLoadout;
-	player assignTeam _team;
 } else {
 	DT_savedLoadout = _defaultLoadout;
 	[player,_defaultLoadout,true] call CBA_fnc_setLoadout;

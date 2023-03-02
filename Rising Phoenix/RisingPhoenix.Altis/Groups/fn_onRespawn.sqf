@@ -26,4 +26,4 @@ private _oldTeam = assignedTeam _unit;
 if (_oldPath isEqualTo []) exitWith {[] call DT_fnc_initGroupMenu};
 
 if (DT_isTFAREnabled && {call TFAR_fnc_haveLRRadio}) then {call DT_fnc_initLrRadio};
-[_unit,_oldPath,_oldRole,true,_oldTeam] remoteExecCall ["DT_fnc_assignPlayer",2];
+[_unit,_oldPath,_oldRole,true] remoteExecCall ["DT_fnc_assignPlayer",2];
