@@ -5,16 +5,17 @@
 */
 private _markers = [];
 {
-	if (leader (group _x) isEqualTo _x) then {
-		private _roleName = getText(missionConfigFile >> DT_bluforFaction >> "Dynamic_Roles" >> (_x getVariable ["DT_role","rifleman"]) >> "name");
+	private _leader = leader _x;
+	if (isPlayer _leader) then {
+		private _roleName = getText(missionConfigFile >> DT_bluforFaction >> "Dynamic_Roles" >> (_leader getVariable ["DT_role","rifleman"]) >> "name");
 
-		private _marker = createMarkerLocal [format["grpLdr%1",_forEachIndex],_x];
+		private _marker = createMarkerLocal [format["grpLdr%1",_forEachIndex],_leader];
 		_marker setMarkerColorLocal "ColorBLUFOR";
-		if (isNull objectParent _x) then {
+		if (isNull objectParent _leader) then {
 			_marker setMarkerTypeLocal "b_inf";
-			_marker setMarkerTextLocal format ["%1 - %2",_roleName,name _x];
+			_marker setMarkerTextLocal format ["%1 - %2",_roleName,name _leader];
 		} else {
-			private _vehicle = objectParent _x;
+			private _vehicle = objectParent _leader;
 			if (_vehicle isKindOf "Tank") then {
 				_marker setMarkerTypeLocal "b_armor";
 			} else {
@@ -33,11 +34,11 @@ private _markers = [];
 				};
 			};
 			private _vehName = getText(configOf _vehicle >> "displayName");
-			_marker setMarkerTextLocal format ["%1 - %2 - %3",_vehName,_roleName,name _x];
+			_marker setMarkerTextLocal format ["%1 - %2 - %3",_vehName,_roleName,name _leader];
 		};
-		_markers pushBack [_marker,_x];
+		_markers pushBack [_marker,_leader];
 	};
-} forEach playableUnits;
+} forEach groups west;
 
 {
 	if (side driver _x isEqualTo west) then {

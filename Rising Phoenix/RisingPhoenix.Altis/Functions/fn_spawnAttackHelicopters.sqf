@@ -50,3 +50,5 @@ _waypoint setWaypointCombatMode "RED";
 if (_target isEqualType objNull) then {
 	_group reveal [_target,4];
 };
+
+_group;
