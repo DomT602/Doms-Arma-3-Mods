@@ -4,42 +4,45 @@
 */
 class Logi_Setup {
 	bluforLightVehicles[] = {
-		"UK3CB_AAF_B_LR_Closed",
-		"UK3CB_AAF_B_LR_Open",
-		"UK3CB_AAF_B_M1151_OGPK_M2",
-		"UK3CB_AAF_B_M1151_OGPK_M240",
-		"UK3CB_AAF_B_Offroad_M2",
-		"UK3CB_AAF_B_Offroad",
-		"UK3CB_AAF_O_LR_SF_M2",
-		"UK3CB_AAF_O_GAZ_Vodnik_PKT"
+		"UK3CB_LDF_B_BRDM2_HQ",
+		"UK3CB_LDF_B_BRDM2",
+		"UK3CB_LDF_B_Tigr_FFV",
+		"UK3CB_LDF_B_Tigr_STS",
+		"UK3CB_LDF_B_M1151_OGPK_M2",
+		"UK3CB_LDF_B_M1151_GPK_PKM",
+		"UK3CB_LDF_B_M998_4DR",
+		"UK3CB_LDF_B_Offroad_AT"
 	};
 
 	bluforHeavyVehicles[] = {
-		"UK3CB_AAF_B_LAV25",
-		"UK3CB_AAF_B_M1117",
-		"UK3CB_AAF_B_FV4201",
-		"UK3CB_AAF_I_BTR70",
-		"UK3CB_AAF_I_T72BB",
-		"UK3CB_AAF_O_MTLB_BMP",
-		"UK3CB_AAF_O_MTLB_Cannon"
+		"UK3CB_LDF_B_BMP1",
+		"UK3CB_LDF_B_BMP2",
+		"UK3CB_LDF_B_Marshall_Cage_Camo",
+		"UK3CB_LDF_B_MTLB_Cannon",
+		"UK3CB_LDF_B_MTLB_BMP",
+		"UK3CB_LDF_B_MTLB_KPVT",
+		"UK3CB_LDF_B_Leopard_Cage_Camo",
+		"UK3CB_LDF_B_T72BB",
+		"UK3CB_LDF_B_T72A",
+		"UK3CB_LDF_B_RM70_MG"
 	};
 
 	bluforAirVehicles[] = {
-		"UK3CB_AAF_B_UH1H_M240",
-		"UK3CB_AAF_B_UH1H_GUNSHIP",
-		"UK3CB_AAF_O_Mi_24P",
-		"UK3CB_AAF_O_Mi8",
-		"UK3CB_AAF_O_L39_PYLON",
-		"UK3CB_AAF_B_C130J_G",
+		"UK3CB_LDF_B_Mi_24P",
+		"UK3CB_LDF_B_Mi8AMTSh",
+		"UK3CB_LDF_B_Mi8",
+		"UK3CB_LDF_B_L39_PYLON",
+		"UK3CB_LDF_B_MIG21",
+		"UK3CB_LDF_B_C130J",
 		"B_UAV_02_dynamicLoadout_F",
 		"C_IDAP_UAV_06_antimine_F",
 		"B_UAV_01_F"
 	};
 
 	bluforNavalVehicles[] = {
-		"UK3CB_AAF_B_RHIB",
-		"UK3CB_AAF_B_RHIB_Gunboat",
-		"UK3CB_AAF_B_SDV"
+		"UK3CB_MDF_B_RHIB",
+		"UK3CB_MDF_B_RHIB_Gunboat",
+		"UK3CB_MDF_B_Rubber_Rhib"
 	};
 
 	supplyCrateTypes[] = { //crate types to be used below, format {sizeName, classname}
