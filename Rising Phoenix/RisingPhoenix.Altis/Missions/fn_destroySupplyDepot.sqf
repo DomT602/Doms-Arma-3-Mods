@@ -39,7 +39,7 @@ private _objectives = [];
 
 	if (_class isEqualTo "PortableHelipadLight_01_yellow_F") then {
 		private _tank = createVehicle [selectRandom _tankTypes,_pos,[],0,"NONE"];
-		_tank lock 3;
+		_tank lock 2;
 		_tank setDir _dir;
 		_objectives pushBack _tank;
 	} else {

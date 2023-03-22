@@ -29,8 +29,9 @@ params [
 		};
 
 		private _lastIndex = (count _waypoints) - 1;
+		private _group = _x;
 		{
-			private _waypoint = _x addWaypoint [_x,5];
+			private _waypoint = _group addWaypoint [_x,5];
 
 			if (_forEachIndex isEqualTo _lastIndex) then {
 				_waypoint setWaypointType "CYCLE";

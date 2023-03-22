@@ -56,7 +56,7 @@ if (_action isEqualTo "mortar") then {
 			25 + (random 5) + (3 * _i)
 		] remoteExecCall ["CBA_fnc_waitAndExecute",2];
 	};
-	["Rounds are being fired as ordered."] call DT_fnc_notify;
+	["Rounds are being fired as ordered, approximately 30 seconds out."] call DT_fnc_notify;
 } else {
 	if (_action isEqualTo "supplyDrop") then {
 		[_pos] call DT_fnc_createSupplyCrate;
