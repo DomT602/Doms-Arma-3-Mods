@@ -139,14 +139,6 @@ class Common_Arsenal {
 		"rhsusf_mag_15Rnd_9x19_JHP",
 
 		//Launchers
-		"rhs_weap_m72a7",
-		"rhs_weap_maaws",
-		"rhs_optic_maaws",
-		"rhs_mag_maaws_HEAT",
-		"rhs_mag_maaws_HEDP",
-		"rhs_mag_maaws_HE",
-		"MRAWS_HEAT_F",
-		"MRAWS_HE_F",
-		"rhs_weap_M136_hedp"
+		"rhs_weap_m72a7"
 	};
 };

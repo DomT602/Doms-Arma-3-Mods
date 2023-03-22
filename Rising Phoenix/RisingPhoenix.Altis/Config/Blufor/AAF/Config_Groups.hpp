@@ -6,10 +6,10 @@ class Dynamic_Groups { //format: {"Group Name",{"Group","Roles","Matching","Role
 	faction_name = "Altis Armed Forces";
 	group_setup[] = {
 		{"Command",{"officer","medic","uavop"},"true","40","30"},
-		{"Alpha",{"squadlead","medic","autorifleman","teamlead","engineer","rifleman"},"true","50","31"},
-		{"Bravo",{"squadlead","medic","rifleman","teamlead","engineer","rifleman"},"count playableUnits > 6","51","31"},
-		{"Charlie",{"squadlead","medic","rifleman","teamlead","engineer","rifleman"},"count playableUnits > 12","52","31"},
-		{"Delta",{"squadlead","medic","rifleman","teamlead","engineer","rifleman"},"count playableUnits > 18","53","31"},
+		{"Alpha",{"squadlead","medic","autorifleman","rifleman","teamlead","engineer","rifleman","rifleman"},"true","50","31"},
+		{"Bravo",{"squadlead","medic","autorifleman","rifleman","teamlead","engineer","rifleman","rifleman"},"count playableUnits > 6","51","31"},
+		{"Charlie",{"squadlead","medic","autorifleman","rifleman","teamlead","engineer","rifleman","rifleman"},"count playableUnits > 12","52","31"},
+		{"Delta",{"squadlead","medic","autorifleman","rifleman","teamlead","engineer","rifleman","rifleman"},"count playableUnits > 18","53","31"},
 		{"Raptor",{"pilot","pilot"},"true","60","32"},
 		{"Spectre",{"pilot","pilot"},"count playableUnits > 10","60","32"},
 		{"Warpig",{"commander","crewman","crewman"},"true","61","33"},
