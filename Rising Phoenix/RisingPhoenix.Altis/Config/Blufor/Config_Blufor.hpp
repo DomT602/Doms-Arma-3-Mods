@@ -32,3 +32,7 @@ class USSOCOM {
 class AAF {
 	#include "AAF\Config_Groups.hpp"
 };
+
+class LDF {
+	#include "LDF\Config_Groups.hpp"
+};
