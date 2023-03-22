@@ -11,6 +11,7 @@ class Dynamic_Roles {
 	#include "Config_Engineer.hpp"
 	#include "Config_TeamLeader.hpp"
 	#include "Config_SquadLeader.hpp"
+	#include "Config_Autorifleman.hpp"
 
 	#include "Config_Pilot.hpp"
 	#include "Config_UAVOp.hpp"
