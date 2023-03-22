@@ -23,6 +23,7 @@ class pilot {
 	arsenalItems[] = {
 		"rhsusf_hgu56p_visor_mask_mo",
 		"rhsusf_hgu56p_visor_mask_skull",
-		"rhsusf_hgu56p_visor"
+		"rhsusf_hgu56p_visor",
+		"rhsusf_ihadss"
 	};
 };

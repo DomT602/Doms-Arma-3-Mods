@@ -212,6 +212,18 @@ class Common_Arsenal {
 		"ACE_HuntIR_monitor",
 		"rhsusf_acc_anpeq15",
 		"rhsusf_acc_rvg_blk",
-		"rhsusf_acc_tacsac_blk"
+		"rhsusf_acc_tacsac_blk",
+		"rhsusf_100Rnd_556x45_soft_pouch_coyote",
+		"rhsusf_200Rnd_556x45_box",
+
+		"rhs_weap_maaws",
+		"rhs_optic_maaws",
+		"rhs_mag_maaws_HEAT",
+		"rhs_mag_maaws_HEDP",
+		"rhs_mag_maaws_HE",
+		"MRAWS_HEAT_F",
+		"MRAWS_HE_F",
+		"rhs_weap_M136_hedp",
+		"rhs_weap_m72a7"
 	};
 };

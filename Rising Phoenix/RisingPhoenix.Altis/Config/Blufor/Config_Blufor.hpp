@@ -28,3 +28,7 @@ class NATO {
 class USSOCOM {
 	#include "USSOCOM\Config_Groups.hpp"
 };
+
+class AAF {
+	#include "AAF\Config_Groups.hpp"
+};
