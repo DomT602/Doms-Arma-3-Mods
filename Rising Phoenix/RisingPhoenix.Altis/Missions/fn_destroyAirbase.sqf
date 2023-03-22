@@ -44,7 +44,7 @@ private _objectives = [];
 	} else {
 		if (_class in ["Land_HelipadCircle_F","Land_HelipadSquare_F","Land_HelipadRescue_F"]) then {
 			private _helicopter = createVehicle [selectRandom _heliTypes,_pos,[],0,"NONE"];
-			_helicopter lock 3;
+			_helicopter lock 2;
 			_helicopter setDir _dir;
 			_objectives pushBack _helicopter;
 		};
