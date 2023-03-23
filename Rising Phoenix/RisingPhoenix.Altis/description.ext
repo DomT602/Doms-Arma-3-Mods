@@ -48,7 +48,7 @@ class CfgFunctions {
 class Params {
 	class bluforFaction {
 		title = "Blufor Faction";
-		texts[] = {"CTRG (Vanilla)","NATO (Vanilla)","CSAT (Vanilla)","AMF (AMF_AIO)","BAF (3CB)","USSOCOM (RHS)"};
+		texts[] = {"CTRG (Vanilla)","NATO (Vanilla)","CSAT (Vanilla)","AMF (AMF_AIO)","BAF (3CB)","USSOCOM (RHS)","Altis Armed Forces (3CB)","Livonian Defence Force (3CB)","Ukranian Armed Forces (3CB)"};
 		values[] = {0,1,2,3,4,5};
 		default = 0;
 	};
