@@ -36,3 +36,7 @@ class AAF {
 class LDF {
 	#include "LDF\Config_Groups.hpp"
 };
+
+class UAS {
+	#include "UAS\Config_Groups.hpp"
+};

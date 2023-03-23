@@ -4,36 +4,53 @@
 */
 class Logi_Setup {
 	bluforLightVehicles[] = {
-		"UK3CB_AAF_B_LR_Closed",
-		"UK3CB_AAF_B_LR_Open",
-		"UK3CB_AAF_B_M1151_OGPK_M2",
-		"UK3CB_AAF_B_M1151_OGPK_M240",
-		"UK3CB_AAF_B_Offroad_M2",
-		"UK3CB_AAF_B_Offroad",
-		"UK3CB_AAF_O_LR_SF_M2",
-		"UK3CB_AAF_O_GAZ_Vodnik_PKT"
+		"UK3CB_GAF_B_BRDM2",
+		"UK3CB_GAF_B_BRDM2_ATGM",
+		"UK3CB_GAF_B_BRDM2_HQ",
+		"UK3CB_GAF_B_Offroad",
+		"UK3CB_GAF_B_Offroad_HMG",
+		"UK3CB_GAF_B_Offroad_AT",
+		"rhsusf_m1151_m2crows_usarmy_wd",
+		"rhsusf_m1151_m2_v2_usarmy_wd",
+		"rhsusf_m1151_m240_v2_usarmy_wd",
+		"rhsusf_M1117_W",
+		"rhs_tigr_sts_msv",
+		"rhs_tigr_m_msv"
 	};
 
 	bluforHeavyVehicles[] = {
-		"UK3CB_AAF_B_LAV25",
-		"UK3CB_AAF_B_M1117",
-		"UK3CB_AAF_B_FV4201",
-		"UK3CB_AAF_I_BTR70",
-		"UK3CB_AAF_I_T72BB",
-		"UK3CB_AAF_O_MTLB_BMP",
-		"UK3CB_AAF_O_MTLB_Cannon"
+		"UK3CB_GAF_B_BMD1P",
+		"UK3CB_GAF_B_BMP1",
+		"UK3CB_GAF_B_BMP2",
+		"UK3CB_GAF_B_BTR80",
+		"UK3CB_GAF_B_BTR80a",
+		"UK3CB_GAF_B_MTLB_Cannon",
+		"UK3CB_GAF_B_MTLB_BMP",
+		"UK3CB_GAF_B_MTLB_KPVT",
+		"UK3CB_GAF_B_T55",
+		"UK3CB_GAF_B_T72A",
+		"UK3CB_GAF_B_T80BVK",
+		"rhsusf_m1a2sep1tuskiwd_usarmy",
+		"RHS_M2A3_BUSKIII_wd",
+		"RHS_M6_wd",
+		"rhsusf_stryker_m1132_m2_wd",
+		"rhsusf_stryker_m1132_m2_np_wd",
+		"rhsusf_m113_usarmy",
+		"rhsusf_m113_usarmy_M240",
+		"UK3CB_LDF_B_Leopard_Cage_Camo",
+		"UK3CB_KRG_B_FV4201",
+		"UK3CB_GAF_B_T72BC"
 	};
 
 	bluforAirVehicles[] = {
-		"UK3CB_AAF_B_UH1H_M240",
-		"UK3CB_AAF_B_UH1H_GUNSHIP",
-		"UK3CB_AAF_O_Mi_24P",
-		"UK3CB_AAF_O_Mi8",
-		"UK3CB_AAF_O_L39_PYLON",
-		"UK3CB_AAF_B_C130J_G",
-		"B_UAV_02_dynamicLoadout_F",
-		"C_IDAP_UAV_06_antimine_F",
-		"B_UAV_01_F"
+		"UK3CB_GAF_B_Mi_24P",
+		"UK3CB_GAF_B_Mi_24V",
+		"UK3CB_GAF_B_Mi8AMTSh",
+		"UK3CB_GAF_B_Mi8",
+		"UK3CB_GAF_B_MIG29S",
+		"UK3CB_GAF_B_MIG29SM",
+		"UK3CB_GAF_B_Su25SM",
+		"UK3CB_GAF_B_MIG21_CAS"
 	};
 
 	bluforNavalVehicles[] = {

@@ -97,26 +97,23 @@ class Logi_Setup {
 			{"B_Mortar_01_weapon_F",2},
 			{"B_Mortar_01_support_F",2}
 		}},
-		{"staticWeaponCrateCategory","Mk30 HMG","large",{
+		{"staticWeaponCrateCategory","M2 HMG","large",{
 			{"ACE_EarPlugs",2},
-			{"B_HMG_01_weapon_F",1},
-			{"B_HMG_01_high_weapon_F",1},
-			{"B_HMG_01_support_F",1},
-			{"B_HMG_01_support_high_F",1}
+			{"RHS_M2_MiniTripod_Bag",1},
+			{"RHS_M2_Tripod_Bag",1},
+			{"RHS_M2_Gun_Bag",1}
 		}},
-		{"staticWeaponCrateCategory","Mk32 GMG","large",{
+		{"staticWeaponCrateCategory","M240 MMG","large",{
 			{"ACE_EarPlugs",2},
-			{"B_GMG_01_high_weapon_F",1},
-			{"B_GMG_01_weapon_F",1},
-			{"B_HMG_01_support_F",1},
-			{"B_HMG_01_support_high_F",1}
+			{"UK3CB_Static_M240_Gun_Bag",1},
+			{"UK3CB_B_Static_M240_Tripod_High_Bag",1},
+			{"UK3CB_B_Static_M240_Tripod_Low_Bag",1}
 		}},
 		{"lightWeaponCrateCategory","Standard Resupply","medium",{
-			{"30Rnd_65x39_caseless_mag",25},
-			{"30Rnd_556x45_Stanag_Sand",25},
-			{"20Rnd_762x51_Mag",20},
-			{"100Rnd_65x39_caseless_mag",10},
-			{"150Rnd_556x45_Drum_Mag_F",8},
+			{"rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull",35},
+			{"rhsusf_200Rnd_556x45_box",8},
+			{"UK3CB_ACR_30rnd_556x45_R",35},
+			{"rhsusf_100Rnd_556x45_soft_pouch",12}
 						
 			{"HandGrenade",6},
 			{"MiniGrenade",6},
