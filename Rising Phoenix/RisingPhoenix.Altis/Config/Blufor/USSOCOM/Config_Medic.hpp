@@ -1,6 +1,6 @@
 /*
 	Faction: Medic
-	Author: Dom
+	Author: SiegeSix
 */
 class medic {
 	name = $STR_B_MEDIC_F0;

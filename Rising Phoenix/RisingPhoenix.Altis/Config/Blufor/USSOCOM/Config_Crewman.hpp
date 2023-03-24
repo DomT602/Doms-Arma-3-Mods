@@ -1,6 +1,6 @@
 /*
 	Faction: Crewman
-	Author: Dom
+	Author: SiegeSix
 */
 class crewman {
 	name = $STR_B_CREW_F0;

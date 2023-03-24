@@ -1,6 +1,6 @@
 /*
 	Faction: Rifleman
-	Author: Dom
+	Author: SiegeSix
 */
 class rifleman {
 	name = $STR_DN_RIFLEMAN;
@@ -20,6 +20,13 @@ class rifleman {
 	};
 
 	arsenalItems[] = {
-		
+		"rhs_weap_maaws",
+		"rhs_optic_maaws",
+		"rhs_mag_maaws_HEAT",
+		"rhs_mag_maaws_HEDP",
+		"rhs_mag_maaws_HE",
+		"MRAWS_HEAT_F",
+		"MRAWS_HE_F",
+		"rhs_weap_M136_hedp"
 	};
 };

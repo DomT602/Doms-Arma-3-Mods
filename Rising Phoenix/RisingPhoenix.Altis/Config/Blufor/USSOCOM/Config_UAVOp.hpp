@@ -1,6 +1,6 @@
 /*
 	Faction: UAV Operator
-	Author: Dom
+	Author: SiegeSix
 */
 class uavop {
 	name = $STR_A3_B_SOLDIER_UAV_F0;

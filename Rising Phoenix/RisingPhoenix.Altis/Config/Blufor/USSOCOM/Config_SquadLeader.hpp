@@ -1,6 +1,6 @@
 /*
 	Faction: Squad Leader
-	Author: Dom
+	Author: SiegeSix
 */
 class squadlead {
 	name = $STR_B_SOLDIER_SL_F0;

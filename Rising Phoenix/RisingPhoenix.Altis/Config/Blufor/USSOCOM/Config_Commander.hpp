@@ -1,6 +1,6 @@
 /*
 	Faction: Commander
-	Author: Dom
+	Author: SiegeSix
 */
 class commander {
 	name = "Commander";

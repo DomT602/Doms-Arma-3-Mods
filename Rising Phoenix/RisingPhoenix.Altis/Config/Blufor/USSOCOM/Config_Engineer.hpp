@@ -1,6 +1,6 @@
 /*
 	Faction: Engineer
-	Author: Dom
+	Author: SiegeSix
 */
 class engineer {
 	name = $STR_B_ENGINEER_F0;
