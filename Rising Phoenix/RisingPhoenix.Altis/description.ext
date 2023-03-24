@@ -30,7 +30,7 @@ minPlayerDistance = 1000;
 
 disabledAI = 1;
 enableDebugConsole[] = {"76561198071007604"};
-zeusUIDs[] = {"76561198071007604","76561198263254376"}; //list UIDs for access to zeus here
+zeusUIDs[] = {"76561198071007604"}; //list UIDs for access to zeus here
 unsafeCVL = 1;
 joinUnassigned = 0;
 
@@ -48,8 +48,8 @@ class CfgFunctions {
 class Params {
 	class bluforFaction {
 		title = "Blufor Faction";
-		texts[] = {"CTRG (Vanilla)","NATO (Vanilla)","CSAT (Vanilla)","AMF (AMF_AIO)","BAF (3CB)","USSOCOM (RHS)","LDF (3cb)","UAF (3cb)","AAF (3cb)"};
-		values[] = {0,1,2,3,4,5,6,7,8};
+		texts[] = {"CTRG (Vanilla)","NATO (Vanilla)","CSAT (Vanilla)","AMF (AMF_AIO)","BAF (3CB)","USSOCOM (RHS)","Altis Armed Forces (3CB)","Livonian Defence Force (3CB)","Ukranian Armed Forces (3CB)"};
+		values[] = {0,1,2,3,4,5};
 		default = 0;
 	};
 	class opforFaction {
