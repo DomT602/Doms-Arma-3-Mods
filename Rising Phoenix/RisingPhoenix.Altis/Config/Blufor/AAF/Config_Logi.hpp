@@ -110,7 +110,7 @@ class Logi_Setup {
 			{"rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull",35},
 			{"rhsusf_200Rnd_556x45_box",8},
 			{"UK3CB_ACR_30rnd_556x45_R",35},
-			{"rhsusf_100Rnd_556x45_soft_pouch",12}
+			{"rhsusf_100Rnd_556x45_soft_pouch",12},
 						
 			{"HandGrenade",6},
 			{"MiniGrenade",6},
