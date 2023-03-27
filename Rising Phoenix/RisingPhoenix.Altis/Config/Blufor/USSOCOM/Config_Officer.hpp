@@ -1,6 +1,6 @@
 /*
 	Faction: Officer
-	Author: Dom
+	Author: SiegeSix
 */
 class officer {
 	name = $STR_B_OFFICER_F0;

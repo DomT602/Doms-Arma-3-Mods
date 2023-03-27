@@ -1,6 +1,6 @@
 /*
 	Faction: Pilot
-	Author: Dom
+	Author: SiegeSix
 */
 class pilot {
 	name = $STR_B_PILOT_F0;
