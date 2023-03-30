@@ -17,9 +17,9 @@ DT_bluforFaction = switch (paramsArray select 0) do {
 	case 3: {"AMF"};
 	case 4: {"BAF"};
 	case 5: {"USSOCOM"};
-	case 6: {"LDF"};
-	case 7: {"UAF"};
-	case 8: {"AAF"};
+	case 6: {"AAF"};
+	case 7: {"LDF"};
+	case 8: {"UAF"};
 };
 publicVariable "DT_bluforFaction";
 
