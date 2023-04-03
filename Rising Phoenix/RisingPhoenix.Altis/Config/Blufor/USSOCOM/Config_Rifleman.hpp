@@ -27,6 +27,14 @@ class rifleman {
 		"rhs_mag_maaws_HE",
 		"MRAWS_HEAT_F",
 		"MRAWS_HE_F",
-		"rhs_weap_M136_hedp"
+		"rhs_weap_M136_hedp",
+		"rhs_weap_mk17_STD",
+		"rhs_weap_m40a5",
+		"rhs_weap_m32",
+		"rhs_weap_m249_pip_S_para",
+		"rhs_weap_XM2010",
+		"rhs_weap_m14ebrri",
+		"optic_lrps",
+		"rhsusf_acc_premier_mrds"
 	};
 };

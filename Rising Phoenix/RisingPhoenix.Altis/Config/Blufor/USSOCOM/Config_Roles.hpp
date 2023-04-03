@@ -151,17 +151,11 @@ class Common_Arsenal {
 		"rhs_weap_mk18",
 		"rhs_weap_mk18_KAC",
 		"rhs_weap_mk18_KAC_d",
-		"rhs_weap_mk17_STD",
 		"rhs_weap_sr25_ec",
 		"rhs_weap_m4a1_blockII",
 		"rhs_weap_m4a1_blockII_M203",
 		"rhs_weap_mk18_m320",
 		"rhs_weap_M590_5RD",
-		"rhs_weap_m40a5",
-		"rhs_weap_m32",
-		"rhs_weap_m249_pip_S_para",
-		"rhs_weap_XM2010",
-		"rhs_weap_m14ebrri",
 		"rhs_weap_hk416d10",
 		"rhs_weap_hk416d10_m320",
 		"rhs_weap_hk416d145",
@@ -186,9 +180,7 @@ class Common_Arsenal {
 		"rhsusf_5Rnd_762x51_AICS_m118_special_Mag",
 		"rhsusf_10Rnd_762x51_m118_special_Mag",
 		"rhsusf_acc_harris_swivel",
-		"optic_lrps",
 		"rhsusf_acc_leupoldmk4",
-		"rhsusf_acc_premier_mrds",
 		"rhsusf_20Rnd_762x51_SR25_m118_special_Mag",
 		"rhsusf_20Rnd_762x51_SR25_m993_Mag",
 		"rhs_mag_20Rnd_SCAR_762x51_m80a1_epr",
@@ -215,7 +207,9 @@ class Common_Arsenal {
 		"rhsusf_acc_tacsac_blk",
 		"rhsusf_100Rnd_556x45_soft_pouch_coyote",
 		"rhsusf_200Rnd_556x45_box",
-
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		"rhsusf_10Rnd_762x51_m993_Mag",
+		"rhsusf_5Rnd_762x51_AICS_m993_Mag",
 		"rhs_weap_m72a7"
 	};
 };
