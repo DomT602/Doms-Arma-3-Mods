@@ -8,9 +8,9 @@ params [
 ];
 
 if (_enable) then {
-	DT_viewDistance_getInMan = player addEventHandler ["getInMan",{_this call DT_fnc_getInMan}];
-	DT_viewDistance_getOutMan = player addEventHandler ["getOutMan",{_this call DT_fnc_getOutMan}];
-	DT_viewDistance_respawn = player addEventHandler ["respawn",{_this call DT_fnc_getOutMan}];
+	DT_viewDistance_getInMan = player addEventHandler ["GetInMan",DT_fnc_getInMan];
+	DT_viewDistance_getOutMan = player addEventHandler ["GetOutMan",DT_fnc_getOutMan];
+	DT_viewDistance_respawn = player addEventHandler ["Respawn",DT_fnc_getOutMan];
 
 	DT_viewDistance_uavHandle = ["ACE_controlledUAV", {
 		ACE_controlledUAV params [["_uav",objNull]];
