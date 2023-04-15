@@ -11,7 +11,6 @@ private _newValue = parseNumber (_control lbData _index);
 private _variableToUpdate = format ["DT_%1ViewDistance",_type];
 private _viewVar = profileNamespace getVariable [_variableToUpdate,[5000,5000,25]];
 _viewVar set [2,_newValue];
-profileNamespace setVariable [_variableToUpdate,_viewVar];
 
 ACE_controlledUAV params [["_uav",objNull]];
 private _vehicle = if (isNull _uav) then {objectParent player} else {_uav};

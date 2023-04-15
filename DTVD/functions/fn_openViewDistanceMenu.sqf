@@ -8,9 +8,9 @@ if !(DT_viewDistanceEnabled) exitWith {};
 if (dialog) exitWith {};
 	
 private _display = createDialog ["DT_viewDistanceMenu",false];
-
 private _sliderDataArray = [];
 private _terrainDataArray = [];
+
 {
 	_x params ["_viewDistance","_objectDistance","_terrainGrid"];
 	_sliderDataArray pushBack _viewDistance;
@@ -36,10 +36,13 @@ for "_i" from 1400 to 1409 do {
 };
 
 private _gridData = ["50","25","12.5","6.25","3.125"];
+private _gridIndex = _gridData find (str DT_terrainGridMax);
+_gridData = _gridData select [_gridIndex,5];
+
 for "_i" from 2100 to 2104 do {
 	private _control = _display displayCtrl _i;
 	{
-		_control lbAdd localize format ["STR_DTVD_terrainGrid%1",(_forEachIndex + 1)];
+		_control lbAdd localize format ["STR_DTVD_terrainGrid%1",_x];
 		_control lbSetData [_forEachIndex,_x];
 	} forEach _gridData;
 

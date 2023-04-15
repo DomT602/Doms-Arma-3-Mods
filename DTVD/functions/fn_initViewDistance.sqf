@@ -21,6 +21,26 @@ if (_enable) then {
 		};
     }] call CBA_fnc_addEventHandler;
 
+    {
+		private _variable = profileNamespace getVariable [_x,[5000,5000,25]];
+		_variable params ["_viewDistance","_objectDistance","_terrainGrid"];
+		if (_viewDistance > DT_viewDistanceMax) then {
+			_variable set [0,DT_viewDistanceMax];
+		};
+		if (_objectDistance > DT_viewDistanceMax) then {
+			_variable set [1,DT_viewDistanceMax];
+		};
+		if (_terrainGrid > DT_terrainGridMax) then {
+			_variable set [2,DT_terrainGridMax];
+		};
+	} forEach [
+		"DT_footViewDistance",
+		"DT_shipViewDistance",
+		"DT_carViewDistance",
+		"DT_rotaryViewDistance",
+		"DT_airViewDistance"
+	];
+
 	private _vehicle = objectParent player;
 	if (isNull _vehicle) then {
 		[] call DT_fnc_getOutMan;

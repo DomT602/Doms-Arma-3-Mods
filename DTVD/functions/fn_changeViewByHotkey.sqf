@@ -7,11 +7,16 @@ params [
 	["_value",100,[0]]
 ];
 
-setViewDistance _value;
-setObjectViewDistance _value;
+if (viewDistance isNotEqualTo _value) then {
+	setViewDistance _value;
+};
+if ((getObjectViewDistance select 0) isNotEqualTo _value) then {
+	setObjectViewDistance _value;
+};
 
 private _type = "foot";
-if !(isNull objectParent player) then {
+private _vehicle = objectParent player;
+if !(isNull _vehicle) then {
 	if (_vehicle isKindOf "Air") then {
 		if (_vehicle isKindOf "Helicopter") then {
 			_type = "rotary";
@@ -22,7 +27,7 @@ if !(isNull objectParent player) then {
 		if (_vehicle isKindOf "Ship") then {
 			_type = "ship";
 		} else {
-			private _type = "car";
+			_type = "car";
 		};
 	};
 };
@@ -31,4 +36,3 @@ private _variableToUpdate = format ["DT_%1ViewDistance",_type];
 private _viewVar = profileNamespace getVariable [_variableToUpdate,[5000,5000,25]];
 _viewVar set [0,_value];
 _viewVar set [1,_value];
-profileNamespace setVariable [_variableToUpdate,_viewVar];

@@ -11,7 +11,6 @@ _newValue = round _newValue;
 private _variableToUpdate = format ["DT_%1ViewDistance",_type];
 private _viewVar = profileNamespace getVariable [_variableToUpdate,[5000,5000,25]];
 _viewVar set [_updateIndex,_newValue];
-profileNamespace setVariable [_variableToUpdate,_viewVar];
 
 private _display = findDisplay 9439;
 private _controlString = str _control;

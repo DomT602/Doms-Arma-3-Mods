@@ -48,27 +48,27 @@
         </Key>
     </Package>
     <Package name="Terrain">
-        <Key ID="STR_DTVD_terrainGrid1">
+        <Key ID="STR_DTVD_terrainGrid50">
             <English>50 (Smoothest)</English>
             <German>50 (Am weichesten)</German>
 			<Turkish>50 (En düz)</Turkish>
         </Key>
-        <Key ID="STR_DTVD_terrainGrid2">
+        <Key ID="STR_DTVD_terrainGrid25">
             <English>25 (Default)</English>
             <German>25 (Standard)</German>
 			<Turkish>25 (Varsayılan)</Turkish>
         </Key>
-        <Key ID="STR_DTVD_terrainGrid3">
+        <Key ID="STR_DTVD_terrainGrid12.5">
             <English>12.5</English>
             <German>12.5</German>
 			<Turkish>12.5</Turkish>
         </Key>
-        <Key ID="STR_DTVD_terrainGrid4">
+        <Key ID="STR_DTVD_terrainGrid6.25">
             <English>6.25</English>
             <German>6.25</German>
 			<Turkish>6.25</Turkish>
         </Key>
-        <Key ID="STR_DTVD_terrainGrid5">
+        <Key ID="STR_DTVD_terrainGrid3.125">
             <English>3.125 (Best Quality)</English>
             <German>3.125 (Beste Qualität)</German>
 			<Turkish>3.125 (En İyi Kalite)</Turkish>
@@ -97,6 +97,9 @@
         <Key ID="STR_DTVD_viewDistanceHotkey2">
             <English>Change view hotkey 2</English>
         </Key>
+        <Key ID="STR_DTVD_viewDistanceHotkey3">
+            <English>Change view hotkey 3</English>
+        </Key>
         <Key ID="STR_DTVD_viewDistanceHotkeyDescription">
             <English>Select the view and object distance you would like to be changed to when pressing the selected hotkey.</English>
         </Key>
@@ -110,6 +113,12 @@
             <German>Einstellung der maximalen Sichtweite des Spieler.</German>
 			<Turkish>Oyuncuların kullanabileceği azami görüş mesafesini seç.</Turkish>
         </Key>
+        <Key ID="STR_DTVD_maxTerrainGrid">
+            <English>Max Terrain Grid</English>
+        </Key>
+        <Key ID="STR_DTVD_maxTerrainGridDescription">
+            <English>Select the max terrain grid players may use.</English>
+        </Key>
         <Key ID="STR_DTVD_openMenu">
             <English>Open view distance menu</English>
             <German>Öffne Sichtweitenmenü</German>
@@ -120,6 +129,9 @@
         </Key>
         <Key ID="STR_DTVD_hotkey2">
             <English>View distance hotkey 2</English>
+        </Key>
+        <Key ID="STR_DTVD_hotkey3">
+            <English>View distance hotkey 3</English>
         </Key>
         <Key ID="STR_DT_modCategory">
             <English>Dom's Mods</English>
