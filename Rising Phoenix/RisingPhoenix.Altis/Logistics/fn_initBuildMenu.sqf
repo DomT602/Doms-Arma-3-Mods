@@ -18,13 +18,13 @@ private _baseCfg = missionConfigFile >> DT_bluforFaction >> "Logi_Setup";
 	{
 		([_x] call DT_fnc_fetchDetails) params ["_text","_icon"];
 
-		_tree tvAdd [[_index],_text];
+		private _itemIndex = _tree tvAdd [[_index],_text];
 
 		if !(_icon in ["","pictureStaticObject","pictureThing"]) then {
-			_tree tvSetPicture [[_index,_forEachIndex],_icon];
+			_tree tvSetPicture [[_index,_itemIndex],_icon];
 		};
 
-		_tree tvSetData [[_index,_forEachIndex],_x];
+		_tree tvSetData [[_index,_itemIndex],_x];
 	} forEach _x;
 } forEach [
 	getArray(_baseCfg >> "bluforLightVehicles"),

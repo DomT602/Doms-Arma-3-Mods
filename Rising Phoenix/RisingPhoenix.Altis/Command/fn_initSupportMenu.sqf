@@ -11,11 +11,10 @@ private _supportCooldowns = missionNamespace getVariable ["DT_supportCooldowns",
 
 {
 	_x params ["_title","_action","_cooldown"];
-	private _actionIndex = _forEachIndex;
-	private _readyTime = _supportCooldowns select _actionIndex;
+	private _readyTime = _supportCooldowns select _forEachIndex;
 
 	if (CBA_missionTime < _readyTime) then {_title = format ["%1 - %2 minutes till available",_title,ceil((_readyTime - CBA_missionTime) / 60)]};
-	_tree tvAdd [[],_title];
+	private _actionIndex = _tree tvAdd [[],_title];
 	_tree tvSetData [[_actionIndex],str([_action,_cooldown])];
 
 	if (_action isEqualTo "mortar") then {
@@ -27,8 +26,8 @@ private _supportCooldowns = missionNamespace getVariable ["DT_supportCooldowns",
 			private _allSupplyBoxes = getArray(missionConfigFile >> DT_bluforFaction >> "Logi_Setup" >> "supplyCrates") select {_x select 0 in ["medicalCrateCategory","lightWeaponCrateCategory"]};
 			{
 				_x params ["_category","_title","_crateSize","_contents"];
-				_tree tvAdd [[_actionIndex],_title];
-				_tree tvSetData [[_actionIndex,_forEachIndex],str([_crateSize,_contents])];
+				private _index = _tree tvAdd [[_actionIndex],_title];
+				_tree tvSetData [[_actionIndex,_index],str([_crateSize,_contents])];
 			} forEach _allSupplyBoxes;
 		} else {
 			if (_action isEqualTo "rallyPoint") then {

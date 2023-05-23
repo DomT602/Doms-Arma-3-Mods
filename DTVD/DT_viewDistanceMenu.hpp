@@ -32,6 +32,7 @@ class DT_viewDistanceMenu {
 			idc = 1000;
 			text = "$STR_DTVD_menuTitle";
 			style = 0x02;
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])","(profilenamespace getvariable ['GUI_BCG_RGB_A',0.8])"};
 			x = 0.381406 * safezoneW + safezoneX;
 			y = 0.114 * safezoneH + safezoneY;
 			w = 0.221719 * safezoneW;

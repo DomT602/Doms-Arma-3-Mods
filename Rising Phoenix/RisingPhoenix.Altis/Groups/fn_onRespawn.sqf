@@ -1,7 +1,7 @@
 /*
 	Faction: fn_onRespawn.sqf
 	Author: Dom
-	Requires: Handles re-assigning group on player respawn
+	Description: Handles re-assigning group on player respawn
 */
 params [
 	["_unit",objNull,[objNull]],

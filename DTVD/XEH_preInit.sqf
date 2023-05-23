@@ -41,7 +41,7 @@
 	"SLIDER",
 	["STR_DTVD_viewDistanceHotkey1","STR_DTVD_viewDistanceHotkeyDescription"],
 	["STR_DT_modCategory","STR_DTVD_modSubCategory"],
-	[200,DT_viewDistanceMax,3000,0]
+	[200,DT_viewDistanceMax,3000 min DT_viewDistanceMax,0]
 ] call CBA_fnc_addSetting;
 [["STR_DT_modCategory","STR_DTVD_modSubCategory"],"viewHotkey1","STR_DTVD_hotkey1",{[DT_viewDistanceHotkey1] call DT_fnc_changeViewByHotkey},"",[DIK_BACKSLASH,[true,false,false]]] call CBA_fnc_addKeybind;
 
@@ -50,7 +50,7 @@
 	"SLIDER",
 	["STR_DTVD_viewDistanceHotkey2","STR_DTVD_viewDistanceHotkeyDescription"],
 	["STR_DT_modCategory","STR_DTVD_modSubCategory"],
-	[200,DT_viewDistanceMax,6000,0]
+	[200,DT_viewDistanceMax,6000 min DT_viewDistanceMax,0]
 ] call CBA_fnc_addSetting;
 [["STR_DT_modCategory","STR_DTVD_modSubCategory"],"viewHotkey2","STR_DTVD_hotkey2",{[DT_viewDistanceHotkey2] call DT_fnc_changeViewByHotkey},"",[DIK_BACKSLASH,[false,true,false]]] call CBA_fnc_addKeybind;
 
@@ -59,6 +59,6 @@
 	"SLIDER",
 	["STR_DTVD_viewDistanceHotkey3","STR_DTVD_viewDistanceHotkeyDescription"],
 	["STR_DT_modCategory","STR_DTVD_modSubCategory"],
-	[200,DT_viewDistanceMax,9000,0]
+	[200,DT_viewDistanceMax,9000 min DT_viewDistanceMax,0]
 ] call CBA_fnc_addSetting;
 [["STR_DT_modCategory","STR_DTVD_modSubCategory"],"viewHotkey3","STR_DTVD_hotkey3",{[DT_viewDistanceHotkey3] call DT_fnc_changeViewByHotkey},"",[DIK_BACKSLASH,[false,false,true]]] call CBA_fnc_addKeybind;

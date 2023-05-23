@@ -1,7 +1,7 @@
 /*
 	Faction: fn_initGroupMenu.sqf
 	Author: Dom
-	Requires: Open and populates the group menu
+	Description: Open and populates the group menu
 */
 
 private _display = createDialog ["DT_groupMenu",true];
