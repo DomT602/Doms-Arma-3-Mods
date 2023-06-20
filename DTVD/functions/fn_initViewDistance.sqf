@@ -4,10 +4,11 @@
 	Description: Starts or stops the view distance handler
 */
 params [
-    ["_enable",true,[false]]
+	["_enable",true,[false]]
 ];
 
 if (_enable) then {
+	private _firstTimeSetup = isNil {profileNamespace getVariable "DT_footViewDistance"};
 	DT_viewDistance_getInMan = player addEventHandler ["GetInMan",DT_fnc_getInMan];
 	DT_viewDistance_getOutMan = player addEventHandler ["GetOutMan",DT_fnc_getOutMan];
 	DT_viewDistance_respawn = player addEventHandler ["Respawn",DT_fnc_getOutMan];
@@ -19,9 +20,9 @@ if (_enable) then {
 		} else {
 			[player,nil,_uav] call DT_fnc_getInMan;
 		};
-    }] call CBA_fnc_addEventHandler;
+	}] call CBA_fnc_addEventHandler;
 
-    {
+	{
 		private _variable = profileNamespace getVariable [_x,[5000,5000,25]];
 		_variable params ["_viewDistance","_objectDistance","_terrainGrid"];
 		if (_viewDistance > DT_viewDistanceMax) then {
@@ -32,6 +33,9 @@ if (_enable) then {
 		};
 		if (_terrainGrid > DT_terrainGridMax) then {
 			_variable set [2,DT_terrainGridMax];
+		};
+		if (_firstTimeSetup) then {
+			profileNamespace setVariable [_x,_variable];
 		};
 	} forEach [
 		"DT_footViewDistance",
