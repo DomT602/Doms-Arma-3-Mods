@@ -28,7 +28,7 @@ if (isNull _selectedGroup) then {
 	_groupToUpdate set [3,_selectedGroup];
 };
 
-if !(player in _selectedGroup) then {
+if !(_unit in (units _selectedGroup)) then {
 	[_unit] joinSilent _selectedGroup;
 };
 
