@@ -43,6 +43,6 @@ for "_i" from 1 to _heavyCount do {
 	_waypoint setWaypointBehaviour "AWARE";
 } forEach _groups;
 
-_groups pushBack ([_target,_lightCount] call DT_fnc_spawnAttackHelicopters);
+_groups pushBack ([_target,_mediumCount] call DT_fnc_spawnAttackHelicopters);
 
 _groups;

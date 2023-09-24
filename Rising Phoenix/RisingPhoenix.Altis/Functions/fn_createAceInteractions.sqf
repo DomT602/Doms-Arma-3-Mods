@@ -225,10 +225,12 @@ private _talkCategory = [
 	[0,10,0.1,2]
 ] call CBA_fnc_addSetting;
 
-[
-	"DT_autoRadioOption",
-	"LIST",
-	["Automatic Radio Channel Selection","Choose what radio channel selection should happen once you recieve your radio (TFAR only)."],
-	["Operation Rising Phoenix","Radio"],
-	[[0,1,2],["Disabled","Group default","Last selected channel"],1]
-] call CBA_fnc_addSetting;
+if (DT_isTFAREnabled) then {
+	[
+		"DT_autoRadioOption",
+		"LIST",
+		["Automatic Radio Channel Selection","Choose what radio channel selection should happen once you recieve your radio."],
+		["Operation Rising Phoenix","Radio"],
+		[[0,1,2],["Disabled","Group default","Last selected channel"],1]
+	] call CBA_fnc_addSetting;
+};

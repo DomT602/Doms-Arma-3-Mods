@@ -31,7 +31,7 @@ if (DT_buildAction > 0 || {!alive player || {!isNull objectParent player}}) then
 				};
 			},
 			[_class,_finalPosition,_finalDir],
-			0.01
+			0.1
 		] call CBA_fnc_waitAndExecute;
 	} else {
 		["Build cancelled."] call DT_fnc_notify;

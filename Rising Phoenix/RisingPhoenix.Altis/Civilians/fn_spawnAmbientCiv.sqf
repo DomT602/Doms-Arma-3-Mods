@@ -43,11 +43,10 @@ if (DT_ambientCivHandle isEqualTo -1) then {
 				DT_ambientCivHandle = -1;
 			};
 
-			private _toDelete = [];
 			{
 				_x params ["_unit","_group","_vehicle","_lastPos"];
 				if !(alive _unit) then {
-					_toDelete pushBack _forEachIndex;
+					DT_ambientCivs deleteAt _forEachIndex;
 					if (alive _vehicle && {[_unit] call DT_fnc_areaIsClear}) then {
 						deleteVehicle _vehicle;
 					};
@@ -89,16 +88,7 @@ if (DT_ambientCivHandle isEqualTo -1) then {
 						};
 					};
 				};
-			} forEach DT_ambientCivs;
-
-			reverse _toDelete;
-			{
-				DT_ambientCivs deleteAt _x;
-			} forEach _toDelete;
-
-			if (_toDelete isNotEqualTo []) then {
-				[count _toDelete] call DT_fnc_spawnAmbientCiv;
-			};
+			} forEachReversed DT_ambientCivs;
 		},
 		15
 	] call CBA_fnc_addPerFrameHandler;

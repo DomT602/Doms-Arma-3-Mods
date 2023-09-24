@@ -66,7 +66,7 @@ private _markers = [];
 		{
 			_x params ["_marker",["_unit",objNull]];
 			if !(isNull _unit) then {
-				_marker setMarkerPosLocal (getPosATL _unit);
+				_marker setMarkerPosLocal _unit;
 			};
 		} forEach _markers;
 	},

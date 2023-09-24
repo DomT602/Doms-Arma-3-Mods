@@ -7,7 +7,7 @@ params [
 	["_object",objNull,[objNull]]
 ];
 private _driver = driver _object;
-if (isNull _object || {_driver isKindOf "CAManBase" && (side _driver isEqualTo civilian)}) exitWith {};
+if (_driver isKindOf "CAManBase" && (side _driver isEqualTo civilian)) exitWith {};
 
 private _class = typeOf _object;
 if ("UK3CB" in _class) then { //exception for 3CB mods, as they keep ammo in vehicle
