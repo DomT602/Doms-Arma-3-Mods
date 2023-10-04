@@ -1,5 +1,5 @@
 /*
-	Faction: fn_getRandomName.sqf
+	File: fn_getRandomName.sqf
 	Author: Dom
 	Requires: Gets a random name utilising names which AI can use
 */

@@ -1,8 +1,0 @@
-#include "GUI\masterHandler.hpp"
-
-class CfgFunctions {
-    #include "Functions.hpp"
-};
-
-#include "Config\Config_Groups.hpp"
-#include "Config\Config_Roles.hpp"
