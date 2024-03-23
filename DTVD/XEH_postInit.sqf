@@ -1,4 +1,4 @@
-if (isClass(configFile >> "CfgPatches" >> "ace_common")) then {
+if !(isClass(configFile >> "CfgPatches" >> "ace_common")) then {
 	
 	// Add event handler for UAV control change if ACE is not usable
 	ACE_controlledUAV = [objNull, objNull, [], ""];
