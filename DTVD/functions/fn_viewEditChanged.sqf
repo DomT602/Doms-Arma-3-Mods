@@ -3,8 +3,9 @@
 	Author: Dom
 	Description: Handles an update to the view distance options
 */
-params ["_control","_text","_type","_updateIndex"];
+params ["_control","_type","_updateIndex"];
 
+private _text = ctrlText _control;
 if (count _text < 3) exitWith {}; //not finished typing
 private _newValue = parseNumber ([_text,"0123456789"] call BIS_fnc_filterString);
 _newValue = ((_newValue max 200) min DT_viewDistanceMax);

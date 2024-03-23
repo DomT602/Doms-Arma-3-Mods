@@ -83,7 +83,7 @@ class DT_viewDistanceMenu {
 			w = 0.0360937 * safezoneW;
 			h = 0.022 * safezoneH;
 			maxChars = 5;
-			onEditChanged = "[_this select 0,_this select 1,'foot',0] call DT_fnc_viewEditChanged";
+			onKeyUp = "[_this select 0,'foot',0] call DT_fnc_viewEditChanged";
 		};
 		class RscSlider_1901: RscXSliderH
 		{
@@ -103,7 +103,7 @@ class DT_viewDistanceMenu {
 			w = 0.0360937 * safezoneW;
 			h = 0.022 * safezoneH;
 			maxChars = 5;
-			onEditChanged = "[_this select 0,_this select 1,'foot',1] call DT_fnc_viewEditChanged";
+			onKeyUp = "[_this select 0,'foot',1] call DT_fnc_viewEditChanged";
 		};
 		class RscCombo_2100: RscCombo
 		{
@@ -375,7 +375,7 @@ class DT_viewDistanceMenu {
 			w = 0.0360937 * safezoneW;
 			h = 0.022 * safezoneH;
 			maxChars = 5;
-			onEditChanged = "[_this select 0,_this select 1,'ship',0] call DT_fnc_viewEditChanged";
+			onKeyUp = "[_this select 0,'ship',0] call DT_fnc_viewEditChanged";
 		};
 		class RscEdit_1403: RscEdit
 		{
@@ -386,7 +386,7 @@ class DT_viewDistanceMenu {
 			w = 0.0360937 * safezoneW;
 			h = 0.022 * safezoneH;
 			maxChars = 5;
-			onEditChanged = "[_this select 0,_this select 1,'ship',1] call DT_fnc_viewEditChanged";
+			onKeyUp = "[_this select 0,'ship',1] call DT_fnc_viewEditChanged";
 		};
 		class RscEdit_1404: RscEdit
 		{
@@ -397,7 +397,7 @@ class DT_viewDistanceMenu {
 			w = 0.0360937 * safezoneW;
 			h = 0.022 * safezoneH;
 			maxChars = 5;
-			onEditChanged = "[_this select 0,_this select 1,'car',0] call DT_fnc_viewEditChanged";
+			onKeyUp = "[_this select 0,'car',0] call DT_fnc_viewEditChanged";
 		};
 		class RscEdit_1405: RscEdit
 		{
@@ -408,7 +408,7 @@ class DT_viewDistanceMenu {
 			w = 0.0360937 * safezoneW;
 			h = 0.022 * safezoneH;
 			maxChars = 5;
-			onEditChanged = "[_this select 0,_this select 1,'car',1] call DT_fnc_viewEditChanged";
+			onKeyUp = "[_this select 0,'car',1] call DT_fnc_viewEditChanged";
 		};
 		class RscEdit_1406: RscEdit
 		{
@@ -419,7 +419,7 @@ class DT_viewDistanceMenu {
 			w = 0.0360937 * safezoneW;
 			h = 0.022 * safezoneH;
 			maxChars = 5;
-			onEditChanged = "[_this select 0,_this select 1,'rotary',0] call DT_fnc_viewEditChanged";
+			onKeyUp = "[_this select 0,'rotary',0] call DT_fnc_viewEditChanged";
 		};
 		class RscEdit_1407: RscEdit
 		{
@@ -430,7 +430,7 @@ class DT_viewDistanceMenu {
 			w = 0.0360937 * safezoneW;
 			h = 0.022 * safezoneH;
 			maxChars = 5;
-			onEditChanged = "[_this select 0,_this select 1,'rotary',1] call DT_fnc_viewEditChanged";
+			onKeyUp = "[_this select 0,'rotary',1] call DT_fnc_viewEditChanged";
 		};
 		class RscEdit_1408: RscEdit
 		{
@@ -441,7 +441,7 @@ class DT_viewDistanceMenu {
 			w = 0.0360937 * safezoneW;
 			h = 0.022 * safezoneH;
 			maxChars = 5;
-			onEditChanged = "[_this select 0,_this select 1,'air',0] call DT_fnc_viewEditChanged";
+			onKeyUp = "[_this select 0,'air',0] call DT_fnc_viewEditChanged";
 		};
 		class RscEdit_1409: RscEdit
 		{
@@ -452,7 +452,7 @@ class DT_viewDistanceMenu {
 			w = 0.0360937 * safezoneW;
 			h = 0.022 * safezoneH;
 			maxChars = 5;
-			onEditChanged = "[_this select 0,_this select 1,'air',1] call DT_fnc_viewEditChanged";
+			onKeyUp = "[_this select 0,'air',1] call DT_fnc_viewEditChanged";
 		};
 	};
 };
