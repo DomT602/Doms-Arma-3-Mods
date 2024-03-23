@@ -2,8 +2,8 @@ class CfgPatches {
     class DTVD {
         units[] = {};
         weapons[] = {};
-        requiredVersion = 2.14;
-        requiredAddons[] = {"cba_main"};
+        requiredVersion = 2.00;
+        requiredAddons[] = {"ace_common"};
         author = "DomT602";
     };
 };
@@ -15,7 +15,6 @@ class CfgFunctions {
             file = "\DTVD\functions";
             class changeSingleValue {};
             class changeViewByHotkey {};
-            class getUavControlPosition {};
             class getInMan {};
             class getOutMan {};
             class initViewDistance {};
