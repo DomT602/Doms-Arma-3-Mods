@@ -77,7 +77,6 @@ class DT_viewDistanceMenu {
 		class RscEdit_1400: RscEdit
 		{
 			idc = 1400;
-			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.18 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -97,7 +96,6 @@ class DT_viewDistanceMenu {
 		class RscEdit_1401: RscEdit
 		{
 			idc = 1401;
-			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.213 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -369,7 +367,6 @@ class DT_viewDistanceMenu {
 		class RscEdit_1402: RscEdit
 		{
 			idc = 1402;
-			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.323 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -380,7 +377,6 @@ class DT_viewDistanceMenu {
 		class RscEdit_1403: RscEdit
 		{
 			idc = 1403;
-			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.356 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -391,7 +387,6 @@ class DT_viewDistanceMenu {
 		class RscEdit_1404: RscEdit
 		{
 			idc = 1404;
-			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.455 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -402,7 +397,6 @@ class DT_viewDistanceMenu {
 		class RscEdit_1405: RscEdit
 		{
 			idc = 1405;
-			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.488 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -413,7 +407,6 @@ class DT_viewDistanceMenu {
 		class RscEdit_1406: RscEdit
 		{
 			idc = 1406;
-			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.587 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -424,7 +417,6 @@ class DT_viewDistanceMenu {
 		class RscEdit_1407: RscEdit
 		{
 			idc = 1407;
-			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.62 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -435,7 +427,6 @@ class DT_viewDistanceMenu {
 		class RscEdit_1408: RscEdit
 		{
 			idc = 1408;
-			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
@@ -446,7 +437,6 @@ class DT_viewDistanceMenu {
 		class RscEdit_1409: RscEdit
 		{
 			idc = 1409;
-			text = "12000";
 			x = 0.561875 * safezoneW + safezoneX;
 			y = 0.753 * safezoneH + safezoneY;
 			w = 0.0360937 * safezoneW;
