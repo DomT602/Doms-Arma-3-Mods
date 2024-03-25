@@ -4,144 +4,176 @@
         <Key ID="STR_DTVD_menuTitle">
             <English>View Distance Menu</English>
             <German>Sichtweiten Einstellungen</German>
-		    <Turkish>Görüş Mesafesi Menüsü</Turkish>
+            <Turkish>Görüş Mesafesi Menüsü</Turkish>
+            <Japanese>描画視程設定</Japanese>
         </Key>
         <Key ID="STR_DTVD_foot">
             <English>Foot:</English>
             <German>Fuß:</German>
-			<Turkish>Piyade:</Turkish>
+            <Turkish>Piyade:</Turkish>
+            <Japanese>歩兵:</Japanese>
         </Key>
         <Key ID="STR_DTVD_ship">
             <English>Ship:</English>
             <German>Schiff:</German>
-			<Turkish>Gemi:</Turkish>
+            <Turkish>Gemi:</Turkish>
+            <Japanese>船舶:</Japanese>
         </Key>
         <Key ID="STR_DTVD_car">
             <English>Car:</English>
             <German>Auto:</German>
-			<Turkish>Araç:</Turkish>
+            <Turkish>Araç:</Turkish>
+            <Japanese>車両:</Japanese>
         </Key>
         <Key ID="STR_DTVD_rotary">
             <English>Rotary:</English>
             <German>Helikopter:</German>
-			<Turkish>Helikopter:</Turkish>
+            <Turkish>Helikopter:</Turkish>
+            <Japanese>回転翼:</Japanese>
         </Key>
         <Key ID="STR_DTVD_air">
             <English>Other Air:</English>
             <German>Andere Flugzeuge:</German>
-			<Turkish>Diğer Hava Araçları:</Turkish>
+            <Turkish>Diğer Hava Araçları:</Turkish>
+            <Japanese>航空機:</Japanese>
         </Key>
         <Key ID="STR_DTVD_view">
             <English>View:</English>
             <German>Sichtweite:</German>
-			<Turkish>Görüş Mesafesi:</Turkish>
+            <Turkish>Görüş Mesafesi:</Turkish>
+            <Japanese>総合視程:</Japanese>
         </Key>
         <Key ID="STR_DTVD_object">
             <English>Object:</English>
             <German>Objektsichtweite:</German>
-			<Turkish>Obje Görüş Mesafesi:</Turkish>
+            <Turkish>Obje Görüş Mesafesi:</Turkish>
+            <Japanese>オブジェクト:</Japanese>
         </Key>
         <Key ID="STR_DTVD_terrain">
             <English>Terrain:</English>
             <German>Gelände:</German>
-			<Turkish>Arazi:</Turkish>
+            <Turkish>Arazi:</Turkish>
+            <Japanese>地形品質:</Japanese>
         </Key>
     </Package>
     <Package name="Terrain">
         <Key ID="STR_DTVD_terrainGrid50">
             <English>50 (Smoothest)</English>
             <German>50 (Am weichesten)</German>
-			<Turkish>50 (En düz)</Turkish>
+            <Turkish>50 (En düz)</Turkish>
+            <Japanese>50 (処理優先)</Japanese>
         </Key>
         <Key ID="STR_DTVD_terrainGrid25">
             <English>25 (Default)</English>
             <German>25 (Standard)</German>
-			<Turkish>25 (Varsayılan)</Turkish>
+            <Turkish>25 (Varsayılan)</Turkish>
+            <Japanese>25 (デフォルト)</Japanese>
         </Key>
         <Key ID="STR_DTVD_terrainGrid12.5">
             <English>12.5</English>
             <German>12.5</German>
-			<Turkish>12.5</Turkish>
+            <Turkish>12.5</Turkish>
+            <Japanese>12.5</Japanese>
         </Key>
         <Key ID="STR_DTVD_terrainGrid6.25">
             <English>6.25</English>
             <German>6.25</German>
-			<Turkish>6.25</Turkish>
+            <Turkish>6.25</Turkish>
+            <Japanese>6.25</Japanese>
         </Key>
         <Key ID="STR_DTVD_terrainGrid3.125">
             <English>3.125 (Best Quality)</English>
             <German>3.125 (Beste Qualität)</German>
-			<Turkish>3.125 (En İyi Kalite)</Turkish>
+            <Turkish>3.125 (En İyi Kalite)</Turkish>
+            <Japanese>3.125 (最高クオリティ)</Japanese>
         </Key>
     </Package>
     <Package name="Options">
         <Key ID="STR_DTVD_enableOption">
             <English>Enable View Distance Management</English>
             <German>Aktiviere Sichtweiten Manager</German>
-			<Turkish>Görüş Mesafesi Düzenleyicisini Etkinleştir</Turkish>
+            <Turkish>Görüş Mesafesi Düzenleyicisini Etkinleştir</Turkish>
+            <Japanese>描画視程設定を有効化</Japanese>
         </Key>
         <Key ID="STR_DTVD_enableOptionDescription">
             <English>Allow the DT View Distance Manager to manage your view distance and terrain grid.</English>
             <German>Erlaube den DT Sichtweiten Manager die Sichtweite und Geländeraster einzustellen.</German>
-			<Turkish>DT Görüş Mesafesi Düzenleyicisine görüş mesafesini ve araziyi ayarlaması için izin ver.</Turkish>
+            <Turkish>DT Görüş Mesafesi Düzenleyicisine görüş mesafesini ve araziyi ayarlaması için izin ver.</Turkish>
+            <Japanese>DTVDで描画視程と地形品質を管理できるようにします。</Japanese>
         </Key>
         <Key ID="STR_DTVD_objectSync">
             <English>Automatically sync object distance</English>
+            <Japanese>描画距離自動同期</Japanese>
         </Key>
         <Key ID="STR_DTVD_objectSyncDescription">
             <English>Automatically sync changes to the object view distance to match the selected terrain view distance.</English>
+            <Japanese>設定した総合視程と一致するように、オブジェクトの描画視程の変更を自動的に同期します。</Japanese>
         </Key>
         <Key ID="STR_DTVD_viewDistanceHotkey1">
             <English>Change view hotkey 1</English>
+            <Japanese>ホットキー1の設定距離</Japanese>
         </Key>
         <Key ID="STR_DTVD_viewDistanceHotkey2">
             <English>Change view hotkey 2</English>
+            <Japanese>ホットキー2の設定距離</Japanese>
         </Key>
         <Key ID="STR_DTVD_viewDistanceHotkey3">
             <English>Change view hotkey 3</English>
+            <Japanese>ホットキー3の設定距離</Japanese>
         </Key>
         <Key ID="STR_DTVD_viewDistanceHotkeyDescription">
             <English>Select the view and object distance you would like to be changed to when pressing the selected hotkey.</English>
+            <Japanese>選択したホットキーを押したときに変更される総合描画とオブジェクト描画の視程距離を設定します。</Japanese>
         </Key>
         <Key ID="STR_DTVD_maxDistance">
             <English>Max View Distance</English>
             <German>Maximale Sichtweite</German>
-			<Turkish>Azami Görüş Mesafesi</Turkish>
+            <Turkish>Azami Görüş Mesafesi</Turkish>
+            <Japanese>最大描画視程距離</Japanese>
         </Key>
         <Key ID="STR_DTVD_maxDistanceDescription">
             <English>Select the max view distance players may use.</English>
             <German>Einstellung der maximalen Sichtweite des Spieler.</German>
-			<Turkish>Oyuncuların kullanabileceği azami görüş mesafesini seç.</Turkish>
+            <Turkish>Oyuncuların kullanabileceği azami görüş mesafesini seç.</Turkish>
+            <Japanese>プレイヤーが使用できる最大描画視程距離を指定します。</Japanese>
         </Key>
         <Key ID="STR_DTVD_maxTerrainGrid">
             <English>Max Terrain Grid</English>
+            <Japanese>最大地形グリッド</Japanese>
         </Key>
         <Key ID="STR_DTVD_maxTerrainGridDescription">
             <English>Select the max terrain grid players may use.</English>
+            <Japanese>プレイヤーが使用できる地形グリッドの最高値(高い=処理優先)を指定します。</Japanese>
         </Key>
         <Key ID="STR_DTVD_openMenu">
             <English>Open view distance menu</English>
             <German>Öffne Sichtweitenmenü</German>
-			<Turkish>Görüş mesafesi menüsünü aç</Turkish>
+            <Turkish>Görüş mesafesi menüsünü aç</Turkish>
+            <Japanese>描画視程設定を開く</Japanese>
         </Key>
         <Key ID="STR_DTVD_hotkey1">
             <English>View distance hotkey 1</English>
+            <Japanese>視程距離ホットキー 1</Japanese>
         </Key>
         <Key ID="STR_DTVD_hotkey2">
             <English>View distance hotkey 2</English>
+            <Japanese>視程距離ホットキー 2</Japanese>
         </Key>
         <Key ID="STR_DTVD_hotkey3">
             <English>View distance hotkey 3</English>
+            <Japanese>視程距離ホットキー 3</Japanese>
         </Key>
         <Key ID="STR_DT_modCategory">
             <English>Dom's Mods</English>
             <German>Dom's Mods</German>
-			<Turkish>Dom's Mods</Turkish>
+            <Turkish>Dom's Mods</Turkish>
+            <Japanese>Dom's Mods</Japanese>
         </Key>
         <Key ID="STR_DTVD_modSubCategory">
             <English>View Distance</English>
             <German>Sichtweite</German>
-			<Turkish>Görüş Mesafesi</Turkish>
+            <Turkish>Görüş Mesafesi</Turkish>
+            <Japanese>視程距離</Japanese>
         </Key>
     </Package>
 </Project>
