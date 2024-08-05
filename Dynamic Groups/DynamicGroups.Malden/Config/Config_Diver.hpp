@@ -1,5 +1,5 @@
 /*
-	Faction: Diver
+	Faction: CTRG
 	Author: Dom
 */
 class diver {

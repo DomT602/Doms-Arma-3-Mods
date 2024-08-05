@@ -1,5 +1,5 @@
 /*
-	Faction: Spotter
+	Faction: CTRG
 	Author: Dom
 */
 class spotter {

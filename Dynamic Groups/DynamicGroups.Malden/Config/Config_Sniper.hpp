@@ -1,5 +1,5 @@
 /*
-	Faction: Sniper
+	Faction: CTRG
 	Author: Dom
 */
 class sniper {

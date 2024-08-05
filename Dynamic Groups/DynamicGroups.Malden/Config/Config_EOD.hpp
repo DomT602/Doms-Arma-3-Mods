@@ -1,5 +1,5 @@
 /*
-	Faction: EOD
+	Faction: CTRG
 	Author: Dom
 */
 class eod {

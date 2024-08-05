@@ -36,7 +36,7 @@ if (DT_isACEEnabled) then {
 	[player,1,["ACE_SelfActions"],_arsenalCategory] call ace_interact_menu_fnc_addActionToObject;
 
 	["ace_arsenal_displayClosed",{
-		DT_savedLoadout = getUnitLoadout player;
+		DT_savedLoadout = [player] call CBA_fnc_getLoadout;
 	}] call CBA_fnc_addEventHandler;
 } else {
 	{

@@ -1,5 +1,5 @@
 /*
-	Faction: Example
+	Faction: CTRG
 	Author: Dom
 */
 class roleClassname { //this class is used when defining which roles are in what group
