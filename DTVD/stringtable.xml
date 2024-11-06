@@ -125,6 +125,18 @@
             <English>Select the view and object distance you would like to be changed to when pressing the selected hotkey.</English>
             <Japanese>選択したホットキーを押したときに変更される総合描画とオブジェクト描画の視程距離を設定します。</Japanese>
         </Key>
+        <Key ID="STR_DTVD_incrementDistance">
+            <English>Distance Increment Value</English>
+        </Key>
+        <Key ID="STR_DTVD_incrementDistanceDescription">
+            <English>Select the distance you want added or subtracted when the selected hotkey is pressed.</English>
+        </Key>
+        <Key ID="STR_DTVD_incrementHotkeyAdd">
+            <English>Add distance hotkey</English>
+        </Key>
+        <Key ID="STR_DTVD_incrementHotkeyRemove">
+            <English>Remove distance hotkey</English>
+        </Key>
         <Key ID="STR_DTVD_maxDistance">
             <English>Max View Distance</English>
             <German>Maximale Sichtweite</German>

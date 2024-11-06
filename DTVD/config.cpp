@@ -17,6 +17,7 @@ class CfgFunctions {
             class changeViewByHotkey {};
             class getInMan {};
             class getOutMan {};
+            class incrementDistance {};
             class initViewDistance {};
             class openViewDistanceMenu {};
             class terrainGridChanged {};

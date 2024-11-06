@@ -19,22 +19,22 @@
 ] call CBA_fnc_addSetting;
 
 [
-	"DT_viewDistanceMax",
-	"SLIDER",
-	["STR_DTVD_maxDistance","STR_DTVD_maxDistanceDescription"],
+	"DT_automaticObjectSync",
+	"CHECKBOX",
+	["STR_DTVD_objectSync","STR_DTVD_objectSyncDescription"],
 	["STR_DT_modCategory","STR_DTVD_modSubCategory"],
-	[200,40000,12000,0],
-	1
+	true
 ] call CBA_fnc_addSetting;
 
 [
-	"DT_terrainGridMax",
-	"LIST",
-	["STR_DTVD_maxTerrainGrid","STR_DTVD_maxTerrainGridDescription"],
+	"DT_incrementValue",
+	"SLIDER",
+	["STR_DTVD_incrementDistance","STR_DTVD_incrementDistanceDescription"],
 	["STR_DT_modCategory","STR_DTVD_modSubCategory"],
-	[[50,25,12.5,6.25,3.125],["STR_DTVD_terrainGrid50","STR_DTVD_terrainGrid25","STR_DTVD_terrainGrid12.5","STR_DTVD_terrainGrid6.25","STR_DTVD_terrainGrid3.125"],0],
-	1
+	[100,1000,500,0]
 ] call CBA_fnc_addSetting;
+[["STR_DT_modCategory","STR_DTVD_modSubCategory"],"incrementHotkeyAdd","STR_DTVD_incrementHotkeyAdd",{[DT_incrementValue,true] call DT_fnc_incrementDistance},"",[DIK_ADD,[false,true,false]]] call CBA_fnc_addKeybind;
+[["STR_DT_modCategory","STR_DTVD_modSubCategory"],"incrementHotkeyRemove","STR_DTVD_incrementHotkeyRemove",{[DT_incrementValue,false] call DT_fnc_incrementDistance},"",[DIK_SUBTRACT,[false,true,false]]] call CBA_fnc_addKeybind;
 
 [
 	"DT_viewDistanceHotkey1",
@@ -62,3 +62,21 @@
 	[200,DT_viewDistanceMax,9000 min DT_viewDistanceMax,0]
 ] call CBA_fnc_addSetting;
 [["STR_DT_modCategory","STR_DTVD_modSubCategory"],"viewHotkey3","STR_DTVD_hotkey3",{[DT_viewDistanceHotkey3] call DT_fnc_changeViewByHotkey},"",[DIK_BACKSLASH,[false,false,true]]] call CBA_fnc_addKeybind;
+
+[
+	"DT_viewDistanceMax",
+	"SLIDER",
+	["STR_DTVD_maxDistance","STR_DTVD_maxDistanceDescription"],
+	["STR_DT_modCategory","STR_DTVD_modSubCategory"],
+	[200,40000,12000,0],
+	1
+] call CBA_fnc_addSetting;
+
+[
+	"DT_terrainGridMax",
+	"LIST",
+	["STR_DTVD_maxTerrainGrid","STR_DTVD_maxTerrainGridDescription"],
+	["STR_DT_modCategory","STR_DTVD_modSubCategory"],
+	[[50,25,12.5,6.25,3.125],["STR_DTVD_terrainGrid50","STR_DTVD_terrainGrid25","STR_DTVD_terrainGrid12.5","STR_DTVD_terrainGrid6.25","STR_DTVD_terrainGrid3.125"],0],
+	1
+] call CBA_fnc_addSetting;

@@ -3,6 +3,7 @@
 	Author: Dom
 	Description: Handles an update to view distance when a hotkey is pressed
 */
+if !(DT_viewDistanceEnabled) exitWith {};
 params [
 	["_value",100,[0]]
 ];
