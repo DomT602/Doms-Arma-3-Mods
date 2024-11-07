@@ -9,7 +9,7 @@ _args params ["_control","_index"];
 private _newValue = parseNumber (_control lbData _index);
 
 private _variableToUpdate = format ["DT_%1ViewDistance",_type];
-private _viewVar = profileNamespace getVariable [_variableToUpdate,[5000,5000,25]];
+private _viewVar = profileNamespace getVariable [_variableToUpdate,[5000,5000,25,0]];
 _viewVar set [2,_newValue];
 
 ACE_controlledUAV params [["_uav",objNull]];

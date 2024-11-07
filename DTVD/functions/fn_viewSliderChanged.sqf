@@ -3,13 +3,12 @@
 	Author: Dom
 	Description: Handles an update to the view distance options
 */
-params ["_args","_type","_updateIndex"];
-_args params ["_control","_newValue"];
+params ["_control","_newValue","_type","_updateIndex"];
 
 _newValue = round _newValue;
 
 private _variableToUpdate = format ["DT_%1ViewDistance",_type];
-private _viewVar = profileNamespace getVariable [_variableToUpdate,[5000,5000,25]];
+private _viewVar = profileNamespace getVariable [_variableToUpdate,[5000,5000,25,0]];
 _viewVar set [_updateIndex,_newValue];
 
 private _display = findDisplay 9439;
@@ -24,5 +23,5 @@ _editBox ctrlSetText str _newValue;
 if (DT_automaticObjectSync && {_updateIndex isEqualTo 0}) then {
 	private _objectViewSlider = _display displayCtrl (_controlID + 1);
 	_objectViewSlider sliderSetPosition _newValue;
-	[[_objectViewSlider,_newValue],_type,1] call DT_fnc_viewSliderChanged;
+	[_objectViewSlider,_newValue,_type,1] call DT_fnc_viewSliderChanged;
 };

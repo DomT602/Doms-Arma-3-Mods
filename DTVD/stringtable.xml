@@ -49,11 +49,17 @@
             <Turkish>Obje Görüş Mesafesi:</Turkish>
             <Japanese>オブジェクト:</Japanese>
         </Key>
+        <Key ID="STR_DTVD_zoom">
+            <English>Zoom:</English>
+        </Key>
         <Key ID="STR_DTVD_terrain">
             <English>Terrain:</English>
             <German>Gelände:</German>
             <Turkish>Arazi:</Turkish>
             <Japanese>地形品質:</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_zoomTooltip">
+            <English>This setting is enabled through Options > Addon Options > Dom's Mods</English>
         </Key>
     </Package>
     <Package name="Terrain">
@@ -106,7 +112,7 @@
             <Japanese>描画距離自動同期</Japanese>
         </Key>
         <Key ID="STR_DTVD_objectSyncDescription">
-            <English>Automatically sync changes to the object view distance to match the selected terrain view distance.</English>
+            <English>Automatically sync changes to the object view distance slider to match the selected terrain view distance slider.</English>
             <Japanese>設定した総合視程と一致するように、オブジェクトの描画視程の変更を自動的に同期します。</Japanese>
         </Key>
         <Key ID="STR_DTVD_viewDistanceHotkey1">
@@ -132,10 +138,10 @@
             <English>Select the distance you want added or subtracted when the selected hotkey is pressed.</English>
         </Key>
         <Key ID="STR_DTVD_incrementHotkeyAdd">
-            <English>Add distance hotkey</English>
+            <English>Increment distance hotkey</English>
         </Key>
         <Key ID="STR_DTVD_incrementHotkeyRemove">
-            <English>Remove distance hotkey</English>
+            <English>Decrement distance hotkey</English>
         </Key>
         <Key ID="STR_DTVD_maxDistance">
             <English>Max View Distance</English>
@@ -186,6 +192,18 @@
             <German>Sichtweite</German>
             <Turkish>Görüş Mesafesi</Turkish>
             <Japanese>視程距離</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_scopeBoost">
+            <English>Enable Scope Zoom Boost</English>
+        </Key>
+        <Key ID="STR_DTVD_scopeBoostDescription">
+            <English>Enables the setting so when you zoom in through a scope, your current view and object view distance is boosted by the configured value.</English>
+        </Key>
+        <Key ID="STR_DTVD_focusedBoost">
+            <English>Enable Focused Zoom Boost</English>
+        </Key>
+        <Key ID="STR_DTVD_focusedBoostDescription">
+            <English>Enables the setting so when you focus your view (hold right click etc), your current view and object view distance is boosted by the configured value.</English>
         </Key>
     </Package>
 </Project>

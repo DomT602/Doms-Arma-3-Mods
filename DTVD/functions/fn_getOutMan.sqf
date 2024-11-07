@@ -4,7 +4,7 @@
 	Description: Updates to correct view distance for exiting a vehicle
 */
 
-(profileNamespace getVariable ["DT_footViewDistance",[5000,5000,25]]) params ["_viewDistance","_objectDistance","_terrainGrid"];
+(profileNamespace getVariable ["DT_footViewDistance",[5000,5000,25,0]]) params ["_viewDistance","_objectDistance","_terrainGrid"];
 if (viewDistance isNotEqualTo _viewDistance) then {
 	setViewDistance _viewDistance;
 };

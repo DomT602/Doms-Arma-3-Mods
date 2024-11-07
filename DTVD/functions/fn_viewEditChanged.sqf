@@ -10,7 +10,7 @@ private _newValue = parseNumber ([_text,"0123456789"] call BIS_fnc_filterString)
 _newValue = ((_newValue max 200) min DT_viewDistanceMax);
 
 private _variableToUpdate = format ["DT_%1ViewDistance",_type];
-private _viewVar = profileNamespace getVariable [_variableToUpdate,[5000,5000,25]];
+private _viewVar = profileNamespace getVariable [_variableToUpdate,[5000,5000,25,0]];
 _viewVar set [_updateIndex,_newValue];
 
 private _display = findDisplay 9439;

@@ -18,7 +18,7 @@ if (_vehicle isKindOf "Air") then {
 	};
 };
 
-(profileNamespace getVariable [_variable,[5000,5000,25]]) params ["_viewDistance","_objectDistance","_terrainGrid"];
+(profileNamespace getVariable [_variable,[5000,5000,25,0]]) params ["_viewDistance","_objectDistance","_terrainGrid"];
 if (viewDistance isNotEqualTo _viewDistance) then {
 	setViewDistance _viewDistance;
 };

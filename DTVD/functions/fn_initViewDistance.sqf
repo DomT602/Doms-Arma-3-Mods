@@ -23,7 +23,7 @@ if (_enable) then {
 	}] call CBA_fnc_addEventHandler;
 
 	{
-		private _variable = profileNamespace getVariable [_x,[5000,5000,25]];
+		private _variable = profileNamespace getVariable [_x,[5000,5000,25,0]];
 		_variable params ["_viewDistance","_objectDistance","_terrainGrid"];
 		if (_viewDistance > DT_viewDistanceMax) then {
 			_variable set [0,DT_viewDistanceMax];
@@ -33,6 +33,9 @@ if (_enable) then {
 		};
 		if (_terrainGrid > DT_terrainGridMax) then {
 			_variable set [2,DT_terrainGridMax];
+		};
+		if (count _variable isEqualTo 3) then { //needed for people who used old version
+			_variable pushBack 0;
 		};
 		if (_firstTimeSetup) then {
 			profileNamespace setVariable [_x,_variable];
