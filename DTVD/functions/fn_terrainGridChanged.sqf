@@ -12,7 +12,7 @@ private _variableToUpdate = format ["DT_%1ViewDistance",_type];
 private _viewVar = profileNamespace getVariable [_variableToUpdate,[5000,5000,25,0]];
 _viewVar set [2,_newValue];
 
-ACE_controlledUAV params [["_uav",objNull]];
+private _uav = [] call DT_fnc_getActiveUAV;
 private _vehicle = if (isNull _uav) then {objectParent player} else {_uav};
 
 if (_type isEqualTo "rotary") exitWith {

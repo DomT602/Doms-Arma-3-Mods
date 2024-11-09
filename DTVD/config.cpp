@@ -3,7 +3,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = 2.00;
-        requiredAddons[] = {"ace_common"};
+        requiredAddons[] = {"cba_main"};
         author = "DomT602";
     };
 };
@@ -16,6 +16,7 @@ class CfgFunctions {
             class changeSingleValue {};
             class changeViewByHotkey {};
             class focusedZoom {};
+            class getActiveUAV {};
             class getInMan {};
             class getOutMan {};
             class getVarByVehicle {};

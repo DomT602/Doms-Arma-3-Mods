@@ -13,14 +13,26 @@ if (_enable) then {
 	DT_viewDistance_getOutMan = player addEventHandler ["GetOutMan",DT_fnc_getOutMan];
 	DT_viewDistance_respawn = player addEventHandler ["Respawn",DT_fnc_getOutMan];
 
-	DT_viewDistance_uavHandle = ["ACE_controlledUAV", {
-		ACE_controlledUAV params [["_uav",objNull]];
-		if (isNull _uav) then {
-			[] call DT_fnc_getOutMan;
-		} else {
-			[player,nil,_uav] call DT_fnc_getInMan;
-		};
-	}] call CBA_fnc_addEventHandler;
+	if (DT_viewDistance_isACEEnabled) then {
+		DT_viewDistance_uavHandle = ["ACE_controlledUAV",{
+			ACE_controlledUAV params [["_uav",objNull]];
+			if (isNull _uav) then {
+				[] call DT_fnc_getOutMan;
+			} else {
+				[player,nil,_uav] call DT_fnc_getInMan;
+			};
+		}] call CBA_fnc_addEventHandler;
+	} else {
+		DT_viewDistance_uavHandle = addMissionEventHandler ["PlayerViewChanged",{
+			params ["","","","","","_uav"];
+			
+			if (isNull _uav) then {
+				[] call DT_fnc_getOutMan;
+			} else {
+				[player,nil,_uav] call DT_fnc_getInMan;
+			};
+		}];
+	};
 
 	{
 		private _variable = profileNamespace getVariable [_x,[5000,5000,25,0]];
@@ -63,6 +75,10 @@ if (_enable) then {
 	player removeEventHandler ["respawn",DT_viewDistance_respawn];
 	DT_viewDistance_respawn = nil;
 
-	["ACE_controlledUAV",DT_viewDistance_uavHandle] call CBA_fnc_removeEventHandler;
+	if (DT_viewDistance_isACEEnabled) then {
+		["ACE_controlledUAV",DT_viewDistance_uavHandle] call CBA_fnc_removeEventHandler;
+	} else {
+		removeMissionEventHandler ["PlayerViewChanged",DT_viewDistance_uavHandle];
+	};
 	DT_viewDistance_uavHandle = nil;
 };

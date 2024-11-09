@@ -1,5 +1,7 @@
 #include "\a3\editor_f\Data\Scripts\dikCodes.h"
 
+DT_viewDistance_isACEEnabled = isClass (configFile >> "CfgPatches" >> "ace_main");
+
 [
 	"DT_viewDistanceEnabled",
 	"CHECKBOX",

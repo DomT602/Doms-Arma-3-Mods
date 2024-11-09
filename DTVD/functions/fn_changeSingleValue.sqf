@@ -9,7 +9,7 @@ params [
 	["_value",5000,[0]]
 ];
 
-ACE_controlledUAV params [["_uav",objNull]];
+private _uav = [] call DT_fnc_getActiveUAV;
 private _vehicle = if (isNull _uav) then {objectParent player} else {_uav};
 
 if (_viewType isEqualTo "rotary") exitWith {

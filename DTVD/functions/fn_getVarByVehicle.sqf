@@ -4,7 +4,9 @@
 	Description: Returns the correct view distance variable to edit depending on vehicle the player may be in
 */
 private _type = "foot";
-private _vehicle = objectParent player;
+private _uav = [] call DT_fnc_getActiveUAV;
+private _vehicle = if (isNull _uav) then {objectParent player} else {_uav};
+
 if !(isNull _vehicle) then {
 	if (_vehicle isKindOf "Air") then {
 		if (_vehicle isKindOf "Helicopter") then {

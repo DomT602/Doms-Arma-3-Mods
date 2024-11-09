@@ -17,7 +17,7 @@ if (_enable) then {
 	DT_viewDistance_zoomContInOn = addUserActionEventHandler ["zoomContIn","Activate",DT_fnc_focusedZoom];
 	DT_viewDistance_zoomContInOff = addUserActionEventHandler ["zoomContIn","Deactivate",DT_fnc_focusedZoom];
 } else {
-	if (isNil "DT_viewDistance_zoomTempSwitchOn") exitWith {};
+	if (isNil "DT_viewDistance_zoomTempOn") exitWith {};
 	removeUserActionEventHandler ["zoomTemp","Activate",DT_viewDistance_zoomTempOn];
 	removeUserActionEventHandler ["zoomTemp","Deactivate",DT_viewDistance_zoomTempOff];
 	removeUserActionEventHandler ["zoomIn","Activate",DT_viewDistance_zoomInOn];
