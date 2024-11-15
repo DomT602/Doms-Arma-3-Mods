@@ -51,6 +51,7 @@
         </Key>
         <Key ID="STR_DTVD_zoom">
             <English>Zoom:</English>
+            <Japanese>ズーム:</Japanese>
         </Key>
         <Key ID="STR_DTVD_terrain">
             <English>Terrain:</English>
@@ -59,7 +60,8 @@
             <Japanese>地形品質:</Japanese>
         </Key>
         <Key ID="STR_DTVD_zoomTooltip">
-            <English>This setting is enabled through Options > Addon Options > Dom's Mods</English>
+            <English>This setting is enabled through Options &gt; Addon Options &gt; Dom's Mods</English>
+            <Japanese>この設定は設定 &gt; アドオン設定 &gt; Dom's Modsから有効化できます。</Japanese>
         </Key>
     </Package>
     <Package name="Terrain">
@@ -109,7 +111,7 @@
         </Key>
         <Key ID="STR_DTVD_objectSync">
             <English>Automatically sync object distance</English>
-            <Japanese>描画距離自動同期</Japanese>
+            <Japanese>描画距離の自動同期</Japanese>
         </Key>
         <Key ID="STR_DTVD_objectSyncDescription">
             <English>Automatically sync changes to the object view distance slider to match the selected terrain view distance slider.</English>
@@ -133,15 +135,19 @@
         </Key>
         <Key ID="STR_DTVD_incrementDistance">
             <English>Distance Increment Value</English>
+            <Japanese>距離の増減値</Japanese>
         </Key>
         <Key ID="STR_DTVD_incrementDistanceDescription">
             <English>Select the distance you want added or subtracted when the selected hotkey is pressed.</English>
+            <Japanese>選択したホットキーを押したときに増加もしくは減少する距離を設定します。</Japanese>
         </Key>
         <Key ID="STR_DTVD_incrementHotkeyAdd">
             <English>Increment distance hotkey</English>
+            <Japanese>距離増加ホットキー</Japanese>
         </Key>
         <Key ID="STR_DTVD_incrementHotkeyRemove">
             <English>Decrement distance hotkey</English>
+            <Japanese>距離減少ホットキー</Japanese>
         </Key>
         <Key ID="STR_DTVD_maxDistance">
             <English>Max View Distance</English>
@@ -195,15 +201,19 @@
         </Key>
         <Key ID="STR_DTVD_scopeBoost">
             <English>Enable Scope Zoom Boost</English>
+            <Japanese>照準器使用時のズームブーストを有効化</Japanese>
         </Key>
         <Key ID="STR_DTVD_scopeBoostDescription">
             <English>Enables the setting so when you zoom in through a scope, your current view and object view distance is boosted by the configured value.</English>
+            <Japanese>この設定を有効化すると、スコープなどの照準器を覗き見た時に現在の(総合/オブジェクト)描画距離が設定値の分だけブーストされるようになります。</Japanese>
         </Key>
         <Key ID="STR_DTVD_focusedBoost">
             <English>Enable Focused Zoom Boost</English>
+            <Japanese>注視時のズームブーストを有効化</Japanese>
         </Key>
         <Key ID="STR_DTVD_focusedBoostDescription">
             <English>Enables the setting so when you focus your view (hold right click etc), your current view and object view distance is boosted by the configured value.</English>
+            <Japanese>この設定を有効化すると、注視時(右クリックを長押しした時に"フォーカス"された時)に現在の(総合/オブジェクト)描画距離が設定値の分だけブーストされるようになります。</Japanese>
         </Key>
     </Package>
 </Project>
