@@ -35,6 +35,6 @@ class crewman {
 		"ToolKit", "H_HelmetCrew_B"
 	};
 	arsenalBackpacks[] = {
-		
+
 	};
 };

@@ -39,14 +39,14 @@ class paratrooper {
 		"launch_MRAWS_sand_F",
 		"launch_NLAW_F",
 
-		"launch_B_Titan_F", 
+		"launch_B_Titan_F",
 		"launch_B_Titan_olive_F",
 		"launch_B_Titan_short_F",
 		"launch_B_Titan_short_tna_F",
 		"launch_B_Titan_tna_F"
 	};
 	arsenalMagazines[] = {
-		
+
 	};
 	arsenalItems[] = {
 		"optic_AMS",
@@ -54,6 +54,6 @@ class paratrooper {
 		"optic_LRPS"
 	};
 	arsenalBackpacks[] = {
-		
+
 	};
 };

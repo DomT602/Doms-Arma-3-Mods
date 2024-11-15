@@ -50,7 +50,7 @@ _squads pushBack ([_spawnPosition,75] call DT_fnc_createMortar);
 					["The intel had details on a commander in the region.",DT_fnc_killCommander]
 				];
 				(selectRandom _missions) params ["_message","_code"];
-				
+
 				[_message] remoteExecCall ["DT_fnc_notify",0];
 				[_locationObject] call _code;
 			};
@@ -71,7 +71,7 @@ _squads pushBack ([_spawnPosition,75] call DT_fnc_createMortar);
 			},
 			[_laptop]
 		] call CBA_fnc_waitUntilAndExecute;
-		
+
 		[
 			{
 				params ["_pos"];

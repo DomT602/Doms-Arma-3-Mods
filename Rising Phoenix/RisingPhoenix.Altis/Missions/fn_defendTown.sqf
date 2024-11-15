@@ -53,9 +53,9 @@ publicVariable "DT_missionDetails";
 				} else {
 					[_missionVar,false] call DT_fnc_endMission;
 				};
-				
+
 				[
-					{	
+					{
 						params ["_pos"];
 						[_pos] call DT_fnc_areaIsClear
 					},

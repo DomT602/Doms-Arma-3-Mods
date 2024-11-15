@@ -256,7 +256,7 @@ switch _questionIndex do {
 		if (_karma < 0) then {
 			_options append _genericNegativeResponses;
 		};
-		
+
 		_response = selectRandom _options;
 	};
 	case 7: {

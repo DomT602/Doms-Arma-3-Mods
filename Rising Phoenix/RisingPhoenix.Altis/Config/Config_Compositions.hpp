@@ -133,9 +133,9 @@ class Compositions {
 			{"Land_HBarrier_Big_F",{39.92,29.21,0.00},271.14}
 		}
 	};
-	
+
 	opforAASites[] = {
-		{ 
+		{
 			{"Land_HBarrier_Big_F",{-10.38,5.33,0.00},53.31},
 			{"Land_HBarrier_Big_F",{10.60,4.99,0.00},180.82},
 			{"Land_HBarrier_Big_F",{-2.10,12.05,0.00},53.31},
@@ -201,7 +201,7 @@ class Compositions {
 		}
 	};
 	opforSupplyDepots[] = {
-		{ 
+		{
 			{"PortableHelipadLight_01_yellow_F",{-0.97,6.51,0.00},181.56},
 			{"Land_TentHangar_V1_F",{-5.33,1.22,0.00},0.00},
 			{"PortableHelipadLight_01_yellow_F",{-8.03,-3.13,0.00},179.71},

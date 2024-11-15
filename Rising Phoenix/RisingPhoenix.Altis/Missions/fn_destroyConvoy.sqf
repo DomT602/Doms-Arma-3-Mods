@@ -42,7 +42,7 @@ private _units = units _squad;
 	},
 	{
 		params ["","_missionVar","_locationObject","_squad","_spawnPos"];
-		
+
 		[_missionVar,true] call DT_fnc_endMission;
 		[_locationObject,paramsArray select 4] call DT_fnc_adjustKarma;
 		if !(missionNamespace getVariable ["DT_opforHeaviesDisabled",false]) then {

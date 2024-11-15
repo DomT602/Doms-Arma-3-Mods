@@ -20,6 +20,6 @@ class squadlead {
 	};
 
 	arsenalItems[] = {
-		
+
 	};
 };

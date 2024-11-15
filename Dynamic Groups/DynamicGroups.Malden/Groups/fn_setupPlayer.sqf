@@ -16,7 +16,7 @@ if (_isRespawn) then {
 } else {
 	DT_savedLoadout = _defaultLoadout;
 	player setUnitLoadout _defaultLoadout;
-	
+
 	private _weapons = getArray(_roleConfig >> "arsenalWeapons");
 	_weapons append getArray(missionConfigFile >> "Common_Arsenal" >> "weapons");
 	private _magazines = getArray(_roleConfig >> "arsenalMagazines");

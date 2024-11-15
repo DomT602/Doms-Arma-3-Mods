@@ -32,7 +32,7 @@ class Logi_Setup {
 
 		"O_Heli_Light_02_unarmed_F",
 		"O_Heli_Light_02_dynamicLoadout_F",
-		
+
 		"O_Heli_Transport_04_covered_F",
 		"O_Heli_Transport_04_bench_F",
 
@@ -40,7 +40,7 @@ class Logi_Setup {
 
 		"O_T_VTOL_02_infantry_dynamicLoadout_F",
 		"O_T_VTOL_02_vehicle_dynamicLoadout_F",
-		
+
 		"O_Plane_Fighter_02_F",
 		"O_Plane_CAS_02_dynamicLoadout_F"
 	};
@@ -123,7 +123,7 @@ class Logi_Setup {
 			{"10Rnd_762x54_Mag",20},
 			{"150Rnd_762x54_Box",10},
 			{"100Rnd_580x42_Mag_F",8},
-						
+
 			{"HandGrenade",6},
 			{"MiniGrenade",6},
 			{"SmokeShell",4},
@@ -133,7 +133,7 @@ class Logi_Setup {
 			{"UGL_FlareGreen_F",10},
 			{"UGL_FlareYellow_F",10},
 			{"1Rnd_Smoke_Grenade_shell",5},
-			{"1Rnd_SmokeRed_Grenade_shell",5}			
+			{"1Rnd_SmokeRed_Grenade_shell",5}
 		}},
 		{"miscWeaponCrateCategory","Explosives","small",{
 			{"DemoCharge_Remote_Mag",6},
@@ -145,7 +145,7 @@ class Logi_Setup {
 
 		}},
 		{"miscWeaponCrateCategory","Empty Crate (Medium)","medium",{
-			
+
 		}}
 	};
 };

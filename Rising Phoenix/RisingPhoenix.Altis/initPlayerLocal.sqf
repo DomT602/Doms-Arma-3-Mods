@@ -45,7 +45,7 @@ if (DT_isTFAREnabled) then {
 };
 
 ["ace_arsenal_displayClosed",{
-	DT_savedLoadout = [player] call CBA_fnc_getLoadout;	
+	DT_savedLoadout = [player] call CBA_fnc_getLoadout;
 	["Loadout saved."] call DT_fnc_notify;
 
 	if (DT_isTFAREnabled && {call TFAR_fnc_haveLRRadio}) then {call DT_fnc_initLrRadio};
@@ -72,7 +72,7 @@ if (DT_isTFAREnabled) then {
 [] call DT_fnc_setupDiaryTutorials;
 
 DT_isZeus = (getPlayerUID player) in (getArray(missionConfigFile >> "zeusUIDs"));
-if (DT_isZeus) then { 
+if (DT_isZeus) then {
 	[player] remoteExecCall ["DT_fnc_assignZeus",2];
 };
 

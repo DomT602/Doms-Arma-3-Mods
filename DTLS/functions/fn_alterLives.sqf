@@ -17,7 +17,7 @@ switch _action do {
 	case "transfer": {
 		private _myIndex = -1;
 		for "_i" from 0 to (lbSize _listbox)-1 do {
-			private _uid = _listbox lbData _i; 
+			private _uid = _listbox lbData _i;
 			if (_uid isEqualTo (getPlayerUID player)) exitWith {
 				_myIndex = _i;
 			};
@@ -54,7 +54,7 @@ switch _action do {
 	};
 	case "resetAll": {
 		for "_i" from 0 to (lbSize _listbox)-1 do {
-			private _uid = _listbox lbData _i; 
+			private _uid = _listbox lbData _i;
 			private _unit = [_uid] call DT_fnc_findPlayerByUID;
 			private _unitsLives = [_unit] call DT_fnc_getLives;
 

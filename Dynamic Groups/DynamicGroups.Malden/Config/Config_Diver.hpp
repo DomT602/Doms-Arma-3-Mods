@@ -35,6 +35,6 @@ class diver {
 		"U_B_survival_uniform", "U_B_Wetsuit", "V_RebreatherB", "G_B_Diving"
 	};
 	arsenalBackpacks[] = {
-		
+
 	};
 };

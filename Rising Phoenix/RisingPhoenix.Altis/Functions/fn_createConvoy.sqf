@@ -25,7 +25,7 @@ for "_i" from 1 to _mediumCount do {
 	private _group = [selectRandom _mediumVehicles,_startPos] call DT_fnc_createVehicle;
 	_groups pushBack _group;
 };
-	
+
 private _mainGroup = createGroup [east,true];
 private _vehicles = [];
 {

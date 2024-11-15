@@ -25,7 +25,7 @@ if (DT_ambientOpforHandle isEqualTo -1) then {
 				[_this select 1] call CBA_fnc_removePerFrameHandler;
 				DT_ambientOpforHandle = -1;
 			};
-			
+
 			{
 				_x params ["_vehicle","_group","_lastPos"];
 				if (isNull _group) then {
@@ -40,7 +40,7 @@ if (DT_ambientOpforHandle isEqualTo -1) then {
 						private _locations = DT_civLocations select {!(_x in DT_activeCivLocations)};
 						private _nearRoads = (selectRandom _locations) nearRoads 750;
 						private _spawnPos = getPosATL (selectRandom _nearRoads);
-						
+
 						_vehicle setPosATL _spawnPos;
 						_vehicle setDamage 0;
 
@@ -58,7 +58,7 @@ if (DT_ambientOpforHandle isEqualTo -1) then {
 									_position = getPosATL (selectRandom _nearRoads);
 								};
 							};
-							
+
 							private _waypoint = _group addWaypoint [_position,10];
 							_waypoint setWaypointType "MOVE";
 							_waypoint setWaypointBehaviour "SAFE";

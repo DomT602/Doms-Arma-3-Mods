@@ -6,7 +6,7 @@
 
 if !(DT_viewDistanceEnabled) exitWith {};
 if (dialog) exitWith {};
-	
+
 private _display = createDialog ["DT_viewDistanceMenu",false];
 private _sliderDataArray = [];
 private _terrainDataArray = [];

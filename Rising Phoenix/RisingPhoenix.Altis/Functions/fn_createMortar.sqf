@@ -33,7 +33,7 @@ if (DT_isLambsEnabled) then {
 		if (!alive _unit || {gunner _mortar isNotEqualTo _unit}) exitWith {[_handle] call CBA_fnc_removePerFrameHandler};
 
 		private _targets = playableUnits select {_x distance _mortar < 1500 && {east knowsAbout _x > 3.5 && {!(objectParent _x isKindOf "Air")}}};
-		
+
 		if (_targets isNotEqualTo []) then {
 			private _target = selectRandom _targets;
 			_unit doWatch _target;
@@ -49,7 +49,7 @@ if (DT_isLambsEnabled) then {
 				} else {
 					_ammoType = 2;
 				};
-			}; 
+			};
 			_args set [2,_currentPos];
 			_args set [3,_spread];
 

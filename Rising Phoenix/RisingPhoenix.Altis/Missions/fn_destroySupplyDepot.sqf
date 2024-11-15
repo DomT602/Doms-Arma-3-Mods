@@ -63,7 +63,7 @@ _squads pushBack ([_spawnPos,50] call DT_fnc_createStatic);
 	},
 	{
 		params ["","_missionVar","_spawnPos","_squads","_objects"];
-		
+
 		[_missionVar,true] call DT_fnc_endMission;
 		missionNamespace setVariable ["DT_opforHeaviesDisabled",true];
 

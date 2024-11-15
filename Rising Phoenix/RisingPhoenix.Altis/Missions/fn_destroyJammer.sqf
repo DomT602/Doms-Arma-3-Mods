@@ -55,7 +55,7 @@ _squads pushBack ([_spawnPos,50] call DT_fnc_createStatic);
 			};
 		};
 		["destroyJammer"] call DT_fnc_startSideMission;
-		
+
 		[
 			{
 				params ["_pos"];

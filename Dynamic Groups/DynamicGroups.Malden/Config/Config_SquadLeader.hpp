@@ -32,12 +32,12 @@ class squadlead {
 		"arifle_MX_GL_F"
 	};
 	arsenalMagazines[] = {
-		
+
 	};
 	arsenalItems[] = {
-		
+
 	};
 	arsenalBackpacks[] = {
-		
+
 	};
 };

@@ -42,7 +42,7 @@ class Common_Arsenal {
 
 		"U_B_Wetsuit", "U_B_survival_uniform","V_RebreatherB", "G_B_Diving", "G_Diving",
 		"U_B_PilotCoveralls",
-		
+
 		"V_Rangemaster_belt",
 
 		"B_Carryall_cbr", "B_Kitbag_cbr", "B_AssaultPack_cbr", "B_LegStrapBag_coyote_F", "B_Parachute", "ACE_NonSteerableParachute",
@@ -160,7 +160,7 @@ class Common_Arsenal {
 		"rhs_weap_hk416d10_m320",
 		"rhs_weap_hk416d145",
 		"rhs_weap_hk416d145_m320",
-		
+
 		"rhsusf_acc_grip_m203_blk",
 		"rhsusf_acc_acog_rmr",
 		"rhsusf_acc_su230_mrds",

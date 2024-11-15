@@ -43,7 +43,7 @@ class Common_Arsenal {
 
 		"U_B_Wetsuit", "U_B_survival_uniform","V_RebreatherB", "G_B_Diving", "G_Diving",
 		"U_B_PilotCoveralls",
-		
+
 		"DemoCharge_Remote_Mag",
 		"SatchelCharge_Remote_Mag",
 		"B_IR_Grenade",
@@ -76,7 +76,7 @@ class Common_Arsenal {
 		"amf_uniform_01_DA_2",
 		"amf_uniform_02_DA",
 		"amf_uniform_02_DA_2",
-		
+
 		"amf_SMB_FUS_BME",
 		"amf_SMB_FUS_TAN",
 		"amf_SMB_FUS_TDF",
@@ -93,7 +93,7 @@ class Common_Arsenal {
 		"amf_SMB_AUXSAN_BME",
 		"amf_SMB_AUXSAN_TAN",
 		"amf_SMB_AUXSAN_TDF",
-		
+
 		"AMF_rush24_01_MTP",
 		"AMF_rush24_01_TAN",
 		"AMF_rush24_01_TDF",
@@ -105,7 +105,7 @@ class Common_Arsenal {
 		"AMF_FELIN_BACKPACK_TAN_MEDIC",
 		"TFAR_rt1523g_sage",
 		"B_Parachute",
-		
+
 		"AMF_FELIN_05_CE",
 		"AMF_FELIN_05_TAN",
 		"AMF_FELIN_L05_CE",
@@ -114,14 +114,14 @@ class Common_Arsenal {
 		"AMF_FELIN_06_TAN",
 		"AMF_FELIN_L06_CE",
 		"AMF_FELIN_L06_TAN",
-		
+
 		"AMF_Samas_F1_01_F",
 		"AMF_Samas_FELIN_01_F",
 		"AMF_Samas_G2_01_F",
 		"AMF_Samas_VALO_01_F",
 		"AMF_614_short_01_F",
 		"AMF_614_long_HK269_01_F",
-		
+
 		"rhsusf_acc_g33_xps3",
 		"rhsusf_acc_su230",
 		"rhsusf_acc_compm4",
@@ -132,7 +132,7 @@ class Common_Arsenal {
 		"amf_rotex_v",
 		"amf_acc_614_grip3",
 		"amf_acc_614_grip2",
-		
+
 		"ACE_30Rnd_556x45_Stanag_Mk262_mag",
 		"ACE_30Rnd_556x45_Stanag_Mk318_mag",
 		"rhs_mag_30Rnd_556x45_Mk262_Stanag",
@@ -160,16 +160,16 @@ class Common_Arsenal {
 		"ACE_40mm_Flare_white",
 		"ACE_40mm_Flare_green",
 		"ACE_40mm_Flare_red",
-		
+
 		"AMF_Glock_17_TAN",
 		"acc_flashlight_pistol",
 		"16Rnd_9x21_Mag",
-		
+
 		"ACE_VMH3",
 		"ACE_VMM3",
 		"AMF_RFG_AC58",
 		"AMF_RFG_APAV40",
-		
+
 		"amf_balaclava_ranger",
 		"amf_balaclava_blk",
 		"amf_balaclava_goggles_blk",

@@ -25,7 +25,7 @@ if (_enable) then {
 	} else {
 		DT_viewDistance_uavHandle = addMissionEventHandler ["PlayerViewChanged",{
 			params ["","","","","","_uav"];
-			
+
 			if (isNull _uav) then {
 				[] call DT_fnc_getOutMan;
 			} else {

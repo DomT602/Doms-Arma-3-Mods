@@ -28,7 +28,7 @@ class marksman {
 	arsenalItems[] = {
 		"AMF_SCAR_H_painted",
 		"AMF_SCAR_H_02_F",
-		
+
 		"amf_SMB_TP_HK417_BME",
 		"amf_SMB_TP_HK417_TAN",
 		"amf_SMB_TP_HK417_TDF",
@@ -41,7 +41,7 @@ class marksman {
 		"amf_schmidt_benderx4",
 		"10Rnd_762x51_Mag",
 		"optic_lrps",
-		
+
 		"AMF_PGM_ULTIMA_RATIO_01_F"
 	};
 };

@@ -27,10 +27,10 @@ class pilot {
 	};
 
 	arsenalWeapons[] = {
-		
+
 	};
 	arsenalMagazines[] = {
-		
+
 	};
 	arsenalItems[] = {
 		"U_B_HeliPilotCoveralls", "U_B_PilotCoveralls",
@@ -39,6 +39,6 @@ class pilot {
 		"H_CrewHelmetHeli_B"
 	};
 	arsenalBackpacks[] = {
-		
+
 	};
 };

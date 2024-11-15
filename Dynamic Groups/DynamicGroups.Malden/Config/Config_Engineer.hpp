@@ -35,6 +35,6 @@ class engineer {
 		"ToolKit", "MineDetector"
 	};
 	arsenalBackpacks[] = {
-		
+
 	};
 };

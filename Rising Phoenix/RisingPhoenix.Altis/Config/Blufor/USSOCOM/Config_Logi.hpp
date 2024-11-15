@@ -122,7 +122,7 @@ class Logi_Setup {
 			{"20Rnd_762x51_Mag",20},
 			{"100Rnd_65x39_caseless_mag",10},
 			{"150Rnd_556x45_Drum_Mag_F",8},
-						
+
 			{"HandGrenade",6},
 			{"MiniGrenade",6},
 			{"SmokeShell",4},
@@ -144,7 +144,7 @@ class Logi_Setup {
 
 		}},
 		{"miscWeaponCrateCategory","Empty Crate (Medium)","medium",{
-			
+
 		}}
 	};
 };

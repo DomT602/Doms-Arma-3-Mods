@@ -60,7 +60,7 @@ if (DT_ambientCivHandle isEqualTo -1) then {
 
 						_vehicle setPosATL _spawnPos;
 						_vehicle setDamage 0;
-						
+
 						if (isNull objectParent _unit) then {
 							_unit moveInDriver _vehicle;
 						};
@@ -73,7 +73,7 @@ if (DT_ambientCivHandle isEqualTo -1) then {
 									_position = getPosATL (selectRandom _nearRoads);
 								};
 							};
-							
+
 							private _waypoint = _group addWaypoint [_position,10];
 							_waypoint setWaypointType "MOVE";
 							_waypoint setWaypointBehaviour "SAFE";

@@ -27,6 +27,6 @@ class pilot {
 	};
 
 	arsenalItems[] = {
-		
+
 	};
 };

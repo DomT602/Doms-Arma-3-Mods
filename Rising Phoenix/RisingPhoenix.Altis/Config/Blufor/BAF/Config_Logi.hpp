@@ -178,13 +178,13 @@ class Logi_Setup {
 			{"UK3CB_BAF_762_L42A1_20Rnd_T",10},
 			{"UK3CB_BAF_338_5Rnd",10},
 			{"UK3CB_BAF_338_5Rnd_Tracer",5},
-			{"UK3CB_BAF_556_200Rnd",5},		
+			{"UK3CB_BAF_556_200Rnd",5},
 			{"UK3CB_BAF_762_200Rnd",5},
 			{"rhs_mag_m18_purple",5},
 			{"rhs_mag_m18_red",5},
 			{"rhs_mag_m18_blue",5},
 			{"rhs_mag_m18_green",5},
-			{"rhs_mag_m67",10}		
+			{"rhs_mag_m67",10}
 		}},
 		{"miscWeaponCrateCategory","Raven","small",,{
 			{"B_rhsusf_B_BACKPACK",1}

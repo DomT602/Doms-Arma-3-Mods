@@ -23,7 +23,7 @@ private _arsenalCategory = [
 	{[_player,_player,false] call ace_arsenal_fnc_openBox},
 	{
 		isNull objectParent _player &&
-		{_player getVariable ["ace_arsenal_virtualItems",[]] isNotEqualTo [] && 
+		{_player getVariable ["ace_arsenal_virtualItems",[]] isNotEqualTo [] &&
 		{_player distance arsenal_1 < 100}}
 	}
 ] call ace_interact_menu_fnc_createAction;

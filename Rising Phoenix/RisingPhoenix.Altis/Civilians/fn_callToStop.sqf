@@ -32,5 +32,5 @@ _karma = round (_karma / 20); //value between -5 and 5
 				_delay
 			] remoteExecCall ["CBA_fnc_waitAndExecute",_x];
 		};
-	};	
+	};
 } forEach _nearbyUnits;

@@ -111,7 +111,7 @@ class Logi_Setup {
 			{"rhsusf_200Rnd_556x45_box",8},
 			{"UK3CB_ACR_30rnd_556x45_R",35},
 			{"rhsusf_100Rnd_556x45_soft_pouch",12},
-						
+
 			{"HandGrenade",6},
 			{"MiniGrenade",6},
 			{"SmokeShell",4},
@@ -133,7 +133,7 @@ class Logi_Setup {
 
 		}},
 		{"miscWeaponCrateCategory","Empty Crate (Medium)","medium",{
-			
+
 		}}
 	};
 };

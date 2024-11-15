@@ -32,7 +32,7 @@ class Logi_Setup {
 
 		"AMF_gazelle_minigun_f",
 		"AMF_TIGRE_01",
-		
+
 		"B_AMF_REAPER_dynamicLoadout_F",
 		"B_AMF_PLANE_TRANSPORT_01_F",
 
@@ -109,7 +109,7 @@ class Logi_Setup {
 			{"20Rnd_762x51_HK417_mag",20},
 			{"150Rnd_MINI_MG_mag",10},
 			{"20Rnd_762x51_Mag",20},
-						
+
 			{"HandGrenade",6},
 			{"MiniGrenade",6},
 			{"SmokeShell",4},
@@ -131,7 +131,7 @@ class Logi_Setup {
 
 		}},
 		{"miscWeaponCrateCategory","Empty Crate (Medium)","medium",{
-			
+
 		}}
 	};
 };

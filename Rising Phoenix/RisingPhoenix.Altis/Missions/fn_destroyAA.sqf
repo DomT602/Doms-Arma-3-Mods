@@ -55,7 +55,7 @@ _squads append ([_spawnPos,50] call DT_fnc_createPatrols);
 	},
 	{
 		params ["","_missionVar","_spawnPos","_squads","_objects"];
-		
+
 		[_missionVar,true] call DT_fnc_endMission;
 		["destroyAA"] call DT_fnc_startSideMission;
 

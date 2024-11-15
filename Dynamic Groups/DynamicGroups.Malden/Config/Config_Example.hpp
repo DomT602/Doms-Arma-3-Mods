@@ -35,6 +35,6 @@ class roleClassname { //this class is used when defining which roles are in what
 		"U_B_survival_uniform", "U_B_Wetsuit", "V_RebreatherB", "G_B_Diving"
 	};
 	arsenalBackpacks[] = { //backpacks that will be in the arsenal specific to this role
-		
+
 	};
 };
