@@ -204,7 +204,7 @@
             <Japanese>照準器使用時のズームブーストを有効化</Japanese>
         </Key>
         <Key ID="STR_DTVD_scopeBoostDescription">
-            <English>Enables the setting so when you zoom in through a scope, your current view and object view distance is boosted by the configured value.</English>
+            <English>When you zoom in through a scope, your current view and object view distance is boosted by the configured value.</English>
             <Japanese>この設定を有効化すると、スコープなどの照準器を覗き見た時に現在の(総合/オブジェクト)描画距離が設定値の分だけブーストされるようになります。</Japanese>
         </Key>
         <Key ID="STR_DTVD_focusedBoost">
@@ -212,8 +212,20 @@
             <Japanese>注視時のズームブーストを有効化</Japanese>
         </Key>
         <Key ID="STR_DTVD_focusedBoostDescription">
-            <English>Enables the setting so when you focus your view (hold right click etc), your current view and object view distance is boosted by the configured value.</English>
+            <English>When you focus your view (hold right click etc), your current view and object view distance is boosted by the configured value.</English>
             <Japanese>この設定を有効化すると、注視時(右クリックを長押しした時に"フォーカス"された時)に現在の(総合/オブジェクト)描画距離が設定値の分だけブーストされるようになります。</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_notifications">
+            <English>Enable Notifications</English>
+        </Key>
+        <Key ID="STR_DTVD_notificationsDescription">
+            <English>Enable notifications when you change the view distance by a hotkey.</English>
+        </Key>
+        <Key ID="STR_DTVD_presetViewHotkey">
+            <English>View distance changed: %1m (Hotkey %2).</English>
+        </Key>
+        <Key ID="STR_DTVD_incrementedViewHotkey">
+            <English>View distance changed: %1m (%2%3m).</English>
         </Key>
     </Package>
 </Project>

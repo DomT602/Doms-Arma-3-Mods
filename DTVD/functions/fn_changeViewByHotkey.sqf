@@ -5,7 +5,8 @@
 */
 if !(DT_viewDistanceEnabled) exitWith {};
 params [
-	["_value",100,[0]]
+	["_value",100,[0]],
+	["_hotkey","1",[""]]
 ];
 
 if (viewDistance isNotEqualTo _value) then {
@@ -18,3 +19,7 @@ if ((getObjectViewDistance select 0) isNotEqualTo _value) then {
 private _viewVar = [] call DT_fnc_getVarByVehicle;
 _viewVar set [0,_value];
 _viewVar set [1,_value];
+
+if (DT_notificationsEnabled) then {
+	systemChat format [localize "STR_DTVD_presetViewHotkey",_value,_hotkey];
+};

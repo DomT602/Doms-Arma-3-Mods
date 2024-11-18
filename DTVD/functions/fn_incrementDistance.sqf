@@ -16,3 +16,8 @@ setObjectViewDistance _newViewDistance;
 private _viewVar = [] call DT_fnc_getVarByVehicle;
 _viewVar set [0,_newViewDistance];
 _viewVar set [1,_newViewDistance];
+
+if (DT_notificationsEnabled) then {
+	private _symbol = if (_add) then {"+"} else {"-"};
+	systemChat format [localize "STR_DTVD_incrementedViewHotkey",_newViewDistance,_symbol,_value];
+};
