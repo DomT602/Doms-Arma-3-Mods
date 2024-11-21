@@ -217,15 +217,19 @@
         </Key>
         <Key ID="STR_DTVD_notifications">
             <English>Enable Notifications</English>
+            <Japanese>通知を有効化</Japanese>
         </Key>
         <Key ID="STR_DTVD_notificationsDescription">
             <English>Enable notifications when you change the view distance by a hotkey.</English>
+            <Japanese>ホットキーの入力で描画距離が変更された際に通知を表示する機能を有効化します</Japanese>
         </Key>
         <Key ID="STR_DTVD_presetViewHotkey">
             <English>View distance changed: %1m (Hotkey %2).</English>
+            <Japanese>描画距離が変更されました: %1m (ホットキー %2)</Japanese>
         </Key>
         <Key ID="STR_DTVD_incrementedViewHotkey">
             <English>View distance changed: %1m (%2%3m).</English>
+            <Japanese>描画距離が変更されました: %1m (%2%3m)</Japanese>
         </Key>
     </Package>
 </Project>
