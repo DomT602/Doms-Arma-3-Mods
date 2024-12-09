@@ -437,7 +437,7 @@ class DT_viewDistanceMenu {
 		{
 			idc = 1409;
 			maxChars = 5;
-			onEditChanged = "[_this select 0,_this select 1,'air',0] call DT_fnc_viewEditChanged";
+			onEditChanged = "[_this select 0,_this select 1,'air',1] call DT_fnc_viewEditChanged";
 			x = 36.5 * GUI_GRID_CENTER_W + GUI_GRID_CENTER_X;
 			y = 9 * GUI_GRID_CENTER_H + GUI_GRID_CENTER_Y;
 			w = 3.5 * GUI_GRID_CENTER_W;
