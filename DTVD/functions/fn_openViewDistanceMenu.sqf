@@ -5,7 +5,7 @@
 */
 
 if !(DT_viewDistanceEnabled) exitWith {};
-if (dialog) exitWith {};
+if (dialog || {!isNull (findDisplay 312)}) exitWith {};
 
 private _display = createDialog ["DT_viewDistanceMenu",false];
 private _sliderDataArray = [];
